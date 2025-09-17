@@ -1,0 +1,557 @@
+2025-09-15 13:27:48,653 - INFO - Sucessfully handled the missing values using random_sample imputation.
+NPA Status                              0
+RevolvingUtilizationOfUnsecuredLines    0
+age                                     0
+Gender                                  0
+Region                                  0
+Rented_OwnHouse                         0
+Occupation                              0
+Education                               0
+NumberOfTime30-59DaysPastDueNotWorse    0
+DebtRatio                               0
+NumberOfOpenCreditLinesAndLoans         0
+NumberOfTimes90DaysLate                 0
+NumberRealEstateLoansOrLines            0
+NumberOfTime60-89DaysPastDueNotWorse    0
+MonthlyIncome_replaced                  0
+NumberOfDependents_replaced             0
+dtype: int64 NPA Status                              0
+RevolvingUtilizationOfUnsecuredLines    0
+age                                     0
+Gender                                  0
+Region                                  0
+Rented_OwnHouse                         0
+Occupation                              0
+Education                               0
+NumberOfTime30-59DaysPastDueNotWorse    0
+DebtRatio                               0
+NumberOfOpenCreditLinesAndLoans         0
+NumberOfTimes90DaysLate                 0
+NumberRealEstateLoansOrLines            0
+NumberOfTime60-89DaysPastDueNotWorse    0
+MonthlyIncome_replaced                  0
+NumberOfDependents_replaced             0
+dtype: int64
+2025-09-15 13:35:56,858 - INFO - Sucessfully handled the missing values using random_sample imputation.
+NPA Status                              0
+RevolvingUtilizationOfUnsecuredLines    0
+age                                     0
+Gender                                  0
+Region                                  0
+Rented_OwnHouse                         0
+Occupation                              0
+Education                               0
+NumberOfTime30-59DaysPastDueNotWorse    0
+DebtRatio                               0
+NumberOfOpenCreditLinesAndLoans         0
+NumberOfTimes90DaysLate                 0
+NumberRealEstateLoansOrLines            0
+NumberOfTime60-89DaysPastDueNotWorse    0
+MonthlyIncome_replaced                  0
+NumberOfDependents_replaced             0
+dtype: int64 NPA Status                              0
+RevolvingUtilizationOfUnsecuredLines    0
+age                                     0
+Gender                                  0
+Region                                  0
+Rented_OwnHouse                         0
+Occupation                              0
+Education                               0
+NumberOfTime30-59DaysPastDueNotWorse    0
+DebtRatio                               0
+NumberOfOpenCreditLinesAndLoans         0
+NumberOfTimes90DaysLate                 0
+NumberRealEstateLoansOrLines            0
+NumberOfTime60-89DaysPastDueNotWorse    0
+MonthlyIncome_replaced                  0
+NumberOfDependents_replaced             0
+dtype: int64
+2025-09-15 14:44:05,327 - INFO - Sucessfully handled the missing values using random_sample imputation.
+NPA Status                              0
+RevolvingUtilizationOfUnsecuredLines    0
+age                                     0
+Gender                                  0
+Region                                  0
+Rented_OwnHouse                         0
+Occupation                              0
+Education                               0
+NumberOfTime30-59DaysPastDueNotWorse    0
+DebtRatio                               0
+NumberOfOpenCreditLinesAndLoans         0
+NumberOfTimes90DaysLate                 0
+NumberRealEstateLoansOrLines            0
+NumberOfTime60-89DaysPastDueNotWorse    0
+MonthlyIncome_replaced                  0
+NumberOfDependents_replaced             0
+dtype: int64 NPA Status                              0
+RevolvingUtilizationOfUnsecuredLines    0
+age                                     0
+Gender                                  0
+Region                                  0
+Rented_OwnHouse                         0
+Occupation                              0
+Education                               0
+NumberOfTime30-59DaysPastDueNotWorse    0
+DebtRatio                               0
+NumberOfOpenCreditLinesAndLoans         0
+NumberOfTimes90DaysLate                 0
+NumberRealEstateLoansOrLines            0
+NumberOfTime60-89DaysPastDueNotWorse    0
+MonthlyIncome_replaced                  0
+NumberOfDependents_replaced             0
+dtype: int64
+2025-09-15 14:48:17,259 - INFO - Sucessfully handled the missing values using random_sample imputation.
+NPA Status                              0
+RevolvingUtilizationOfUnsecuredLines    0
+age                                     0
+Gender                                  0
+Region                                  0
+Rented_OwnHouse                         0
+Occupation                              0
+Education                               0
+NumberOfTime30-59DaysPastDueNotWorse    0
+DebtRatio                               0
+NumberOfOpenCreditLinesAndLoans         0
+NumberOfTimes90DaysLate                 0
+NumberRealEstateLoansOrLines            0
+NumberOfTime60-89DaysPastDueNotWorse    0
+MonthlyIncome_replaced                  0
+NumberOfDependents_replaced             0
+dtype: int64 NPA Status                              0
+RevolvingUtilizationOfUnsecuredLines    0
+age                                     0
+Gender                                  0
+Region                                  0
+Rented_OwnHouse                         0
+Occupation                              0
+Education                               0
+NumberOfTime30-59DaysPastDueNotWorse    0
+DebtRatio                               0
+NumberOfOpenCreditLinesAndLoans         0
+NumberOfTimes90DaysLate                 0
+NumberRealEstateLoansOrLines            0
+NumberOfTime60-89DaysPastDueNotWorse    0
+MonthlyIncome_replaced                  0
+NumberOfDependents_replaced             0
+dtype: int64
+2025-09-15 14:48:17,259 - INFO - ['MonthlyIncome', 'NumberOfDependents']
+2025-09-15 16:49:19,925 - INFO - Sucessfully handled the missing values using random_sample imputation.
+NPA Status                              0
+RevolvingUtilizationOfUnsecuredLines    0
+age                                     0
+Gender                                  0
+Region                                  0
+Rented_OwnHouse                         0
+Occupation                              0
+Education                               0
+NumberOfTime30-59DaysPastDueNotWorse    0
+DebtRatio                               0
+NumberOfOpenCreditLinesAndLoans         0
+NumberOfTimes90DaysLate                 0
+NumberRealEstateLoansOrLines            0
+NumberOfTime60-89DaysPastDueNotWorse    0
+MonthlyIncome_replaced                  0
+NumberOfDependents_replaced             0
+dtype: int64 NPA Status                              0
+RevolvingUtilizationOfUnsecuredLines    0
+age                                     0
+Gender                                  0
+Region                                  0
+Rented_OwnHouse                         0
+Occupation                              0
+Education                               0
+NumberOfTime30-59DaysPastDueNotWorse    0
+DebtRatio                               0
+NumberOfOpenCreditLinesAndLoans         0
+NumberOfTimes90DaysLate                 0
+NumberRealEstateLoansOrLines            0
+NumberOfTime60-89DaysPastDueNotWorse    0
+MonthlyIncome_replaced                  0
+NumberOfDependents_replaced             0
+dtype: int64
+2025-09-15 16:49:19,926 - INFO - ['MonthlyIncome', 'NumberOfDependents']
+2025-09-16 10:13:03,432 - INFO - Sucessfully handled the missing values using random_sample imputation.
+NPA Status                              0
+RevolvingUtilizationOfUnsecuredLines    0
+age                                     0
+Gender                                  0
+Region                                  0
+Rented_OwnHouse                         0
+Occupation                              0
+Education                               0
+NumberOfTime30-59DaysPastDueNotWorse    0
+DebtRatio                               0
+NumberOfOpenCreditLinesAndLoans         0
+NumberOfTimes90DaysLate                 0
+NumberRealEstateLoansOrLines            0
+NumberOfTime60-89DaysPastDueNotWorse    0
+MonthlyIncome_replaced                  0
+NumberOfDependents_replaced             0
+dtype: int64 NPA Status                              0
+RevolvingUtilizationOfUnsecuredLines    0
+age                                     0
+Gender                                  0
+Region                                  0
+Rented_OwnHouse                         0
+Occupation                              0
+Education                               0
+NumberOfTime30-59DaysPastDueNotWorse    0
+DebtRatio                               0
+NumberOfOpenCreditLinesAndLoans         0
+NumberOfTimes90DaysLate                 0
+NumberRealEstateLoansOrLines            0
+NumberOfTime60-89DaysPastDueNotWorse    0
+MonthlyIncome_replaced                  0
+NumberOfDependents_replaced             0
+dtype: int64
+2025-09-16 10:13:03,432 - INFO - ['MonthlyIncome', 'NumberOfDependents']
+2025-09-16 23:32:34,466 - INFO - Sucessfully handled the missing values using random_sample imputation.
+NPA Status                              0
+RevolvingUtilizationOfUnsecuredLines    0
+age                                     0
+Gender                                  0
+Region                                  0
+Rented_OwnHouse                         0
+Occupation                              0
+Education                               0
+NumberOfTime30-59DaysPastDueNotWorse    0
+DebtRatio                               0
+NumberOfOpenCreditLinesAndLoans         0
+NumberOfTimes90DaysLate                 0
+NumberRealEstateLoansOrLines            0
+NumberOfTime60-89DaysPastDueNotWorse    0
+MonthlyIncome_replaced                  0
+NumberOfDependents_replaced             0
+dtype: int64 NPA Status                              0
+RevolvingUtilizationOfUnsecuredLines    0
+age                                     0
+Gender                                  0
+Region                                  0
+Rented_OwnHouse                         0
+Occupation                              0
+Education                               0
+NumberOfTime30-59DaysPastDueNotWorse    0
+DebtRatio                               0
+NumberOfOpenCreditLinesAndLoans         0
+NumberOfTimes90DaysLate                 0
+NumberRealEstateLoansOrLines            0
+NumberOfTime60-89DaysPastDueNotWorse    0
+MonthlyIncome_replaced                  0
+NumberOfDependents_replaced             0
+dtype: int64
+2025-09-16 23:32:34,475 - INFO - ['MonthlyIncome', 'NumberOfDependents']
+2025-09-16 23:43:24,754 - INFO - Sucessfully handled the missing values using random_sample imputation.
+NPA Status                              0
+RevolvingUtilizationOfUnsecuredLines    0
+age                                     0
+Gender                                  0
+Region                                  0
+Rented_OwnHouse                         0
+Occupation                              0
+Education                               0
+NumberOfTime30-59DaysPastDueNotWorse    0
+DebtRatio                               0
+NumberOfOpenCreditLinesAndLoans         0
+NumberOfTimes90DaysLate                 0
+NumberRealEstateLoansOrLines            0
+NumberOfTime60-89DaysPastDueNotWorse    0
+MonthlyIncome_replaced                  0
+NumberOfDependents_replaced             0
+dtype: int64 NPA Status                              0
+RevolvingUtilizationOfUnsecuredLines    0
+age                                     0
+Gender                                  0
+Region                                  0
+Rented_OwnHouse                         0
+Occupation                              0
+Education                               0
+NumberOfTime30-59DaysPastDueNotWorse    0
+DebtRatio                               0
+NumberOfOpenCreditLinesAndLoans         0
+NumberOfTimes90DaysLate                 0
+NumberRealEstateLoansOrLines            0
+NumberOfTime60-89DaysPastDueNotWorse    0
+MonthlyIncome_replaced                  0
+NumberOfDependents_replaced             0
+dtype: int64
+2025-09-16 23:43:24,754 - INFO - ['MonthlyIncome', 'NumberOfDependents']
+2025-09-16 23:48:25,529 - INFO - Sucessfully handled the missing values using random_sample imputation.
+NPA Status                              0
+RevolvingUtilizationOfUnsecuredLines    0
+age                                     0
+Gender                                  0
+Region                                  0
+Rented_OwnHouse                         0
+Occupation                              0
+Education                               0
+NumberOfTime30-59DaysPastDueNotWorse    0
+DebtRatio                               0
+NumberOfOpenCreditLinesAndLoans         0
+NumberOfTimes90DaysLate                 0
+NumberRealEstateLoansOrLines            0
+NumberOfTime60-89DaysPastDueNotWorse    0
+MonthlyIncome_replaced                  0
+NumberOfDependents_replaced             0
+dtype: int64 NPA Status                              0
+RevolvingUtilizationOfUnsecuredLines    0
+age                                     0
+Gender                                  0
+Region                                  0
+Rented_OwnHouse                         0
+Occupation                              0
+Education                               0
+NumberOfTime30-59DaysPastDueNotWorse    0
+DebtRatio                               0
+NumberOfOpenCreditLinesAndLoans         0
+NumberOfTimes90DaysLate                 0
+NumberRealEstateLoansOrLines            0
+NumberOfTime60-89DaysPastDueNotWorse    0
+MonthlyIncome_replaced                  0
+NumberOfDependents_replaced             0
+dtype: int64
+2025-09-16 23:48:25,530 - INFO - ['MonthlyIncome', 'NumberOfDependents']
+2025-09-16 23:52:12,124 - INFO - Sucessfully handled the missing values using random_sample imputation.
+NPA Status                              0
+RevolvingUtilizationOfUnsecuredLines    0
+age                                     0
+Gender                                  0
+Region                                  0
+Rented_OwnHouse                         0
+Occupation                              0
+Education                               0
+NumberOfTime30-59DaysPastDueNotWorse    0
+DebtRatio                               0
+NumberOfOpenCreditLinesAndLoans         0
+NumberOfTimes90DaysLate                 0
+NumberRealEstateLoansOrLines            0
+NumberOfTime60-89DaysPastDueNotWorse    0
+MonthlyIncome_replaced                  0
+NumberOfDependents_replaced             0
+dtype: int64 NPA Status                              0
+RevolvingUtilizationOfUnsecuredLines    0
+age                                     0
+Gender                                  0
+Region                                  0
+Rented_OwnHouse                         0
+Occupation                              0
+Education                               0
+NumberOfTime30-59DaysPastDueNotWorse    0
+DebtRatio                               0
+NumberOfOpenCreditLinesAndLoans         0
+NumberOfTimes90DaysLate                 0
+NumberRealEstateLoansOrLines            0
+NumberOfTime60-89DaysPastDueNotWorse    0
+MonthlyIncome_replaced                  0
+NumberOfDependents_replaced             0
+dtype: int64
+2025-09-16 23:52:12,124 - INFO - ['MonthlyIncome', 'NumberOfDependents']
+2025-09-16 23:53:25,673 - INFO - Sucessfully handled the missing values using random_sample imputation.
+NPA Status                              0
+RevolvingUtilizationOfUnsecuredLines    0
+age                                     0
+Gender                                  0
+Region                                  0
+Rented_OwnHouse                         0
+Occupation                              0
+Education                               0
+NumberOfTime30-59DaysPastDueNotWorse    0
+DebtRatio                               0
+NumberOfOpenCreditLinesAndLoans         0
+NumberOfTimes90DaysLate                 0
+NumberRealEstateLoansOrLines            0
+NumberOfTime60-89DaysPastDueNotWorse    0
+MonthlyIncome_replaced                  0
+NumberOfDependents_replaced             0
+dtype: int64 NPA Status                              0
+RevolvingUtilizationOfUnsecuredLines    0
+age                                     0
+Gender                                  0
+Region                                  0
+Rented_OwnHouse                         0
+Occupation                              0
+Education                               0
+NumberOfTime30-59DaysPastDueNotWorse    0
+DebtRatio                               0
+NumberOfOpenCreditLinesAndLoans         0
+NumberOfTimes90DaysLate                 0
+NumberRealEstateLoansOrLines            0
+NumberOfTime60-89DaysPastDueNotWorse    0
+MonthlyIncome_replaced                  0
+NumberOfDependents_replaced             0
+dtype: int64
+2025-09-16 23:53:25,673 - INFO - ['MonthlyIncome', 'NumberOfDependents']
+2025-09-16 23:57:31,151 - INFO - Sucessfully handled the missing values using random_sample imputation.
+NPA Status                              0
+RevolvingUtilizationOfUnsecuredLines    0
+age                                     0
+Gender                                  0
+Region                                  0
+Rented_OwnHouse                         0
+Occupation                              0
+Education                               0
+NumberOfTime30-59DaysPastDueNotWorse    0
+DebtRatio                               0
+NumberOfOpenCreditLinesAndLoans         0
+NumberOfTimes90DaysLate                 0
+NumberRealEstateLoansOrLines            0
+NumberOfTime60-89DaysPastDueNotWorse    0
+MonthlyIncome_replaced                  0
+NumberOfDependents_replaced             0
+dtype: int64 NPA Status                              0
+RevolvingUtilizationOfUnsecuredLines    0
+age                                     0
+Gender                                  0
+Region                                  0
+Rented_OwnHouse                         0
+Occupation                              0
+Education                               0
+NumberOfTime30-59DaysPastDueNotWorse    0
+DebtRatio                               0
+NumberOfOpenCreditLinesAndLoans         0
+NumberOfTimes90DaysLate                 0
+NumberRealEstateLoansOrLines            0
+NumberOfTime60-89DaysPastDueNotWorse    0
+MonthlyIncome_replaced                  0
+NumberOfDependents_replaced             0
+dtype: int64
+2025-09-16 23:57:31,152 - INFO - ['MonthlyIncome', 'NumberOfDependents']
+2025-09-17 00:06:08,919 - INFO - Sucessfully handled the missing values using random_sample imputation.
+NPA Status                              0
+RevolvingUtilizationOfUnsecuredLines    0
+age                                     0
+Gender                                  0
+Region                                  0
+Rented_OwnHouse                         0
+Occupation                              0
+Education                               0
+NumberOfTime30-59DaysPastDueNotWorse    0
+DebtRatio                               0
+NumberOfOpenCreditLinesAndLoans         0
+NumberOfTimes90DaysLate                 0
+NumberRealEstateLoansOrLines            0
+NumberOfTime60-89DaysPastDueNotWorse    0
+MonthlyIncome_replaced                  0
+NumberOfDependents_replaced             0
+dtype: int64 NPA Status                              0
+RevolvingUtilizationOfUnsecuredLines    0
+age                                     0
+Gender                                  0
+Region                                  0
+Rented_OwnHouse                         0
+Occupation                              0
+Education                               0
+NumberOfTime30-59DaysPastDueNotWorse    0
+DebtRatio                               0
+NumberOfOpenCreditLinesAndLoans         0
+NumberOfTimes90DaysLate                 0
+NumberRealEstateLoansOrLines            0
+NumberOfTime60-89DaysPastDueNotWorse    0
+MonthlyIncome_replaced                  0
+NumberOfDependents_replaced             0
+dtype: int64
+2025-09-17 00:06:08,919 - INFO - ['MonthlyIncome', 'NumberOfDependents']
+2025-09-17 00:10:13,704 - INFO - Sucessfully handled the missing values using random_sample imputation.
+NPA Status                              0
+RevolvingUtilizationOfUnsecuredLines    0
+age                                     0
+Gender                                  0
+Region                                  0
+Rented_OwnHouse                         0
+Occupation                              0
+Education                               0
+NumberOfTime30-59DaysPastDueNotWorse    0
+DebtRatio                               0
+NumberOfOpenCreditLinesAndLoans         0
+NumberOfTimes90DaysLate                 0
+NumberRealEstateLoansOrLines            0
+NumberOfTime60-89DaysPastDueNotWorse    0
+MonthlyIncome_replaced                  0
+NumberOfDependents_replaced             0
+dtype: int64 NPA Status                              0
+RevolvingUtilizationOfUnsecuredLines    0
+age                                     0
+Gender                                  0
+Region                                  0
+Rented_OwnHouse                         0
+Occupation                              0
+Education                               0
+NumberOfTime30-59DaysPastDueNotWorse    0
+DebtRatio                               0
+NumberOfOpenCreditLinesAndLoans         0
+NumberOfTimes90DaysLate                 0
+NumberRealEstateLoansOrLines            0
+NumberOfTime60-89DaysPastDueNotWorse    0
+MonthlyIncome_replaced                  0
+NumberOfDependents_replaced             0
+dtype: int64
+2025-09-17 00:10:13,704 - INFO - ['MonthlyIncome', 'NumberOfDependents']
+2025-09-17 00:12:49,754 - INFO - Sucessfully handled the missing values using random_sample imputation.
+NPA Status                              0
+RevolvingUtilizationOfUnsecuredLines    0
+age                                     0
+Gender                                  0
+Region                                  0
+Rented_OwnHouse                         0
+Occupation                              0
+Education                               0
+NumberOfTime30-59DaysPastDueNotWorse    0
+DebtRatio                               0
+NumberOfOpenCreditLinesAndLoans         0
+NumberOfTimes90DaysLate                 0
+NumberRealEstateLoansOrLines            0
+NumberOfTime60-89DaysPastDueNotWorse    0
+MonthlyIncome_replaced                  0
+NumberOfDependents_replaced             0
+dtype: int64 NPA Status                              0
+RevolvingUtilizationOfUnsecuredLines    0
+age                                     0
+Gender                                  0
+Region                                  0
+Rented_OwnHouse                         0
+Occupation                              0
+Education                               0
+NumberOfTime30-59DaysPastDueNotWorse    0
+DebtRatio                               0
+NumberOfOpenCreditLinesAndLoans         0
+NumberOfTimes90DaysLate                 0
+NumberRealEstateLoansOrLines            0
+NumberOfTime60-89DaysPastDueNotWorse    0
+MonthlyIncome_replaced                  0
+NumberOfDependents_replaced             0
+dtype: int64
+2025-09-17 00:12:49,754 - INFO - ['MonthlyIncome', 'NumberOfDependents']
+2025-09-17 08:29:54,137 - INFO - Sucessfully handled the missing values using random_sample imputation.
+NPA Status                              0
+RevolvingUtilizationOfUnsecuredLines    0
+age                                     0
+Gender                                  0
+Region                                  0
+Rented_OwnHouse                         0
+Occupation                              0
+Education                               0
+NumberOfTime30-59DaysPastDueNotWorse    0
+DebtRatio                               0
+NumberOfOpenCreditLinesAndLoans         0
+NumberOfTimes90DaysLate                 0
+NumberRealEstateLoansOrLines            0
+NumberOfTime60-89DaysPastDueNotWorse    0
+MonthlyIncome_replaced                  0
+NumberOfDependents_replaced             0
+dtype: int64 NPA Status                              0
+RevolvingUtilizationOfUnsecuredLines    0
+age                                     0
+Gender                                  0
+Region                                  0
+Rented_OwnHouse                         0
+Occupation                              0
+Education                               0
+NumberOfTime30-59DaysPastDueNotWorse    0
+DebtRatio                               0
+NumberOfOpenCreditLinesAndLoans         0
+NumberOfTimes90DaysLate                 0
+NumberRealEstateLoansOrLines            0
+NumberOfTime60-89DaysPastDueNotWorse    0
+MonthlyIncome_replaced                  0
+NumberOfDependents_replaced             0
+dtype: int64
+2025-09-17 08:29:54,138 - INFO - ['MonthlyIncome', 'NumberOfDependents']

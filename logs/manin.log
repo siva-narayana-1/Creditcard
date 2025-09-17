@@ -1,0 +1,1992 @@
+2025-09-15 13:27:47,987 - INFO - Loaded data sucessfully with shape of (150002, 18)
+2025-09-15 13:27:48,066 - INFO - Null values in the data set are:NPA Status                                  2
+RevolvingUtilizationOfUnsecuredLines        2
+age                                         2
+Gender                                      2
+Region                                      2
+MonthlyIncome                           29733
+Rented_OwnHouse                             2
+Occupation                                  2
+Education                                   2
+NumberOfTime30-59DaysPastDueNotWorse        2
+DebtRatio                                   2
+MonthlyIncome.1                         29733
+NumberOfOpenCreditLinesAndLoans             2
+NumberOfTimes90DaysLate                     2
+NumberRealEstateLoansOrLines                2
+NumberOfTime60-89DaysPastDueNotWorse        2
+NumberOfDependents                       3924
+Good_Bad                                    2
+dtype: int64
+2025-09-15 13:27:48,169 - INFO - After droping the rows in Good_Bad column ,Null values in the data set are:NPA Status                                  0
+RevolvingUtilizationOfUnsecuredLines        0
+age                                         0
+Gender                                      0
+Region                                      0
+MonthlyIncome                           29731
+Rented_OwnHouse                             0
+Occupation                                  0
+Education                                   0
+NumberOfTime30-59DaysPastDueNotWorse        0
+DebtRatio                                   0
+MonthlyIncome.1                         29731
+NumberOfOpenCreditLinesAndLoans             0
+NumberOfTimes90DaysLate                     0
+NumberRealEstateLoansOrLines                0
+NumberOfTime60-89DaysPastDueNotWorse        0
+NumberOfDependents                       3924
+Good_Bad                                    0
+dtype: int64
+2025-09-15 13:27:48,201 - INFO - Loaded data sucessfully after droping MonthlyIncome.1 column with shape of (150000, 17)
+2025-09-15 13:27:48,217 - INFO - After dividing the data as independent and dependent their shape is (150000, 16) and (150000,)
+2025-09-15 13:27:48,265 - INFO - sample X and y data are 
+        NPA Status  RevolvingUtilizationOfUnsecuredLines   age  ... NumberRealEstateLoansOrLines NumberOfTime60-89DaysPastDueNotWorse  NumberOfDependents
+16865          0.0                              0.103895  62.0  ...                          0.0                                  0.0                 0.0
+146111         0.0                              0.268793  49.0  ...                          1.0                                  0.0                   2
+
+[2 rows x 16 columns] 
+ 129593    Good
+143270    Good
+Name: Good_Bad, dtype: object
+2025-09-15 13:27:48,341 - INFO - missing values is activated...............
+2025-09-15 13:27:48,720 - INFO - After using random_sample imputation checking the null values 
+ NPA Status                              0
+RevolvingUtilizationOfUnsecuredLines    0
+age                                     0
+Gender                                  0
+Region                                  0
+Rented_OwnHouse                         0
+Occupation                              0
+Education                               0
+NumberOfTime30-59DaysPastDueNotWorse    0
+DebtRatio                               0
+NumberOfOpenCreditLinesAndLoans         0
+NumberOfTimes90DaysLate                 0
+NumberRealEstateLoansOrLines            0
+NumberOfTime60-89DaysPastDueNotWorse    0
+MonthlyIncome_replaced                  0
+NumberOfDependents_replaced             0
+dtype: int64
+ NPA Status                              0
+RevolvingUtilizationOfUnsecuredLines    0
+age                                     0
+Gender                                  0
+Region                                  0
+Rented_OwnHouse                         0
+Occupation                              0
+Education                               0
+NumberOfTime30-59DaysPastDueNotWorse    0
+DebtRatio                               0
+NumberOfOpenCreditLinesAndLoans         0
+NumberOfTimes90DaysLate                 0
+NumberRealEstateLoansOrLines            0
+NumberOfTime60-89DaysPastDueNotWorse    0
+MonthlyIncome_replaced                  0
+NumberOfDependents_replaced             0
+dtype: int64
+2025-09-15 13:27:48,781 - INFO - We have checked their is no null values in the data set now.
+2025-09-15 13:27:48,801 - INFO - Sucessfully divided the train and test as numeric and category columns:
+ train_num:(120000, 11)
+ train_cat:(30000, 5)
+ test_num:(30000, 11)
+ test_cat:(30000, 5)
+2025-09-15 13:27:48,801 - INFO - handle outlier is activated.......
+2025-09-15 13:30:07,555 - INFO - shapes and data are :
+(120000, 22)
+sample data are:
+        NPA Status  RevolvingUtilizationOfUnsecuredLines   age  ...  NumberOfTime60-89DaysPastDueNotWorse_log  MonthlyIncome_replaced_log  NumberOfDependents_replaced_log
+92599          0.0                              0.034203  48.0  ...                                       0.0                    8.274102                         0.000000
+73506          0.0                              0.043730  62.0  ...                                       0.0                    9.503085                         0.000000
+122012         0.0                              0.154452  34.0  ...                                       0.0                    8.160804                         0.000000
+136472         0.0                              0.861306  62.0  ...                                       0.0                    8.699681                         0.000000
+54359          0.0                              0.011110  31.0  ...                                       0.0                    8.771990                         0.693147
+
+[5 rows x 22 columns]
+(30000, 22)
+sample data are:
+       NPA Status  RevolvingUtilizationOfUnsecuredLines   age  ...  NumberOfTime60-89DaysPastDueNotWorse_log  MonthlyIncome_replaced_log  NumberOfDependents_replaced_log
+11081         0.0                              0.000000  64.0  ...                                       0.0                    7.814400                         0.000000
+29718         0.0                              1.169166  56.0  ...                                       0.0                    8.455531                         0.693147
+76681         0.0                              0.298113  43.0  ...                                       0.0                    9.146442                         0.000000
+55974         0.0                            957.000000  79.0  ...                                       0.0                    8.779711                         0.000000
+14712         0.0                              0.004047  47.0  ...                                       0.0                    9.328212                         1.098612
+
+[5 rows x 22 columns]
+2025-09-15 13:35:56,190 - INFO - Loaded data sucessfully with shape of (150002, 18)
+2025-09-15 13:35:56,268 - INFO - Null values in the data set are:NPA Status                                  2
+RevolvingUtilizationOfUnsecuredLines        2
+age                                         2
+Gender                                      2
+Region                                      2
+MonthlyIncome                           29733
+Rented_OwnHouse                             2
+Occupation                                  2
+Education                                   2
+NumberOfTime30-59DaysPastDueNotWorse        2
+DebtRatio                                   2
+MonthlyIncome.1                         29733
+NumberOfOpenCreditLinesAndLoans             2
+NumberOfTimes90DaysLate                     2
+NumberRealEstateLoansOrLines                2
+NumberOfTime60-89DaysPastDueNotWorse        2
+NumberOfDependents                       3924
+Good_Bad                                    2
+dtype: int64
+2025-09-15 13:35:56,382 - INFO - After droping the rows in Good_Bad column ,Null values in the data set are:NPA Status                                  0
+RevolvingUtilizationOfUnsecuredLines        0
+age                                         0
+Gender                                      0
+Region                                      0
+MonthlyIncome                           29731
+Rented_OwnHouse                             0
+Occupation                                  0
+Education                                   0
+NumberOfTime30-59DaysPastDueNotWorse        0
+DebtRatio                                   0
+MonthlyIncome.1                         29731
+NumberOfOpenCreditLinesAndLoans             0
+NumberOfTimes90DaysLate                     0
+NumberRealEstateLoansOrLines                0
+NumberOfTime60-89DaysPastDueNotWorse        0
+NumberOfDependents                       3924
+Good_Bad                                    0
+dtype: int64
+2025-09-15 13:35:56,414 - INFO - Loaded data sucessfully after droping MonthlyIncome.1 column with shape of (150000, 17)
+2025-09-15 13:35:56,431 - INFO - After dividing the data as independent and dependent their shape is (150000, 16) and (150000,)
+2025-09-15 13:35:56,458 - INFO - sample X and y data are 
+        NPA Status  RevolvingUtilizationOfUnsecuredLines   age  ... NumberRealEstateLoansOrLines NumberOfTime60-89DaysPastDueNotWorse  NumberOfDependents
+86215          0.0                              0.661035  61.0  ...                          2.0                                  0.0                 1.0
+115399         0.0                              0.000000  62.0  ...                          0.0                                  0.0                 0.0
+
+[2 rows x 16 columns] 
+ 104360    Good
+34555     Good
+Name: Good_Bad, dtype: object
+2025-09-15 13:35:56,538 - INFO - missing values is activated...............
+2025-09-15 13:35:56,921 - INFO - After using random_sample imputation checking the null values 
+ NPA Status                              0
+RevolvingUtilizationOfUnsecuredLines    0
+age                                     0
+Gender                                  0
+Region                                  0
+Rented_OwnHouse                         0
+Occupation                              0
+Education                               0
+NumberOfTime30-59DaysPastDueNotWorse    0
+DebtRatio                               0
+NumberOfOpenCreditLinesAndLoans         0
+NumberOfTimes90DaysLate                 0
+NumberRealEstateLoansOrLines            0
+NumberOfTime60-89DaysPastDueNotWorse    0
+MonthlyIncome_replaced                  0
+NumberOfDependents_replaced             0
+dtype: int64
+ NPA Status                              0
+RevolvingUtilizationOfUnsecuredLines    0
+age                                     0
+Gender                                  0
+Region                                  0
+Rented_OwnHouse                         0
+Occupation                              0
+Education                               0
+NumberOfTime30-59DaysPastDueNotWorse    0
+DebtRatio                               0
+NumberOfOpenCreditLinesAndLoans         0
+NumberOfTimes90DaysLate                 0
+NumberRealEstateLoansOrLines            0
+NumberOfTime60-89DaysPastDueNotWorse    0
+MonthlyIncome_replaced                  0
+NumberOfDependents_replaced             0
+dtype: int64
+2025-09-15 13:35:56,968 - INFO - We have checked their is no null values in the data set now.
+2025-09-15 13:35:56,984 - INFO - Sucessfully divided the train and test as numeric and category columns:
+ train_num:(120000, 11)
+ train_cat:(30000, 5)
+ test_num:(30000, 11)
+ test_cat:(30000, 5)
+2025-09-15 13:35:56,984 - INFO - handle outlier is activated.......
+2025-09-15 13:38:18,501 - INFO - shapes and data are :
+(120000, 22)
+sample data are:
+        NPA Status  RevolvingUtilizationOfUnsecuredLines   age  ...  NumberOfTime60-89DaysPastDueNotWorse_log  MonthlyIncome_replaced_log  NumberOfDependents_replaced_log
+73683          0.0                              0.069601  39.0  ...                                       0.0                    7.244942                         0.693147
+52712          0.0                              0.033867  67.0  ...                                       0.0                    8.160804                         0.000000
+148961         0.0                              0.149527  64.0  ...                                       0.0                    8.389587                         1.098612
+54834          0.0                              0.025517  48.0  ...                                       0.0                    9.259226                         0.693147
+115953         0.0                              0.830730  44.0  ...                                       0.0                    8.899048                         1.098612
+
+[5 rows x 22 columns]
+(30000, 22)
+sample data are:
+        NPA Status  RevolvingUtilizationOfUnsecuredLines   age  ...  NumberOfTime60-89DaysPastDueNotWorse_log  MonthlyIncome_replaced_log  NumberOfDependents_replaced_log
+63357          0.0                              0.116571  64.0  ...                                       0.0                    7.418781                         0.000000
+64380          0.0                              0.000841  47.0  ...                                       0.0                    8.318986                         0.693147
+52416          0.0                              0.729814  32.0  ...                                       0.0                    8.604288                         1.386294
+122020         0.0                              0.122071  50.0  ...                                       0.0                    8.023225                         0.000000
+110266         0.0                              0.333293  62.0  ...                                       0.0                    8.338545                         0.000000
+
+[5 rows x 22 columns]
+2025-09-15 14:44:04,658 - INFO - Loaded data sucessfully with shape of (150002, 18)
+2025-09-15 14:44:04,722 - INFO - Null values in the data set are:NPA Status                                  2
+RevolvingUtilizationOfUnsecuredLines        2
+age                                         2
+Gender                                      2
+Region                                      2
+MonthlyIncome                           29733
+Rented_OwnHouse                             2
+Occupation                                  2
+Education                                   2
+NumberOfTime30-59DaysPastDueNotWorse        2
+DebtRatio                                   2
+MonthlyIncome.1                         29733
+NumberOfOpenCreditLinesAndLoans             2
+NumberOfTimes90DaysLate                     2
+NumberRealEstateLoansOrLines                2
+NumberOfTime60-89DaysPastDueNotWorse        2
+NumberOfDependents                       3924
+Good_Bad                                    2
+dtype: int64
+2025-09-15 14:44:04,816 - INFO - After droping the rows in Good_Bad column ,Null values in the data set are:NPA Status                                  0
+RevolvingUtilizationOfUnsecuredLines        0
+age                                         0
+Gender                                      0
+Region                                      0
+MonthlyIncome                           29731
+Rented_OwnHouse                             0
+Occupation                                  0
+Education                                   0
+NumberOfTime30-59DaysPastDueNotWorse        0
+DebtRatio                                   0
+MonthlyIncome.1                         29731
+NumberOfOpenCreditLinesAndLoans             0
+NumberOfTimes90DaysLate                     0
+NumberRealEstateLoansOrLines                0
+NumberOfTime60-89DaysPastDueNotWorse        0
+NumberOfDependents                       3924
+Good_Bad                                    0
+dtype: int64
+2025-09-15 14:44:04,847 - INFO - Loaded data sucessfully after droping MonthlyIncome.1 column with shape of (150000, 17)
+2025-09-15 14:44:04,868 - INFO - After dividing the data as independent and dependent their shape is (150000, 16) and (150000,)
+2025-09-15 14:44:04,927 - INFO - sample X and y data are 
+       NPA Status  RevolvingUtilizationOfUnsecuredLines   age  ... NumberRealEstateLoansOrLines NumberOfTime60-89DaysPastDueNotWorse  NumberOfDependents
+48346         0.0                              0.003316  51.0  ...                          0.0                                  0.0                 0.0
+85137         0.0                              0.518840  63.0  ...                          1.0                                  0.0                 0.0
+
+[2 rows x 16 columns] 
+ 111734     Bad
+46455     Good
+Name: Good_Bad, dtype: object
+2025-09-15 14:44:05,060 - INFO - missing values is activated...............
+2025-09-15 14:44:05,362 - INFO - After using random_sample imputation checking the null values 
+ NPA Status                              0
+RevolvingUtilizationOfUnsecuredLines    0
+age                                     0
+Gender                                  0
+Region                                  0
+Rented_OwnHouse                         0
+Occupation                              0
+Education                               0
+NumberOfTime30-59DaysPastDueNotWorse    0
+DebtRatio                               0
+NumberOfOpenCreditLinesAndLoans         0
+NumberOfTimes90DaysLate                 0
+NumberRealEstateLoansOrLines            0
+NumberOfTime60-89DaysPastDueNotWorse    0
+MonthlyIncome_replaced                  0
+NumberOfDependents_replaced             0
+dtype: int64
+ NPA Status                              0
+RevolvingUtilizationOfUnsecuredLines    0
+age                                     0
+Gender                                  0
+Region                                  0
+Rented_OwnHouse                         0
+Occupation                              0
+Education                               0
+NumberOfTime30-59DaysPastDueNotWorse    0
+DebtRatio                               0
+NumberOfOpenCreditLinesAndLoans         0
+NumberOfTimes90DaysLate                 0
+NumberRealEstateLoansOrLines            0
+NumberOfTime60-89DaysPastDueNotWorse    0
+MonthlyIncome_replaced                  0
+NumberOfDependents_replaced             0
+dtype: int64
+2025-09-15 14:44:05,396 - INFO - We have checked their is no null values in the data set now.
+2025-09-15 14:44:05,410 - INFO - Sucessfully divided the train and test as numeric and category columns:
+ train_num:(120000, 11)
+ train_cat:(30000, 5)
+ test_num:(30000, 11)
+ test_cat:(30000, 5)
+2025-09-15 14:44:05,410 - INFO - handle outlier is activated.......
+2025-09-15 14:45:26,634 - INFO - shapes and data are :
+(120000, 22)
+sample data are:
+       NPA Status  RevolvingUtilizationOfUnsecuredLines   age  ...  NumberOfTime60-89DaysPastDueNotWorse_log  MonthlyIncome_replaced_log  NumberOfDependents_replaced_log
+46638         0.0                              0.640968  53.0  ...                                       0.0                    7.539559                         0.000000
+48453         0.0                              0.267937  43.0  ...                                       0.0                    8.726968                         1.386294
+29055         0.0                              0.953463  53.0  ...                                       0.0                    7.550135                         0.693147
+94708         0.0                              0.020044  54.0  ...                                       0.0                    6.908755                         0.000000
+3261          0.0                              0.075493  40.0  ...                                       0.0                    9.615872                         0.000000
+
+[5 rows x 22 columns]
+(30000, 22)
+sample data are:
+        NPA Status  RevolvingUtilizationOfUnsecuredLines   age  ...  NumberOfTime60-89DaysPastDueNotWorse_log  MonthlyIncome_replaced_log  NumberOfDependents_replaced_log
+11779          0.0                              0.017381  79.0  ...                                       0.0                    8.853808                         0.000000
+29273          0.0                              1.000000  60.0  ...                                       0.0                    8.936035                         0.000000
+118842         0.0                              0.000000  59.0  ...                                       0.0                    8.463370                         0.000000
+143984         0.0                              0.593084  63.0  ...                                       0.0                    9.609854                         0.000000
+36816          0.0                              0.274852  39.0  ...                                       0.0                    8.699681                         1.386294
+
+[5 rows x 22 columns]
+2025-09-15 14:48:16,787 - INFO - Loaded data sucessfully with shape of (150002, 18)
+2025-09-15 14:48:16,828 - INFO - Null values in the data set are:NPA Status                                  2
+RevolvingUtilizationOfUnsecuredLines        2
+age                                         2
+Gender                                      2
+Region                                      2
+MonthlyIncome                           29733
+Rented_OwnHouse                             2
+Occupation                                  2
+Education                                   2
+NumberOfTime30-59DaysPastDueNotWorse        2
+DebtRatio                                   2
+MonthlyIncome.1                         29733
+NumberOfOpenCreditLinesAndLoans             2
+NumberOfTimes90DaysLate                     2
+NumberRealEstateLoansOrLines                2
+NumberOfTime60-89DaysPastDueNotWorse        2
+NumberOfDependents                       3924
+Good_Bad                                    2
+dtype: int64
+2025-09-15 14:48:16,893 - INFO - After droping the rows in Good_Bad column ,Null values in the data set are:NPA Status                                  0
+RevolvingUtilizationOfUnsecuredLines        0
+age                                         0
+Gender                                      0
+Region                                      0
+MonthlyIncome                           29731
+Rented_OwnHouse                             0
+Occupation                                  0
+Education                                   0
+NumberOfTime30-59DaysPastDueNotWorse        0
+DebtRatio                                   0
+MonthlyIncome.1                         29731
+NumberOfOpenCreditLinesAndLoans             0
+NumberOfTimes90DaysLate                     0
+NumberRealEstateLoansOrLines                0
+NumberOfTime60-89DaysPastDueNotWorse        0
+NumberOfDependents                       3924
+Good_Bad                                    0
+dtype: int64
+2025-09-15 14:48:16,917 - INFO - Loaded data sucessfully after droping MonthlyIncome.1 column with shape of (150000, 17)
+2025-09-15 14:48:16,917 - INFO - After dividing the data as independent and dependent their shape is (150000, 16) and (150000,)
+2025-09-15 14:48:16,958 - INFO - sample X and y data are 
+       NPA Status  RevolvingUtilizationOfUnsecuredLines   age  ... NumberRealEstateLoansOrLines NumberOfTime60-89DaysPastDueNotWorse  NumberOfDependents
+99768         0.0                               0.44077  38.0  ...                          1.0                                  0.0                 2.0
+77817         0.0                               0.70781  29.0  ...                          0.0                                  0.0                 0.0
+
+[2 rows x 16 columns] 
+ 18128    Good
+20875    Good
+Name: Good_Bad, dtype: object
+2025-09-15 14:48:17,012 - INFO - missing values is activated...............
+2025-09-15 14:48:17,294 - INFO - After using random_sample imputation checking the null values 
+ NPA Status                              0
+RevolvingUtilizationOfUnsecuredLines    0
+age                                     0
+Gender                                  0
+Region                                  0
+Rented_OwnHouse                         0
+Occupation                              0
+Education                               0
+NumberOfTime30-59DaysPastDueNotWorse    0
+DebtRatio                               0
+NumberOfOpenCreditLinesAndLoans         0
+NumberOfTimes90DaysLate                 0
+NumberRealEstateLoansOrLines            0
+NumberOfTime60-89DaysPastDueNotWorse    0
+MonthlyIncome_replaced                  0
+NumberOfDependents_replaced             0
+dtype: int64
+ NPA Status                              0
+RevolvingUtilizationOfUnsecuredLines    0
+age                                     0
+Gender                                  0
+Region                                  0
+Rented_OwnHouse                         0
+Occupation                              0
+Education                               0
+NumberOfTime30-59DaysPastDueNotWorse    0
+DebtRatio                               0
+NumberOfOpenCreditLinesAndLoans         0
+NumberOfTimes90DaysLate                 0
+NumberRealEstateLoansOrLines            0
+NumberOfTime60-89DaysPastDueNotWorse    0
+MonthlyIncome_replaced                  0
+NumberOfDependents_replaced             0
+dtype: int64
+2025-09-15 14:48:17,321 - INFO - We have checked their is no null values in the data set now.
+2025-09-15 14:48:17,336 - INFO - Sucessfully divided the train and test as numeric and category columns:
+ train_num:(120000, 11)
+ train_cat:(30000, 5)
+ test_num:(30000, 11)
+ test_cat:(30000, 5)
+2025-09-15 14:48:17,336 - INFO - handle outlier is activated.......
+2025-09-15 14:49:21,800 - INFO - shapes and data are :
+(120000, 22)
+sample data are:
+        NPA Status  RevolvingUtilizationOfUnsecuredLines   age  ...  NumberOfTime60-89DaysPastDueNotWorse_log  MonthlyIncome_replaced_log  NumberOfDependents_replaced_log
+88959          0.0                              0.039843  71.0  ...                                       0.0                    7.496097                         0.000000
+10270          1.0                              0.023427  59.0  ...                                       0.0                    8.630700                         0.693147
+140556         1.0                              0.707127  51.0  ...                                       0.0                    8.648397                         0.693147
+25786          0.0                              0.102240  64.0  ...                                       0.0                    9.007857                         0.000000
+143148         0.0                              0.652030  65.0  ...                                       0.0                    8.006701                         0.000000
+
+[5 rows x 22 columns]
+(30000, 22)
+sample data are:
+        NPA Status  RevolvingUtilizationOfUnsecuredLines   age  ...  NumberOfTime60-89DaysPastDueNotWorse_log  MonthlyIncome_replaced_log  NumberOfDependents_replaced_log
+85789          0.0                              0.834954  50.0  ...                                       0.0                    8.657129                         0.693147
+118978         0.0                              0.272037  35.0  ...                                       0.0                    9.239122                         0.000000
+99880          0.0                              0.298207  55.0  ...                                       0.0                    8.529912                         1.098612
+116339         0.0                              1.000000  65.0  ...                                       0.0                    7.681099                         0.000000
+52007          0.0                              0.043539  52.0  ...                                       0.0                    9.018090                         0.000000
+
+[5 rows x 22 columns]
+2025-09-15 16:49:19,493 - INFO - Loaded data sucessfully with shape of (150002, 18)
+2025-09-15 16:49:19,532 - INFO - Null values in the data set are:NPA Status                                  2
+RevolvingUtilizationOfUnsecuredLines        2
+age                                         2
+Gender                                      2
+Region                                      2
+MonthlyIncome                           29733
+Rented_OwnHouse                             2
+Occupation                                  2
+Education                                   2
+NumberOfTime30-59DaysPastDueNotWorse        2
+DebtRatio                                   2
+MonthlyIncome.1                         29733
+NumberOfOpenCreditLinesAndLoans             2
+NumberOfTimes90DaysLate                     2
+NumberRealEstateLoansOrLines                2
+NumberOfTime60-89DaysPastDueNotWorse        2
+NumberOfDependents                       3924
+Good_Bad                                    2
+dtype: int64
+2025-09-15 16:49:19,599 - INFO - After droping the rows in Good_Bad column ,Null values in the data set are:NPA Status                                  0
+RevolvingUtilizationOfUnsecuredLines        0
+age                                         0
+Gender                                      0
+Region                                      0
+MonthlyIncome                           29731
+Rented_OwnHouse                             0
+Occupation                                  0
+Education                                   0
+NumberOfTime30-59DaysPastDueNotWorse        0
+DebtRatio                                   0
+MonthlyIncome.1                         29731
+NumberOfOpenCreditLinesAndLoans             0
+NumberOfTimes90DaysLate                     0
+NumberRealEstateLoansOrLines                0
+NumberOfTime60-89DaysPastDueNotWorse        0
+NumberOfDependents                       3924
+Good_Bad                                    0
+dtype: int64
+2025-09-15 16:49:19,620 - INFO - Loaded data sucessfully after droping MonthlyIncome.1 column with shape of (150000, 17)
+2025-09-15 16:49:19,634 - INFO - After dividing the data as independent and dependent their shape is (150000, 16) and (150000,)
+2025-09-15 16:49:19,665 - INFO - sample X and y data are 
+        NPA Status  RevolvingUtilizationOfUnsecuredLines   age  ... NumberRealEstateLoansOrLines NumberOfTime60-89DaysPastDueNotWorse  NumberOfDependents
+105249         0.0                              0.258510  69.0  ...                          2.0                                  0.0                 2.0
+141006         0.0                              0.098693  47.0  ...                          1.0                                  0.0                   2
+
+[2 rows x 16 columns] 
+ 89882     Bad
+35520    Good
+Name: Good_Bad, dtype: object
+2025-09-15 16:49:19,718 - INFO - missing values is activated...............
+2025-09-15 16:49:19,960 - INFO - After using random_sample imputation checking the null values 
+ NPA Status                              0
+RevolvingUtilizationOfUnsecuredLines    0
+age                                     0
+Gender                                  0
+Region                                  0
+Rented_OwnHouse                         0
+Occupation                              0
+Education                               0
+NumberOfTime30-59DaysPastDueNotWorse    0
+DebtRatio                               0
+NumberOfOpenCreditLinesAndLoans         0
+NumberOfTimes90DaysLate                 0
+NumberRealEstateLoansOrLines            0
+NumberOfTime60-89DaysPastDueNotWorse    0
+MonthlyIncome_replaced                  0
+NumberOfDependents_replaced             0
+dtype: int64
+ NPA Status                              0
+RevolvingUtilizationOfUnsecuredLines    0
+age                                     0
+Gender                                  0
+Region                                  0
+Rented_OwnHouse                         0
+Occupation                              0
+Education                               0
+NumberOfTime30-59DaysPastDueNotWorse    0
+DebtRatio                               0
+NumberOfOpenCreditLinesAndLoans         0
+NumberOfTimes90DaysLate                 0
+NumberRealEstateLoansOrLines            0
+NumberOfTime60-89DaysPastDueNotWorse    0
+MonthlyIncome_replaced                  0
+NumberOfDependents_replaced             0
+dtype: int64
+2025-09-15 16:49:19,988 - INFO - We have checked their is no null values in the data set now.
+2025-09-15 16:49:20,003 - INFO - Sucessfully divided the train and test as numeric and category columns:
+ train_num:(120000, 11)
+ train_cat:(30000, 5)
+ test_num:(30000, 11)
+ test_cat:(30000, 5)
+2025-09-15 16:49:20,004 - INFO - handle outlier is activated.......
+2025-09-15 16:50:27,936 - INFO - shapes and data are :
+(120000, 22)
+sample data are:
+        NPA Status  RevolvingUtilizationOfUnsecuredLines   age  ...  NumberOfTime60-89DaysPastDueNotWorse_log  MonthlyIncome_replaced_log  NumberOfDependents_replaced_log
+67889          0.0                              0.083230  35.0  ...                                       0.0                    8.343078                         0.693147
+137036         0.0                              0.524533  64.0  ...                                       0.0                    9.188708                         0.000000
+138220         0.0                              0.458134  48.0  ...                                       0.0                    7.696667                         1.098612
+140711         0.0                              0.026925  68.0  ...                                       0.0                    7.263330                         0.000000
+146843         0.0                              0.143217  44.0  ...                                       0.0                    8.779711                         1.098612
+
+[5 rows x 22 columns]
+(30000, 22)
+sample data are:
+        NPA Status  RevolvingUtilizationOfUnsecuredLines   age  ...  NumberOfTime60-89DaysPastDueNotWorse_log  MonthlyIncome_replaced_log  NumberOfDependents_replaced_log
+89327          0.0                              0.055117  58.0  ...                                  0.000000                    8.726968                         0.000000
+91296          0.0                              1.000000  28.0  ...                                  0.693147                    7.193686                         0.693147
+109116         0.0                              0.023862  50.0  ...                                  0.000000                    0.000000                         0.000000
+97209          1.0                              1.000000  57.0  ...                                  4.595120                    8.013343                         0.000000
+78274          0.0                              0.071095  50.0  ...                                  0.000000                    7.853605                         0.693147
+
+[5 rows x 22 columns]
+2025-09-16 10:13:02,853 - INFO - Loaded data sucessfully with shape of (150002, 18)
+2025-09-16 10:13:02,902 - INFO - Null values in the data set are:NPA Status                                  2
+RevolvingUtilizationOfUnsecuredLines        2
+age                                         2
+Gender                                      2
+Region                                      2
+MonthlyIncome                           29733
+Rented_OwnHouse                             2
+Occupation                                  2
+Education                                   2
+NumberOfTime30-59DaysPastDueNotWorse        2
+DebtRatio                                   2
+MonthlyIncome.1                         29733
+NumberOfOpenCreditLinesAndLoans             2
+NumberOfTimes90DaysLate                     2
+NumberRealEstateLoansOrLines                2
+NumberOfTime60-89DaysPastDueNotWorse        2
+NumberOfDependents                       3924
+Good_Bad                                    2
+dtype: int64
+2025-09-16 10:13:02,986 - INFO - After droping the rows in Good_Bad column ,Null values in the data set are:NPA Status                                  0
+RevolvingUtilizationOfUnsecuredLines        0
+age                                         0
+Gender                                      0
+Region                                      0
+MonthlyIncome                           29731
+Rented_OwnHouse                             0
+Occupation                                  0
+Education                                   0
+NumberOfTime30-59DaysPastDueNotWorse        0
+DebtRatio                                   0
+MonthlyIncome.1                         29731
+NumberOfOpenCreditLinesAndLoans             0
+NumberOfTimes90DaysLate                     0
+NumberRealEstateLoansOrLines                0
+NumberOfTime60-89DaysPastDueNotWorse        0
+NumberOfDependents                       3924
+Good_Bad                                    0
+dtype: int64
+2025-09-16 10:13:03,004 - INFO - Loaded data sucessfully after droping MonthlyIncome.1 column with shape of (150000, 17)
+2025-09-16 10:13:03,018 - INFO - After dividing the data as independent and dependent their shape is (150000, 16) and (150000,)
+2025-09-16 10:13:03,061 - INFO - sample X and y data are 
+        NPA Status  RevolvingUtilizationOfUnsecuredLines   age  ... NumberRealEstateLoansOrLines NumberOfTime60-89DaysPastDueNotWorse  NumberOfDependents
+129301         0.0                              0.085727  59.0  ...                          2.0                                  0.0                 3.0
+16948          0.0                              0.026151  56.0  ...                          1.0                                  0.0                 1.0
+
+[2 rows x 16 columns] 
+ 76813     Good
+102592    Good
+Name: Good_Bad, dtype: object
+2025-09-16 10:13:03,130 - INFO - missing values is activated...............
+2025-09-16 10:13:03,475 - INFO - After using random_sample imputation checking the null values 
+ NPA Status                              0
+RevolvingUtilizationOfUnsecuredLines    0
+age                                     0
+Gender                                  0
+Region                                  0
+Rented_OwnHouse                         0
+Occupation                              0
+Education                               0
+NumberOfTime30-59DaysPastDueNotWorse    0
+DebtRatio                               0
+NumberOfOpenCreditLinesAndLoans         0
+NumberOfTimes90DaysLate                 0
+NumberRealEstateLoansOrLines            0
+NumberOfTime60-89DaysPastDueNotWorse    0
+MonthlyIncome_replaced                  0
+NumberOfDependents_replaced             0
+dtype: int64
+ NPA Status                              0
+RevolvingUtilizationOfUnsecuredLines    0
+age                                     0
+Gender                                  0
+Region                                  0
+Rented_OwnHouse                         0
+Occupation                              0
+Education                               0
+NumberOfTime30-59DaysPastDueNotWorse    0
+DebtRatio                               0
+NumberOfOpenCreditLinesAndLoans         0
+NumberOfTimes90DaysLate                 0
+NumberRealEstateLoansOrLines            0
+NumberOfTime60-89DaysPastDueNotWorse    0
+MonthlyIncome_replaced                  0
+NumberOfDependents_replaced             0
+dtype: int64
+2025-09-16 10:13:03,498 - INFO - We have checked their is no null values in the data set now.
+2025-09-16 10:13:03,528 - INFO - Sucessfully divided the train and test as numeric and category columns:
+ train_num:(120000, 11)
+ train_cat:(30000, 5)
+ test_num:(30000, 11)
+ test_cat:(30000, 5)
+2025-09-16 10:13:03,528 - INFO - handle outlier is activated.......
+2025-09-16 10:14:23,293 - INFO - shapes and data are :
+(120000, 22)
+sample data are:
+        NPA Status  RevolvingUtilizationOfUnsecuredLines   age  ...  NumberOfTime60-89DaysPastDueNotWorse_log  MonthlyIncome_replaced_log  NumberOfDependents_replaced_log
+57348          0.0                              0.080851  62.0  ...                                       0.0                    7.659643                         0.000000
+21870          0.0                           3677.000000  43.0  ...                                       0.0                    9.928229                         1.386294
+42822          0.0                              0.546718  84.0  ...                                       0.0                    8.439448                         0.000000
+27534          0.0                              0.030489  76.0  ...                                       0.0                    8.343078                         0.000000
+143024         0.0                              0.060094  38.0  ...                                       0.0                    6.639876                         1.098612
+
+[5 rows x 22 columns]
+(30000, 22)
+sample data are:
+       NPA Status  RevolvingUtilizationOfUnsecuredLines   age  ...  NumberOfTime60-89DaysPastDueNotWorse_log  MonthlyIncome_replaced_log  NumberOfDependents_replaced_log
+75727         0.0                              0.079510  59.0  ...                                       0.0                    9.024131                         0.000000
+72314         0.0                              0.045629  62.0  ...                                       0.0                    9.139703                         0.000000
+32188         0.0                              1.000000  57.0  ...                                       0.0                    8.612685                         1.098612
+60485         0.0                              1.000000  53.0  ...                                       0.0                    9.320002                         0.000000
+23757         0.0                              1.000000  39.0  ...                                       0.0                    9.393911                         0.000000
+
+[5 rows x 22 columns]
+2025-09-16 23:32:33,875 - INFO - Loaded data sucessfully with shape of (150002, 18)
+2025-09-16 23:32:33,944 - INFO - Null values in the data set are:NPA Status                                  2
+RevolvingUtilizationOfUnsecuredLines        2
+age                                         2
+Gender                                      2
+Region                                      2
+MonthlyIncome                           29733
+Rented_OwnHouse                             2
+Occupation                                  2
+Education                                   2
+NumberOfTime30-59DaysPastDueNotWorse        2
+DebtRatio                                   2
+MonthlyIncome.1                         29733
+NumberOfOpenCreditLinesAndLoans             2
+NumberOfTimes90DaysLate                     2
+NumberRealEstateLoansOrLines                2
+NumberOfTime60-89DaysPastDueNotWorse        2
+NumberOfDependents                       3924
+Good_Bad                                    2
+dtype: int64
+2025-09-16 23:32:34,034 - INFO - After droping the rows in Good_Bad column ,Null values in the data set are:NPA Status                                  0
+RevolvingUtilizationOfUnsecuredLines        0
+age                                         0
+Gender                                      0
+Region                                      0
+MonthlyIncome                           29731
+Rented_OwnHouse                             0
+Occupation                                  0
+Education                                   0
+NumberOfTime30-59DaysPastDueNotWorse        0
+DebtRatio                                   0
+MonthlyIncome.1                         29731
+NumberOfOpenCreditLinesAndLoans             0
+NumberOfTimes90DaysLate                     0
+NumberRealEstateLoansOrLines                0
+NumberOfTime60-89DaysPastDueNotWorse        0
+NumberOfDependents                       3924
+Good_Bad                                    0
+dtype: int64
+2025-09-16 23:32:34,060 - INFO - Loaded data sucessfully after droping MonthlyIncome.1 column with shape of (150000, 17)
+2025-09-16 23:32:34,063 - INFO - After dividing the data as independent and dependent their shape is (150000, 16) and (150000,)
+2025-09-16 23:32:34,115 - INFO - sample X and y data are 
+       NPA Status  RevolvingUtilizationOfUnsecuredLines   age  ... NumberRealEstateLoansOrLines NumberOfTime60-89DaysPastDueNotWorse  NumberOfDependents
+92280         0.0                              0.658688  58.0  ...                          1.0                                  0.0                 2.0
+82569         0.0                              0.633086  39.0  ...                          1.0                                  0.0                 0.0
+
+[2 rows x 16 columns] 
+ 21885    Good
+45801    Good
+Name: Good_Bad, dtype: object
+2025-09-16 23:32:34,182 - INFO - missing values is activated...............
+2025-09-16 23:32:34,523 - INFO - After using random_sample imputation checking the null values 
+ NPA Status                              0
+RevolvingUtilizationOfUnsecuredLines    0
+age                                     0
+Gender                                  0
+Region                                  0
+Rented_OwnHouse                         0
+Occupation                              0
+Education                               0
+NumberOfTime30-59DaysPastDueNotWorse    0
+DebtRatio                               0
+NumberOfOpenCreditLinesAndLoans         0
+NumberOfTimes90DaysLate                 0
+NumberRealEstateLoansOrLines            0
+NumberOfTime60-89DaysPastDueNotWorse    0
+MonthlyIncome_replaced                  0
+NumberOfDependents_replaced             0
+dtype: int64
+ NPA Status                              0
+RevolvingUtilizationOfUnsecuredLines    0
+age                                     0
+Gender                                  0
+Region                                  0
+Rented_OwnHouse                         0
+Occupation                              0
+Education                               0
+NumberOfTime30-59DaysPastDueNotWorse    0
+DebtRatio                               0
+NumberOfOpenCreditLinesAndLoans         0
+NumberOfTimes90DaysLate                 0
+NumberRealEstateLoansOrLines            0
+NumberOfTime60-89DaysPastDueNotWorse    0
+MonthlyIncome_replaced                  0
+NumberOfDependents_replaced             0
+dtype: int64
+2025-09-16 23:32:34,567 - INFO - We have checked their is no null values in the data set now.
+2025-09-16 23:32:34,586 - INFO - Sucessfully divided the train and test as numeric and category columns:
+ train_num:(120000, 11)
+ train_cat:(30000, 5)
+ test_num:(30000, 11)
+ test_cat:(30000, 5)
+2025-09-16 23:32:34,586 - INFO - handle outlier is activated.......
+2025-09-16 23:32:34,787 - INFO - shapes and data are :
+(120000, 11)
+sample data are:
+        NPA Status_log  RevolvingUtilizationOfUnsecuredLines_log   age_log  ...  NumberOfTime60-89DaysPastDueNotWorse_log  MonthlyIncome_replaced_log  NumberOfDependents_replaced_log
+70735              0.0                                  0.117320  3.784190  ...                                       0.0                    8.328693                         1.609438
+129706             0.0                                  0.075917  4.219508  ...                                       0.0                    8.886962                         0.000000
+41157              0.0                                  0.211123  3.526361  ...                                       0.0                    8.036250                         0.000000
+68656              0.0                                  0.140785  4.094345  ...                                       0.0                    9.441531                         0.000000
+130397             0.0                                  0.326750  4.094345  ...                                       0.0                    9.392745                         1.098612
+
+[5 rows x 11 columns]
+(30000, 11)
+sample data are:
+        NPA Status_log  RevolvingUtilizationOfUnsecuredLines_log   age_log  ...  NumberOfTime60-89DaysPastDueNotWorse_log  MonthlyIncome_replaced_log  NumberOfDependents_replaced_log
+123751        0.693147                                  0.434294  3.912023  ...                                  0.693147                    8.499844                         0.000000
+22324         0.000000                                  0.672709  3.401197  ...                                  0.000000                    7.783641                         0.693147
+110910        0.000000                                  0.562989  4.158883  ...                                  0.000000                    8.500454                         0.000000
+141287        0.000000                                  0.137260  3.970292  ...                                  0.000000                    8.822322                         0.693147
+16412         0.000000                                  0.000000  4.060443  ...                                  0.000000                    9.483112                         0.000000
+
+[5 rows x 11 columns]
+2025-09-16 23:43:24,292 - INFO - Loaded data sucessfully with shape of (150002, 18)
+2025-09-16 23:43:24,325 - INFO - Null values in the data set are:NPA Status                                  2
+RevolvingUtilizationOfUnsecuredLines        2
+age                                         2
+Gender                                      2
+Region                                      2
+MonthlyIncome                           29733
+Rented_OwnHouse                             2
+Occupation                                  2
+Education                                   2
+NumberOfTime30-59DaysPastDueNotWorse        2
+DebtRatio                                   2
+MonthlyIncome.1                         29733
+NumberOfOpenCreditLinesAndLoans             2
+NumberOfTimes90DaysLate                     2
+NumberRealEstateLoansOrLines                2
+NumberOfTime60-89DaysPastDueNotWorse        2
+NumberOfDependents                       3924
+Good_Bad                                    2
+dtype: int64
+2025-09-16 23:43:24,404 - INFO - After droping the rows in Good_Bad column ,Null values in the data set are:NPA Status                                  0
+RevolvingUtilizationOfUnsecuredLines        0
+age                                         0
+Gender                                      0
+Region                                      0
+MonthlyIncome                           29731
+Rented_OwnHouse                             0
+Occupation                                  0
+Education                                   0
+NumberOfTime30-59DaysPastDueNotWorse        0
+DebtRatio                                   0
+MonthlyIncome.1                         29731
+NumberOfOpenCreditLinesAndLoans             0
+NumberOfTimes90DaysLate                     0
+NumberRealEstateLoansOrLines                0
+NumberOfTime60-89DaysPastDueNotWorse        0
+NumberOfDependents                       3924
+Good_Bad                                    0
+dtype: int64
+2025-09-16 23:43:24,421 - INFO - Loaded data sucessfully after droping MonthlyIncome.1 column with shape of (150000, 17)
+2025-09-16 23:43:24,435 - INFO - After dividing the data as independent and dependent their shape is (150000, 16) and (150000,)
+2025-09-16 23:43:24,468 - INFO - sample X and y data are 
+       NPA Status  RevolvingUtilizationOfUnsecuredLines   age  ... NumberRealEstateLoansOrLines NumberOfTime60-89DaysPastDueNotWorse  NumberOfDependents
+95905         0.0                              0.081435  39.0  ...                          0.0                                  0.0                 3.0
+28362         0.0                              0.160570  29.0  ...                          0.0                                  0.0                 0.0
+
+[2 rows x 16 columns] 
+ 128606    Good
+137333    Good
+Name: Good_Bad, dtype: object
+2025-09-16 23:43:24,533 - INFO - missing values is activated...............
+2025-09-16 23:43:24,792 - INFO - After using random_sample imputation checking the null values 
+ NPA Status                              0
+RevolvingUtilizationOfUnsecuredLines    0
+age                                     0
+Gender                                  0
+Region                                  0
+Rented_OwnHouse                         0
+Occupation                              0
+Education                               0
+NumberOfTime30-59DaysPastDueNotWorse    0
+DebtRatio                               0
+NumberOfOpenCreditLinesAndLoans         0
+NumberOfTimes90DaysLate                 0
+NumberRealEstateLoansOrLines            0
+NumberOfTime60-89DaysPastDueNotWorse    0
+MonthlyIncome_replaced                  0
+NumberOfDependents_replaced             0
+dtype: int64
+ NPA Status                              0
+RevolvingUtilizationOfUnsecuredLines    0
+age                                     0
+Gender                                  0
+Region                                  0
+Rented_OwnHouse                         0
+Occupation                              0
+Education                               0
+NumberOfTime30-59DaysPastDueNotWorse    0
+DebtRatio                               0
+NumberOfOpenCreditLinesAndLoans         0
+NumberOfTimes90DaysLate                 0
+NumberRealEstateLoansOrLines            0
+NumberOfTime60-89DaysPastDueNotWorse    0
+MonthlyIncome_replaced                  0
+NumberOfDependents_replaced             0
+dtype: int64
+2025-09-16 23:43:24,822 - INFO - We have checked their is no null values in the data set now.
+2025-09-16 23:43:24,837 - INFO - Sucessfully divided the train and test as numeric and category columns:
+ train_num:(120000, 11)
+ train_cat:(30000, 5)
+ test_num:(30000, 11)
+ test_cat:(30000, 5)
+2025-09-16 23:43:24,837 - INFO - handle outlier is activated.......
+2025-09-16 23:43:25,023 - INFO - shapes and data are :
+(120000, 11)
+sample data are:
+       NPA Status_log  RevolvingUtilizationOfUnsecuredLines_log   age_log  ...  NumberOfTime60-89DaysPastDueNotWorse_log  MonthlyIncome_replaced_log  NumberOfDependents_replaced_log
+29896             0.0                                  0.234508  4.262680  ...                                  0.000000                    8.619930                         0.693147
+97099             0.0                                  0.199667  3.761200  ...                                  0.693147                    8.732143                         1.098612
+16872             0.0                                  0.000000  4.007333  ...                                  0.000000                    9.287394                         1.386294
+53235             0.0                                  0.019655  4.174387  ...                                  0.000000                    7.601402                         0.000000
+22397             0.0                                  0.000000  4.025352  ...                                  0.000000                    8.737292                         0.693147
+
+[5 rows x 11 columns]
+(30000, 11)
+sample data are:
+        NPA Status_log  RevolvingUtilizationOfUnsecuredLines_log   age_log  ...  NumberOfTime60-89DaysPastDueNotWorse_log  MonthlyIncome_replaced_log  NumberOfDependents_replaced_log
+78620              0.0                                  0.557475  3.891820  ...                                       0.0                    9.433564                         1.386294
+104088             0.0                                  0.010753  4.043051  ...                                       0.0                    8.749574                         1.098612
+42916              0.0                                  0.206388  3.828641  ...                                       0.0                    9.310276                         0.000000
+56743              0.0                                  0.694146  3.988984  ...                                       0.0                    8.253748                         0.000000
+21941              0.0                                  0.044073  3.784190  ...                                       0.0                    7.124478                         0.000000
+
+[5 rows x 11 columns]
+2025-09-16 23:48:25,088 - INFO - Loaded data sucessfully with shape of (150002, 18)
+2025-09-16 23:48:25,129 - INFO - Null values in the data set are:NPA Status                                  2
+RevolvingUtilizationOfUnsecuredLines        2
+age                                         2
+Gender                                      2
+Region                                      2
+MonthlyIncome                           29733
+Rented_OwnHouse                             2
+Occupation                                  2
+Education                                   2
+NumberOfTime30-59DaysPastDueNotWorse        2
+DebtRatio                                   2
+MonthlyIncome.1                         29733
+NumberOfOpenCreditLinesAndLoans             2
+NumberOfTimes90DaysLate                     2
+NumberRealEstateLoansOrLines                2
+NumberOfTime60-89DaysPastDueNotWorse        2
+NumberOfDependents                       3924
+Good_Bad                                    2
+dtype: int64
+2025-09-16 23:48:25,203 - INFO - After droping the rows in Good_Bad column ,Null values in the data set are:NPA Status                                  0
+RevolvingUtilizationOfUnsecuredLines        0
+age                                         0
+Gender                                      0
+Region                                      0
+MonthlyIncome                           29731
+Rented_OwnHouse                             0
+Occupation                                  0
+Education                                   0
+NumberOfTime30-59DaysPastDueNotWorse        0
+DebtRatio                                   0
+MonthlyIncome.1                         29731
+NumberOfOpenCreditLinesAndLoans             0
+NumberOfTimes90DaysLate                     0
+NumberRealEstateLoansOrLines                0
+NumberOfTime60-89DaysPastDueNotWorse        0
+NumberOfDependents                       3924
+Good_Bad                                    0
+dtype: int64
+2025-09-16 23:48:25,220 - INFO - Loaded data sucessfully after droping MonthlyIncome.1 column with shape of (150000, 17)
+2025-09-16 23:48:25,230 - INFO - After dividing the data as independent and dependent their shape is (150000, 16) and (150000,)
+2025-09-16 23:48:25,264 - INFO - sample X and y data are 
+       NPA Status  RevolvingUtilizationOfUnsecuredLines   age  ... NumberRealEstateLoansOrLines NumberOfTime60-89DaysPastDueNotWorse  NumberOfDependents
+83310         0.0                              1.000000  56.0  ...                          0.0                                  0.0                 0.0
+48837         0.0                              0.585028  68.0  ...                          1.0                                  0.0                 0.0
+
+[2 rows x 16 columns] 
+ 34974    Good
+12601    Good
+Name: Good_Bad, dtype: object
+2025-09-16 23:48:25,309 - INFO - missing values is activated...............
+2025-09-16 23:48:25,564 - INFO - After using random_sample imputation checking the null values 
+ NPA Status                              0
+RevolvingUtilizationOfUnsecuredLines    0
+age                                     0
+Gender                                  0
+Region                                  0
+Rented_OwnHouse                         0
+Occupation                              0
+Education                               0
+NumberOfTime30-59DaysPastDueNotWorse    0
+DebtRatio                               0
+NumberOfOpenCreditLinesAndLoans         0
+NumberOfTimes90DaysLate                 0
+NumberRealEstateLoansOrLines            0
+NumberOfTime60-89DaysPastDueNotWorse    0
+MonthlyIncome_replaced                  0
+NumberOfDependents_replaced             0
+dtype: int64
+ NPA Status                              0
+RevolvingUtilizationOfUnsecuredLines    0
+age                                     0
+Gender                                  0
+Region                                  0
+Rented_OwnHouse                         0
+Occupation                              0
+Education                               0
+NumberOfTime30-59DaysPastDueNotWorse    0
+DebtRatio                               0
+NumberOfOpenCreditLinesAndLoans         0
+NumberOfTimes90DaysLate                 0
+NumberRealEstateLoansOrLines            0
+NumberOfTime60-89DaysPastDueNotWorse    0
+MonthlyIncome_replaced                  0
+NumberOfDependents_replaced             0
+dtype: int64
+2025-09-16 23:48:25,599 - INFO - We have checked their is no null values in the data set now.
+2025-09-16 23:48:25,609 - INFO - Sucessfully divided the train and test as numeric and category columns:
+ train_num:(120000, 11)
+ train_cat:(30000, 5)
+ test_num:(30000, 11)
+ test_cat:(30000, 5)
+2025-09-16 23:48:25,609 - INFO - handle outlier is activated.......
+2025-09-16 23:48:25,737 - INFO - shapes and data are :
+(120000, 11)
+sample data are:
+       NPA Status_log  RevolvingUtilizationOfUnsecuredLines_log   age_log  ...  NumberOfTime60-89DaysPastDueNotWorse_log  MonthlyIncome_replaced_log  NumberOfDependents_replaced_log
+52407             0.0                                  0.123758  4.110874  ...                                       0.0                    9.276970                         0.000000
+55625             0.0                                  0.289859  3.951244  ...                                       0.0                    8.740497                         1.609438
+8381              0.0                                  0.415543  3.891820  ...                                       0.0                    8.748305                         1.098612
+6451              0.0                                  0.039796  4.143135  ...                                       0.0                    9.095715                         0.000000
+72663             0.0                                  0.091293  3.761200  ...                                       0.0                    9.200391                         1.791759
+
+[5 rows x 11 columns]
+(30000, 11)
+sample data are:
+        NPA Status_log  RevolvingUtilizationOfUnsecuredLines_log   age_log  ...  NumberOfTime60-89DaysPastDueNotWorse_log  MonthlyIncome_replaced_log  NumberOfDependents_replaced_log
+129649        0.000000                                  0.304640  3.970292  ...                                  0.693147                    9.028099                         0.000000
+135712        0.000000                                  0.364474  3.828641  ...                                  0.000000                    8.630700                         1.098612
+3395          0.000000                                  0.012105  4.406719  ...                                  0.000000                    8.294300                         0.000000
+61994         0.000000                                  0.002693  4.127134  ...                                  0.000000                    9.210440                         0.693147
+51735         0.693147                                  0.586899  3.637586  ...                                  0.693147                    9.012986                         1.098612
+
+[5 rows x 11 columns]
+2025-09-16 23:48:25,905 - INFO - We have done the trimming and now check the columns: 
+train:
+Index(['NPA Status_log_trim', 'RevolvingUtilizationOfUnsecuredLines_log_trim',
+       'age_log_trim', 'NumberOfTime30-59DaysPastDueNotWorse_log_trim',
+       'DebtRatio_log_trim', 'NumberOfOpenCreditLinesAndLoans_log_trim',
+       'NumberOfTimes90DaysLate_log_trim',
+       'NumberRealEstateLoansOrLines_log_trim',
+       'NumberOfTime60-89DaysPastDueNotWorse_log_trim',
+       'MonthlyIncome_replaced_log_trim',
+       'NumberOfDependents_replaced_log_trim'],
+      dtype='object')
+test:
+Index(['NPA Status_log_trim', 'RevolvingUtilizationOfUnsecuredLines_log_trim',
+       'age_log_trim', 'NumberOfTime30-59DaysPastDueNotWorse_log_trim',
+       'DebtRatio_log_trim', 'NumberOfOpenCreditLinesAndLoans_log_trim',
+       'NumberOfTimes90DaysLate_log_trim',
+       'NumberRealEstateLoansOrLines_log_trim',
+       'NumberOfTime60-89DaysPastDueNotWorse_log_trim',
+       'MonthlyIncome_replaced_log_trim',
+       'NumberOfDependents_replaced_log_trim'],
+      dtype='object')
+2025-09-16 23:52:11,531 - INFO - Loaded data sucessfully with shape of (150002, 18)
+2025-09-16 23:52:11,594 - INFO - Null values in the data set are:NPA Status                                  2
+RevolvingUtilizationOfUnsecuredLines        2
+age                                         2
+Gender                                      2
+Region                                      2
+MonthlyIncome                           29733
+Rented_OwnHouse                             2
+Occupation                                  2
+Education                                   2
+NumberOfTime30-59DaysPastDueNotWorse        2
+DebtRatio                                   2
+MonthlyIncome.1                         29733
+NumberOfOpenCreditLinesAndLoans             2
+NumberOfTimes90DaysLate                     2
+NumberRealEstateLoansOrLines                2
+NumberOfTime60-89DaysPastDueNotWorse        2
+NumberOfDependents                       3924
+Good_Bad                                    2
+dtype: int64
+2025-09-16 23:52:11,687 - INFO - After droping the rows in Good_Bad column ,Null values in the data set are:NPA Status                                  0
+RevolvingUtilizationOfUnsecuredLines        0
+age                                         0
+Gender                                      0
+Region                                      0
+MonthlyIncome                           29731
+Rented_OwnHouse                             0
+Occupation                                  0
+Education                                   0
+NumberOfTime30-59DaysPastDueNotWorse        0
+DebtRatio                                   0
+MonthlyIncome.1                         29731
+NumberOfOpenCreditLinesAndLoans             0
+NumberOfTimes90DaysLate                     0
+NumberRealEstateLoansOrLines                0
+NumberOfTime60-89DaysPastDueNotWorse        0
+NumberOfDependents                       3924
+Good_Bad                                    0
+dtype: int64
+2025-09-16 23:52:11,700 - INFO - Loaded data sucessfully after droping MonthlyIncome.1 column with shape of (150000, 17)
+2025-09-16 23:52:11,728 - INFO - After dividing the data as independent and dependent their shape is (150000, 16) and (150000,)
+2025-09-16 23:52:11,767 - INFO - sample X and y data are 
+        NPA Status  RevolvingUtilizationOfUnsecuredLines   age  ... NumberRealEstateLoansOrLines NumberOfTime60-89DaysPastDueNotWorse  NumberOfDependents
+27920          0.0                              0.000000  46.0  ...                          2.0                                  0.0                 0.0
+134060         0.0                              0.022152  61.0  ...                          1.0                                  0.0                   1
+
+[2 rows x 16 columns] 
+ 62088    Good
+10037    Good
+Name: Good_Bad, dtype: object
+2025-09-16 23:52:11,833 - INFO - missing values is activated...............
+2025-09-16 23:52:12,168 - INFO - After using random_sample imputation checking the null values 
+ NPA Status                              0
+RevolvingUtilizationOfUnsecuredLines    0
+age                                     0
+Gender                                  0
+Region                                  0
+Rented_OwnHouse                         0
+Occupation                              0
+Education                               0
+NumberOfTime30-59DaysPastDueNotWorse    0
+DebtRatio                               0
+NumberOfOpenCreditLinesAndLoans         0
+NumberOfTimes90DaysLate                 0
+NumberRealEstateLoansOrLines            0
+NumberOfTime60-89DaysPastDueNotWorse    0
+MonthlyIncome_replaced                  0
+NumberOfDependents_replaced             0
+dtype: int64
+ NPA Status                              0
+RevolvingUtilizationOfUnsecuredLines    0
+age                                     0
+Gender                                  0
+Region                                  0
+Rented_OwnHouse                         0
+Occupation                              0
+Education                               0
+NumberOfTime30-59DaysPastDueNotWorse    0
+DebtRatio                               0
+NumberOfOpenCreditLinesAndLoans         0
+NumberOfTimes90DaysLate                 0
+NumberRealEstateLoansOrLines            0
+NumberOfTime60-89DaysPastDueNotWorse    0
+MonthlyIncome_replaced                  0
+NumberOfDependents_replaced             0
+dtype: int64
+2025-09-16 23:52:12,212 - INFO - We have checked their is no null values in the data set now.
+2025-09-16 23:52:12,223 - INFO - Sucessfully divided the train and test as numeric and category columns:
+ train_num:(120000, 11)
+ train_cat:(30000, 5)
+ test_num:(30000, 11)
+ test_cat:(30000, 5)
+2025-09-16 23:52:12,223 - INFO - handle outlier is activated.......
+2025-09-16 23:52:12,420 - INFO - shapes and data are :
+(120000, 11)
+sample data are:
+        NPA Status_log  RevolvingUtilizationOfUnsecuredLines_log   age_log  ...  NumberOfTime60-89DaysPastDueNotWorse_log  MonthlyIncome_replaced_log  NumberOfDependents_replaced_log
+92950              0.0                                  0.391428  3.891820  ...                                  0.693147                    8.908830                         1.098612
+47386              0.0                                  0.057435  3.610918  ...                                  0.000000                    8.855093                         0.000000
+131039             0.0                                  0.132903  4.025352  ...                                  0.000000                    7.824446                         0.000000
+130577             0.0                                  0.279026  3.850148  ...                                  0.000000                    8.837391                         1.609438
+102320             0.0                                  0.000314  3.850148  ...                                  0.000000                    9.012011                         0.693147
+
+[5 rows x 11 columns]
+(30000, 11)
+sample data are:
+        NPA Status_log  RevolvingUtilizationOfUnsecuredLines_log   age_log  ...  NumberOfTime60-89DaysPastDueNotWorse_log  MonthlyIncome_replaced_log  NumberOfDependents_replaced_log
+127868             0.0                                  0.743821  3.367296  ...                                       0.0                    8.250881                         1.386294
+30578              0.0                                  0.029235  3.761200  ...                                       0.0                    9.113609                         1.098612
+15093              0.0                                  0.000000  3.178054  ...                                       0.0                    6.710523                         0.000000
+117636             0.0                                  0.223730  4.060443  ...                                       0.0                    9.096836                         1.098612
+92395              0.0                                  0.000431  4.356709  ...                                       0.0                    8.517393                         0.000000
+
+[5 rows x 11 columns]
+2025-09-16 23:52:12,654 - INFO - We have done the trimming and now check the columns: 
+train:
+Index(['NPA Status_log_trim', 'RevolvingUtilizationOfUnsecuredLines_log_trim',
+       'age_log_trim', 'NumberOfTime30-59DaysPastDueNotWorse_log_trim',
+       'DebtRatio_log_trim', 'NumberOfOpenCreditLinesAndLoans_log_trim',
+       'NumberOfTimes90DaysLate_log_trim',
+       'NumberRealEstateLoansOrLines_log_trim',
+       'NumberOfTime60-89DaysPastDueNotWorse_log_trim',
+       'MonthlyIncome_replaced_log_trim',
+       'NumberOfDependents_replaced_log_trim'],
+      dtype='object')
+test:
+Index(['NPA Status_log_trim', 'RevolvingUtilizationOfUnsecuredLines_log_trim',
+       'age_log_trim', 'NumberOfTime30-59DaysPastDueNotWorse_log_trim',
+       'DebtRatio_log_trim', 'NumberOfOpenCreditLinesAndLoans_log_trim',
+       'NumberOfTimes90DaysLate_log_trim',
+       'NumberRealEstateLoansOrLines_log_trim',
+       'NumberOfTime60-89DaysPastDueNotWorse_log_trim',
+       'MonthlyIncome_replaced_log_trim',
+       'NumberOfDependents_replaced_log_trim'],
+      dtype='object')
+2025-09-16 23:53:25,168 - INFO - Loaded data sucessfully with shape of (150002, 18)
+2025-09-16 23:53:25,227 - INFO - Null values in the data set are:NPA Status                                  2
+RevolvingUtilizationOfUnsecuredLines        2
+age                                         2
+Gender                                      2
+Region                                      2
+MonthlyIncome                           29733
+Rented_OwnHouse                             2
+Occupation                                  2
+Education                                   2
+NumberOfTime30-59DaysPastDueNotWorse        2
+DebtRatio                                   2
+MonthlyIncome.1                         29733
+NumberOfOpenCreditLinesAndLoans             2
+NumberOfTimes90DaysLate                     2
+NumberRealEstateLoansOrLines                2
+NumberOfTime60-89DaysPastDueNotWorse        2
+NumberOfDependents                       3924
+Good_Bad                                    2
+dtype: int64
+2025-09-16 23:53:25,310 - INFO - After droping the rows in Good_Bad column ,Null values in the data set are:NPA Status                                  0
+RevolvingUtilizationOfUnsecuredLines        0
+age                                         0
+Gender                                      0
+Region                                      0
+MonthlyIncome                           29731
+Rented_OwnHouse                             0
+Occupation                                  0
+Education                                   0
+NumberOfTime30-59DaysPastDueNotWorse        0
+DebtRatio                                   0
+MonthlyIncome.1                         29731
+NumberOfOpenCreditLinesAndLoans             0
+NumberOfTimes90DaysLate                     0
+NumberRealEstateLoansOrLines                0
+NumberOfTime60-89DaysPastDueNotWorse        0
+NumberOfDependents                       3924
+Good_Bad                                    0
+dtype: int64
+2025-09-16 23:53:25,320 - INFO - Loaded data sucessfully after droping MonthlyIncome.1 column with shape of (150000, 17)
+2025-09-16 23:53:25,336 - INFO - After dividing the data as independent and dependent their shape is (150000, 16) and (150000,)
+2025-09-16 23:53:25,368 - INFO - sample X and y data are 
+       NPA Status  RevolvingUtilizationOfUnsecuredLines   age  ... NumberRealEstateLoansOrLines NumberOfTime60-89DaysPastDueNotWorse  NumberOfDependents
+63071         0.0                              0.129571  25.0  ...                          0.0                                  0.0                 0.0
+80249         0.0                              0.236588  24.0  ...                          0.0                                  0.0                 0.0
+
+[2 rows x 16 columns] 
+ 38683     Good
+141804    Good
+Name: Good_Bad, dtype: object
+2025-09-16 23:53:25,435 - INFO - missing values is activated...............
+2025-09-16 23:53:25,717 - INFO - After using random_sample imputation checking the null values 
+ NPA Status                              0
+RevolvingUtilizationOfUnsecuredLines    0
+age                                     0
+Gender                                  0
+Region                                  0
+Rented_OwnHouse                         0
+Occupation                              0
+Education                               0
+NumberOfTime30-59DaysPastDueNotWorse    0
+DebtRatio                               0
+NumberOfOpenCreditLinesAndLoans         0
+NumberOfTimes90DaysLate                 0
+NumberRealEstateLoansOrLines            0
+NumberOfTime60-89DaysPastDueNotWorse    0
+MonthlyIncome_replaced                  0
+NumberOfDependents_replaced             0
+dtype: int64
+ NPA Status                              0
+RevolvingUtilizationOfUnsecuredLines    0
+age                                     0
+Gender                                  0
+Region                                  0
+Rented_OwnHouse                         0
+Occupation                              0
+Education                               0
+NumberOfTime30-59DaysPastDueNotWorse    0
+DebtRatio                               0
+NumberOfOpenCreditLinesAndLoans         0
+NumberOfTimes90DaysLate                 0
+NumberRealEstateLoansOrLines            0
+NumberOfTime60-89DaysPastDueNotWorse    0
+MonthlyIncome_replaced                  0
+NumberOfDependents_replaced             0
+dtype: int64
+2025-09-16 23:53:25,749 - INFO - We have checked their is no null values in the data set now.
+2025-09-16 23:53:25,765 - INFO - Sucessfully divided the train and test as numeric and category columns:
+ train_num:(120000, 11)
+ train_cat:(30000, 5)
+ test_num:(30000, 11)
+ test_cat:(30000, 5)
+2025-09-16 23:53:25,765 - INFO - handle outlier is activated.......
+2025-09-16 23:53:25,924 - INFO - shapes and data are :
+(120000, 11)
+sample data are:
+       NPA Status_log  RevolvingUtilizationOfUnsecuredLines_log   age_log  ...  NumberOfTime60-89DaysPastDueNotWorse_log  MonthlyIncome_replaced_log  NumberOfDependents_replaced_log
+32535        0.693147                                  0.971422  4.007333  ...                                  0.693147                    7.824446                         1.098612
+59135        0.000000                                  0.238513  4.189655  ...                                  0.000000                    7.193686                         0.000000
+89639        0.693147                                  0.060353  4.127134  ...                                  0.000000                    7.170888                         0.000000
+87754        0.000000                                  0.158906  3.465736  ...                                  0.000000                    0.693147                         0.000000
+1379         0.000000                                  0.160173  4.394449  ...                                  0.000000                    8.699681                         0.000000
+
+[5 rows x 11 columns]
+(30000, 11)
+sample data are:
+       NPA Status_log  RevolvingUtilizationOfUnsecuredLines_log   age_log  ...  NumberOfTime60-89DaysPastDueNotWorse_log  MonthlyIncome_replaced_log  NumberOfDependents_replaced_log
+11236             0.0                                  0.384628  4.304065  ...                                       0.0                    8.702843                         0.000000
+57406             0.0                                  0.000000  3.401197  ...                                       0.0                    7.661998                         0.000000
+24672             0.0                                  0.367939  4.043051  ...                                       0.0                    7.313887                         0.000000
+20170             0.0                                  0.024479  4.174387  ...                                       0.0                    7.514255                         0.693147
+47796             0.0                                  0.075263  4.276666  ...                                       0.0                    9.524202                         0.000000
+
+[5 rows x 11 columns]
+2025-09-16 23:53:26,114 - INFO - We have done the trimming and now check the columns: 
+train:
+Index(['NPA Status_log_trim', 'RevolvingUtilizationOfUnsecuredLines_log_trim',
+       'age_log_trim', 'NumberOfTime30-59DaysPastDueNotWorse_log_trim',
+       'DebtRatio_log_trim', 'NumberOfOpenCreditLinesAndLoans_log_trim',
+       'NumberOfTimes90DaysLate_log_trim',
+       'NumberRealEstateLoansOrLines_log_trim',
+       'NumberOfTime60-89DaysPastDueNotWorse_log_trim',
+       'MonthlyIncome_replaced_log_trim',
+       'NumberOfDependents_replaced_log_trim'],
+      dtype='object')
+test:
+Index(['NPA Status_log_trim', 'RevolvingUtilizationOfUnsecuredLines_log_trim',
+       'age_log_trim', 'NumberOfTime30-59DaysPastDueNotWorse_log_trim',
+       'DebtRatio_log_trim', 'NumberOfOpenCreditLinesAndLoans_log_trim',
+       'NumberOfTimes90DaysLate_log_trim',
+       'NumberRealEstateLoansOrLines_log_trim',
+       'NumberOfTime60-89DaysPastDueNotWorse_log_trim',
+       'MonthlyIncome_replaced_log_trim',
+       'NumberOfDependents_replaced_log_trim'],
+      dtype='object')
+2025-09-16 23:57:30,389 - INFO - Loaded data sucessfully with shape of (150002, 18)
+2025-09-16 23:57:30,465 - INFO - Null values in the data set are:NPA Status                                  2
+RevolvingUtilizationOfUnsecuredLines        2
+age                                         2
+Gender                                      2
+Region                                      2
+MonthlyIncome                           29733
+Rented_OwnHouse                             2
+Occupation                                  2
+Education                                   2
+NumberOfTime30-59DaysPastDueNotWorse        2
+DebtRatio                                   2
+MonthlyIncome.1                         29733
+NumberOfOpenCreditLinesAndLoans             2
+NumberOfTimes90DaysLate                     2
+NumberRealEstateLoansOrLines                2
+NumberOfTime60-89DaysPastDueNotWorse        2
+NumberOfDependents                       3924
+Good_Bad                                    2
+dtype: int64
+2025-09-16 23:57:30,583 - INFO - After droping the rows in Good_Bad column ,Null values in the data set are:NPA Status                                  0
+RevolvingUtilizationOfUnsecuredLines        0
+age                                         0
+Gender                                      0
+Region                                      0
+MonthlyIncome                           29731
+Rented_OwnHouse                             0
+Occupation                                  0
+Education                                   0
+NumberOfTime30-59DaysPastDueNotWorse        0
+DebtRatio                                   0
+MonthlyIncome.1                         29731
+NumberOfOpenCreditLinesAndLoans             0
+NumberOfTimes90DaysLate                     0
+NumberRealEstateLoansOrLines                0
+NumberOfTime60-89DaysPastDueNotWorse        0
+NumberOfDependents                       3924
+Good_Bad                                    0
+dtype: int64
+2025-09-16 23:57:30,613 - INFO - Loaded data sucessfully after droping MonthlyIncome.1 column with shape of (150000, 17)
+2025-09-16 23:57:30,622 - INFO - After dividing the data as independent and dependent their shape is (150000, 16) and (150000,)
+2025-09-16 23:57:30,681 - INFO - sample X and y data are 
+       NPA Status  RevolvingUtilizationOfUnsecuredLines   age  ... NumberRealEstateLoansOrLines NumberOfTime60-89DaysPastDueNotWorse  NumberOfDependents
+21722         0.0                              0.643531  60.0  ...                          0.0                                  0.0                 0.0
+25554         0.0                              0.001035  85.0  ...                          1.0                                  0.0                 0.0
+
+[2 rows x 16 columns] 
+ 1988    Good
+2296    Good
+Name: Good_Bad, dtype: object
+2025-09-16 23:57:30,778 - INFO - missing values is activated...............
+2025-09-16 23:57:31,220 - INFO - After using random_sample imputation checking the null values 
+ NPA Status                              0
+RevolvingUtilizationOfUnsecuredLines    0
+age                                     0
+Gender                                  0
+Region                                  0
+Rented_OwnHouse                         0
+Occupation                              0
+Education                               0
+NumberOfTime30-59DaysPastDueNotWorse    0
+DebtRatio                               0
+NumberOfOpenCreditLinesAndLoans         0
+NumberOfTimes90DaysLate                 0
+NumberRealEstateLoansOrLines            0
+NumberOfTime60-89DaysPastDueNotWorse    0
+MonthlyIncome_replaced                  0
+NumberOfDependents_replaced             0
+dtype: int64
+ NPA Status                              0
+RevolvingUtilizationOfUnsecuredLines    0
+age                                     0
+Gender                                  0
+Region                                  0
+Rented_OwnHouse                         0
+Occupation                              0
+Education                               0
+NumberOfTime30-59DaysPastDueNotWorse    0
+DebtRatio                               0
+NumberOfOpenCreditLinesAndLoans         0
+NumberOfTimes90DaysLate                 0
+NumberRealEstateLoansOrLines            0
+NumberOfTime60-89DaysPastDueNotWorse    0
+MonthlyIncome_replaced                  0
+NumberOfDependents_replaced             0
+dtype: int64
+2025-09-16 23:57:31,285 - INFO - We have checked their is no null values in the data set now.
+2025-09-16 23:57:31,306 - INFO - Sucessfully divided the train and test as numeric and category columns:
+ train_num:(120000, 11)
+ train_cat:(30000, 5)
+ test_num:(30000, 11)
+ test_cat:(30000, 5)
+2025-09-16 23:57:31,306 - INFO - handle outlier is activated.......
+2025-09-16 23:57:31,579 - INFO - shapes and data are :
+(120000, 11)
+sample data are:
+       NPA Status_log  RevolvingUtilizationOfUnsecuredLines_log   age_log  ...  NumberOfTime60-89DaysPastDueNotWorse_log  MonthlyIncome_replaced_log  NumberOfDependents_replaced_log
+72946             0.0                                  0.024730  4.127134  ...                                       0.0                    8.455743                         0.000000
+84562             0.0                                  0.065090  4.234107  ...                                       0.0                    8.517393                         0.000000
+49543             0.0                                  0.136984  3.850148  ...                                       0.0                    8.630700                         1.098612
+66650             0.0                                  0.210474  4.262680  ...                                       0.0                    7.363914                         0.000000
+77290             0.0                                  0.154762  3.663562  ...                                       0.0                    8.630700                         1.098612
+
+[5 rows x 11 columns]
+(30000, 11)
+sample data are:
+       NPA Status_log  RevolvingUtilizationOfUnsecuredLines_log   age_log  ...  NumberOfTime60-89DaysPastDueNotWorse_log  MonthlyIncome_replaced_log  NumberOfDependents_replaced_log
+73145             0.0                                  0.569316  3.850148  ...                                       0.0                    8.513988                         1.098612
+98804             0.0                                  0.200798  3.555348  ...                                       0.0                    8.112228                         0.000000
+82574             0.0                                  0.000000  3.951244  ...                                       0.0                    8.816853                         1.386294
+8561              0.0                                  0.001363  4.110874  ...                                       0.0                    8.188967                         0.000000
+14685             0.0                                  0.693147  4.248495  ...                                       0.0                    7.623642                         0.000000
+
+[5 rows x 11 columns]
+2025-09-16 23:57:31,831 - INFO - We have done the trimming and now check the columns: 
+train:
+Index(['NPA Status_log_trim', 'RevolvingUtilizationOfUnsecuredLines_log_trim',
+       'age_log_trim', 'NumberOfTime30-59DaysPastDueNotWorse_log_trim',
+       'DebtRatio_log_trim', 'NumberOfOpenCreditLinesAndLoans_log_trim',
+       'NumberOfTimes90DaysLate_log_trim',
+       'NumberRealEstateLoansOrLines_log_trim',
+       'NumberOfTime60-89DaysPastDueNotWorse_log_trim',
+       'MonthlyIncome_replaced_log_trim',
+       'NumberOfDependents_replaced_log_trim'],
+      dtype='object')
+test:
+Index(['NPA Status_log_trim', 'RevolvingUtilizationOfUnsecuredLines_log_trim',
+       'age_log_trim', 'NumberOfTime30-59DaysPastDueNotWorse_log_trim',
+       'DebtRatio_log_trim', 'NumberOfOpenCreditLinesAndLoans_log_trim',
+       'NumberOfTimes90DaysLate_log_trim',
+       'NumberRealEstateLoansOrLines_log_trim',
+       'NumberOfTime60-89DaysPastDueNotWorse_log_trim',
+       'MonthlyIncome_replaced_log_trim',
+       'NumberOfDependents_replaced_log_trim'],
+      dtype='object')
+2025-09-17 00:06:08,265 - INFO - Loaded data sucessfully with shape of (150002, 18)
+2025-09-17 00:06:08,344 - INFO - Null values in the data set are:NPA Status                                  2
+RevolvingUtilizationOfUnsecuredLines        2
+age                                         2
+Gender                                      2
+Region                                      2
+MonthlyIncome                           29733
+Rented_OwnHouse                             2
+Occupation                                  2
+Education                                   2
+NumberOfTime30-59DaysPastDueNotWorse        2
+DebtRatio                                   2
+MonthlyIncome.1                         29733
+NumberOfOpenCreditLinesAndLoans             2
+NumberOfTimes90DaysLate                     2
+NumberRealEstateLoansOrLines                2
+NumberOfTime60-89DaysPastDueNotWorse        2
+NumberOfDependents                       3924
+Good_Bad                                    2
+dtype: int64
+2025-09-17 00:06:08,455 - INFO - After droping the rows in Good_Bad column ,Null values in the data set are:NPA Status                                  0
+RevolvingUtilizationOfUnsecuredLines        0
+age                                         0
+Gender                                      0
+Region                                      0
+MonthlyIncome                           29731
+Rented_OwnHouse                             0
+Occupation                                  0
+Education                                   0
+NumberOfTime30-59DaysPastDueNotWorse        0
+DebtRatio                                   0
+MonthlyIncome.1                         29731
+NumberOfOpenCreditLinesAndLoans             0
+NumberOfTimes90DaysLate                     0
+NumberRealEstateLoansOrLines                0
+NumberOfTime60-89DaysPastDueNotWorse        0
+NumberOfDependents                       3924
+Good_Bad                                    0
+dtype: int64
+2025-09-17 00:06:08,483 - INFO - Loaded data sucessfully after droping MonthlyIncome.1 column with shape of (150000, 17)
+2025-09-17 00:06:08,487 - INFO - After dividing the data as independent and dependent their shape is (150000, 16) and (150000,)
+2025-09-17 00:06:08,535 - INFO - sample X and y data are 
+       NPA Status  RevolvingUtilizationOfUnsecuredLines   age  ... NumberRealEstateLoansOrLines NumberOfTime60-89DaysPastDueNotWorse  NumberOfDependents
+86120         0.0                              0.257871  75.0  ...                          2.0                                  0.0                 0.0
+91969         0.0                              0.898204  59.0  ...                          1.0                                  2.0                 0.0
+
+[2 rows x 16 columns] 
+ 91314     Good
+148784    Good
+Name: Good_Bad, dtype: object
+2025-09-17 00:06:08,615 - INFO - missing values is activated...............
+2025-09-17 00:06:08,983 - INFO - After using random_sample imputation checking the null values 
+ NPA Status                              0
+RevolvingUtilizationOfUnsecuredLines    0
+age                                     0
+Gender                                  0
+Region                                  0
+Rented_OwnHouse                         0
+Occupation                              0
+Education                               0
+NumberOfTime30-59DaysPastDueNotWorse    0
+DebtRatio                               0
+NumberOfOpenCreditLinesAndLoans         0
+NumberOfTimes90DaysLate                 0
+NumberRealEstateLoansOrLines            0
+NumberOfTime60-89DaysPastDueNotWorse    0
+MonthlyIncome_replaced                  0
+NumberOfDependents_replaced             0
+dtype: int64
+ NPA Status                              0
+RevolvingUtilizationOfUnsecuredLines    0
+age                                     0
+Gender                                  0
+Region                                  0
+Rented_OwnHouse                         0
+Occupation                              0
+Education                               0
+NumberOfTime30-59DaysPastDueNotWorse    0
+DebtRatio                               0
+NumberOfOpenCreditLinesAndLoans         0
+NumberOfTimes90DaysLate                 0
+NumberRealEstateLoansOrLines            0
+NumberOfTime60-89DaysPastDueNotWorse    0
+MonthlyIncome_replaced                  0
+NumberOfDependents_replaced             0
+dtype: int64
+2025-09-17 00:06:09,044 - INFO - We have checked their is no null values in the data set now.
+2025-09-17 00:06:09,060 - INFO - Sucessfully divided the train and test as numeric and category columns:
+ train_num:(120000, 11)
+ train_cat:(30000, 5)
+ test_num:(30000, 11)
+ test_cat:(30000, 5)
+2025-09-17 00:06:09,060 - INFO - handle outlier is activated.......
+2025-09-17 00:06:09,267 - INFO - shapes and data are :
+(120000, 11)
+sample data are:
+       NPA Status_log  RevolvingUtilizationOfUnsecuredLines_log   age_log  ...  NumberOfTime60-89DaysPastDueNotWorse_log  MonthlyIncome_replaced_log  NumberOfDependents_replaced_log
+28937             0.0                                  0.000000  3.891820  ...                                       0.0                    8.527342                         1.098612
+18794             0.0                                  0.345896  4.094345  ...                                       0.0                    9.076923                         0.693147
+32858             0.0                                  0.111437  3.912023  ...                                       0.0                    9.392745                         1.098612
+43482             0.0                                  0.028409  3.433987  ...                                       0.0                    8.429673                         0.000000
+54900             0.0                                  0.115376  3.871201  ...                                       0.0                    0.693147                         1.386294
+
+[5 rows x 11 columns]
+(30000, 11)
+sample data are:
+       NPA Status_log  RevolvingUtilizationOfUnsecuredLines_log   age_log  ...  NumberOfTime60-89DaysPastDueNotWorse_log  MonthlyIncome_replaced_log  NumberOfDependents_replaced_log
+38988             0.0                                  0.137887  3.988984  ...                                       0.0                    8.552367                         0.000000
+37398             0.0                                  0.693147  4.143135  ...                                       0.0                    8.962007                         0.000000
+57435             0.0                                  0.519036  3.610918  ...                                       0.0                    8.006701                         0.693147
+31506             0.0                                  0.037606  3.828641  ...                                       0.0                    8.770129                         1.098612
+66594             0.0                                  0.031749  4.007333  ...                                       0.0                    8.899594                         0.693147
+
+[5 rows x 11 columns]
+2025-09-17 00:06:09,490 - INFO - We have done the trimming and now check the columns: 
+train:
+Index(['NPA Status_log_trim', 'RevolvingUtilizationOfUnsecuredLines_log_trim',
+       'age_log_trim', 'NumberOfTime30-59DaysPastDueNotWorse_log_trim',
+       'DebtRatio_log_trim', 'NumberOfOpenCreditLinesAndLoans_log_trim',
+       'NumberOfTimes90DaysLate_log_trim',
+       'NumberRealEstateLoansOrLines_log_trim',
+       'NumberOfTime60-89DaysPastDueNotWorse_log_trim',
+       'MonthlyIncome_replaced_log_trim',
+       'NumberOfDependents_replaced_log_trim'],
+      dtype='object')
+test:
+Index(['NPA Status_log_trim', 'RevolvingUtilizationOfUnsecuredLines_log_trim',
+       'age_log_trim', 'NumberOfTime30-59DaysPastDueNotWorse_log_trim',
+       'DebtRatio_log_trim', 'NumberOfOpenCreditLinesAndLoans_log_trim',
+       'NumberOfTimes90DaysLate_log_trim',
+       'NumberRealEstateLoansOrLines_log_trim',
+       'NumberOfTime60-89DaysPastDueNotWorse_log_trim',
+       'MonthlyIncome_replaced_log_trim',
+       'NumberOfDependents_replaced_log_trim'],
+      dtype='object')
+2025-09-17 00:10:13,034 - INFO - Loaded data sucessfully with shape of (150002, 18)
+2025-09-17 00:10:13,098 - INFO - Null values in the data set are:NPA Status                                  2
+RevolvingUtilizationOfUnsecuredLines        2
+age                                         2
+Gender                                      2
+Region                                      2
+MonthlyIncome                           29733
+Rented_OwnHouse                             2
+Occupation                                  2
+Education                                   2
+NumberOfTime30-59DaysPastDueNotWorse        2
+DebtRatio                                   2
+MonthlyIncome.1                         29733
+NumberOfOpenCreditLinesAndLoans             2
+NumberOfTimes90DaysLate                     2
+NumberRealEstateLoansOrLines                2
+NumberOfTime60-89DaysPastDueNotWorse        2
+NumberOfDependents                       3924
+Good_Bad                                    2
+dtype: int64
+2025-09-17 00:10:13,209 - INFO - After droping the rows in Good_Bad column ,Null values in the data set are:NPA Status                                  0
+RevolvingUtilizationOfUnsecuredLines        0
+age                                         0
+Gender                                      0
+Region                                      0
+MonthlyIncome                           29731
+Rented_OwnHouse                             0
+Occupation                                  0
+Education                                   0
+NumberOfTime30-59DaysPastDueNotWorse        0
+DebtRatio                                   0
+MonthlyIncome.1                         29731
+NumberOfOpenCreditLinesAndLoans             0
+NumberOfTimes90DaysLate                     0
+NumberRealEstateLoansOrLines                0
+NumberOfTime60-89DaysPastDueNotWorse        0
+NumberOfDependents                       3924
+Good_Bad                                    0
+dtype: int64
+2025-09-17 00:10:13,241 - INFO - Loaded data sucessfully after droping MonthlyIncome.1 column with shape of (150000, 17)
+2025-09-17 00:10:13,257 - INFO - After dividing the data as independent and dependent their shape is (150000, 16) and (150000,)
+2025-09-17 00:10:13,304 - INFO - sample X and y data are 
+       NPA Status  RevolvingUtilizationOfUnsecuredLines   age  ... NumberRealEstateLoansOrLines NumberOfTime60-89DaysPastDueNotWorse  NumberOfDependents
+36655         0.0                              0.000000  72.0  ...                          0.0                                  0.0                 0.0
+6524          0.0                              0.002069  55.0  ...                          1.0                                  0.0                 1.0
+
+[2 rows x 16 columns] 
+ 144257    Good
+88256     Good
+Name: Good_Bad, dtype: object
+2025-09-17 00:10:13,384 - INFO - missing values is activated...............
+2025-09-17 00:10:13,780 - INFO - After using random_sample imputation checking the null values 
+ NPA Status                              0
+RevolvingUtilizationOfUnsecuredLines    0
+age                                     0
+Gender                                  0
+Region                                  0
+Rented_OwnHouse                         0
+Occupation                              0
+Education                               0
+NumberOfTime30-59DaysPastDueNotWorse    0
+DebtRatio                               0
+NumberOfOpenCreditLinesAndLoans         0
+NumberOfTimes90DaysLate                 0
+NumberRealEstateLoansOrLines            0
+NumberOfTime60-89DaysPastDueNotWorse    0
+MonthlyIncome_replaced                  0
+NumberOfDependents_replaced             0
+dtype: int64
+ NPA Status                              0
+RevolvingUtilizationOfUnsecuredLines    0
+age                                     0
+Gender                                  0
+Region                                  0
+Rented_OwnHouse                         0
+Occupation                              0
+Education                               0
+NumberOfTime30-59DaysPastDueNotWorse    0
+DebtRatio                               0
+NumberOfOpenCreditLinesAndLoans         0
+NumberOfTimes90DaysLate                 0
+NumberRealEstateLoansOrLines            0
+NumberOfTime60-89DaysPastDueNotWorse    0
+MonthlyIncome_replaced                  0
+NumberOfDependents_replaced             0
+dtype: int64
+2025-09-17 00:10:13,831 - INFO - We have checked their is no null values in the data set now.
+2025-09-17 00:10:13,855 - INFO - Sucessfully divided the train and test as numeric and category columns:
+ train_num:(120000, 11)
+ train_cat:(30000, 5)
+ test_num:(30000, 11)
+ test_cat:(30000, 5)
+2025-09-17 00:10:13,855 - INFO - handle outlier is activated.......
+2025-09-17 00:10:14,063 - INFO - shapes and data are :
+(120000, 11)
+sample data are:
+        NPA Status_log  RevolvingUtilizationOfUnsecuredLines_log   age_log  ...  NumberOfTime60-89DaysPastDueNotWorse_log  MonthlyIncome_replaced_log  NumberOfDependents_replaced_log
+135103             0.0                                  0.445910  3.931826  ...                                       0.0                    9.680406                         1.098612
+819                0.0                                  0.181301  4.430817  ...                                       0.0                    7.937732                         0.000000
+2840               0.0                                  0.436406  3.912023  ...                                       0.0                    9.581973                         1.386294
+126681             0.0                                  0.036293  4.143135  ...                                       0.0                    7.743703                         0.000000
+53702              0.0                                  0.168720  3.850148  ...                                       0.0                    7.937732                         1.098612
+
+[5 rows x 11 columns]
+(30000, 11)
+sample data are:
+       NPA Status_log  RevolvingUtilizationOfUnsecuredLines_log   age_log  ...  NumberOfTime60-89DaysPastDueNotWorse_log  MonthlyIncome_replaced_log  NumberOfDependents_replaced_log
+56519        0.000000                                  0.018325  4.304065  ...                                  0.000000                    8.101981                         0.000000
+16103        0.693147                                  0.704580  3.610918  ...                                  1.098612                    8.039480                         0.693147
+75565        0.000000                                  0.019693  4.382027  ...                                  0.000000                    7.955425                         0.000000
+74390        0.000000                                  0.028910  3.610918  ...                                  0.000000                    8.732466                         0.000000
+60485        0.000000                                  0.693147  3.988984  ...                                  0.000000                    9.320002                         0.000000
+
+[5 rows x 11 columns]
+2025-09-17 00:10:14,279 - INFO - We have done the trimming and now check the columns: 
+train:
+Index(['NPA Status_log_trim', 'RevolvingUtilizationOfUnsecuredLines_log_trim',
+       'age_log_trim', 'NumberOfTime30-59DaysPastDueNotWorse_log_trim',
+       'DebtRatio_log_trim', 'NumberOfOpenCreditLinesAndLoans_log_trim',
+       'NumberOfTimes90DaysLate_log_trim',
+       'NumberRealEstateLoansOrLines_log_trim',
+       'NumberOfTime60-89DaysPastDueNotWorse_log_trim',
+       'MonthlyIncome_replaced_log_trim',
+       'NumberOfDependents_replaced_log_trim'],
+      dtype='object')
+test:
+Index(['NPA Status_log_trim', 'RevolvingUtilizationOfUnsecuredLines_log_trim',
+       'age_log_trim', 'NumberOfTime30-59DaysPastDueNotWorse_log_trim',
+       'DebtRatio_log_trim', 'NumberOfOpenCreditLinesAndLoans_log_trim',
+       'NumberOfTimes90DaysLate_log_trim',
+       'NumberRealEstateLoansOrLines_log_trim',
+       'NumberOfTime60-89DaysPastDueNotWorse_log_trim',
+       'MonthlyIncome_replaced_log_trim',
+       'NumberOfDependents_replaced_log_trim'],
+      dtype='object')
+2025-09-17 00:12:49,051 - INFO - Loaded data sucessfully with shape of (150002, 18)
+2025-09-17 00:12:49,125 - INFO - Null values in the data set are:NPA Status                                  2
+RevolvingUtilizationOfUnsecuredLines        2
+age                                         2
+Gender                                      2
+Region                                      2
+MonthlyIncome                           29733
+Rented_OwnHouse                             2
+Occupation                                  2
+Education                                   2
+NumberOfTime30-59DaysPastDueNotWorse        2
+DebtRatio                                   2
+MonthlyIncome.1                         29733
+NumberOfOpenCreditLinesAndLoans             2
+NumberOfTimes90DaysLate                     2
+NumberRealEstateLoansOrLines                2
+NumberOfTime60-89DaysPastDueNotWorse        2
+NumberOfDependents                       3924
+Good_Bad                                    2
+dtype: int64
+2025-09-17 00:12:49,238 - INFO - After droping the rows in Good_Bad column ,Null values in the data set are:NPA Status                                  0
+RevolvingUtilizationOfUnsecuredLines        0
+age                                         0
+Gender                                      0
+Region                                      0
+MonthlyIncome                           29731
+Rented_OwnHouse                             0
+Occupation                                  0
+Education                                   0
+NumberOfTime30-59DaysPastDueNotWorse        0
+DebtRatio                                   0
+MonthlyIncome.1                         29731
+NumberOfOpenCreditLinesAndLoans             0
+NumberOfTimes90DaysLate                     0
+NumberRealEstateLoansOrLines                0
+NumberOfTime60-89DaysPastDueNotWorse        0
+NumberOfDependents                       3924
+Good_Bad                                    0
+dtype: int64
+2025-09-17 00:12:49,266 - INFO - Loaded data sucessfully after droping MonthlyIncome.1 column with shape of (150000, 17)
+2025-09-17 00:12:49,279 - INFO - After dividing the data as independent and dependent their shape is (150000, 16) and (150000,)
+2025-09-17 00:12:49,332 - INFO - sample X and y data are 
+        NPA Status  RevolvingUtilizationOfUnsecuredLines   age  ... NumberRealEstateLoansOrLines NumberOfTime60-89DaysPastDueNotWorse  NumberOfDependents
+126059         0.0                              0.010758  80.0  ...                          0.0                                  0.0                 0.0
+116757         0.0                              0.984403  49.0  ...                          1.0                                  0.0                 1.0
+
+[2 rows x 16 columns] 
+ 120819    Good
+61909     Good
+Name: Good_Bad, dtype: object
+2025-09-17 00:12:49,418 - INFO - missing values is activated...............
+2025-09-17 00:12:49,813 - INFO - After using random_sample imputation checking the null values 
+ NPA Status                              0
+RevolvingUtilizationOfUnsecuredLines    0
+age                                     0
+Gender                                  0
+Region                                  0
+Rented_OwnHouse                         0
+Occupation                              0
+Education                               0
+NumberOfTime30-59DaysPastDueNotWorse    0
+DebtRatio                               0
+NumberOfOpenCreditLinesAndLoans         0
+NumberOfTimes90DaysLate                 0
+NumberRealEstateLoansOrLines            0
+NumberOfTime60-89DaysPastDueNotWorse    0
+MonthlyIncome_replaced                  0
+NumberOfDependents_replaced             0
+dtype: int64
+ NPA Status                              0
+RevolvingUtilizationOfUnsecuredLines    0
+age                                     0
+Gender                                  0
+Region                                  0
+Rented_OwnHouse                         0
+Occupation                              0
+Education                               0
+NumberOfTime30-59DaysPastDueNotWorse    0
+DebtRatio                               0
+NumberOfOpenCreditLinesAndLoans         0
+NumberOfTimes90DaysLate                 0
+NumberRealEstateLoansOrLines            0
+NumberOfTime60-89DaysPastDueNotWorse    0
+MonthlyIncome_replaced                  0
+NumberOfDependents_replaced             0
+dtype: int64
+2025-09-17 00:12:49,869 - INFO - We have checked their is no null values in the data set now.
+2025-09-17 00:12:49,881 - INFO - Sucessfully divided the train and test as numeric and category columns:
+ train_num:(120000, 11)
+ train_cat:(30000, 5)
+ test_num:(30000, 11)
+ test_cat:(30000, 5)
+2025-09-17 00:12:49,881 - INFO - handle outlier is activated.......
+2025-09-17 00:12:50,101 - INFO - shapes and data are :
+(120000, 11)
+sample data are:
+        NPA Status_log  RevolvingUtilizationOfUnsecuredLines_log   age_log  ...  NumberOfTime60-89DaysPastDueNotWorse_log  MonthlyIncome_replaced_log  NumberOfDependents_replaced_log
+32979              0.0                                  0.115486  4.204693  ...                                       0.0                    8.294300                         0.000000
+27569              0.0                                  0.143888  3.433987  ...                                       0.0                    8.131825                         0.000000
+11183              0.0                                  0.113981  4.234107  ...                                       0.0                    8.964184                         0.000000
+143893             0.0                                  0.001928  4.343805  ...                                       0.0                    8.160232                         0.000000
+40633              0.0                                  0.463607  3.850148  ...                                       0.0                    9.239996                         0.693147
+
+[5 rows x 11 columns]
+(30000, 11)
+sample data are:
+        NPA Status_log  RevolvingUtilizationOfUnsecuredLines_log   age_log  ...  NumberOfTime60-89DaysPastDueNotWorse_log  MonthlyIncome_replaced_log  NumberOfDependents_replaced_log
+129195        0.000000                                  0.482081  3.912023  ...                                  0.000000                    9.210940                         1.386294
+29041         0.693147                                  0.685344  3.931826  ...                                  1.098612                    9.185023                         1.386294
+19020         0.000000                                  0.235263  3.465736  ...                                  0.000000                    8.517393                         1.386294
+2722          0.000000                                  0.069150  4.488636  ...                                  0.000000                    8.764210                         0.693147
+101037        0.000000                                  0.014645  3.806662  ...                                  0.000000                    8.412055                         0.693147
+
+[5 rows x 11 columns]
+2025-09-17 00:12:50,362 - INFO - We have done the trimming and now check the columns: 
+train:
+Index(['NPA Status_log_trim', 'RevolvingUtilizationOfUnsecuredLines_log_trim',
+       'age_log_trim', 'NumberOfTime30-59DaysPastDueNotWorse_log_trim',
+       'DebtRatio_log_trim', 'NumberOfOpenCreditLinesAndLoans_log_trim',
+       'NumberOfTimes90DaysLate_log_trim',
+       'NumberRealEstateLoansOrLines_log_trim',
+       'NumberOfTime60-89DaysPastDueNotWorse_log_trim',
+       'MonthlyIncome_replaced_log_trim',
+       'NumberOfDependents_replaced_log_trim'],
+      dtype='object')
+test:
+Index(['NPA Status_log_trim', 'RevolvingUtilizationOfUnsecuredLines_log_trim',
+       'age_log_trim', 'NumberOfTime30-59DaysPastDueNotWorse_log_trim',
+       'DebtRatio_log_trim', 'NumberOfOpenCreditLinesAndLoans_log_trim',
+       'NumberOfTimes90DaysLate_log_trim',
+       'NumberRealEstateLoansOrLines_log_trim',
+       'NumberOfTime60-89DaysPastDueNotWorse_log_trim',
+       'MonthlyIncome_replaced_log_trim',
+       'NumberOfDependents_replaced_log_trim'],
+      dtype='object')
+2025-09-17 08:29:53,658 - INFO - Loaded data sucessfully with shape of (150002, 18)
+2025-09-17 08:29:53,700 - INFO - Null values in the data set are:NPA Status                                  2
+RevolvingUtilizationOfUnsecuredLines        2
+age                                         2
+Gender                                      2
+Region                                      2
+MonthlyIncome                           29733
+Rented_OwnHouse                             2
+Occupation                                  2
+Education                                   2
+NumberOfTime30-59DaysPastDueNotWorse        2
+DebtRatio                                   2
+MonthlyIncome.1                         29733
+NumberOfOpenCreditLinesAndLoans             2
+NumberOfTimes90DaysLate                     2
+NumberRealEstateLoansOrLines                2
+NumberOfTime60-89DaysPastDueNotWorse        2
+NumberOfDependents                       3924
+Good_Bad                                    2
+dtype: int64
+2025-09-17 08:29:53,767 - INFO - After droping the rows in Good_Bad column ,Null values in the data set are:NPA Status                                  0
+RevolvingUtilizationOfUnsecuredLines        0
+age                                         0
+Gender                                      0
+Region                                      0
+MonthlyIncome                           29731
+Rented_OwnHouse                             0
+Occupation                                  0
+Education                                   0
+NumberOfTime30-59DaysPastDueNotWorse        0
+DebtRatio                                   0
+MonthlyIncome.1                         29731
+NumberOfOpenCreditLinesAndLoans             0
+NumberOfTimes90DaysLate                     0
+NumberRealEstateLoansOrLines                0
+NumberOfTime60-89DaysPastDueNotWorse        0
+NumberOfDependents                       3924
+Good_Bad                                    0
+dtype: int64
+2025-09-17 08:29:53,793 - INFO - Loaded data sucessfully after droping MonthlyIncome.1 column with shape of (150000, 17)
+2025-09-17 08:29:53,808 - INFO - After dividing the data as independent and dependent their shape is (150000, 16) and (150000,)
+2025-09-17 08:29:53,840 - INFO - sample X and y data are 
+       NPA Status  RevolvingUtilizationOfUnsecuredLines   age  ... NumberRealEstateLoansOrLines NumberOfTime60-89DaysPastDueNotWorse  NumberOfDependents
+22523         0.0                              0.063768  48.0  ...                          0.0                                  0.0                 NaN
+31888         0.0                              0.100920  55.0  ...                          2.0                                  0.0                 2.0
+
+[2 rows x 16 columns] 
+ 40231    Good
+55629    Good
+Name: Good_Bad, dtype: object
+2025-09-17 08:29:53,908 - INFO - missing values is activated...............
+2025-09-17 08:29:54,169 - INFO - After using random_sample imputation checking the null values 
+ NPA Status                              0
+RevolvingUtilizationOfUnsecuredLines    0
+age                                     0
+Gender                                  0
+Region                                  0
+Rented_OwnHouse                         0
+Occupation                              0
+Education                               0
+NumberOfTime30-59DaysPastDueNotWorse    0
+DebtRatio                               0
+NumberOfOpenCreditLinesAndLoans         0
+NumberOfTimes90DaysLate                 0
+NumberRealEstateLoansOrLines            0
+NumberOfTime60-89DaysPastDueNotWorse    0
+MonthlyIncome_replaced                  0
+NumberOfDependents_replaced             0
+dtype: int64
+ NPA Status                              0
+RevolvingUtilizationOfUnsecuredLines    0
+age                                     0
+Gender                                  0
+Region                                  0
+Rented_OwnHouse                         0
+Occupation                              0
+Education                               0
+NumberOfTime30-59DaysPastDueNotWorse    0
+DebtRatio                               0
+NumberOfOpenCreditLinesAndLoans         0
+NumberOfTimes90DaysLate                 0
+NumberRealEstateLoansOrLines            0
+NumberOfTime60-89DaysPastDueNotWorse    0
+MonthlyIncome_replaced                  0
+NumberOfDependents_replaced             0
+dtype: int64
+2025-09-17 08:29:54,197 - INFO - We have checked their is no null values in the data set now.
+2025-09-17 08:29:54,216 - INFO - Sucessfully divided the train and test as numeric and category columns:
+ train_num:(120000, 11)
+ train_cat:(30000, 5)
+ test_num:(30000, 11)
+ test_cat:(30000, 5)
+2025-09-17 08:29:54,216 - INFO - handle outlier is activated.......
+2025-09-17 08:29:54,350 - INFO - shapes and data are :
+(120000, 11)
+sample data are:
+        NPA Status_log  RevolvingUtilizationOfUnsecuredLines_log   age_log  ...  NumberOfTime60-89DaysPastDueNotWorse_log  MonthlyIncome_replaced_log  NumberOfDependents_replaced_log
+117523             0.0                                  0.026585  4.143135  ...                                  0.000000                    9.259226                              0.0
+80430              0.0                                  0.520754  4.219508  ...                                  0.000000                    8.748464                              0.0
+109345             0.0                                  0.068147  3.806662  ...                                  0.000000                    8.612685                              0.0
+1579               0.0                                  0.693147  3.433987  ...                                  0.693147                    8.412055                              0.0
+99196              0.0                                  0.063994  3.761200  ...                                  0.000000                    8.146130                              0.0
+
+[5 rows x 11 columns]
+(30000, 11)
+sample data are:
+        NPA Status_log  RevolvingUtilizationOfUnsecuredLines_log   age_log  ...  NumberOfTime60-89DaysPastDueNotWorse_log  MonthlyIncome_replaced_log  NumberOfDependents_replaced_log
+92525              0.0                                  0.205041  3.713572  ...                                       0.0                    8.686430                         0.000000
+23083              0.0                                  0.176620  3.433987  ...                                       0.0                    0.693147                         1.098612
+20814              0.0                                  0.641245  3.951244  ...                                       0.0                    9.114270                         0.000000
+34978              0.0                                  0.164766  4.418841  ...                                       0.0                    8.922792                         0.000000
+103895             0.0                                  0.017714  4.234107  ...                                       0.0                    9.012011                         0.000000
+
+[5 rows x 11 columns]
+2025-09-17 08:29:54,571 - INFO - We have done the trimming and now check the columns: 
+train:
+Index(['NPA Status_log_trim', 'RevolvingUtilizationOfUnsecuredLines_log_trim',
+       'age_log_trim', 'NumberOfTime30-59DaysPastDueNotWorse_log_trim',
+       'DebtRatio_log_trim', 'NumberOfOpenCreditLinesAndLoans_log_trim',
+       'NumberOfTimes90DaysLate_log_trim',
+       'NumberRealEstateLoansOrLines_log_trim',
+       'NumberOfTime60-89DaysPastDueNotWorse_log_trim',
+       'MonthlyIncome_replaced_log_trim',
+       'NumberOfDependents_replaced_log_trim'],
+      dtype='object')
+test:
+Index(['NPA Status_log_trim', 'RevolvingUtilizationOfUnsecuredLines_log_trim',
+       'age_log_trim', 'NumberOfTime30-59DaysPastDueNotWorse_log_trim',
+       'DebtRatio_log_trim', 'NumberOfOpenCreditLinesAndLoans_log_trim',
+       'NumberOfTimes90DaysLate_log_trim',
+       'NumberRealEstateLoansOrLines_log_trim',
+       'NumberOfTime60-89DaysPastDueNotWorse_log_trim',
+       'MonthlyIncome_replaced_log_trim',
+       'NumberOfDependents_replaced_log_trim'],
+      dtype='object')
