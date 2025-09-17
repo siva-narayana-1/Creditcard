@@ -12,7 +12,7 @@ from sklearn.preprocessing import OneHotEncoder,OrdinalEncoder
 from constant import Constant_selection
 from hypothesis import Hypothesis_testing
 from loggers import Logs
-logger = Logs.get_logger("manin")
+logger = Logs.get_logger("main")
 import warnings
 warnings.filterwarnings('ignore')
 class Creaditcard:
