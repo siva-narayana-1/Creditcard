@@ -22,5 +22,3 @@ class Logger:
 =======
             print(f"{exc_type} at {exc_line.tb_lineno} as {exc_msg}")
 
-
->>>>>>> b1bbf0c870a1d8ca10d3460eb94dab38a20b0b6a
