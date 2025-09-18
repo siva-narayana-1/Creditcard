@@ -1,0 +1,2447 @@
+2025-09-18 14:57:37,839 - INFO - Encoding has started....
+2025-09-18 14:57:37,841 - INFO - Columns in the x_ train are : Index(['Gender', 'Region'], dtype='object')
+2025-09-18 14:57:37,856 - INFO - Sample data are :         Gender   Region
+104025  Female     West
+5415      Male    South
+75612   Female  Central
+138169    Male     West
+87184   Female  Central
+...        ...      ...
+119879    Male     West
+103694    Male     West
+131932    Male     East
+146867    Male    South
+121958  Female     East
+
+[120000 rows x 2 columns]
+2025-09-18 15:04:00,043 - INFO - Encoding has started....
+2025-09-18 15:04:00,043 - INFO - Columns in the x_ train are : Index(['Gender', 'Region'], dtype='object')
+2025-09-18 15:04:00,050 - INFO - Sample data are :         Gender   Region
+104025  Female     West
+5415      Male    South
+75612   Female  Central
+138169    Male     West
+87184   Female  Central
+...        ...      ...
+119879    Male     West
+103694    Male     West
+131932    Male     East
+146867    Male    South
+121958  Female     East
+
+[120000 rows x 2 columns]
+2025-09-18 15:04:00,050 - INFO - [array(['Female', 'Male'], dtype=object), array(['Central', 'East', 'North', 'South', 'West'], dtype=object)]
+2025-09-18 15:04:00,050 - INFO - ['Gender_Male' 'Region_East' 'Region_North' 'Region_South' 'Region_West']
+2025-09-18 15:32:12,957 - INFO - Encoding has started....
+2025-09-18 15:32:12,973 - INFO - Columns in the x_ train are : Index(['Gender', 'Region'], dtype='object')
+2025-09-18 15:32:12,973 - INFO - Sample data are :         Gender   Region
+104025  Female     West
+5415      Male    South
+75612   Female  Central
+138169    Male     West
+87184   Female  Central
+...        ...      ...
+119879    Male     West
+103694    Male     West
+131932    Male     East
+146867    Male    South
+121958  Female     East
+
+[120000 rows x 2 columns]
+2025-09-18 15:32:12,973 - INFO - [array(['Female', 'Male'], dtype=object), array(['Central', 'East', 'North', 'South', 'West'], dtype=object)]
+2025-09-18 15:32:12,973 - INFO - ['Gender_Male' 'Region_East' 'Region_North' 'Region_South' 'Region_West']
+2025-09-18 15:32:13,054 - INFO - Sample data after Onehotencoder is :        Gender_Male  Region_East  Region_North  Region_South  Region_West
+0               0.0          0.0           0.0           0.0          1.0
+1               1.0          0.0           0.0           1.0          0.0
+2               0.0          0.0           0.0           0.0          0.0
+3               1.0          0.0           0.0           0.0          1.0
+4               0.0          0.0           0.0           0.0          0.0
+...             ...          ...           ...           ...          ...
+119995          1.0          0.0           0.0           0.0          1.0
+119996          1.0          0.0           0.0           0.0          1.0
+119997          1.0          1.0           0.0           0.0          0.0
+119998          1.0          0.0           0.0           1.0          0.0
+119999          0.0          1.0           0.0           0.0          0.0
+
+[120000 rows x 5 columns]
+2025-09-18 15:32:28,576 - INFO - Encoding has started....
+2025-09-18 15:32:28,576 - INFO - Columns in the x_ train are : Index(['Gender', 'Region'], dtype='object')
+2025-09-18 15:32:28,591 - INFO - Sample data are :         Gender   Region
+104025  Female     West
+5415      Male    South
+75612   Female  Central
+138169    Male     West
+87184   Female  Central
+...        ...      ...
+119879    Male     West
+103694    Male     West
+131932    Male     East
+146867    Male    South
+121958  Female     East
+
+[120000 rows x 2 columns]
+2025-09-18 15:32:28,591 - INFO - [array(['Female', 'Male'], dtype=object), array(['Central', 'East', 'North', 'South', 'West'], dtype=object)]
+2025-09-18 15:32:28,591 - INFO - ['Gender_Male' 'Region_East' 'Region_North' 'Region_South' 'Region_West']
+2025-09-18 15:32:28,673 - INFO - Sample data after Onehotencoder is :        Gender_Male  Region_East  Region_North  Region_South  Region_West
+0               0.0          0.0           0.0           0.0          1.0
+1               1.0          0.0           0.0           1.0          0.0
+2               0.0          0.0           0.0           0.0          0.0
+3               1.0          0.0           0.0           0.0          1.0
+4               0.0          0.0           0.0           0.0          0.0
+...             ...          ...           ...           ...          ...
+119995          1.0          0.0           0.0           0.0          1.0
+119996          1.0          0.0           0.0           0.0          1.0
+119997          1.0          1.0           0.0           0.0          0.0
+119998          1.0          0.0           0.0           1.0          0.0
+119999          0.0          1.0           0.0           0.0          0.0
+
+[120000 rows x 5 columns]
+2025-09-18 15:33:04,134 - INFO - Encoding has started....
+2025-09-18 15:33:04,134 - INFO - Columns in the x_ train are : Index(['Gender', 'Region'], dtype='object')
+2025-09-18 15:33:04,149 - INFO - Sample data are :         Gender   Region
+104025  Female     West
+5415      Male    South
+75612   Female  Central
+138169    Male     West
+87184   Female  Central
+...        ...      ...
+119879    Male     West
+103694    Male     West
+131932    Male     East
+146867    Male    South
+121958  Female     East
+
+[120000 rows x 2 columns]
+2025-09-18 15:33:04,149 - INFO - [array(['Female', 'Male'], dtype=object), array(['Central', 'East', 'North', 'South', 'West'], dtype=object)]
+2025-09-18 15:33:04,149 - INFO - ['Gender_Male' 'Region_East' 'Region_North' 'Region_South' 'Region_West']
+2025-09-18 15:33:04,231 - INFO - Sample data after Onehotencoder is :        Gender_Male  Region_East  Region_North  Region_South  Region_West
+74262           1.0          0.0           1.0           0.0          0.0
+14344           1.0          0.0           0.0           0.0          1.0
+69375           1.0          0.0           0.0           1.0          0.0
+67825           1.0          0.0           1.0           0.0          0.0
+117596          1.0          0.0           0.0           0.0          0.0
+34908           1.0          0.0           0.0           0.0          0.0
+50341           1.0          0.0           0.0           0.0          0.0
+2025-09-18 15:33:31,915 - INFO - Encoding has started....
+2025-09-18 15:33:31,915 - INFO - Columns in the x_ train are : Index(['Gender', 'Region'], dtype='object')
+2025-09-18 15:33:31,936 - INFO - Sample data are :         Gender   Region
+104025  Female     West
+5415      Male    South
+75612   Female  Central
+138169    Male     West
+87184   Female  Central
+...        ...      ...
+119879    Male     West
+103694    Male     West
+131932    Male     East
+146867    Male    South
+121958  Female     East
+
+[120000 rows x 2 columns]
+2025-09-18 15:33:31,936 - INFO - [array(['Female', 'Male'], dtype=object), array(['Central', 'East', 'North', 'South', 'West'], dtype=object)]
+2025-09-18 15:33:31,936 - INFO - ['Gender_Male' 'Region_East' 'Region_North' 'Region_South' 'Region_West']
+2025-09-18 15:33:32,013 - INFO - Sample data after Onehotencoder is :        Gender_Male  Region_East  Region_North  Region_South  Region_West
+35338           1.0          0.0           0.0           0.0          1.0
+113815          1.0          0.0           1.0           0.0          0.0
+89046           0.0          0.0           1.0           0.0          0.0
+89805           1.0          0.0           0.0           0.0          1.0
+41619           1.0          0.0           0.0           1.0          0.0
+62174           0.0          0.0           1.0           0.0          0.0
+65512           1.0          0.0           1.0           0.0          0.0
+2025-09-18 15:33:57,609 - INFO - Encoding has started....
+2025-09-18 15:33:57,609 - INFO - Columns in the x_ train are : Index(['Gender', 'Region'], dtype='object')
+2025-09-18 15:33:57,615 - INFO - Sample data are :         Gender   Region
+104025  Female     West
+5415      Male    South
+75612   Female  Central
+138169    Male     West
+87184   Female  Central
+...        ...      ...
+119879    Male     West
+103694    Male     West
+131932    Male     East
+146867    Male    South
+121958  Female     East
+
+[120000 rows x 2 columns]
+2025-09-18 15:33:57,622 - INFO - [array(['Female', 'Male'], dtype=object), array(['Central', 'East', 'North', 'South', 'West'], dtype=object)]
+2025-09-18 15:33:57,622 - INFO - ['Gender_Male' 'Region_East' 'Region_North' 'Region_South' 'Region_West']
+2025-09-18 15:33:57,699 - INFO - Sample data after Onehotencoder is :
+       Gender_Male  Region_East  Region_North  Region_South  Region_West
+12549          1.0          0.0           0.0           1.0          0.0
+19742          1.0          0.0           0.0           0.0          1.0
+80845          1.0          0.0           0.0           0.0          1.0
+63573          1.0          0.0           0.0           0.0          1.0
+37447          0.0          0.0           0.0           1.0          0.0
+34659          1.0          0.0           0.0           0.0          0.0
+61959          0.0          1.0           0.0           0.0          0.0
+2025-09-18 15:39:00,095 - INFO - Encoding has started....
+2025-09-18 15:39:00,095 - INFO - ------------------Onehot Encoder----------------------
+2025-09-18 15:39:00,095 - INFO - Columns in the x_ train are : Index(['Gender', 'Region'], dtype='object')
+2025-09-18 15:39:00,108 - INFO - Sample data are :         Gender   Region
+104025  Female     West
+5415      Male    South
+75612   Female  Central
+138169    Male     West
+87184   Female  Central
+...        ...      ...
+119879    Male     West
+103694    Male     West
+131932    Male     East
+146867    Male    South
+121958  Female     East
+
+[120000 rows x 2 columns]
+2025-09-18 15:39:00,114 - INFO - [array(['Female', 'Male'], dtype=object), array(['Central', 'East', 'North', 'South', 'West'], dtype=object)]
+2025-09-18 15:39:00,114 - INFO - ['Gender_Male' 'Region_East' 'Region_North' 'Region_South' 'Region_West']
+2025-09-18 15:39:00,184 - INFO - Sample data after Onehotencoder is :
+       Gender_Male  Region_East  Region_North  Region_South  Region_West
+74734          1.0          0.0           0.0           0.0          1.0
+25687          0.0          0.0           0.0           1.0          0.0
+86226          0.0          1.0           0.0           0.0          0.0
+69356          1.0          0.0           0.0           1.0          0.0
+50934          0.0          0.0           0.0           0.0          0.0
+54417          0.0          0.0           0.0           0.0          0.0
+65694          0.0          0.0           0.0           0.0          0.0
+2025-09-18 15:39:00,184 - INFO - ------------------Ordinal Encoder-----------------------
+2025-09-18 15:39:00,184 - INFO - Columns in the x_ train are : Index(['Rented_OwnHouse', 'Occupation', 'Education'], dtype='object')
+2025-09-18 15:39:00,193 - INFO - Sample data are :        Rented_OwnHouse   Occupation     Education
+104025        Ownhouse     Self_Emp      Graduate
+5415          Ownhouse     Self_Emp        Matric
+75612           Rented  Non-officer  Professional
+138169        Ownhouse  Non-officer  Professional
+87184         Ownhouse  Non-officer      Graduate
+...                ...          ...           ...
+119879        Ownhouse     Self_Emp      Graduate
+103694        Ownhouse     Self_Emp           PhD
+131932          Rented     Officer1  Professional
+146867          Rented     Self_Emp  Professional
+121958          Rented     Self_Emp     Post-Grad
+
+[120000 rows x 3 columns]
+2025-09-18 15:39:00,206 - INFO - [array(['Ownhouse', 'Rented'], dtype=object), array(['Non-officer', 'Officer1', 'Officer2', 'Officer3', 'Self_Emp'],
+      dtype=object), array(['Graduate', 'Matric', 'PhD', 'Post-Grad', 'Professional'],
+      dtype=object)]
+2025-09-18 15:39:00,206 - INFO - ['Rented_OwnHouse_Ownhouse' 'Rented_OwnHouse_Rented'
+ 'Occupation_Non-officer' 'Occupation_Officer1' 'Occupation_Officer2'
+ 'Occupation_Officer3' 'Occupation_Self_Emp' 'Education_Graduate'
+ 'Education_Matric' 'Education_PhD' 'Education_Post-Grad'
+ 'Education_Professional']
+2025-09-18 15:39:00,299 - INFO - Sample data after Onehotencoder is :
+        Rented_OwnHouse_Ownhouse  Rented_OwnHouse_Rented  Occupation_Non-officer  ...  Education_PhD  Education_Post-Grad  Education_Professional
+34572                        0.0                     1.0                     1.0  ...            0.0                  0.0                     1.0
+108813                       0.0                     1.0                     1.0  ...            0.0                  0.0                     0.0
+31632                        1.0                     0.0                     0.0  ...            0.0                  0.0                     0.0
+60815                        0.0                     1.0                     1.0  ...            0.0                  0.0                     0.0
+50316                        1.0                     0.0                     0.0  ...            0.0                  0.0                     1.0
+83701                        0.0                     1.0                     0.0  ...            0.0                  0.0                     0.0
+101585                       1.0                     0.0                     0.0  ...            0.0                  0.0                     1.0
+
+[7 rows x 12 columns]
+2025-09-18 15:42:21,900 - INFO - Encoding has started....
+2025-09-18 15:42:21,900 - INFO - ------------------Onehot Encoder----------------------
+2025-09-18 15:42:21,900 - INFO - Columns in the x_ train are : Index(['Gender', 'Region'], dtype='object')
+2025-09-18 15:42:21,906 - INFO - Sample data are :         Gender   Region
+104025  Female     West
+5415      Male    South
+75612   Female  Central
+138169    Male     West
+87184   Female  Central
+...        ...      ...
+119879    Male     West
+103694    Male     West
+131932    Male     East
+146867    Male    South
+121958  Female     East
+
+[120000 rows x 2 columns]
+2025-09-18 15:42:21,912 - INFO - [array(['Female', 'Male'], dtype=object), array(['Central', 'East', 'North', 'South', 'West'], dtype=object)]
+2025-09-18 15:42:21,912 - INFO - ['Gender_Male' 'Region_East' 'Region_North' 'Region_South' 'Region_West']
+2025-09-18 15:42:21,990 - INFO - Sample data after Onehotencoder is :
+       Gender_Male  Region_East  Region_North  Region_South  Region_West
+53097          1.0          0.0           0.0           1.0          0.0
+34268          1.0          1.0           0.0           0.0          0.0
+28698          1.0          0.0           1.0           0.0          0.0
+99084          1.0          1.0           0.0           0.0          0.0
+10669          1.0          0.0           0.0           1.0          0.0
+81568          1.0          0.0           0.0           0.0          1.0
+21072          1.0          0.0           0.0           0.0          0.0
+2025-09-18 15:42:21,990 - INFO - ------------------Ordinal Encoder-----------------------
+2025-09-18 15:42:21,990 - INFO - Columns in the x_ train are : Index(['Rented_OwnHouse', 'Occupation', 'Education'], dtype='object')
+2025-09-18 15:42:21,996 - INFO - Sample data are :        Rented_OwnHouse   Occupation     Education
+104025        Ownhouse     Self_Emp      Graduate
+5415          Ownhouse     Self_Emp        Matric
+75612           Rented  Non-officer  Professional
+138169        Ownhouse  Non-officer  Professional
+87184         Ownhouse  Non-officer      Graduate
+...                ...          ...           ...
+119879        Ownhouse     Self_Emp      Graduate
+103694        Ownhouse     Self_Emp           PhD
+131932          Rented     Officer1  Professional
+146867          Rented     Self_Emp  Professional
+121958          Rented     Self_Emp     Post-Grad
+
+[120000 rows x 3 columns]
+2025-09-18 15:42:22,005 - INFO - [array(['Ownhouse', 'Rented'], dtype=object), array(['Non-officer', 'Officer1', 'Officer2', 'Officer3', 'Self_Emp'],
+      dtype=object), array(['Graduate', 'Matric', 'PhD', 'Post-Grad', 'Professional'],
+      dtype=object)]
+2025-09-18 15:42:22,005 - INFO - ['Rented_OwnHouse_Ownhouse' 'Rented_OwnHouse_Rented'
+ 'Occupation_Non-officer' 'Occupation_Officer1' 'Occupation_Officer2'
+ 'Occupation_Officer3' 'Occupation_Self_Emp' 'Education_Graduate'
+ 'Education_Matric' 'Education_PhD' 'Education_Post-Grad'
+ 'Education_Professional']
+2025-09-18 15:42:22,102 - INFO - Sample data after Onehotencoder is :
+        Rented_OwnHouse_Ownhouse  Rented_OwnHouse_Rented  Occupation_Non-officer  ...  Education_PhD  Education_Post-Grad  Education_Professional
+60842                        1.0                     0.0                     1.0  ...            0.0                  0.0                     1.0
+23317                        0.0                     1.0                     0.0  ...            0.0                  1.0                     0.0
+104284                       0.0                     1.0                     0.0  ...            0.0                  0.0                     1.0
+44012                        1.0                     0.0                     1.0  ...            0.0                  0.0                     0.0
+82998                        1.0                     0.0                     1.0  ...            0.0                  0.0                     0.0
+62481                        0.0                     1.0                     1.0  ...            0.0                  0.0                     0.0
+48185                        0.0                     1.0                     1.0  ...            0.0                  0.0                     1.0
+
+[7 rows x 12 columns]
+2025-09-18 15:44:53,466 - INFO - Encoding has started....
+2025-09-18 15:44:53,466 - INFO - ------------------Onehot Encoder----------------------
+2025-09-18 15:44:53,466 - INFO - Columns in the x_ train are : Index(['Gender', 'Region'], dtype='object')
+2025-09-18 15:44:53,485 - INFO - Sample data are :         Gender   Region
+104025  Female     West
+5415      Male    South
+75612   Female  Central
+138169    Male     West
+87184   Female  Central
+...        ...      ...
+119879    Male     West
+103694    Male     West
+131932    Male     East
+146867    Male    South
+121958  Female     East
+
+[120000 rows x 2 columns]
+2025-09-18 15:44:53,491 - INFO - [array(['Female', 'Male'], dtype=object), array(['Central', 'East', 'North', 'South', 'West'], dtype=object)]
+2025-09-18 15:44:53,491 - INFO - ['Gender_Male' 'Region_East' 'Region_North' 'Region_South' 'Region_West']
+2025-09-18 15:44:53,569 - INFO - Sample data after Onehotencoder is :
+       Gender_Male  Region_East  Region_North  Region_South  Region_West
+75563          1.0          0.0           0.0           0.0          1.0
+45730          0.0          0.0           1.0           0.0          0.0
+76658          1.0          1.0           0.0           0.0          0.0
+70871          0.0          1.0           0.0           0.0          0.0
+98582          0.0          0.0           0.0           0.0          0.0
+74094          1.0          0.0           0.0           0.0          0.0
+24741          1.0          0.0           1.0           0.0          0.0
+2025-09-18 15:44:53,569 - INFO - ------------------Ordinal Encoder-----------------------
+2025-09-18 15:44:53,569 - INFO - Columns in the x_ train are : Index(['Rented_OwnHouse', 'Occupation', 'Education'], dtype='object')
+2025-09-18 15:44:53,573 - INFO - Sample data are :        Rented_OwnHouse   Occupation     Education
+104025        Ownhouse     Self_Emp      Graduate
+5415          Ownhouse     Self_Emp        Matric
+75612           Rented  Non-officer  Professional
+138169        Ownhouse  Non-officer  Professional
+87184         Ownhouse  Non-officer      Graduate
+...                ...          ...           ...
+119879        Ownhouse     Self_Emp      Graduate
+103694        Ownhouse     Self_Emp           PhD
+131932          Rented     Officer1  Professional
+146867          Rented     Self_Emp  Professional
+121958          Rented     Self_Emp     Post-Grad
+
+[120000 rows x 3 columns]
+2025-09-18 15:44:53,583 - INFO - [array(['Ownhouse', 'Rented'], dtype=object), array(['Non-officer', 'Officer1', 'Officer2', 'Officer3', 'Self_Emp'],
+      dtype=object), array(['Graduate', 'Matric', 'PhD', 'Post-Grad', 'Professional'],
+      dtype=object)]
+2025-09-18 15:44:53,583 - INFO - ['Rented_OwnHouse_Ownhouse' 'Rented_OwnHouse_Rented'
+ 'Occupation_Non-officer' 'Occupation_Officer1' 'Occupation_Officer2'
+ 'Occupation_Officer3' 'Occupation_Self_Emp' 'Education_Graduate'
+ 'Education_Matric' 'Education_PhD' 'Education_Post-Grad'
+ 'Education_Professional']
+2025-09-18 15:44:53,671 - INFO - Sample data after Onehotencoder is :
+       Rented_OwnHouse_Ownhouse  Rented_OwnHouse_Rented  Occupation_Non-officer  ...  Education_PhD  Education_Post-Grad  Education_Professional
+61072                       0.0                     1.0                     0.0  ...            0.0                  0.0                     0.0
+19940                       0.0                     1.0                     1.0  ...            0.0                  0.0                     0.0
+1154                        0.0                     1.0                     1.0  ...            0.0                  0.0                     1.0
+35475                       0.0                     1.0                     0.0  ...            0.0                  1.0                     0.0
+96496                       1.0                     0.0                     0.0  ...            1.0                  0.0                     0.0
+22387                       0.0                     1.0                     0.0  ...            0.0                  0.0                     1.0
+65587                       1.0                     0.0                     0.0  ...            0.0                  0.0                     0.0
+
+[7 rows x 12 columns]
+2025-09-18 15:45:41,087 - INFO - Encoding has started....
+2025-09-18 15:45:41,089 - INFO - ------------------Onehot Encoder----------------------
+2025-09-18 15:45:41,089 - INFO - Columns in the x_ train are : Index(['Gender', 'Region'], dtype='object')
+2025-09-18 15:45:41,093 - INFO - Sample data are :         Gender   Region
+104025  Female     West
+5415      Male    South
+75612   Female  Central
+138169    Male     West
+87184   Female  Central
+...        ...      ...
+119879    Male     West
+103694    Male     West
+131932    Male     East
+146867    Male    South
+121958  Female     East
+
+[120000 rows x 2 columns]
+2025-09-18 15:45:41,093 - INFO - [array(['Female', 'Male'], dtype=object), array(['Central', 'East', 'North', 'South', 'West'], dtype=object)]
+2025-09-18 15:45:41,093 - INFO - ['Gender_Male' 'Region_East' 'Region_North' 'Region_South' 'Region_West']
+2025-09-18 15:45:41,167 - INFO - Sample data after Onehotencoder is :
+        Gender_Male  Region_East  Region_North  Region_South  Region_West
+9625            0.0          0.0           0.0           0.0          0.0
+80654           1.0          0.0           1.0           0.0          0.0
+94555           0.0          0.0           1.0           0.0          0.0
+29425           1.0          0.0           0.0           0.0          1.0
+108161          0.0          1.0           0.0           0.0          0.0
+50146           1.0          0.0           0.0           1.0          0.0
+82898           1.0          0.0           0.0           1.0          0.0
+2025-09-18 15:45:41,167 - INFO - ------------------Ordinal Encoder-----------------------
+2025-09-18 15:45:41,167 - INFO - Columns in the x_ train are : Index(['Rented_OwnHouse', 'Occupation', 'Education'], dtype='object')
+2025-09-18 15:45:41,183 - INFO - Sample data are :        Rented_OwnHouse   Occupation     Education
+104025        Ownhouse     Self_Emp      Graduate
+5415          Ownhouse     Self_Emp        Matric
+75612           Rented  Non-officer  Professional
+138169        Ownhouse  Non-officer  Professional
+87184         Ownhouse  Non-officer      Graduate
+...                ...          ...           ...
+119879        Ownhouse     Self_Emp      Graduate
+103694        Ownhouse     Self_Emp           PhD
+131932          Rented     Officer1  Professional
+146867          Rented     Self_Emp  Professional
+121958          Rented     Self_Emp     Post-Grad
+
+[120000 rows x 3 columns]
+2025-09-18 15:45:41,183 - INFO - [array(['Ownhouse', 'Rented'], dtype=object), array(['Non-officer', 'Officer1', 'Officer2', 'Officer3', 'Self_Emp'],
+      dtype=object), array(['Graduate', 'Matric', 'PhD', 'Post-Grad', 'Professional'],
+      dtype=object)]
+2025-09-18 15:45:41,183 - INFO - ['Rented_OwnHouse_Ownhouse' 'Rented_OwnHouse_Rented'
+ 'Occupation_Non-officer' 'Occupation_Officer1' 'Occupation_Officer2'
+ 'Occupation_Officer3' 'Occupation_Self_Emp' 'Education_Graduate'
+ 'Education_Matric' 'Education_PhD' 'Education_Post-Grad'
+ 'Education_Professional']
+2025-09-18 15:45:41,282 - INFO - Sample data after Onehotencoder is :
+        Rented_OwnHouse_Ownhouse  Rented_OwnHouse_Rented  Occupation_Non-officer  ...  Education_PhD  Education_Post-Grad  Education_Professional
+32994                        1.0                     0.0                     0.0  ...            0.0                  1.0                     0.0
+28604                        1.0                     0.0                     0.0  ...            0.0                  0.0                     1.0
+97761                        0.0                     1.0                     0.0  ...            0.0                  1.0                     0.0
+12104                        0.0                     1.0                     0.0  ...            0.0                  1.0                     0.0
+196                          1.0                     0.0                     0.0  ...            0.0                  1.0                     0.0
+105356                       1.0                     0.0                     1.0  ...            0.0                  0.0                     0.0
+52273                        0.0                     1.0                     0.0  ...            0.0                  0.0                     1.0
+
+[7 rows x 12 columns]
+2025-09-18 15:47:22,039 - INFO - Encoding has started....
+2025-09-18 15:47:22,039 - INFO - ------------------Onehot Encoder----------------------
+2025-09-18 15:47:22,039 - INFO - Columns in the x_ train are : Index(['Gender', 'Region'], dtype='object')
+2025-09-18 15:47:22,041 - INFO - Sample data are :         Gender   Region
+104025  Female     West
+5415      Male    South
+75612   Female  Central
+138169    Male     West
+87184   Female  Central
+...        ...      ...
+119879    Male     West
+103694    Male     West
+131932    Male     East
+146867    Male    South
+121958  Female     East
+
+[120000 rows x 2 columns]
+2025-09-18 15:47:22,041 - INFO - [array(['Female', 'Male'], dtype=object), array(['Central', 'East', 'North', 'South', 'West'], dtype=object)]
+2025-09-18 15:47:22,041 - INFO - ['Gender_Male' 'Region_East' 'Region_North' 'Region_South' 'Region_West']
+2025-09-18 15:47:22,125 - INFO - Sample data after Onehotencoder is :
+        Gender_Male  Region_East  Region_North  Region_South  Region_West
+52192           1.0          0.0           0.0           0.0          0.0
+106032          0.0          0.0           0.0           1.0          0.0
+33184           1.0          0.0           0.0           0.0          1.0
+53399           1.0          0.0           0.0           0.0          1.0
+42675           0.0          0.0           0.0           0.0          0.0
+47629           1.0          0.0           0.0           0.0          0.0
+109292          0.0          1.0           0.0           0.0          0.0
+2025-09-18 15:47:22,125 - INFO - ------------------Ordinal Encoder-----------------------
+2025-09-18 15:47:22,125 - INFO - Columns in the x_ train are : Index(['Rented_OwnHouse', 'Occupation', 'Education'], dtype='object')
+2025-09-18 15:47:22,125 - INFO - Sample data are :        Rented_OwnHouse   Occupation     Education
+104025        Ownhouse     Self_Emp      Graduate
+5415          Ownhouse     Self_Emp        Matric
+75612           Rented  Non-officer  Professional
+138169        Ownhouse  Non-officer  Professional
+87184         Ownhouse  Non-officer      Graduate
+...                ...          ...           ...
+119879        Ownhouse     Self_Emp      Graduate
+103694        Ownhouse     Self_Emp           PhD
+131932          Rented     Officer1  Professional
+146867          Rented     Self_Emp  Professional
+121958          Rented     Self_Emp     Post-Grad
+
+[120000 rows x 3 columns]
+2025-09-18 15:47:22,141 - INFO - [array(['Ownhouse', 'Rented'], dtype=object), array(['Non-officer', 'Officer1', 'Officer2', 'Officer3', 'Self_Emp'],
+      dtype=object), array(['Graduate', 'Matric', 'PhD', 'Post-Grad', 'Professional'],
+      dtype=object)]
+2025-09-18 15:47:22,141 - INFO - ['Rented_OwnHouse_Ownhouse' 'Rented_OwnHouse_Rented'
+ 'Occupation_Non-officer' 'Occupation_Officer1' 'Occupation_Officer2'
+ 'Occupation_Officer3' 'Occupation_Self_Emp' 'Education_Graduate'
+ 'Education_Matric' 'Education_PhD' 'Education_Post-Grad'
+ 'Education_Professional']
+2025-09-18 15:47:22,237 - INFO - Sample data after Onehotencoder is :
+        Rented_OwnHouse_Ownhouse  Rented_OwnHouse_Rented  Occupation_Non-officer  ...  Education_PhD  Education_Post-Grad  Education_Professional
+119411                       0.0                     1.0                     0.0  ...            0.0                  1.0                     0.0
+71971                        0.0                     1.0                     0.0  ...            0.0                  1.0                     0.0
+13397                        1.0                     0.0                     0.0  ...            0.0                  0.0                     0.0
+96488                        0.0                     1.0                     0.0  ...            0.0                  1.0                     0.0
+33293                        0.0                     1.0                     1.0  ...            0.0                  0.0                     0.0
+119670                       0.0                     1.0                     0.0  ...            0.0                  1.0                     0.0
+924                          1.0                     0.0                     0.0  ...            0.0                  0.0                     1.0
+
+[7 rows x 12 columns]
+2025-09-18 15:48:55,561 - INFO - Encoding has started....
+2025-09-18 15:48:55,561 - INFO - ------------------Onehot Encoder----------------------
+2025-09-18 15:48:55,561 - INFO - Columns in the x_ train are : Index(['Gender', 'Region'], dtype='object')
+2025-09-18 15:48:55,567 - INFO - Sample data are :         Gender   Region
+104025  Female     West
+5415      Male    South
+75612   Female  Central
+138169    Male     West
+87184   Female  Central
+...        ...      ...
+119879    Male     West
+103694    Male     West
+131932    Male     East
+146867    Male    South
+121958  Female     East
+
+[120000 rows x 2 columns]
+2025-09-18 15:48:55,574 - INFO - [array(['Female', 'Male'], dtype=object), array(['Central', 'East', 'North', 'South', 'West'], dtype=object)]
+2025-09-18 15:48:55,574 - INFO - ['Gender_Male' 'Region_East' 'Region_North' 'Region_South' 'Region_West']
+2025-09-18 15:48:55,655 - INFO - Sample data after Onehotencoder is :
+       Gender_Male  Region_East  Region_North  Region_South  Region_West
+35710          1.0          0.0           1.0           0.0          0.0
+86406          1.0          1.0           0.0           0.0          0.0
+65966          0.0          1.0           0.0           0.0          0.0
+98755          1.0          0.0           0.0           1.0          0.0
+86176          1.0          0.0           1.0           0.0          0.0
+98173          0.0          0.0           0.0           1.0          0.0
+9637           1.0          0.0           0.0           0.0          1.0
+2025-09-18 15:49:17,973 - INFO - Encoding has started....
+2025-09-18 15:49:17,973 - INFO - ------------------Onehot Encoder----------------------
+2025-09-18 15:49:17,973 - INFO - Columns in the x_ train are : Index(['Gender', 'Region'], dtype='object')
+2025-09-18 15:49:17,981 - INFO - Sample data are :         Gender   Region
+104025  Female     West
+5415      Male    South
+75612   Female  Central
+138169    Male     West
+87184   Female  Central
+...        ...      ...
+119879    Male     West
+103694    Male     West
+131932    Male     East
+146867    Male    South
+121958  Female     East
+
+[120000 rows x 2 columns]
+2025-09-18 15:49:17,988 - INFO - [array(['Female', 'Male'], dtype=object), array(['Central', 'East', 'North', 'South', 'West'], dtype=object)]
+2025-09-18 15:49:17,988 - INFO - ['Gender_Male' 'Region_East' 'Region_North' 'Region_South' 'Region_West']
+2025-09-18 15:49:18,068 - INFO - Sample data after Onehotencoder is :
+        Gender_Male  Region_East  Region_North  Region_South  Region_West
+103469          1.0          0.0           1.0           0.0          0.0
+7585            1.0          0.0           0.0           0.0          1.0
+30481           1.0          0.0           0.0           0.0          1.0
+116727          0.0          0.0           0.0           0.0          0.0
+65129           1.0          0.0           1.0           0.0          0.0
+77068           0.0          0.0           0.0           0.0          0.0
+78028           0.0          0.0           0.0           0.0          0.0
+2025-09-18 15:49:18,068 - INFO - ------------------Ordinal Encoder-----------------------
+2025-09-18 15:49:18,068 - INFO - Columns in the x_ train are : Index(['Rented_OwnHouse', 'Occupation', 'Education'], dtype='object')
+2025-09-18 15:49:18,075 - INFO - Sample data are :        Rented_OwnHouse   Occupation     Education
+104025        Ownhouse     Self_Emp      Graduate
+5415          Ownhouse     Self_Emp        Matric
+75612           Rented  Non-officer  Professional
+138169        Ownhouse  Non-officer  Professional
+87184         Ownhouse  Non-officer      Graduate
+...                ...          ...           ...
+119879        Ownhouse     Self_Emp      Graduate
+103694        Ownhouse     Self_Emp           PhD
+131932          Rented     Officer1  Professional
+146867          Rented     Self_Emp  Professional
+121958          Rented     Self_Emp     Post-Grad
+
+[120000 rows x 3 columns]
+2025-09-18 15:49:18,084 - INFO - [array(['Ownhouse', 'Rented'], dtype=object), array(['Non-officer', 'Officer1', 'Officer2', 'Officer3', 'Self_Emp'],
+      dtype=object), array(['Graduate', 'Matric', 'PhD', 'Post-Grad', 'Professional'],
+      dtype=object)]
+2025-09-18 15:49:18,084 - INFO - ['Rented_OwnHouse_Ownhouse' 'Rented_OwnHouse_Rented'
+ 'Occupation_Non-officer' 'Occupation_Officer1' 'Occupation_Officer2'
+ 'Occupation_Officer3' 'Occupation_Self_Emp' 'Education_Graduate'
+ 'Education_Matric' 'Education_PhD' 'Education_Post-Grad'
+ 'Education_Professional']
+2025-09-18 15:49:18,180 - INFO - Sample data after Onehotencoder is :
+        Rented_OwnHouse_Ownhouse  Rented_OwnHouse_Rented  Occupation_Non-officer  ...  Education_PhD  Education_Post-Grad  Education_Professional
+114384                       0.0                     1.0                     0.0  ...            0.0                  0.0                     1.0
+12362                        1.0                     0.0                     1.0  ...            0.0                  0.0                     0.0
+9711                         0.0                     1.0                     0.0  ...            0.0                  1.0                     0.0
+106469                       0.0                     1.0                     0.0  ...            0.0                  0.0                     0.0
+109692                       1.0                     0.0                     0.0  ...            0.0                  0.0                     0.0
+48252                        0.0                     1.0                     0.0  ...            0.0                  0.0                     1.0
+58197                        1.0                     0.0                     1.0  ...            0.0                  0.0                     1.0
+
+[7 rows x 12 columns]
+2025-09-18 15:49:51,188 - INFO - Encoding has started....
+2025-09-18 15:49:51,188 - INFO - ------------------Onehot Encoder----------------------
+2025-09-18 15:49:51,188 - INFO - Columns in the x_ train are : Index(['Gender', 'Region'], dtype='object')
+2025-09-18 15:49:51,200 - INFO - Sample data are :         Gender   Region
+104025  Female     West
+5415      Male    South
+75612   Female  Central
+138169    Male     West
+87184   Female  Central
+...        ...      ...
+119879    Male     West
+103694    Male     West
+131932    Male     East
+146867    Male    South
+121958  Female     East
+
+[120000 rows x 2 columns]
+2025-09-18 15:49:51,205 - INFO - [array(['Female', 'Male'], dtype=object), array(['Central', 'East', 'North', 'South', 'West'], dtype=object)]
+2025-09-18 15:49:51,205 - INFO - ['Gender_Male' 'Region_East' 'Region_North' 'Region_South' 'Region_West']
+2025-09-18 15:49:51,285 - INFO - Sample data after Onehotencoder is :
+       Gender_Male  Region_East  Region_North  Region_South  Region_West
+27516          1.0          0.0           0.0           0.0          0.0
+38017          1.0          0.0           0.0           0.0          0.0
+9441           1.0          0.0           0.0           1.0          0.0
+18669          1.0          0.0           1.0           0.0          0.0
+10098          1.0          0.0           0.0           0.0          0.0
+19897          1.0          0.0           0.0           1.0          0.0
+16852          0.0          0.0           0.0           0.0          0.0
+2025-09-18 15:49:51,287 - INFO - ------------------Ordinal Encoder-----------------------
+2025-09-18 15:49:51,287 - INFO - Columns in the x_ train are : Index(['Rented_OwnHouse', 'Occupation', 'Education'], dtype='object')
+2025-09-18 15:49:51,287 - INFO - Sample data are :        Rented_OwnHouse   Occupation     Education
+104025        Ownhouse     Self_Emp      Graduate
+5415          Ownhouse     Self_Emp        Matric
+75612           Rented  Non-officer  Professional
+138169        Ownhouse  Non-officer  Professional
+87184         Ownhouse  Non-officer      Graduate
+...                ...          ...           ...
+119879        Ownhouse     Self_Emp      Graduate
+103694        Ownhouse     Self_Emp           PhD
+131932          Rented     Officer1  Professional
+146867          Rented     Self_Emp  Professional
+121958          Rented     Self_Emp     Post-Grad
+
+[120000 rows x 3 columns]
+2025-09-18 15:49:51,299 - INFO - [array(['Ownhouse', 'Rented'], dtype=object), array(['Non-officer', 'Officer1', 'Officer2', 'Officer3', 'Self_Emp'],
+      dtype=object), array(['Graduate', 'Matric', 'PhD', 'Post-Grad', 'Professional'],
+      dtype=object)]
+2025-09-18 15:49:51,299 - INFO - ['Rented_OwnHouse_Ownhouse' 'Rented_OwnHouse_Rented'
+ 'Occupation_Non-officer' 'Occupation_Officer1' 'Occupation_Officer2'
+ 'Occupation_Officer3' 'Occupation_Self_Emp' 'Education_Graduate'
+ 'Education_Matric' 'Education_PhD' 'Education_Post-Grad'
+ 'Education_Professional']
+2025-09-18 15:49:51,403 - INFO - Sample data after Onehotencoder is :
+        Rented_OwnHouse_Ownhouse  Rented_OwnHouse_Rented  Occupation_Non-officer  ...  Education_PhD  Education_Post-Grad  Education_Professional
+36555                        1.0                     0.0                     0.0  ...            0.0                  0.0                     0.0
+54633                        0.0                     1.0                     1.0  ...            0.0                  0.0                     1.0
+50256                        1.0                     0.0                     1.0  ...            0.0                  0.0                     0.0
+45520                        1.0                     0.0                     0.0  ...            0.0                  0.0                     1.0
+68964                        0.0                     1.0                     0.0  ...            0.0                  0.0                     1.0
+115333                       0.0                     1.0                     0.0  ...            0.0                  0.0                     1.0
+15195                        1.0                     0.0                     0.0  ...            1.0                  0.0                     0.0
+
+[7 rows x 12 columns]
+2025-09-18 15:51:29,259 - INFO - Encoding has started....
+2025-09-18 15:51:29,259 - INFO - ------------------Onehot Encoder----------------------
+2025-09-18 15:51:29,259 - INFO - Columns in the x_ train are : Index(['Gender', 'Region'], dtype='object')
+2025-09-18 15:51:29,276 - INFO - Sample data are :         Gender   Region
+104025  Female     West
+5415      Male    South
+75612   Female  Central
+138169    Male     West
+87184   Female  Central
+...        ...      ...
+119879    Male     West
+103694    Male     West
+131932    Male     East
+146867    Male    South
+121958  Female     East
+
+[120000 rows x 2 columns]
+2025-09-18 15:51:29,286 - INFO - [array(['Female', 'Male'], dtype=object), array(['Central', 'East', 'North', 'South', 'West'], dtype=object)]
+2025-09-18 15:51:29,286 - INFO - ['Gender_Male' 'Region_East' 'Region_North' 'Region_South' 'Region_West']
+2025-09-18 15:51:29,415 - INFO - Sample data after Onehotencoder is :
+        Gender_Male  Region_East  Region_North  Region_South  Region_West
+108044          1.0          0.0           1.0           0.0          0.0
+74729           1.0          0.0           0.0           0.0          0.0
+48139           1.0          0.0           0.0           0.0          1.0
+61297           0.0          0.0           1.0           0.0          0.0
+103999          1.0          0.0           0.0           0.0          0.0
+114400          1.0          0.0           0.0           0.0          1.0
+16827           1.0          0.0           1.0           0.0          0.0
+2025-09-18 15:51:29,427 - INFO - ------------------Ordinal Encoder-----------------------
+2025-09-18 15:51:29,427 - INFO - Columns in the x_ train are : Index(['Rented_OwnHouse', 'Occupation', 'Education'], dtype='object')
+2025-09-18 15:51:29,433 - INFO - Sample data are :        Rented_OwnHouse   Occupation     Education
+104025        Ownhouse     Self_Emp      Graduate
+5415          Ownhouse     Self_Emp        Matric
+75612           Rented  Non-officer  Professional
+138169        Ownhouse  Non-officer  Professional
+87184         Ownhouse  Non-officer      Graduate
+...                ...          ...           ...
+119879        Ownhouse     Self_Emp      Graduate
+103694        Ownhouse     Self_Emp           PhD
+131932          Rented     Officer1  Professional
+146867          Rented     Self_Emp  Professional
+121958          Rented     Self_Emp     Post-Grad
+
+[120000 rows x 3 columns]
+2025-09-18 15:51:29,439 - INFO - [array(['Ownhouse', 'Rented'], dtype=object), array(['Non-officer', 'Officer1', 'Officer2', 'Officer3', 'Self_Emp'],
+      dtype=object), array(['Graduate', 'Matric', 'PhD', 'Post-Grad', 'Professional'],
+      dtype=object)]
+2025-09-18 15:55:23,275 - INFO - Encoding has started....
+2025-09-18 15:55:23,275 - INFO - ------------------Onehot Encoder----------------------
+2025-09-18 15:55:23,275 - INFO - Columns in the x_ train are : Index(['Gender', 'Region'], dtype='object')
+2025-09-18 15:55:23,286 - INFO - Sample data are :         Gender   Region
+104025  Female     West
+5415      Male    South
+75612   Female  Central
+138169    Male     West
+87184   Female  Central
+...        ...      ...
+119879    Male     West
+103694    Male     West
+131932    Male     East
+146867    Male    South
+121958  Female     East
+
+[120000 rows x 2 columns]
+2025-09-18 15:55:23,293 - INFO - [array(['Female', 'Male'], dtype=object), array(['Central', 'East', 'North', 'South', 'West'], dtype=object)]
+2025-09-18 15:55:23,293 - INFO - ['Gender_Male' 'Region_East' 'Region_North' 'Region_South' 'Region_West']
+2025-09-18 15:55:28,790 - ERROR - <class 'ValueError'> at 19 as Shape of passed values is (120000, 1), indices imply (120000, 5)
+2025-09-18 15:58:47,413 - INFO - Encoding has started....
+2025-09-18 15:58:47,413 - INFO - ------------------Onehot Encoder----------------------
+2025-09-18 15:58:47,413 - INFO - Columns in the x_ train are : Index(['Gender', 'Region'], dtype='object')
+2025-09-18 15:58:47,413 - INFO - Sample data are :         Gender   Region
+104025  Female     West
+5415      Male    South
+75612   Female  Central
+138169    Male     West
+87184   Female  Central
+...        ...      ...
+119879    Male     West
+103694    Male     West
+131932    Male     East
+146867    Male    South
+121958  Female     East
+
+[120000 rows x 2 columns]
+2025-09-18 15:58:47,429 - INFO - [array(['Female', 'Male'], dtype=object), array(['Central', 'East', 'North', 'South', 'West'], dtype=object)]
+2025-09-18 15:58:47,429 - INFO - ['Gender_Male' 'Region_East' 'Region_North' 'Region_South' 'Region_West']
+2025-09-18 15:58:53,053 - ERROR - <class 'ValueError'> at 20 as Shape of passed values is (120000, 1), indices imply (120000, 5)
+2025-09-18 16:01:25,653 - INFO - Encoding has started....
+2025-09-18 16:01:25,653 - INFO - ------------------Onehot Encoder----------------------
+2025-09-18 16:01:25,653 - INFO - Columns in the x_ train are : Index(['Gender', 'Region'], dtype='object')
+2025-09-18 16:01:25,669 - INFO - Sample data are :         Gender   Region
+104025  Female     West
+5415      Male    South
+75612   Female  Central
+138169    Male     West
+87184   Female  Central
+...        ...      ...
+119879    Male     West
+103694    Male     West
+131932    Male     East
+146867    Male    South
+121958  Female     East
+
+[120000 rows x 2 columns]
+2025-09-18 16:01:25,676 - INFO - [array(['Female', 'Male'], dtype=object), array(['Central', 'East', 'North', 'South', 'West'], dtype=object)]
+2025-09-18 16:01:25,676 - INFO - ['Gender_Male' 'Region_East' 'Region_North' 'Region_South' 'Region_West']
+2025-09-18 16:01:31,627 - ERROR - <class 'ValueError'> at 20 as Shape of passed values is (120000, 1), indices imply (120000, 5)
+2025-09-18 16:03:03,026 - INFO - Encoding has started....
+2025-09-18 16:03:03,026 - INFO - ------------------Onehot Encoder----------------------
+2025-09-18 16:03:03,026 - INFO - Columns in the x_ train are : Index(['Gender', 'Region'], dtype='object')
+2025-09-18 16:03:03,048 - INFO - Sample data are :         Gender   Region
+104025  Female     West
+5415      Male    South
+75612   Female  Central
+138169    Male     West
+87184   Female  Central
+...        ...      ...
+119879    Male     West
+103694    Male     West
+131932    Male     East
+146867    Male    South
+121958  Female     East
+
+[120000 rows x 2 columns]
+2025-09-18 16:03:03,054 - INFO - [array(['Female', 'Male'], dtype=object), array(['Central', 'East', 'North', 'South', 'West'], dtype=object)]
+2025-09-18 16:03:03,054 - INFO - ['Gender_Male' 'Region_East' 'Region_North' 'Region_South' 'Region_West']
+2025-09-18 16:03:08,707 - ERROR - <class 'ValueError'> at 20 as Shape of passed values is (120000, 1), indices imply (120000, 5)
+2025-09-18 16:03:58,913 - INFO - Encoding has started....
+2025-09-18 16:03:58,913 - INFO - ------------------Onehot Encoder----------------------
+2025-09-18 16:03:58,913 - INFO - Columns in the x_ train are : Index(['Gender', 'Region'], dtype='object')
+2025-09-18 16:03:58,920 - INFO - Sample data are :         Gender   Region
+104025  Female     West
+5415      Male    South
+75612   Female  Central
+138169    Male     West
+87184   Female  Central
+...        ...      ...
+119879    Male     West
+103694    Male     West
+131932    Male     East
+146867    Male    South
+121958  Female     East
+
+[120000 rows x 2 columns]
+2025-09-18 16:03:58,928 - INFO - [array(['Female', 'Male'], dtype=object), array(['Central', 'East', 'North', 'South', 'West'], dtype=object)]
+2025-09-18 16:03:58,928 - INFO - ['Gender_Male' 'Region_East' 'Region_North' 'Region_South' 'Region_West']
+2025-09-18 16:04:04,398 - ERROR - <class 'ValueError'> at 21 as Shape of passed values is (120000, 1), indices imply (120000, 5)
+2025-09-18 16:05:26,347 - INFO - Encoding has started....
+2025-09-18 16:05:26,347 - INFO - ------------------Onehot Encoder----------------------
+2025-09-18 16:05:26,347 - INFO - Columns in the x_ train are : Index(['Gender', 'Region'], dtype='object')
+2025-09-18 16:05:26,347 - INFO - Sample data are :         Gender   Region
+104025  Female     West
+5415      Male    South
+75612   Female  Central
+138169    Male     West
+87184   Female  Central
+...        ...      ...
+119879    Male     West
+103694    Male     West
+131932    Male     East
+146867    Male    South
+121958  Female     East
+
+[120000 rows x 2 columns]
+2025-09-18 16:05:26,374 - INFO - [array(['Female', 'Male'], dtype=object), array(['Central', 'East', 'North', 'South', 'West'], dtype=object)]
+2025-09-18 16:05:26,374 - INFO - ['Gender_Male' 'Region_East' 'Region_North' 'Region_South' 'Region_West']
+2025-09-18 16:05:32,027 - ERROR - <class 'ValueError'> at 21 as Shape of passed values is (120000, 1), indices imply (120000, 5)
+2025-09-18 16:06:21,430 - INFO - Encoding has started....
+2025-09-18 16:06:21,430 - INFO - ------------------Onehot Encoder----------------------
+2025-09-18 16:06:21,430 - INFO - Columns in the x_ train are : Index(['Gender', 'Region'], dtype='object')
+2025-09-18 16:06:21,430 - INFO - Sample data are :         Gender   Region
+104025  Female     West
+5415      Male    South
+75612   Female  Central
+138169    Male     West
+87184   Female  Central
+...        ...      ...
+119879    Male     West
+103694    Male     West
+131932    Male     East
+146867    Male    South
+121958  Female     East
+
+[120000 rows x 2 columns]
+2025-09-18 16:06:21,446 - INFO - [array(['Female', 'Male'], dtype=object), array(['Central', 'East', 'North', 'South', 'West'], dtype=object)]
+2025-09-18 16:06:21,446 - INFO - ['Gender_Male' 'Region_East' 'Region_North' 'Region_South' 'Region_West']
+2025-09-18 16:06:21,552 - INFO -   (0, 4)	1.0
+  (1, 0)	1.0
+  (1, 3)	1.0
+  (3, 0)	1.0
+  (3, 4)	1.0
+  (5, 0)	1.0
+  (5, 3)	1.0
+  (6, 0)	1.0
+  (6, 4)	1.0
+  (7, 0)	1.0
+  (7, 2)	1.0
+  (9, 0)	1.0
+  (9, 3)	1.0
+  (10, 0)	1.0
+  (10, 4)	1.0
+  (11, 0)	1.0
+  (11, 2)	1.0
+  (12, 0)	1.0
+  (12, 4)	1.0
+  (13, 2)	1.0
+  (15, 1)	1.0
+  (16, 0)	1.0
+  (16, 3)	1.0
+  (17, 1)	1.0
+  (18, 0)	1.0
+  :	:
+  (119984, 0)	1.0
+  (119984, 3)	1.0
+  (119985, 0)	1.0
+  (119986, 0)	1.0
+  (119987, 0)	1.0
+  (119987, 2)	1.0
+  (119988, 0)	1.0
+  (119988, 2)	1.0
+  (119989, 1)	1.0
+  (119990, 3)	1.0
+  (119992, 0)	1.0
+  (119992, 4)	1.0
+  (119993, 0)	1.0
+  (119993, 1)	1.0
+  (119994, 0)	1.0
+  (119994, 3)	1.0
+  (119995, 0)	1.0
+  (119995, 4)	1.0
+  (119996, 0)	1.0
+  (119996, 4)	1.0
+  (119997, 0)	1.0
+  (119997, 1)	1.0
+  (119998, 0)	1.0
+  (119998, 3)	1.0
+  (119999, 1)	1.0
+2025-09-18 16:06:27,006 - ERROR - <class 'ValueError'> at 22 as Shape of passed values is (120000, 1), indices imply (120000, 5)
+2025-09-18 16:08:19,113 - INFO - Encoding has started....
+2025-09-18 16:08:19,113 - INFO - ------------------Onehot Encoder----------------------
+2025-09-18 16:08:19,113 - INFO - Columns in the x_ train are : Index(['Gender', 'Region'], dtype='object')
+2025-09-18 16:08:19,119 - INFO - Sample data are :         Gender   Region
+104025  Female     West
+5415      Male    South
+75612   Female  Central
+138169    Male     West
+87184   Female  Central
+...        ...      ...
+119879    Male     West
+103694    Male     West
+131932    Male     East
+146867    Male    South
+121958  Female     East
+
+[120000 rows x 2 columns]
+2025-09-18 16:08:19,129 - INFO - [array(['Female', 'Male'], dtype=object), array(['Central', 'East', 'North', 'South', 'West'], dtype=object)]
+2025-09-18 16:08:19,129 - INFO - ['Gender_Male' 'Region_East' 'Region_North' 'Region_South' 'Region_West']
+2025-09-18 16:08:19,216 - INFO - [[0. 0. 0. 0. 1.]
+ [1. 0. 0. 1. 0.]
+ [0. 0. 0. 0. 0.]
+ ...
+ [1. 1. 0. 0. 0.]
+ [1. 0. 0. 1. 0.]
+ [0. 1. 0. 0. 0.]]
+2025-09-18 16:08:19,252 - INFO - Sample data after Onehotencoder is :
+        Gender_Male  Region_East  Region_North  Region_South  Region_West
+91025           1.0          0.0           0.0           1.0          0.0
+41096           0.0          1.0           0.0           0.0          0.0
+62845           1.0          1.0           0.0           0.0          0.0
+3948            1.0          0.0           1.0           0.0          0.0
+101726          0.0          0.0           0.0           1.0          0.0
+5038            1.0          0.0           0.0           0.0          1.0
+64254           1.0          0.0           0.0           0.0          1.0
+2025-09-18 16:09:24,194 - INFO - Encoding has started....
+2025-09-18 16:09:24,194 - INFO - ------------------Onehot Encoder----------------------
+2025-09-18 16:09:24,194 - INFO - Columns in the x_ train are : Index(['Gender', 'Region'], dtype='object')
+2025-09-18 16:09:24,203 - INFO - Sample data are :         Gender   Region
+104025  Female     West
+5415      Male    South
+75612   Female  Central
+138169    Male     West
+87184   Female  Central
+...        ...      ...
+119879    Male     West
+103694    Male     West
+131932    Male     East
+146867    Male    South
+121958  Female     East
+
+[120000 rows x 2 columns]
+2025-09-18 16:09:24,209 - INFO - [array(['Female', 'Male'], dtype=object), array(['Central', 'East', 'North', 'South', 'West'], dtype=object)]
+2025-09-18 16:09:24,209 - INFO - ['Gender_Male' 'Region_East' 'Region_North' 'Region_South' 'Region_West']
+2025-09-18 16:09:24,290 - INFO - [[0. 0. 0. 0. 1.]
+ [1. 0. 0. 1. 0.]
+ [0. 0. 0. 0. 0.]
+ ...
+ [1. 1. 0. 0. 0.]
+ [1. 0. 0. 1. 0.]
+ [0. 1. 0. 0. 0.]]
+2025-09-18 16:09:24,326 - INFO - Sample data after Onehotencoder is :
+        Gender_Male  Region_East  Region_North  Region_South  Region_West
+24022           1.0          0.0           0.0           0.0          0.0
+119683          0.0          0.0           0.0           1.0          0.0
+75729           0.0          1.0           0.0           0.0          0.0
+49612           0.0          0.0           0.0           0.0          0.0
+15842           1.0          0.0           0.0           1.0          0.0
+50202           1.0          0.0           0.0           1.0          0.0
+69034           0.0          0.0           0.0           0.0          0.0
+2025-09-18 16:10:23,943 - INFO - Encoding has started....
+2025-09-18 16:10:23,943 - INFO - ------------------Onehot Encoder----------------------
+2025-09-18 16:10:23,943 - INFO - Columns in the x_ train are : Index(['Gender', 'Region'], dtype='object')
+2025-09-18 16:10:23,953 - INFO - Sample data are :         Gender   Region
+104025  Female     West
+5415      Male    South
+75612   Female  Central
+138169    Male     West
+87184   Female  Central
+...        ...      ...
+119879    Male     West
+103694    Male     West
+131932    Male     East
+146867    Male    South
+121958  Female     East
+
+[120000 rows x 2 columns]
+2025-09-18 16:10:23,961 - INFO - [array(['Female', 'Male'], dtype=object), array(['Central', 'East', 'North', 'South', 'West'], dtype=object)]
+2025-09-18 16:10:23,961 - INFO - ['Gender_Male' 'Region_East' 'Region_North' 'Region_South' 'Region_West']
+2025-09-18 16:10:24,034 - INFO - [[0. 0. 0. 0. 1.]
+ [1. 0. 0. 1. 0.]
+ [0. 0. 0. 0. 0.]
+ ...
+ [1. 1. 0. 0. 0.]
+ [1. 0. 0. 1. 0.]
+ [0. 1. 0. 0. 0.]]
+2025-09-18 16:10:24,068 - INFO - Sample data after Onehotencoder is :
+        Gender_Male  Region_East  Region_North  Region_South  Region_West
+98146           0.0          0.0           1.0           0.0          0.0
+79140           1.0          0.0           0.0           0.0          0.0
+50000           1.0          1.0           0.0           0.0          0.0
+70886           1.0          0.0           0.0           1.0          0.0
+86680           0.0          1.0           0.0           0.0          0.0
+109955          1.0          1.0           0.0           0.0          0.0
+61598           1.0          1.0           0.0           0.0          0.0
+2025-09-18 16:10:24,116 - INFO - ------------------Ordinal Encoder-----------------------
+2025-09-18 16:10:24,116 - ERROR - <class 'AttributeError'> at 33 as 'NoneType' object has no attribute 'columns'
+2025-09-18 16:12:24,102 - INFO - Encoding has started....
+2025-09-18 16:12:24,102 - INFO - ------------------Onehot Encoder----------------------
+2025-09-18 16:12:24,102 - INFO - Columns in the x_ train are : Index(['Gender', 'Region'], dtype='object')
+2025-09-18 16:12:24,112 - INFO - Sample data are :         Gender   Region
+104025  Female     West
+5415      Male    South
+75612   Female  Central
+138169    Male     West
+87184   Female  Central
+...        ...      ...
+119879    Male     West
+103694    Male     West
+131932    Male     East
+146867    Male    South
+121958  Female     East
+
+[120000 rows x 2 columns]
+2025-09-18 16:12:24,118 - INFO - [array(['Female', 'Male'], dtype=object), array(['Central', 'East', 'North', 'South', 'West'], dtype=object)]
+2025-09-18 16:12:24,120 - INFO - ['Gender_Male' 'Region_East' 'Region_North' 'Region_South' 'Region_West']
+2025-09-18 16:12:24,202 - INFO - [[0. 0. 0. 0. 1.]
+ [1. 0. 0. 1. 0.]
+ [0. 0. 0. 0. 0.]
+ ...
+ [1. 1. 0. 0. 0.]
+ [1. 0. 0. 1. 0.]
+ [0. 1. 0. 0. 0.]]
+2025-09-18 16:12:24,237 - ERROR - <class 'NameError'> at 24 as name 'fd' is not defined
+2025-09-18 16:13:28,163 - INFO - Encoding has started....
+2025-09-18 16:13:28,163 - INFO - ------------------Onehot Encoder----------------------
+2025-09-18 16:13:28,163 - INFO - Columns in the x_ train are : Index(['Gender', 'Region'], dtype='object')
+2025-09-18 16:13:28,177 - INFO - Sample data are :         Gender   Region
+104025  Female     West
+5415      Male    South
+75612   Female  Central
+138169    Male     West
+87184   Female  Central
+...        ...      ...
+119879    Male     West
+103694    Male     West
+131932    Male     East
+146867    Male    South
+121958  Female     East
+
+[120000 rows x 2 columns]
+2025-09-18 16:13:28,182 - INFO - [array(['Female', 'Male'], dtype=object), array(['Central', 'East', 'North', 'South', 'West'], dtype=object)]
+2025-09-18 16:13:28,182 - INFO - ['Gender_Male' 'Region_East' 'Region_North' 'Region_South' 'Region_West']
+2025-09-18 16:13:28,263 - INFO - [[0. 0. 0. 0. 1.]
+ [1. 0. 0. 1. 0.]
+ [0. 0. 0. 0. 0.]
+ ...
+ [1. 1. 0. 0. 0.]
+ [1. 0. 0. 1. 0.]
+ [0. 1. 0. 0. 0.]]
+2025-09-18 16:13:28,294 - INFO - Sample data after Onehotencoder is :
+        Gender_Male  Region_East  Region_North  Region_South  Region_West
+101698          0.0          0.0           1.0           0.0          0.0
+28353           1.0          0.0           0.0           0.0          1.0
+63846           0.0          0.0           1.0           0.0          0.0
+101883          0.0          1.0           0.0           0.0          0.0
+78611           1.0          0.0           0.0           1.0          0.0
+13805           1.0          0.0           1.0           0.0          0.0
+80668           0.0          0.0           1.0           0.0          0.0
+2025-09-18 16:14:20,420 - INFO - Encoding has started....
+2025-09-18 16:14:20,420 - INFO - ------------------Onehot Encoder----------------------
+2025-09-18 16:14:20,420 - INFO - Columns in the x_ train are : Index(['Gender', 'Region'], dtype='object')
+2025-09-18 16:14:20,430 - INFO - Sample data are :         Gender   Region
+104025  Female     West
+5415      Male    South
+75612   Female  Central
+138169    Male     West
+87184   Female  Central
+...        ...      ...
+119879    Male     West
+103694    Male     West
+131932    Male     East
+146867    Male    South
+121958  Female     East
+
+[120000 rows x 2 columns]
+2025-09-18 16:14:20,434 - INFO - [array(['Female', 'Male'], dtype=object), array(['Central', 'East', 'North', 'South', 'West'], dtype=object)]
+2025-09-18 16:14:20,434 - INFO - ['Gender_Male' 'Region_East' 'Region_North' 'Region_South' 'Region_West']
+2025-09-18 16:14:20,525 - INFO - [[0. 0. 0. 0. 1.]
+ [1. 0. 0. 1. 0.]
+ [0. 0. 0. 0. 0.]
+ ...
+ [1. 1. 0. 0. 0.]
+ [1. 0. 0. 1. 0.]
+ [0. 1. 0. 0. 0.]]
+2025-09-18 16:14:20,557 - INFO - Sample data after Onehotencoder is :
+        Gender_Male  Region_East  Region_North  Region_South  Region_West
+15881           0.0          0.0           1.0           0.0          0.0
+104133          1.0          0.0           0.0           0.0          0.0
+51945           0.0          0.0           1.0           0.0          0.0
+64795           1.0          0.0           1.0           0.0          0.0
+51937           1.0          0.0           0.0           0.0          0.0
+17679           0.0          0.0           0.0           0.0          0.0
+103984          0.0          0.0           1.0           0.0          0.0
+2025-09-18 16:14:20,609 - INFO - ------------------Ordinal Encoder-----------------------
+2025-09-18 16:14:20,609 - INFO - Columns in the x_ train are : Index(['Rented_OwnHouse', 'Occupation', 'Education'], dtype='object')
+2025-09-18 16:14:20,611 - INFO - Sample data are :        Rented_OwnHouse   Occupation     Education
+104025        Ownhouse     Self_Emp      Graduate
+5415          Ownhouse     Self_Emp        Matric
+75612           Rented  Non-officer  Professional
+138169        Ownhouse  Non-officer  Professional
+87184         Ownhouse  Non-officer      Graduate
+...                ...          ...           ...
+119879        Ownhouse     Self_Emp      Graduate
+103694        Ownhouse     Self_Emp           PhD
+131932          Rented     Officer1  Professional
+146867          Rented     Self_Emp  Professional
+121958          Rented     Self_Emp     Post-Grad
+
+[120000 rows x 3 columns]
+2025-09-18 16:14:20,631 - INFO - [array(['Ownhouse', 'Rented'], dtype=object), array(['Non-officer', 'Officer1', 'Officer2', 'Officer3', 'Self_Emp'],
+      dtype=object), array(['Graduate', 'Matric', 'PhD', 'Post-Grad', 'Professional'],
+      dtype=object)]
+2025-09-18 16:14:20,631 - ERROR - <class 'AttributeError'> at 38 as 'OrdinalEncoder' object has no attribute 'get_feature_names_out'
+2025-09-18 16:16:14,672 - INFO - Encoding has started....
+2025-09-18 16:16:14,688 - INFO - ------------------Onehot Encoder----------------------
+2025-09-18 16:16:14,688 - INFO - Columns in the x_ train are : Index(['Gender', 'Region'], dtype='object')
+2025-09-18 16:16:14,695 - INFO - Sample data are :         Gender   Region
+104025  Female     West
+5415      Male    South
+75612   Female  Central
+138169    Male     West
+87184   Female  Central
+...        ...      ...
+119879    Male     West
+103694    Male     West
+131932    Male     East
+146867    Male    South
+121958  Female     East
+
+[120000 rows x 2 columns]
+2025-09-18 16:16:14,704 - INFO - [array(['Female', 'Male'], dtype=object), array(['Central', 'East', 'North', 'South', 'West'], dtype=object)]
+2025-09-18 16:16:14,704 - INFO - ['Gender_Male' 'Region_East' 'Region_North' 'Region_South' 'Region_West']
+2025-09-18 16:16:14,783 - INFO - [[0. 0. 0. 0. 1.]
+ [1. 0. 0. 1. 0.]
+ [0. 0. 0. 0. 0.]
+ ...
+ [1. 1. 0. 0. 0.]
+ [1. 0. 0. 1. 0.]
+ [0. 1. 0. 0. 0.]]
+2025-09-18 16:16:14,822 - INFO - Sample data after Onehotencoder is :
+        Gender_Male  Region_East  Region_North  Region_South  Region_West
+98630           1.0          0.0           1.0           0.0          0.0
+116252          1.0          0.0           0.0           1.0          0.0
+86850           1.0          0.0           1.0           0.0          0.0
+116434          0.0          1.0           0.0           0.0          0.0
+78105           0.0          0.0           1.0           0.0          0.0
+1055            1.0          0.0           0.0           0.0          0.0
+117092          1.0          0.0           0.0           0.0          1.0
+2025-09-18 16:16:14,870 - INFO - ------------------Ordinal Encoder-----------------------
+2025-09-18 16:16:14,870 - INFO - Columns in the x_ train are : Index(['Rented_OwnHouse', 'Occupation', 'Education'], dtype='object')
+2025-09-18 16:16:14,876 - INFO - Sample data are :        Rented_OwnHouse   Occupation     Education
+104025        Ownhouse     Self_Emp      Graduate
+5415          Ownhouse     Self_Emp        Matric
+75612           Rented  Non-officer  Professional
+138169        Ownhouse  Non-officer  Professional
+87184         Ownhouse  Non-officer      Graduate
+...                ...          ...           ...
+119879        Ownhouse     Self_Emp      Graduate
+103694        Ownhouse     Self_Emp           PhD
+131932          Rented     Officer1  Professional
+146867          Rented     Self_Emp  Professional
+121958          Rented     Self_Emp     Post-Grad
+
+[120000 rows x 3 columns]
+2025-09-18 16:16:14,886 - INFO - [array(['Ownhouse', 'Rented'], dtype=object), array(['Non-officer', 'Officer1', 'Officer2', 'Officer3', 'Self_Emp'],
+      dtype=object), array(['Graduate', 'Matric', 'PhD', 'Post-Grad', 'Professional'],
+      dtype=object)]
+2025-09-18 16:16:14,977 - ERROR - <class 'AttributeError'> at 41 as 'OrdinalEncoder' object has no attribute 'get_feature_names_out'
+2025-09-18 16:38:39,593 - INFO - Encoding has started....
+2025-09-18 16:38:39,593 - INFO - ------------------Onehot Encoder----------------------
+2025-09-18 16:38:39,594 - INFO - Columns in the x_ train are : Index(['Gender', 'Region'], dtype='object')
+2025-09-18 16:38:39,609 - INFO - Sample data are :         Gender   Region
+104025  Female     West
+5415      Male    South
+75612   Female  Central
+138169    Male     West
+87184   Female  Central
+...        ...      ...
+119879    Male     West
+103694    Male     West
+131932    Male     East
+146867    Male    South
+121958  Female     East
+
+[120000 rows x 2 columns]
+2025-09-18 16:38:39,618 - INFO - [array(['Female', 'Male'], dtype=object), array(['Central', 'East', 'North', 'South', 'West'], dtype=object)]
+2025-09-18 16:38:39,618 - INFO - ['Gender_Male' 'Region_East' 'Region_North' 'Region_South' 'Region_West']
+2025-09-18 16:38:39,717 - INFO - [[0. 0. 0. 0. 1.]
+ [1. 0. 0. 1. 0.]
+ [0. 0. 0. 0. 0.]
+ ...
+ [1. 1. 0. 0. 0.]
+ [1. 0. 0. 1. 0.]
+ [0. 1. 0. 0. 0.]]
+2025-09-18 16:38:39,769 - INFO - Sample data after Onehotencoder is :
+       Gender_Male  Region_East  Region_North  Region_South  Region_West
+66343          0.0          0.0           1.0           0.0          0.0
+15265          1.0          0.0           0.0           1.0          0.0
+79691          0.0          0.0           0.0           0.0          0.0
+22581          1.0          0.0           0.0           0.0          1.0
+96226          1.0          0.0           0.0           0.0          0.0
+79553          0.0          0.0           0.0           0.0          1.0
+34273          1.0          0.0           0.0           1.0          0.0
+2025-09-18 16:38:39,834 - INFO - ------------------Ordinal Encoder-----------------------
+2025-09-18 16:38:39,835 - INFO - Columns in the x_ train are : Index(['Rented_OwnHouse', 'Occupation', 'Education'], dtype='object')
+2025-09-18 16:38:39,849 - INFO - Sample data are :        Rented_OwnHouse   Occupation     Education
+104025        Ownhouse     Self_Emp      Graduate
+5415          Ownhouse     Self_Emp        Matric
+75612           Rented  Non-officer  Professional
+138169        Ownhouse  Non-officer  Professional
+87184         Ownhouse  Non-officer      Graduate
+...                ...          ...           ...
+119879        Ownhouse     Self_Emp      Graduate
+103694        Ownhouse     Self_Emp           PhD
+131932          Rented     Officer1  Professional
+146867          Rented     Self_Emp  Professional
+121958          Rented     Self_Emp     Post-Grad
+
+[120000 rows x 3 columns]
+2025-09-18 16:38:39,870 - INFO - [array(['Ownhouse', 'Rented'], dtype=object), array(['Non-officer', 'Officer1', 'Officer2', 'Officer3', 'Self_Emp'],
+      dtype=object), array(['Graduate', 'Matric', 'PhD', 'Post-Grad', 'Professional'],
+      dtype=object)]
+2025-09-18 16:38:39,870 - INFO - ['Rented_OwnHouse' 'Occupation' 'Education']
+2025-09-18 16:38:39,969 - ERROR - <class 'NameError'> at 42 as name 'output_train' is not defined
+2025-09-18 16:39:29,983 - INFO - Encoding has started....
+2025-09-18 16:39:29,984 - INFO - ------------------Onehot Encoder----------------------
+2025-09-18 16:39:29,984 - INFO - Columns in the x_ train are : Index(['Gender', 'Region'], dtype='object')
+2025-09-18 16:39:29,991 - INFO - Sample data are :         Gender   Region
+104025  Female     West
+5415      Male    South
+75612   Female  Central
+138169    Male     West
+87184   Female  Central
+...        ...      ...
+119879    Male     West
+103694    Male     West
+131932    Male     East
+146867    Male    South
+121958  Female     East
+
+[120000 rows x 2 columns]
+2025-09-18 16:39:30,000 - INFO - [array(['Female', 'Male'], dtype=object), array(['Central', 'East', 'North', 'South', 'West'], dtype=object)]
+2025-09-18 16:39:30,001 - INFO - ['Gender_Male' 'Region_East' 'Region_North' 'Region_South' 'Region_West']
+2025-09-18 16:39:30,083 - INFO - [[0. 0. 0. 0. 1.]
+ [1. 0. 0. 1. 0.]
+ [0. 0. 0. 0. 0.]
+ ...
+ [1. 1. 0. 0. 0.]
+ [1. 0. 0. 1. 0.]
+ [0. 1. 0. 0. 0.]]
+2025-09-18 16:39:30,126 - INFO - Sample data after Onehotencoder is :
+       Gender_Male  Region_East  Region_North  Region_South  Region_West
+79907          1.0          0.0           0.0           1.0          0.0
+55185          0.0          1.0           0.0           0.0          0.0
+64431          0.0          0.0           1.0           0.0          0.0
+43158          1.0          0.0           0.0           1.0          0.0
+22624          1.0          0.0           0.0           0.0          0.0
+79595          0.0          1.0           0.0           0.0          0.0
+68471          1.0          1.0           0.0           0.0          0.0
+2025-09-18 16:39:30,170 - INFO - ------------------Ordinal Encoder-----------------------
+2025-09-18 16:39:30,170 - INFO - Columns in the x_ train are : Index(['Rented_OwnHouse', 'Occupation', 'Education'], dtype='object')
+2025-09-18 16:39:30,176 - INFO - Sample data are :        Rented_OwnHouse   Occupation     Education
+104025        Ownhouse     Self_Emp      Graduate
+5415          Ownhouse     Self_Emp        Matric
+75612           Rented  Non-officer  Professional
+138169        Ownhouse  Non-officer  Professional
+87184         Ownhouse  Non-officer      Graduate
+...                ...          ...           ...
+119879        Ownhouse     Self_Emp      Graduate
+103694        Ownhouse     Self_Emp           PhD
+131932          Rented     Officer1  Professional
+146867          Rented     Self_Emp  Professional
+121958          Rented     Self_Emp     Post-Grad
+
+[120000 rows x 3 columns]
+2025-09-18 16:39:30,189 - INFO - [array(['Ownhouse', 'Rented'], dtype=object), array(['Non-officer', 'Officer1', 'Officer2', 'Officer3', 'Self_Emp'],
+      dtype=object), array(['Graduate', 'Matric', 'PhD', 'Post-Grad', 'Professional'],
+      dtype=object)]
+2025-09-18 16:39:30,189 - INFO - ['Rented_OwnHouse' 'Occupation' 'Education']
+2025-09-18 16:39:30,273 - ERROR - <class 'NameError'> at 42 as name 'output_train' is not defined
+2025-09-18 16:40:33,485 - INFO - Encoding has started....
+2025-09-18 16:40:33,486 - INFO - ------------------Onehot Encoder----------------------
+2025-09-18 16:40:33,486 - INFO - Columns in the x_ train are : Index(['Gender', 'Region'], dtype='object')
+2025-09-18 16:40:33,494 - INFO - Sample data are :         Gender   Region
+104025  Female     West
+5415      Male    South
+75612   Female  Central
+138169    Male     West
+87184   Female  Central
+...        ...      ...
+119879    Male     West
+103694    Male     West
+131932    Male     East
+146867    Male    South
+121958  Female     East
+
+[120000 rows x 2 columns]
+2025-09-18 16:40:33,502 - INFO - [array(['Female', 'Male'], dtype=object), array(['Central', 'East', 'North', 'South', 'West'], dtype=object)]
+2025-09-18 16:40:33,502 - INFO - ['Gender_Male' 'Region_East' 'Region_North' 'Region_South' 'Region_West']
+2025-09-18 16:40:33,588 - INFO - [[0. 0. 0. 0. 1.]
+ [1. 0. 0. 1. 0.]
+ [0. 0. 0. 0. 0.]
+ ...
+ [1. 1. 0. 0. 0.]
+ [1. 0. 0. 1. 0.]
+ [0. 1. 0. 0. 0.]]
+2025-09-18 16:40:33,689 - INFO - Sample data after Onehotencoder is :
+        Gender_Male  Region_East  Region_North  Region_South  Region_West
+95880           1.0          0.0           0.0           0.0          1.0
+48585           0.0          0.0           1.0           0.0          0.0
+20985           0.0          0.0           0.0           0.0          1.0
+25441           1.0          0.0           0.0           0.0          1.0
+77310           1.0          0.0           0.0           0.0          0.0
+118152          0.0          1.0           0.0           0.0          0.0
+16032           1.0          0.0           0.0           0.0          1.0
+2025-09-18 16:40:33,727 - INFO - ------------------Ordinal Encoder-----------------------
+2025-09-18 16:40:33,727 - INFO - Columns in the x_ train are : Index(['Rented_OwnHouse', 'Occupation', 'Education'], dtype='object')
+2025-09-18 16:40:33,733 - INFO - Sample data are :        Rented_OwnHouse   Occupation     Education
+104025        Ownhouse     Self_Emp      Graduate
+5415          Ownhouse     Self_Emp        Matric
+75612           Rented  Non-officer  Professional
+138169        Ownhouse  Non-officer  Professional
+87184         Ownhouse  Non-officer      Graduate
+...                ...          ...           ...
+119879        Ownhouse     Self_Emp      Graduate
+103694        Ownhouse     Self_Emp           PhD
+131932          Rented     Officer1  Professional
+146867          Rented     Self_Emp  Professional
+121958          Rented     Self_Emp     Post-Grad
+
+[120000 rows x 3 columns]
+2025-09-18 16:40:33,746 - INFO - [array(['Ownhouse', 'Rented'], dtype=object), array(['Non-officer', 'Officer1', 'Officer2', 'Officer3', 'Self_Emp'],
+      dtype=object), array(['Graduate', 'Matric', 'PhD', 'Post-Grad', 'Professional'],
+      dtype=object)]
+2025-09-18 16:40:33,746 - INFO - ['Rented_OwnHouse' 'Occupation' 'Education']
+2025-09-18 16:40:33,834 - INFO - Sample data after Onehotencoder is :
+        Rented_OwnHouse  Occupation  Education
+67876               0.0         1.0        3.0
+41998               0.0         3.0        3.0
+62281               0.0         4.0        1.0
+112815              1.0         4.0        4.0
+74087               0.0         4.0        4.0
+42198               0.0         4.0        0.0
+49578               1.0         4.0        0.0
+2025-09-18 16:45:49,204 - INFO - Encoding has started....
+2025-09-18 16:45:49,206 - INFO - ------------------Onehot Encoder----------------------
+2025-09-18 16:45:49,206 - INFO - Columns in the x_ train are : Index(['Gender', 'Region'], dtype='object')
+2025-09-18 16:45:49,222 - INFO - Sample data are :         Gender   Region
+104025  Female     West
+5415      Male    South
+75612   Female  Central
+138169    Male     West
+87184   Female  Central
+...        ...      ...
+119879    Male     West
+103694    Male     West
+131932    Male     East
+146867    Male    South
+121958  Female     East
+
+[120000 rows x 2 columns]
+2025-09-18 16:45:49,234 - INFO - [array(['Female', 'Male'], dtype=object), array(['Central', 'East', 'North', 'South', 'West'], dtype=object)]
+2025-09-18 16:45:49,234 - INFO - ['Gender_Male' 'Region_East' 'Region_North' 'Region_South' 'Region_West']
+2025-09-18 16:45:49,326 - INFO - [[0. 0. 0. 0. 1.]
+ [1. 0. 0. 1. 0.]
+ [0. 0. 0. 0. 0.]
+ ...
+ [1. 1. 0. 0. 0.]
+ [1. 0. 0. 1. 0.]
+ [0. 1. 0. 0. 0.]]
+2025-09-18 16:45:49,367 - INFO - Sample data after Onehotencoder is :
+        Gender_Male  Region_East  Region_North  Region_South  Region_West
+71733           0.0          0.0           0.0           1.0          0.0
+42016           0.0          0.0           1.0           0.0          0.0
+17558           1.0          0.0           0.0           0.0          0.0
+112023          0.0          0.0           0.0           1.0          0.0
+104130          1.0          0.0           0.0           1.0          0.0
+94260           1.0          0.0           0.0           1.0          0.0
+43108           0.0          0.0           0.0           0.0          0.0
+2025-09-18 16:47:22,103 - INFO - Encoding has started....
+2025-09-18 16:47:22,103 - INFO - ------------------Onehot Encoder----------------------
+2025-09-18 16:47:22,103 - INFO - Columns in the x_ train are : Index(['Gender', 'Region'], dtype='object')
+2025-09-18 16:47:22,116 - INFO - Sample data are :         Gender   Region
+104025  Female     West
+5415      Male    South
+75612   Female  Central
+138169    Male     West
+87184   Female  Central
+...        ...      ...
+119879    Male     West
+103694    Male     West
+131932    Male     East
+146867    Male    South
+121958  Female     East
+
+[120000 rows x 2 columns]
+2025-09-18 16:47:22,131 - INFO - [array(['Female', 'Male'], dtype=object), array(['Central', 'East', 'North', 'South', 'West'], dtype=object)]
+2025-09-18 16:47:22,133 - INFO - ['Gender_Male' 'Region_East' 'Region_North' 'Region_South' 'Region_West']
+2025-09-18 16:47:22,229 - INFO - [[0. 0. 0. 0. 1.]
+ [1. 0. 0. 1. 0.]
+ [0. 0. 0. 0. 0.]
+ ...
+ [1. 1. 0. 0. 0.]
+ [1. 0. 0. 1. 0.]
+ [0. 1. 0. 0. 0.]]
+2025-09-18 16:47:22,273 - INFO - Sample data after Onehotencoder is :
+        Gender_Male  Region_East  Region_North  Region_South  Region_West
+90109           1.0          0.0           1.0           0.0          0.0
+96986           1.0          0.0           0.0           0.0          0.0
+85512           0.0          0.0           1.0           0.0          0.0
+7128            0.0          0.0           1.0           0.0          0.0
+118687          0.0          0.0           1.0           0.0          0.0
+65275           1.0          0.0           1.0           0.0          0.0
+34632           1.0          0.0           0.0           0.0          1.0
+2025-09-18 16:48:26,410 - INFO - Encoding has started....
+2025-09-18 16:48:26,410 - INFO - ------------------Onehot Encoder----------------------
+2025-09-18 16:48:26,410 - INFO - Columns in the x_ train are : Index(['Gender', 'Region'], dtype='object')
+2025-09-18 16:48:26,418 - INFO - Sample data are :         Gender   Region
+104025  Female     West
+5415      Male    South
+75612   Female  Central
+138169    Male     West
+87184   Female  Central
+...        ...      ...
+119879    Male     West
+103694    Male     West
+131932    Male     East
+146867    Male    South
+121958  Female     East
+
+[120000 rows x 2 columns]
+2025-09-18 16:48:26,426 - INFO - [array(['Female', 'Male'], dtype=object), array(['Central', 'East', 'North', 'South', 'West'], dtype=object)]
+2025-09-18 16:48:26,426 - INFO - ['Gender_Male' 'Region_East' 'Region_North' 'Region_South' 'Region_West']
+2025-09-18 16:48:26,508 - INFO - [[0. 0. 0. 0. 1.]
+ [1. 0. 0. 1. 0.]
+ [0. 0. 0. 0. 0.]
+ ...
+ [1. 1. 0. 0. 0.]
+ [1. 0. 0. 1. 0.]
+ [0. 1. 0. 0. 0.]]
+2025-09-18 16:48:26,552 - INFO - Sample data after Onehotencoder is :
+        Gender_Male  Region_East  Region_North  Region_South  Region_West
+88218           1.0          0.0           0.0           0.0          1.0
+73403           0.0          0.0           1.0           0.0          0.0
+18629           0.0          0.0           0.0           0.0          0.0
+1375            1.0          1.0           0.0           0.0          0.0
+115659          1.0          0.0           0.0           0.0          1.0
+10760           1.0          0.0           0.0           1.0          0.0
+9476            1.0          0.0           0.0           0.0          1.0
+2025-09-18 16:49:50,157 - INFO - Encoding has started....
+2025-09-18 16:49:50,160 - INFO - ------------------Onehot Encoder----------------------
+2025-09-18 16:49:50,160 - INFO - Columns in the x_ train are : Index(['Gender', 'Region'], dtype='object')
+2025-09-18 16:49:50,169 - INFO - Sample data are :         Gender   Region
+104025  Female     West
+5415      Male    South
+75612   Female  Central
+138169    Male     West
+87184   Female  Central
+...        ...      ...
+119879    Male     West
+103694    Male     West
+131932    Male     East
+146867    Male    South
+121958  Female     East
+
+[120000 rows x 2 columns]
+2025-09-18 16:49:50,178 - INFO - [array(['Female', 'Male'], dtype=object), array(['Central', 'East', 'North', 'South', 'West'], dtype=object)]
+2025-09-18 16:49:50,179 - INFO - ['Gender_Male' 'Region_East' 'Region_North' 'Region_South' 'Region_West']
+2025-09-18 16:49:50,255 - INFO - [[0. 0. 0. 0. 1.]
+ [1. 0. 0. 1. 0.]
+ [0. 0. 0. 0. 0.]
+ ...
+ [1. 1. 0. 0. 0.]
+ [1. 0. 0. 1. 0.]
+ [0. 1. 0. 0. 0.]]
+2025-09-18 16:49:50,287 - INFO - Sample data after Onehotencoder is :
+        Gender_Male  Region_East  Region_North  Region_South  Region_West
+111706          0.0          1.0           0.0           0.0          0.0
+113478          1.0          0.0           0.0           0.0          1.0
+18914           1.0          0.0           0.0           1.0          0.0
+88562           0.0          1.0           0.0           0.0          0.0
+54934           1.0          0.0           0.0           1.0          0.0
+4473            1.0          0.0           0.0           1.0          0.0
+105442          1.0          0.0           1.0           0.0          0.0
+2025-09-18 16:54:38,060 - INFO - Encoding has started....
+2025-09-18 16:54:38,060 - INFO - ------------------Onehot Encoder----------------------
+2025-09-18 16:54:38,063 - INFO - Columns in the x_ train are : Index(['Gender', 'Region'], dtype='object')
+2025-09-18 16:54:38,070 - INFO - Sample data are :         Gender   Region
+104025  Female     West
+5415      Male    South
+75612   Female  Central
+138169    Male     West
+87184   Female  Central
+...        ...      ...
+119879    Male     West
+103694    Male     West
+131932    Male     East
+146867    Male    South
+121958  Female     East
+
+[120000 rows x 2 columns]
+2025-09-18 16:54:38,070 - INFO - [array(['Female', 'Male'], dtype=object), array(['Central', 'East', 'North', 'South', 'West'], dtype=object)]
+2025-09-18 16:54:38,070 - INFO - ['Gender_Male' 'Region_East' 'Region_North' 'Region_South' 'Region_West']
+2025-09-18 16:54:38,151 - INFO - [[0. 0. 0. 0. 1.]
+ [1. 0. 0. 1. 0.]
+ [0. 0. 0. 0. 0.]
+ ...
+ [1. 1. 0. 0. 0.]
+ [1. 0. 0. 1. 0.]
+ [0. 1. 0. 0. 0.]]
+2025-09-18 16:54:38,179 - INFO - Sample data after Onehotencoder is :
+       Gender_Male  Region_East  Region_North  Region_South  Region_West
+46249          1.0          0.0           0.0           0.0          1.0
+88394          1.0          0.0           0.0           0.0          1.0
+67045          0.0          0.0           1.0           0.0          0.0
+52879          1.0          0.0           0.0           1.0          0.0
+43260          1.0          0.0           0.0           0.0          1.0
+59691          1.0          1.0           0.0           0.0          0.0
+65150          1.0          0.0           0.0           0.0          1.0
+2025-09-18 16:54:38,195 - INFO - ------------------Ordinal Encoder-----------------------
+2025-09-18 16:54:38,195 - INFO - Columns in the x_ train are : Index(['Rented_OwnHouse', 'Occupation', 'Education'], dtype='object')
+2025-09-18 16:54:38,207 - INFO - Sample data are :        Rented_OwnHouse   Occupation     Education
+104025        Ownhouse     Self_Emp      Graduate
+5415          Ownhouse     Self_Emp        Matric
+75612           Rented  Non-officer  Professional
+138169        Ownhouse  Non-officer  Professional
+87184         Ownhouse  Non-officer      Graduate
+...                ...          ...           ...
+119879        Ownhouse     Self_Emp      Graduate
+103694        Ownhouse     Self_Emp           PhD
+131932          Rented     Officer1  Professional
+146867          Rented     Self_Emp  Professional
+121958          Rented     Self_Emp     Post-Grad
+
+[120000 rows x 3 columns]
+2025-09-18 16:54:38,211 - INFO - [array(['Ownhouse', 'Rented'], dtype=object), array(['Non-officer', 'Officer1', 'Officer2', 'Officer3', 'Self_Emp'],
+      dtype=object), array(['Graduate', 'Matric', 'PhD', 'Post-Grad', 'Professional'],
+      dtype=object)]
+2025-09-18 16:54:38,211 - INFO - ['Rented_OwnHouse' 'Occupation' 'Education']
+2025-09-18 16:54:38,306 - ERROR - <class 'NameError'> at 44 as name 'fd' is not defined
+2025-09-18 16:57:29,482 - INFO - Encoding has started....
+2025-09-18 16:57:29,482 - INFO - ------------------Onehot Encoder----------------------
+2025-09-18 16:57:29,484 - INFO - Columns in the x_ train are : Index(['Gender', 'Region'], dtype='object')
+2025-09-18 16:57:29,492 - INFO - Sample data are :         Gender   Region
+104025  Female     West
+5415      Male    South
+75612   Female  Central
+138169    Male     West
+87184   Female  Central
+...        ...      ...
+119879    Male     West
+103694    Male     West
+131932    Male     East
+146867    Male    South
+121958  Female     East
+
+[120000 rows x 2 columns]
+2025-09-18 16:57:29,500 - INFO - [array(['Female', 'Male'], dtype=object), array(['Central', 'East', 'North', 'South', 'West'], dtype=object)]
+2025-09-18 16:57:29,500 - INFO - ['Gender_Male' 'Region_East' 'Region_North' 'Region_South' 'Region_West']
+2025-09-18 16:57:29,579 - INFO - [[0. 0. 0. 0. 1.]
+ [1. 0. 0. 1. 0.]
+ [0. 0. 0. 0. 0.]
+ ...
+ [1. 1. 0. 0. 0.]
+ [1. 0. 0. 1. 0.]
+ [0. 1. 0. 0. 0.]]
+2025-09-18 16:57:29,615 - INFO - Sample data after Onehotencoder is :
+       Gender_Male  Region_East  Region_North  Region_South  Region_West
+6931           1.0          0.0           0.0           0.0          0.0
+1897           1.0          0.0           0.0           0.0          0.0
+79646          1.0          0.0           0.0           0.0          1.0
+13185          1.0          0.0           1.0           0.0          0.0
+23981          1.0          0.0           0.0           0.0          1.0
+95077          0.0          0.0           0.0           0.0          0.0
+30180          0.0          0.0           1.0           0.0          0.0
+2025-09-18 16:57:29,619 - INFO - ------------------Ordinal Encoder-----------------------
+2025-09-18 16:57:29,621 - INFO - Columns in the x_ train are : Index(['Rented_OwnHouse', 'Occupation', 'Education'], dtype='object')
+2025-09-18 16:57:29,627 - INFO - Sample data are :        Rented_OwnHouse   Occupation     Education
+104025        Ownhouse     Self_Emp      Graduate
+5415          Ownhouse     Self_Emp        Matric
+75612           Rented  Non-officer  Professional
+138169        Ownhouse  Non-officer  Professional
+87184         Ownhouse  Non-officer      Graduate
+...                ...          ...           ...
+119879        Ownhouse     Self_Emp      Graduate
+103694        Ownhouse     Self_Emp           PhD
+131932          Rented     Officer1  Professional
+146867          Rented     Self_Emp  Professional
+121958          Rented     Self_Emp     Post-Grad
+
+[120000 rows x 3 columns]
+2025-09-18 16:57:29,639 - INFO - [array(['Ownhouse', 'Rented'], dtype=object), array(['Non-officer', 'Officer1', 'Officer2', 'Officer3', 'Self_Emp'],
+      dtype=object), array(['Graduate', 'Matric', 'PhD', 'Post-Grad', 'Professional'],
+      dtype=object)]
+2025-09-18 16:57:29,639 - INFO - ['Rented_OwnHouse' 'Occupation' 'Education']
+2025-09-18 16:57:29,716 - ERROR - <class 'NameError'> at 44 as name 'fd' is not defined
+2025-09-18 16:58:45,004 - INFO - Encoding has started....
+2025-09-18 16:58:45,004 - INFO - ------------------Onehot Encoder----------------------
+2025-09-18 16:58:45,020 - INFO - Columns in the x_ train are : Index(['Gender', 'Region'], dtype='object')
+2025-09-18 16:58:45,036 - INFO - Sample data are :         Gender   Region
+104025  Female     West
+5415      Male    South
+75612   Female  Central
+138169    Male     West
+87184   Female  Central
+...        ...      ...
+119879    Male     West
+103694    Male     West
+131932    Male     East
+146867    Male    South
+121958  Female     East
+
+[120000 rows x 2 columns]
+2025-09-18 16:58:45,036 - INFO - [array(['Female', 'Male'], dtype=object), array(['Central', 'East', 'North', 'South', 'West'], dtype=object)]
+2025-09-18 16:58:45,036 - INFO - ['Gender_Male' 'Region_East' 'Region_North' 'Region_South' 'Region_West']
+2025-09-18 16:58:45,100 - INFO - [[0. 0. 0. 0. 1.]
+ [1. 0. 0. 1. 0.]
+ [0. 0. 0. 0. 0.]
+ ...
+ [1. 1. 0. 0. 0.]
+ [1. 0. 0. 1. 0.]
+ [0. 1. 0. 0. 0.]]
+2025-09-18 16:58:45,151 - INFO - Sample data after Onehotencoder is :
+       Gender_Male  Region_East  Region_North  Region_South  Region_West
+28010          1.0          0.0           0.0           0.0          0.0
+68461          0.0          0.0           1.0           0.0          0.0
+53912          1.0          1.0           0.0           0.0          0.0
+83125          1.0          0.0           1.0           0.0          0.0
+6449           1.0          0.0           0.0           0.0          0.0
+34841          1.0          0.0           0.0           0.0          1.0
+33630          1.0          0.0           0.0           0.0          1.0
+2025-09-18 16:58:45,151 - INFO - ------------------Ordinal Encoder-----------------------
+2025-09-18 16:58:45,151 - INFO - Columns in the x_ train are : Index(['Rented_OwnHouse', 'Occupation', 'Education'], dtype='object')
+2025-09-18 16:58:45,151 - INFO - Sample data are :        Rented_OwnHouse   Occupation     Education
+104025        Ownhouse     Self_Emp      Graduate
+5415          Ownhouse     Self_Emp        Matric
+75612           Rented  Non-officer  Professional
+138169        Ownhouse  Non-officer  Professional
+87184         Ownhouse  Non-officer      Graduate
+...                ...          ...           ...
+119879        Ownhouse     Self_Emp      Graduate
+103694        Ownhouse     Self_Emp           PhD
+131932          Rented     Officer1  Professional
+146867          Rented     Self_Emp  Professional
+121958          Rented     Self_Emp     Post-Grad
+
+[120000 rows x 3 columns]
+2025-09-18 16:58:45,164 - INFO - [array(['Ownhouse', 'Rented'], dtype=object), array(['Non-officer', 'Officer1', 'Officer2', 'Officer3', 'Self_Emp'],
+      dtype=object), array(['Graduate', 'Matric', 'PhD', 'Post-Grad', 'Professional'],
+      dtype=object)]
+2025-09-18 16:58:45,164 - INFO - ['Rented_OwnHouse' 'Occupation' 'Education']
+2025-09-18 16:58:45,262 - INFO - Sample data after Onehotencoder is :
+        Rented_OwnHouse  Occupation  Education
+93505               1.0         3.0        3.0
+101744              0.0         0.0        4.0
+119104              1.0         4.0        3.0
+45905               1.0         0.0        4.0
+49722               0.0         0.0        4.0
+89962               1.0         2.0        4.0
+38014               1.0         4.0        4.0
+2025-09-18 17:07:02,206 - INFO - Encoding has started....
+2025-09-18 17:07:02,206 - INFO - ------------------Onehot Encoder----------------------
+2025-09-18 17:07:02,206 - INFO - Columns in the x_ train are : Index(['Gender', 'Region'], dtype='object')
+2025-09-18 17:07:02,216 - INFO - Sample data are :         Gender   Region
+104025  Female     West
+5415      Male    South
+75612   Female  Central
+138169    Male     West
+87184   Female  Central
+...        ...      ...
+119879    Male     West
+103694    Male     West
+131932    Male     East
+146867    Male    South
+121958  Female     East
+
+[120000 rows x 2 columns]
+2025-09-18 17:07:02,226 - INFO - [array(['Female', 'Male'], dtype=object), array(['Central', 'East', 'North', 'South', 'West'], dtype=object)]
+2025-09-18 17:07:02,226 - INFO - ['Gender_Male' 'Region_East' 'Region_North' 'Region_South' 'Region_West']
+2025-09-18 17:07:02,283 - INFO - [[0. 0. 0. 0. 1.]
+ [1. 0. 0. 1. 0.]
+ [0. 0. 0. 0. 0.]
+ ...
+ [1. 1. 0. 0. 0.]
+ [1. 0. 0. 1. 0.]
+ [0. 1. 0. 0. 0.]]
+2025-09-18 17:07:02,315 - INFO - Sample data after Onehotencoder is :
+       Gender_Male  Region_East  Region_North  Region_South  Region_West
+85942          0.0          0.0           1.0           0.0          0.0
+61574          1.0          0.0           0.0           0.0          0.0
+88517          1.0          0.0           0.0           1.0          0.0
+92744          1.0          1.0           0.0           0.0          0.0
+88214          1.0          0.0           1.0           0.0          0.0
+34247          0.0          0.0           1.0           0.0          0.0
+1938           1.0          0.0           0.0           0.0          1.0
+2025-09-18 17:07:02,330 - INFO - ------------------Ordinal Encoder-----------------------
+2025-09-18 17:07:02,330 - INFO - Columns in the x_ train are : Index(['Rented_OwnHouse', 'Occupation', 'Education'], dtype='object')
+2025-09-18 17:07:02,334 - INFO - Sample data are :        Rented_OwnHouse   Occupation     Education
+104025        Ownhouse     Self_Emp      Graduate
+5415          Ownhouse     Self_Emp        Matric
+75612           Rented  Non-officer  Professional
+138169        Ownhouse  Non-officer  Professional
+87184         Ownhouse  Non-officer      Graduate
+...                ...          ...           ...
+119879        Ownhouse     Self_Emp      Graduate
+103694        Ownhouse     Self_Emp           PhD
+131932          Rented     Officer1  Professional
+146867          Rented     Self_Emp  Professional
+121958          Rented     Self_Emp     Post-Grad
+
+[120000 rows x 3 columns]
+2025-09-18 17:07:02,348 - INFO - [array(['Ownhouse', 'Rented'], dtype=object), array(['Non-officer', 'Officer1', 'Officer2', 'Officer3', 'Self_Emp'],
+      dtype=object), array(['Graduate', 'Matric', 'PhD', 'Post-Grad', 'Professional'],
+      dtype=object)]
+2025-09-18 17:07:02,350 - INFO - ['Rented_OwnHouse' 'Occupation' 'Education']
+2025-09-18 17:07:02,433 - INFO - Sample data after Onehotencoder is :
+        Rented_OwnHouse  Occupation  Education
+86773               0.0         3.0        4.0
+5725                0.0         0.0        4.0
+61182               0.0         4.0        4.0
+100577              1.0         0.0        4.0
+26530               1.0         2.0        4.0
+13824               1.0         2.0        4.0
+75527               1.0         0.0        0.0
+2025-09-18 17:07:02,475 - INFO - [1 1 1 ... 1 1 1]
+2025-09-18 17:07:02,475 - INFO - ['Bad' 'Good']
+2025-09-18 17:11:43,342 - INFO - Encoding has started....
+2025-09-18 17:11:43,342 - INFO - ------------------Onehot Encoder----------------------
+2025-09-18 17:11:43,342 - INFO - Columns in the x_ train are : Index(['Gender', 'Region'], dtype='object')
+2025-09-18 17:11:43,352 - INFO - Sample data are :         Gender   Region
+104025  Female     West
+5415      Male    South
+75612   Female  Central
+138169    Male     West
+87184   Female  Central
+...        ...      ...
+119879    Male     West
+103694    Male     West
+131932    Male     East
+146867    Male    South
+121958  Female     East
+
+[120000 rows x 2 columns]
+2025-09-18 17:11:43,360 - INFO - [array(['Female', 'Male'], dtype=object), array(['Central', 'East', 'North', 'South', 'West'], dtype=object)]
+2025-09-18 17:11:43,360 - INFO - ['Gender_Male' 'Region_East' 'Region_North' 'Region_South' 'Region_West']
+2025-09-18 17:11:43,428 - INFO - [[0. 0. 0. 0. 1.]
+ [1. 0. 0. 1. 0.]
+ [0. 0. 0. 0. 0.]
+ ...
+ [1. 1. 0. 0. 0.]
+ [1. 0. 0. 1. 0.]
+ [0. 1. 0. 0. 0.]]
+2025-09-18 17:11:43,451 - INFO - Sample data after Onehotencoder is :
+        Gender_Male  Region_East  Region_North  Region_South  Region_West
+89334           0.0          0.0           1.0           0.0          0.0
+3576            0.0          1.0           0.0           0.0          0.0
+5574            1.0          0.0           0.0           0.0          0.0
+72960           0.0          0.0           1.0           0.0          0.0
+108422          0.0          0.0           0.0           0.0          0.0
+1030            1.0          0.0           0.0           0.0          1.0
+29261           1.0          0.0           0.0           0.0          0.0
+2025-09-18 17:11:43,464 - INFO - ------------------Ordinal Encoder-----------------------
+2025-09-18 17:11:43,464 - INFO - Columns in the x_ train are : Index(['Rented_OwnHouse', 'Occupation', 'Education'], dtype='object')
+2025-09-18 17:11:43,464 - INFO - Sample data are :        Rented_OwnHouse   Occupation     Education
+104025        Ownhouse     Self_Emp      Graduate
+5415          Ownhouse     Self_Emp        Matric
+75612           Rented  Non-officer  Professional
+138169        Ownhouse  Non-officer  Professional
+87184         Ownhouse  Non-officer      Graduate
+...                ...          ...           ...
+119879        Ownhouse     Self_Emp      Graduate
+103694        Ownhouse     Self_Emp           PhD
+131932          Rented     Officer1  Professional
+146867          Rented     Self_Emp  Professional
+121958          Rented     Self_Emp     Post-Grad
+
+[120000 rows x 3 columns]
+2025-09-18 17:11:43,477 - INFO - [array(['Ownhouse', 'Rented'], dtype=object), array(['Non-officer', 'Officer1', 'Officer2', 'Officer3', 'Self_Emp'],
+      dtype=object), array(['Graduate', 'Matric', 'PhD', 'Post-Grad', 'Professional'],
+      dtype=object)]
+2025-09-18 17:11:43,477 - INFO - ['Rented_OwnHouse' 'Occupation' 'Education']
+2025-09-18 17:11:43,564 - INFO - Sample data after Onehotencoder is :
+        Rented_OwnHouse  Occupation  Education
+76741               0.0         0.0        0.0
+87745               0.0         4.0        0.0
+110845              1.0         0.0        0.0
+110766              0.0         4.0        2.0
+119983              1.0         2.0        4.0
+48708               0.0         0.0        0.0
+36938               0.0         4.0        4.0
+2025-09-18 17:11:43,613 - INFO - [1 1 1 ... 1 1 1]
+2025-09-18 17:11:43,613 - INFO - ['Bad' 'Good']
+2025-09-18 17:11:43,613 - ERROR - <class 'NameError'> at 57 as name 'res1' is not defined
+2025-09-18 17:12:10,365 - INFO - Encoding has started....
+2025-09-18 17:12:10,365 - INFO - ------------------Onehot Encoder----------------------
+2025-09-18 17:12:10,365 - INFO - Columns in the x_ train are : Index(['Gender', 'Region'], dtype='object')
+2025-09-18 17:12:10,381 - INFO - Sample data are :         Gender   Region
+104025  Female     West
+5415      Male    South
+75612   Female  Central
+138169    Male     West
+87184   Female  Central
+...        ...      ...
+119879    Male     West
+103694    Male     West
+131932    Male     East
+146867    Male    South
+121958  Female     East
+
+[120000 rows x 2 columns]
+2025-09-18 17:12:10,392 - INFO - [array(['Female', 'Male'], dtype=object), array(['Central', 'East', 'North', 'South', 'West'], dtype=object)]
+2025-09-18 17:12:10,392 - INFO - ['Gender_Male' 'Region_East' 'Region_North' 'Region_South' 'Region_West']
+2025-09-18 17:12:10,523 - INFO - [[0. 0. 0. 0. 1.]
+ [1. 0. 0. 1. 0.]
+ [0. 0. 0. 0. 0.]
+ ...
+ [1. 1. 0. 0. 0.]
+ [1. 0. 0. 1. 0.]
+ [0. 1. 0. 0. 0.]]
+2025-09-18 17:12:10,574 - INFO - Sample data after Onehotencoder is :
+        Gender_Male  Region_East  Region_North  Region_South  Region_West
+548             1.0          0.0           0.0           0.0          0.0
+105421          1.0          0.0           1.0           0.0          0.0
+86006           0.0          1.0           0.0           0.0          0.0
+2260            0.0          0.0           0.0           0.0          1.0
+53492           1.0          0.0           0.0           0.0          0.0
+73571           1.0          0.0           0.0           0.0          1.0
+86628           1.0          0.0           0.0           0.0          1.0
+2025-09-18 17:12:10,583 - INFO - ------------------Ordinal Encoder-----------------------
+2025-09-18 17:12:10,583 - INFO - Columns in the x_ train are : Index(['Rented_OwnHouse', 'Occupation', 'Education'], dtype='object')
+2025-09-18 17:12:10,590 - INFO - Sample data are :        Rented_OwnHouse   Occupation     Education
+104025        Ownhouse     Self_Emp      Graduate
+5415          Ownhouse     Self_Emp        Matric
+75612           Rented  Non-officer  Professional
+138169        Ownhouse  Non-officer  Professional
+87184         Ownhouse  Non-officer      Graduate
+...                ...          ...           ...
+119879        Ownhouse     Self_Emp      Graduate
+103694        Ownhouse     Self_Emp           PhD
+131932          Rented     Officer1  Professional
+146867          Rented     Self_Emp  Professional
+121958          Rented     Self_Emp     Post-Grad
+
+[120000 rows x 3 columns]
+2025-09-18 17:12:10,614 - INFO - [array(['Ownhouse', 'Rented'], dtype=object), array(['Non-officer', 'Officer1', 'Officer2', 'Officer3', 'Self_Emp'],
+      dtype=object), array(['Graduate', 'Matric', 'PhD', 'Post-Grad', 'Professional'],
+      dtype=object)]
+2025-09-18 17:12:10,616 - INFO - ['Rented_OwnHouse' 'Occupation' 'Education']
+2025-09-18 17:12:10,786 - INFO - Sample data after Onehotencoder is :
+       Rented_OwnHouse  Occupation  Education
+74916              0.0         4.0        3.0
+23333              0.0         0.0        0.0
+67254              1.0         0.0        4.0
+37837              1.0         1.0        4.0
+89819              1.0         3.0        3.0
+67707              1.0         1.0        3.0
+5507               1.0         3.0        3.0
+2025-09-18 17:12:10,876 - ERROR - <class 'NameError'> at 55 as name 'res' is not defined
+2025-09-18 17:12:46,911 - INFO - Encoding has started....
+2025-09-18 17:12:46,911 - INFO - ------------------Onehot Encoder----------------------
+2025-09-18 17:12:46,911 - INFO - Columns in the x_ train are : Index(['Gender', 'Region'], dtype='object')
+2025-09-18 17:12:46,919 - INFO - Sample data are :         Gender   Region
+104025  Female     West
+5415      Male    South
+75612   Female  Central
+138169    Male     West
+87184   Female  Central
+...        ...      ...
+119879    Male     West
+103694    Male     West
+131932    Male     East
+146867    Male    South
+121958  Female     East
+
+[120000 rows x 2 columns]
+2025-09-18 17:12:46,928 - INFO - [array(['Female', 'Male'], dtype=object), array(['Central', 'East', 'North', 'South', 'West'], dtype=object)]
+2025-09-18 17:12:46,928 - INFO - ['Gender_Male' 'Region_East' 'Region_North' 'Region_South' 'Region_West']
+2025-09-18 17:12:47,009 - INFO - [[0. 0. 0. 0. 1.]
+ [1. 0. 0. 1. 0.]
+ [0. 0. 0. 0. 0.]
+ ...
+ [1. 1. 0. 0. 0.]
+ [1. 0. 0. 1. 0.]
+ [0. 1. 0. 0. 0.]]
+2025-09-18 17:12:47,056 - INFO - Sample data after Onehotencoder is :
+       Gender_Male  Region_East  Region_North  Region_South  Region_West
+93398          0.0          0.0           0.0           0.0          0.0
+67645          1.0          0.0           0.0           0.0          0.0
+17787          1.0          0.0           0.0           0.0          1.0
+87738          1.0          0.0           0.0           1.0          0.0
+69634          0.0          0.0           1.0           0.0          0.0
+76941          1.0          0.0           0.0           1.0          0.0
+18304          1.0          0.0           0.0           0.0          1.0
+2025-09-18 17:12:47,056 - INFO - ------------------Ordinal Encoder-----------------------
+2025-09-18 17:12:47,056 - INFO - Columns in the x_ train are : Index(['Rented_OwnHouse', 'Occupation', 'Education'], dtype='object')
+2025-09-18 17:12:47,067 - INFO - Sample data are :        Rented_OwnHouse   Occupation     Education
+104025        Ownhouse     Self_Emp      Graduate
+5415          Ownhouse     Self_Emp        Matric
+75612           Rented  Non-officer  Professional
+138169        Ownhouse  Non-officer  Professional
+87184         Ownhouse  Non-officer      Graduate
+...                ...          ...           ...
+119879        Ownhouse     Self_Emp      Graduate
+103694        Ownhouse     Self_Emp           PhD
+131932          Rented     Officer1  Professional
+146867          Rented     Self_Emp  Professional
+121958          Rented     Self_Emp     Post-Grad
+
+[120000 rows x 3 columns]
+2025-09-18 17:12:47,072 - INFO - [array(['Ownhouse', 'Rented'], dtype=object), array(['Non-officer', 'Officer1', 'Officer2', 'Officer3', 'Self_Emp'],
+      dtype=object), array(['Graduate', 'Matric', 'PhD', 'Post-Grad', 'Professional'],
+      dtype=object)]
+2025-09-18 17:12:47,072 - INFO - ['Rented_OwnHouse' 'Occupation' 'Education']
+2025-09-18 17:12:47,209 - INFO - Sample data after Onehotencoder is :
+       Rented_OwnHouse  Occupation  Education
+83894              1.0         4.0        0.0
+52845              1.0         4.0        0.0
+40469              0.0         0.0        0.0
+84865              0.0         0.0        0.0
+40509              1.0         1.0        3.0
+49202              0.0         4.0        3.0
+45530              0.0         4.0        4.0
+2025-09-18 17:12:47,279 - INFO - [1 1 1 ... 1 1 1]
+2025-09-18 17:12:47,279 - INFO - ['Bad' 'Good']
+2025-09-18 17:13:14,792 - INFO - Encoding has started....
+2025-09-18 17:13:14,793 - INFO - ------------------Onehot Encoder----------------------
+2025-09-18 17:13:14,793 - INFO - Columns in the x_ train are : Index(['Gender', 'Region'], dtype='object')
+2025-09-18 17:13:14,802 - INFO - Sample data are :         Gender   Region
+104025  Female     West
+5415      Male    South
+75612   Female  Central
+138169    Male     West
+87184   Female  Central
+...        ...      ...
+119879    Male     West
+103694    Male     West
+131932    Male     East
+146867    Male    South
+121958  Female     East
+
+[120000 rows x 2 columns]
+2025-09-18 17:13:14,813 - INFO - [array(['Female', 'Male'], dtype=object), array(['Central', 'East', 'North', 'South', 'West'], dtype=object)]
+2025-09-18 17:13:14,814 - INFO - ['Gender_Male' 'Region_East' 'Region_North' 'Region_South' 'Region_West']
+2025-09-18 17:13:14,891 - INFO - [[0. 0. 0. 0. 1.]
+ [1. 0. 0. 1. 0.]
+ [0. 0. 0. 0. 0.]
+ ...
+ [1. 1. 0. 0. 0.]
+ [1. 0. 0. 1. 0.]
+ [0. 1. 0. 0. 0.]]
+2025-09-18 17:13:14,942 - INFO - Sample data after Onehotencoder is :
+        Gender_Male  Region_East  Region_North  Region_South  Region_West
+106031          0.0          0.0           1.0           0.0          0.0
+1623            0.0          0.0           1.0           0.0          0.0
+57990           1.0          0.0           0.0           0.0          0.0
+50331           1.0          0.0           1.0           0.0          0.0
+3740            1.0          0.0           0.0           1.0          0.0
+76652           1.0          0.0           0.0           0.0          1.0
+116160          0.0          0.0           0.0           1.0          0.0
+2025-09-18 17:13:14,948 - INFO - ------------------Ordinal Encoder-----------------------
+2025-09-18 17:13:14,950 - INFO - Columns in the x_ train are : Index(['Rented_OwnHouse', 'Occupation', 'Education'], dtype='object')
+2025-09-18 17:13:14,955 - INFO - Sample data are :        Rented_OwnHouse   Occupation     Education
+104025        Ownhouse     Self_Emp      Graduate
+5415          Ownhouse     Self_Emp        Matric
+75612           Rented  Non-officer  Professional
+138169        Ownhouse  Non-officer  Professional
+87184         Ownhouse  Non-officer      Graduate
+...                ...          ...           ...
+119879        Ownhouse     Self_Emp      Graduate
+103694        Ownhouse     Self_Emp           PhD
+131932          Rented     Officer1  Professional
+146867          Rented     Self_Emp  Professional
+121958          Rented     Self_Emp     Post-Grad
+
+[120000 rows x 3 columns]
+2025-09-18 17:13:14,972 - INFO - [array(['Ownhouse', 'Rented'], dtype=object), array(['Non-officer', 'Officer1', 'Officer2', 'Officer3', 'Self_Emp'],
+      dtype=object), array(['Graduate', 'Matric', 'PhD', 'Post-Grad', 'Professional'],
+      dtype=object)]
+2025-09-18 17:13:14,972 - INFO - ['Rented_OwnHouse' 'Occupation' 'Education']
+2025-09-18 17:13:15,095 - INFO - Sample data after Onehotencoder is :
+       Rented_OwnHouse  Occupation  Education
+34296              1.0         3.0        3.0
+54369              1.0         0.0        4.0
+63149              0.0         3.0        3.0
+13822              0.0         0.0        0.0
+96844              0.0         4.0        3.0
+74947              0.0         4.0        4.0
+62949              0.0         4.0        4.0
+2025-09-18 17:13:15,167 - INFO - [1 1 1 ... 1 1 1]
+2025-09-18 17:13:15,167 - INFO - ['Bad' 'Good']
+2025-09-18 17:18:16,778 - INFO - Encoding has started....
+2025-09-18 17:18:16,778 - INFO - ------------------Onehot Encoder----------------------
+2025-09-18 17:18:16,778 - INFO - Columns in the x_ train are : Index(['Gender', 'Region'], dtype='object')
+2025-09-18 17:18:16,786 - INFO - Sample data are :         Gender   Region
+104025  Female     West
+5415      Male    South
+75612   Female  Central
+138169    Male     West
+87184   Female  Central
+...        ...      ...
+119879    Male     West
+103694    Male     West
+131932    Male     East
+146867    Male    South
+121958  Female     East
+
+[120000 rows x 2 columns]
+2025-09-18 17:18:16,796 - INFO - [array(['Female', 'Male'], dtype=object), array(['Central', 'East', 'North', 'South', 'West'], dtype=object)]
+2025-09-18 17:18:16,796 - INFO - ['Gender_Male' 'Region_East' 'Region_North' 'Region_South' 'Region_West']
+2025-09-18 17:18:16,893 - INFO - [[0. 0. 0. 0. 1.]
+ [1. 0. 0. 1. 0.]
+ [0. 0. 0. 0. 0.]
+ ...
+ [1. 1. 0. 0. 0.]
+ [1. 0. 0. 1. 0.]
+ [0. 1. 0. 0. 0.]]
+2025-09-18 17:18:16,931 - INFO - Sample data after Onehotencoder is :
+        Gender_Male  Region_East  Region_North  Region_South  Region_West
+58994           1.0          0.0           0.0           1.0          0.0
+18333           1.0          0.0           0.0           0.0          0.0
+103598          1.0          0.0           0.0           0.0          1.0
+34843           0.0          1.0           0.0           0.0          0.0
+112461          1.0          1.0           0.0           0.0          0.0
+64037           0.0          0.0           0.0           0.0          0.0
+79903           0.0          0.0           0.0           0.0          0.0
+2025-09-18 17:18:16,938 - INFO - ------------------Ordinal Encoder-----------------------
+2025-09-18 17:18:16,938 - INFO - Columns in the x_ train are : Index(['Rented_OwnHouse', 'Occupation', 'Education'], dtype='object')
+2025-09-18 17:18:16,947 - INFO - Sample data are :        Rented_OwnHouse   Occupation     Education
+104025        Ownhouse     Self_Emp      Graduate
+5415          Ownhouse     Self_Emp        Matric
+75612           Rented  Non-officer  Professional
+138169        Ownhouse  Non-officer  Professional
+87184         Ownhouse  Non-officer      Graduate
+...                ...          ...           ...
+119879        Ownhouse     Self_Emp      Graduate
+103694        Ownhouse     Self_Emp           PhD
+131932          Rented     Officer1  Professional
+146867          Rented     Self_Emp  Professional
+121958          Rented     Self_Emp     Post-Grad
+
+[120000 rows x 3 columns]
+2025-09-18 17:18:16,967 - INFO - [array(['Ownhouse', 'Rented'], dtype=object), array(['Non-officer', 'Officer1', 'Officer2', 'Officer3', 'Self_Emp'],
+      dtype=object), array(['Graduate', 'Matric', 'PhD', 'Post-Grad', 'Professional'],
+      dtype=object)]
+2025-09-18 17:18:16,967 - INFO - ['Rented_OwnHouse' 'Occupation' 'Education']
+2025-09-18 17:18:17,091 - INFO - Sample data after Onehotencoder is :
+       Rented_OwnHouse  Occupation  Education
+21345              0.0         4.0        1.0
+94200              1.0         4.0        0.0
+34994              1.0         4.0        3.0
+55592              0.0         1.0        3.0
+54189              0.0         4.0        0.0
+69787              1.0         3.0        3.0
+64116              1.0         4.0        0.0
+2025-09-18 17:18:17,161 - INFO - [1 1 1 ... 1 1 1]
+2025-09-18 17:18:17,161 - INFO - ['Bad' 'Good']
+2025-09-18 17:18:53,935 - INFO - Encoding has started....
+2025-09-18 17:18:53,935 - INFO - ------------------Onehot Encoder----------------------
+2025-09-18 17:18:53,935 - INFO - Columns in the x_ train are : Index(['Gender', 'Region'], dtype='object')
+2025-09-18 17:18:53,951 - INFO - Sample data are :         Gender   Region
+104025  Female     West
+5415      Male    South
+75612   Female  Central
+138169    Male     West
+87184   Female  Central
+...        ...      ...
+119879    Male     West
+103694    Male     West
+131932    Male     East
+146867    Male    South
+121958  Female     East
+
+[120000 rows x 2 columns]
+2025-09-18 17:18:53,967 - INFO - [array(['Female', 'Male'], dtype=object), array(['Central', 'East', 'North', 'South', 'West'], dtype=object)]
+2025-09-18 17:18:53,967 - INFO - ['Gender_Male' 'Region_East' 'Region_North' 'Region_South' 'Region_West']
+2025-09-18 17:18:54,046 - INFO - [[0. 0. 0. 0. 1.]
+ [1. 0. 0. 1. 0.]
+ [0. 0. 0. 0. 0.]
+ ...
+ [1. 1. 0. 0. 0.]
+ [1. 0. 0. 1. 0.]
+ [0. 1. 0. 0. 0.]]
+2025-09-18 17:18:54,091 - INFO - Sample data after Onehotencoder is :
+        Gender_Male  Region_East  Region_North  Region_South  Region_West
+80116           1.0          0.0           0.0           0.0          0.0
+115911          0.0          0.0           0.0           1.0          0.0
+56201           1.0          0.0           0.0           0.0          0.0
+14505           1.0          0.0           0.0           0.0          0.0
+97603           1.0          0.0           0.0           1.0          0.0
+92849           1.0          0.0           0.0           1.0          0.0
+32617           1.0          0.0           0.0           0.0          1.0
+2025-09-18 17:18:54,091 - INFO - ------------------Ordinal Encoder-----------------------
+2025-09-18 17:18:54,091 - INFO - Columns in the x_ train are : Index(['Rented_OwnHouse', 'Occupation', 'Education'], dtype='object')
+2025-09-18 17:18:54,110 - INFO - Sample data are :        Rented_OwnHouse   Occupation     Education
+104025        Ownhouse     Self_Emp      Graduate
+5415          Ownhouse     Self_Emp        Matric
+75612           Rented  Non-officer  Professional
+138169        Ownhouse  Non-officer  Professional
+87184         Ownhouse  Non-officer      Graduate
+...                ...          ...           ...
+119879        Ownhouse     Self_Emp      Graduate
+103694        Ownhouse     Self_Emp           PhD
+131932          Rented     Officer1  Professional
+146867          Rented     Self_Emp  Professional
+121958          Rented     Self_Emp     Post-Grad
+
+[120000 rows x 3 columns]
+2025-09-18 17:18:54,125 - INFO - [array(['Ownhouse', 'Rented'], dtype=object), array(['Non-officer', 'Officer1', 'Officer2', 'Officer3', 'Self_Emp'],
+      dtype=object), array(['Graduate', 'Matric', 'PhD', 'Post-Grad', 'Professional'],
+      dtype=object)]
+2025-09-18 17:18:54,125 - INFO - ['Rented_OwnHouse' 'Occupation' 'Education']
+2025-09-18 17:18:54,250 - INFO - Sample data after Onehotencoder is :
+        Rented_OwnHouse  Occupation  Education
+82189               1.0         0.0        0.0
+82057               0.0         0.0        0.0
+21683               0.0         4.0        1.0
+100815              1.0         4.0        0.0
+90624               0.0         4.0        0.0
+32689               0.0         0.0        0.0
+22812               0.0         0.0        0.0
+2025-09-18 17:18:54,312 - INFO - [1 1 1 ... 1 1 1]
+2025-09-18 17:18:54,312 - INFO - ['Bad' 'Good']
+2025-09-18 17:19:42,974 - INFO - Encoding has started....
+2025-09-18 17:19:42,974 - INFO - ------------------Onehot Encoder----------------------
+2025-09-18 17:19:42,974 - INFO - Columns in the x_ train are : Index(['Gender', 'Region'], dtype='object')
+2025-09-18 17:19:42,987 - INFO - Sample data are :         Gender   Region
+104025  Female     West
+5415      Male    South
+75612   Female  Central
+138169    Male     West
+87184   Female  Central
+...        ...      ...
+119879    Male     West
+103694    Male     West
+131932    Male     East
+146867    Male    South
+121958  Female     East
+
+[120000 rows x 2 columns]
+2025-09-18 17:19:42,989 - INFO - [array(['Female', 'Male'], dtype=object), array(['Central', 'East', 'North', 'South', 'West'], dtype=object)]
+2025-09-18 17:19:42,989 - INFO - ['Gender_Male' 'Region_East' 'Region_North' 'Region_South' 'Region_West']
+2025-09-18 17:19:43,095 - INFO - [[0. 0. 0. 0. 1.]
+ [1. 0. 0. 1. 0.]
+ [0. 0. 0. 0. 0.]
+ ...
+ [1. 1. 0. 0. 0.]
+ [1. 0. 0. 1. 0.]
+ [0. 1. 0. 0. 0.]]
+2025-09-18 17:19:43,133 - INFO - Sample data after Onehotencoder is :
+        Gender_Male  Region_East  Region_North  Region_South  Region_West
+19566           1.0          0.0           0.0           1.0          0.0
+10442           0.0          0.0           0.0           1.0          0.0
+31022           1.0          0.0           0.0           1.0          0.0
+20147           1.0          0.0           0.0           0.0          1.0
+57016           1.0          0.0           1.0           0.0          0.0
+118002          1.0          0.0           0.0           1.0          0.0
+35553           0.0          0.0           0.0           1.0          0.0
+2025-09-18 17:19:43,133 - INFO - ------------------Ordinal Encoder-----------------------
+2025-09-18 17:19:43,133 - INFO - Columns in the x_ train are : Index(['Rented_OwnHouse', 'Occupation', 'Education'], dtype='object')
+2025-09-18 17:19:43,150 - INFO - Sample data are :        Rented_OwnHouse   Occupation     Education
+104025        Ownhouse     Self_Emp      Graduate
+5415          Ownhouse     Self_Emp        Matric
+75612           Rented  Non-officer  Professional
+138169        Ownhouse  Non-officer  Professional
+87184         Ownhouse  Non-officer      Graduate
+...                ...          ...           ...
+119879        Ownhouse     Self_Emp      Graduate
+103694        Ownhouse     Self_Emp           PhD
+131932          Rented     Officer1  Professional
+146867          Rented     Self_Emp  Professional
+121958          Rented     Self_Emp     Post-Grad
+
+[120000 rows x 3 columns]
+2025-09-18 17:19:43,168 - INFO - [array(['Ownhouse', 'Rented'], dtype=object), array(['Non-officer', 'Officer1', 'Officer2', 'Officer3', 'Self_Emp'],
+      dtype=object), array(['Graduate', 'Matric', 'PhD', 'Post-Grad', 'Professional'],
+      dtype=object)]
+2025-09-18 17:19:43,168 - INFO - ['Rented_OwnHouse' 'Occupation' 'Education']
+2025-09-18 17:19:43,288 - INFO - Sample data after Onehotencoder is :
+        Rented_OwnHouse  Occupation  Education
+113413              1.0         4.0        0.0
+35058               0.0         4.0        1.0
+50878               1.0         4.0        3.0
+96805               1.0         2.0        4.0
+23752               0.0         4.0        3.0
+63936               0.0         2.0        4.0
+46124               1.0         3.0        3.0
+2025-09-18 17:19:43,357 - INFO - [1 1 1 ... 1 1 1]
+2025-09-18 17:19:43,357 - INFO - ['Bad' 'Good']
+2025-09-18 17:23:06,114 - INFO - Encoding has started....
+2025-09-18 17:23:06,114 - INFO - ------------------Onehot Encoder----------------------
+2025-09-18 17:23:06,114 - INFO - Columns in the x_ train are : Index(['Gender', 'Region'], dtype='object')
+2025-09-18 17:23:06,114 - INFO - Sample data are :         Gender   Region
+104025  Female     West
+5415      Male    South
+75612   Female  Central
+138169    Male     West
+87184   Female  Central
+...        ...      ...
+119879    Male     West
+103694    Male     West
+131932    Male     East
+146867    Male    South
+121958  Female     East
+
+[120000 rows x 2 columns]
+2025-09-18 17:23:06,128 - INFO - [array(['Female', 'Male'], dtype=object), array(['Central', 'East', 'North', 'South', 'West'], dtype=object)]
+2025-09-18 17:23:06,128 - INFO - ['Gender_Male' 'Region_East' 'Region_North' 'Region_South' 'Region_West']
+2025-09-18 17:23:06,231 - INFO - [[0. 0. 0. 0. 1.]
+ [1. 0. 0. 1. 0.]
+ [0. 0. 0. 0. 0.]
+ ...
+ [1. 1. 0. 0. 0.]
+ [1. 0. 0. 1. 0.]
+ [0. 1. 0. 0. 0.]]
+2025-09-18 17:23:06,266 - INFO - Sample data after Onehotencoder is :
+        Gender_Male  Region_East  Region_North  Region_South  Region_West
+65260           0.0          0.0           0.0           0.0          0.0
+23067           0.0          1.0           0.0           0.0          0.0
+114434          1.0          0.0           0.0           1.0          0.0
+75337           1.0          0.0           0.0           1.0          0.0
+85898           1.0          0.0           0.0           0.0          0.0
+107756          0.0          0.0           0.0           0.0          0.0
+28758           0.0          1.0           0.0           0.0          0.0
+2025-09-18 17:23:06,266 - INFO - ------------------Ordinal Encoder-----------------------
+2025-09-18 17:23:06,266 - INFO - Columns in the x_ train are : Index(['Rented_OwnHouse', 'Occupation', 'Education'], dtype='object')
+2025-09-18 17:23:06,280 - INFO - Sample data are :        Rented_OwnHouse   Occupation     Education
+104025        Ownhouse     Self_Emp      Graduate
+5415          Ownhouse     Self_Emp        Matric
+75612           Rented  Non-officer  Professional
+138169        Ownhouse  Non-officer  Professional
+87184         Ownhouse  Non-officer      Graduate
+...                ...          ...           ...
+119879        Ownhouse     Self_Emp      Graduate
+103694        Ownhouse     Self_Emp           PhD
+131932          Rented     Officer1  Professional
+146867          Rented     Self_Emp  Professional
+121958          Rented     Self_Emp     Post-Grad
+
+[120000 rows x 3 columns]
+2025-09-18 17:23:06,296 - INFO - [array(['Ownhouse', 'Rented'], dtype=object), array(['Non-officer', 'Officer1', 'Officer2', 'Officer3', 'Self_Emp'],
+      dtype=object), array(['Graduate', 'Matric', 'PhD', 'Post-Grad', 'Professional'],
+      dtype=object)]
+2025-09-18 17:23:06,296 - INFO - ['Rented_OwnHouse' 'Occupation' 'Education']
+2025-09-18 17:23:06,424 - INFO - Sample data after Onehotencoder is :
+        Rented_OwnHouse  Occupation  Education
+30131               0.0         1.0        3.0
+105194              1.0         3.0        3.0
+59044               0.0         4.0        4.0
+60038               0.0         4.0        4.0
+30199               0.0         4.0        0.0
+20566               1.0         0.0        4.0
+91893               0.0         0.0        0.0
+2025-09-18 17:23:06,491 - INFO - [1 1 1 ... 1 1 1]
+2025-09-18 17:23:06,491 - INFO - ['Bad' 'Good']
+2025-09-18 17:23:47,380 - INFO - Encoding has started....
+2025-09-18 17:23:47,380 - INFO - ------------------Onehot Encoder----------------------
+2025-09-18 17:23:47,382 - INFO - Columns in the x_ train are : Index(['Gender', 'Region'], dtype='object')
+2025-09-18 17:23:47,390 - INFO - Sample data are :         Gender   Region
+104025  Female     West
+5415      Male    South
+75612   Female  Central
+138169    Male     West
+87184   Female  Central
+...        ...      ...
+119879    Male     West
+103694    Male     West
+131932    Male     East
+146867    Male    South
+121958  Female     East
+
+[120000 rows x 2 columns]
+2025-09-18 17:23:47,396 - INFO - [array(['Female', 'Male'], dtype=object), array(['Central', 'East', 'North', 'South', 'West'], dtype=object)]
+2025-09-18 17:23:47,396 - INFO - ['Gender_Male' 'Region_East' 'Region_North' 'Region_South' 'Region_West']
+2025-09-18 17:23:47,475 - INFO - [[0. 0. 0. 0. 1.]
+ [1. 0. 0. 1. 0.]
+ [0. 0. 0. 0. 0.]
+ ...
+ [1. 1. 0. 0. 0.]
+ [1. 0. 0. 1. 0.]
+ [0. 1. 0. 0. 0.]]
+2025-09-18 17:23:47,522 - INFO - Sample data after Onehotencoder is :
+        Gender_Male  Region_East  Region_North  Region_South  Region_West
+86995           1.0          0.0           0.0           0.0          1.0
+100184          0.0          0.0           1.0           0.0          0.0
+101374          0.0          0.0           1.0           0.0          0.0
+119354          1.0          0.0           1.0           0.0          0.0
+110837          1.0          0.0           0.0           1.0          0.0
+41720           1.0          0.0           0.0           0.0          0.0
+96407           0.0          0.0           0.0           1.0          0.0
+2025-09-18 17:23:47,522 - INFO - ------------------Ordinal Encoder-----------------------
+2025-09-18 17:23:47,522 - INFO - Columns in the x_ train are : Index(['Rented_OwnHouse', 'Occupation', 'Education'], dtype='object')
+2025-09-18 17:23:47,540 - INFO - Sample data are :        Rented_OwnHouse   Occupation     Education
+104025        Ownhouse     Self_Emp      Graduate
+5415          Ownhouse     Self_Emp        Matric
+75612           Rented  Non-officer  Professional
+138169        Ownhouse  Non-officer  Professional
+87184         Ownhouse  Non-officer      Graduate
+...                ...          ...           ...
+119879        Ownhouse     Self_Emp      Graduate
+103694        Ownhouse     Self_Emp           PhD
+131932          Rented     Officer1  Professional
+146867          Rented     Self_Emp  Professional
+121958          Rented     Self_Emp     Post-Grad
+
+[120000 rows x 3 columns]
+2025-09-18 17:23:47,554 - INFO - [array(['Ownhouse', 'Rented'], dtype=object), array(['Non-officer', 'Officer1', 'Officer2', 'Officer3', 'Self_Emp'],
+      dtype=object), array(['Graduate', 'Matric', 'PhD', 'Post-Grad', 'Professional'],
+      dtype=object)]
+2025-09-18 17:23:47,554 - INFO - ['Rented_OwnHouse' 'Occupation' 'Education']
+2025-09-18 17:23:47,665 - INFO - Sample data after Onehotencoder is :
+       Rented_OwnHouse  Occupation  Education
+35185              0.0         4.0        2.0
+87720              1.0         0.0        0.0
+45844              1.0         1.0        3.0
+92538              1.0         2.0        4.0
+6522               0.0         3.0        3.0
+94475              0.0         4.0        3.0
+27592              1.0         2.0        4.0
+2025-09-18 17:23:47,748 - INFO - [1 1 1 ... 1 1 1]
+2025-09-18 17:23:47,748 - INFO - ['Bad' 'Good']
+2025-09-18 17:24:30,247 - INFO - Encoding has started....
+2025-09-18 17:24:30,247 - INFO - ------------------Onehot Encoder----------------------
+2025-09-18 17:24:30,247 - INFO - Columns in the x_ train are : Index(['Gender', 'Region'], dtype='object')
+2025-09-18 17:24:30,263 - INFO - Sample data are :         Gender   Region
+104025  Female     West
+5415      Male    South
+75612   Female  Central
+138169    Male     West
+87184   Female  Central
+...        ...      ...
+119879    Male     West
+103694    Male     West
+131932    Male     East
+146867    Male    South
+121958  Female     East
+
+[120000 rows x 2 columns]
+2025-09-18 17:24:30,279 - INFO - [array(['Female', 'Male'], dtype=object), array(['Central', 'East', 'North', 'South', 'West'], dtype=object)]
+2025-09-18 17:24:30,281 - INFO - ['Gender_Male' 'Region_East' 'Region_North' 'Region_South' 'Region_West']
+2025-09-18 17:24:30,370 - INFO - [[0. 0. 0. 0. 1.]
+ [1. 0. 0. 1. 0.]
+ [0. 0. 0. 0. 0.]
+ ...
+ [1. 1. 0. 0. 0.]
+ [1. 0. 0. 1. 0.]
+ [0. 1. 0. 0. 0.]]
+2025-09-18 17:24:30,408 - INFO - Sample data after Onehotencoder is :
+        Gender_Male  Region_East  Region_North  Region_South  Region_West
+4023            0.0          0.0           0.0           1.0          0.0
+101793          0.0          0.0           1.0           0.0          0.0
+92419           1.0          0.0           0.0           0.0          1.0
+63596           1.0          0.0           1.0           0.0          0.0
+54442           1.0          1.0           0.0           0.0          0.0
+33913           0.0          1.0           0.0           0.0          0.0
+5349            0.0          0.0           0.0           0.0          0.0
+2025-09-18 17:24:30,408 - INFO - ------------------Ordinal Encoder-----------------------
+2025-09-18 17:24:30,408 - INFO - Columns in the x_ train are : Index(['Rented_OwnHouse', 'Occupation', 'Education'], dtype='object')
+2025-09-18 17:24:30,408 - INFO - Sample data are :        Rented_OwnHouse   Occupation     Education
+104025        Ownhouse     Self_Emp      Graduate
+5415          Ownhouse     Self_Emp        Matric
+75612           Rented  Non-officer  Professional
+138169        Ownhouse  Non-officer  Professional
+87184         Ownhouse  Non-officer      Graduate
+...                ...          ...           ...
+119879        Ownhouse     Self_Emp      Graduate
+103694        Ownhouse     Self_Emp           PhD
+131932          Rented     Officer1  Professional
+146867          Rented     Self_Emp  Professional
+121958          Rented     Self_Emp     Post-Grad
+
+[120000 rows x 3 columns]
+2025-09-18 17:24:30,424 - INFO - [array(['Ownhouse', 'Rented'], dtype=object), array(['Non-officer', 'Officer1', 'Officer2', 'Officer3', 'Self_Emp'],
+      dtype=object), array(['Graduate', 'Matric', 'PhD', 'Post-Grad', 'Professional'],
+      dtype=object)]
+2025-09-18 17:24:30,424 - INFO - ['Rented_OwnHouse' 'Occupation' 'Education']
+2025-09-18 17:24:30,550 - INFO - Sample data after Onehotencoder is :
+        Rented_OwnHouse  Occupation  Education
+63948               0.0         4.0        1.0
+43464               0.0         0.0        4.0
+34326               0.0         2.0        4.0
+106307              1.0         1.0        3.0
+110738              1.0         3.0        4.0
+73375               0.0         0.0        0.0
+72686               0.0         4.0        0.0
+2025-09-18 17:24:30,613 - INFO - [1 1 1 ... 1 1 1]
+2025-09-18 17:24:30,613 - INFO - ['Bad' 'Good']
+2025-09-18 17:25:20,839 - INFO - Encoding has started....
+2025-09-18 17:25:20,839 - INFO - ------------------Onehot Encoder----------------------
+2025-09-18 17:25:20,839 - INFO - Columns in the x_ train are : Index(['Gender', 'Region'], dtype='object')
+2025-09-18 17:25:20,850 - INFO - Sample data are :         Gender   Region
+104025  Female     West
+5415      Male    South
+75612   Female  Central
+138169    Male     West
+87184   Female  Central
+...        ...      ...
+119879    Male     West
+103694    Male     West
+131932    Male     East
+146867    Male    South
+121958  Female     East
+
+[120000 rows x 2 columns]
+2025-09-18 17:25:20,855 - INFO - [array(['Female', 'Male'], dtype=object), array(['Central', 'East', 'North', 'South', 'West'], dtype=object)]
+2025-09-18 17:25:20,855 - INFO - ['Gender_Male' 'Region_East' 'Region_North' 'Region_South' 'Region_West']
+2025-09-18 17:25:20,954 - INFO - [[0. 0. 0. 0. 1.]
+ [1. 0. 0. 1. 0.]
+ [0. 0. 0. 0. 0.]
+ ...
+ [1. 1. 0. 0. 0.]
+ [1. 0. 0. 1. 0.]
+ [0. 1. 0. 0. 0.]]
+2025-09-18 17:25:20,981 - INFO - Sample data after Onehotencoder is :
+       Gender_Male  Region_East  Region_North  Region_South  Region_West
+59592          0.0          0.0           0.0           1.0          0.0
+17141          1.0          0.0           1.0           0.0          0.0
+83541          1.0          0.0           0.0           1.0          0.0
+39747          0.0          1.0           0.0           0.0          0.0
+72229          0.0          0.0           0.0           0.0          0.0
+68593          1.0          0.0           0.0           0.0          0.0
+56874          0.0          0.0           1.0           0.0          0.0
+2025-09-18 17:25:20,981 - INFO - ------------------Ordinal Encoder-----------------------
+2025-09-18 17:25:20,981 - INFO - Columns in the x_ train are : Index(['Rented_OwnHouse', 'Occupation', 'Education'], dtype='object')
+2025-09-18 17:25:21,000 - INFO - Sample data are :        Rented_OwnHouse   Occupation     Education
+104025        Ownhouse     Self_Emp      Graduate
+5415          Ownhouse     Self_Emp        Matric
+75612           Rented  Non-officer  Professional
+138169        Ownhouse  Non-officer  Professional
+87184         Ownhouse  Non-officer      Graduate
+...                ...          ...           ...
+119879        Ownhouse     Self_Emp      Graduate
+103694        Ownhouse     Self_Emp           PhD
+131932          Rented     Officer1  Professional
+146867          Rented     Self_Emp  Professional
+121958          Rented     Self_Emp     Post-Grad
+
+[120000 rows x 3 columns]
+2025-09-18 17:25:21,013 - INFO - [array(['Ownhouse', 'Rented'], dtype=object), array(['Non-officer', 'Officer1', 'Officer2', 'Officer3', 'Self_Emp'],
+      dtype=object), array(['Graduate', 'Matric', 'PhD', 'Post-Grad', 'Professional'],
+      dtype=object)]
+2025-09-18 17:25:21,013 - INFO - ['Rented_OwnHouse' 'Occupation' 'Education']
+2025-09-18 17:25:21,136 - INFO - Sample data after Onehotencoder is :
+        Rented_OwnHouse  Occupation  Education
+72140               0.0         4.0        1.0
+55635               1.0         0.0        0.0
+58174               0.0         0.0        0.0
+78718               1.0         4.0        4.0
+101647              0.0         4.0        0.0
+21452               0.0         0.0        4.0
+82882               1.0         4.0        4.0
+2025-09-18 17:25:21,205 - INFO - [1 1 1 ... 1 1 1]
+2025-09-18 17:25:21,205 - INFO - ['Bad' 'Good']
