@@ -1,3 +1,7 @@
 .idea
 __pycache__
+<<<<<<< HEAD
+=======
+logs
+>>>>>>> b1bbf0c870a1d8ca10d3460eb94dab38a20b0b6a
 *.pyc
