@@ -1,9 +1,6 @@
 import numpy as np
 import pandas as pd
 import sys
-
-from numpy.core.defchararray import lower
-
 from loggers import Logger
 logger = Logger.get_logs('outliers')
 

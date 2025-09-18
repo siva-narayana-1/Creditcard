@@ -1289,3 +1289,51 @@
        'NumberRealEstateLoansOrLines', 'NumberOfTime60-89DaysPastDueNotWorse',
        'MonthlyIncome_replaced', 'NumberOfDependents_replaced'],
       dtype='object')
+2025-09-18 20:00:12,051 - INFO - Constant filter Constant method is applied....
+2025-09-18 20:00:12,073 - INFO - Columns in the train data are : 11 -> After applyin the constant columns with variance not 0 are : 11 and variance with 0 are : 0
+2025-09-18 20:00:12,080 - INFO - Columns after droping are : Index(['NPA Status', 'RevolvingUtilizationOfUnsecuredLines', 'age',
+       'NumberOfTime30-59DaysPastDueNotWorse', 'DebtRatio',
+       'NumberOfOpenCreditLinesAndLoans', 'NumberOfTimes90DaysLate',
+       'NumberRealEstateLoansOrLines', 'NumberOfTime60-89DaysPastDueNotWorse',
+       'MonthlyIncome_replaced', 'NumberOfDependents_replaced'],
+      dtype='object')
+2025-09-18 20:00:12,100 - INFO - Constant filter Quasi Constant method is applied....
+2025-09-18 20:00:12,118 - INFO - Columns in the train data are : 11 -> After applyin the constant columns with variance not 0 are : 10 and variance with 0 are : 1
+2025-09-18 20:00:12,124 - INFO - Columns after droping are : Index(['RevolvingUtilizationOfUnsecuredLines', 'age',
+       'NumberOfTime30-59DaysPastDueNotWorse', 'DebtRatio',
+       'NumberOfOpenCreditLinesAndLoans', 'NumberOfTimes90DaysLate',
+       'NumberRealEstateLoansOrLines', 'NumberOfTime60-89DaysPastDueNotWorse',
+       'MonthlyIncome_replaced', 'NumberOfDependents_replaced'],
+      dtype='object')
+2025-09-18 20:01:32,444 - INFO - Constant filter Constant method is applied....
+2025-09-18 20:01:32,460 - INFO - Columns in the train data are : 11 -> After applyin the constant columns with variance not 0 are : 11 and variance with 0 are : 0
+2025-09-18 20:01:32,469 - INFO - Columns after droping are : Index(['NPA Status', 'RevolvingUtilizationOfUnsecuredLines', 'age',
+       'NumberOfTime30-59DaysPastDueNotWorse', 'DebtRatio',
+       'NumberOfOpenCreditLinesAndLoans', 'NumberOfTimes90DaysLate',
+       'NumberRealEstateLoansOrLines', 'NumberOfTime60-89DaysPastDueNotWorse',
+       'MonthlyIncome_replaced', 'NumberOfDependents_replaced'],
+      dtype='object')
+2025-09-18 20:01:32,486 - INFO - Constant filter Quasi Constant method is applied....
+2025-09-18 20:01:32,499 - INFO - Columns in the train data are : 11 -> After applyin the constant columns with variance not 0 are : 10 and variance with 0 are : 1
+2025-09-18 20:01:32,508 - INFO - Columns after droping are : Index(['RevolvingUtilizationOfUnsecuredLines', 'age',
+       'NumberOfTime30-59DaysPastDueNotWorse', 'DebtRatio',
+       'NumberOfOpenCreditLinesAndLoans', 'NumberOfTimes90DaysLate',
+       'NumberRealEstateLoansOrLines', 'NumberOfTime60-89DaysPastDueNotWorse',
+       'MonthlyIncome_replaced', 'NumberOfDependents_replaced'],
+      dtype='object')
+2025-09-18 20:30:42,800 - INFO - Constant filter Constant method is applied....
+2025-09-18 20:30:42,822 - INFO - Columns in the train data are : 11 -> After applyin the constant columns with variance not 0 are : 11 and variance with 0 are : 0
+2025-09-18 20:30:42,828 - INFO - Columns after droping are : Index(['NPA Status', 'RevolvingUtilizationOfUnsecuredLines', 'age',
+       'NumberOfTime30-59DaysPastDueNotWorse', 'DebtRatio',
+       'NumberOfOpenCreditLinesAndLoans', 'NumberOfTimes90DaysLate',
+       'NumberRealEstateLoansOrLines', 'NumberOfTime60-89DaysPastDueNotWorse',
+       'MonthlyIncome_replaced', 'NumberOfDependents_replaced'],
+      dtype='object')
+2025-09-18 20:30:42,851 - INFO - Constant filter Quasi Constant method is applied....
+2025-09-18 20:30:42,863 - INFO - Columns in the train data are : 11 -> After applyin the constant columns with variance not 0 are : 10 and variance with 0 are : 1
+2025-09-18 20:30:42,863 - INFO - Columns after droping are : Index(['RevolvingUtilizationOfUnsecuredLines', 'age',
+       'NumberOfTime30-59DaysPastDueNotWorse', 'DebtRatio',
+       'NumberOfOpenCreditLinesAndLoans', 'NumberOfTimes90DaysLate',
+       'NumberRealEstateLoansOrLines', 'NumberOfTime60-89DaysPastDueNotWorse',
+       'MonthlyIncome_replaced', 'NumberOfDependents_replaced'],
+      dtype='object')
