@@ -60,7 +60,7 @@ def dt_algo(X_train,y_train,X_test,y_test):
 
 def rf_algo(X_train,y_train,X_test,y_test):
     try:
-        rf_reg = RandomForestClassifier(criterion='entropy',n_estimators=5)
+        rf_reg = RandomForestClassifier(criterion='entropy',n_estimators=100)
         rf_reg.fit(X_train, y_train)
         logger.info(f'Test Accuracy RF : {accuracy_score(y_test, rf_reg.predict(X_test))}')
         logger.info(f'confusion matrix : {confusion_matrix(y_test, rf_reg.predict(X_test))}')

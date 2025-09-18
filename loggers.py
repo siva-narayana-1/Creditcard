@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 import sys
 import logging
 
@@ -17,8 +17,8 @@ class Logger:
             return logger
         except Exception as e:
             exc_type, exc_msg, exc_line = sys.exc_info()
-<<<<<<< HEAD
+
             print(f'{exc_type} at {exc_line.tb_lineno} as {exc_msg}')
-=======
+
             print(f"{exc_type} at {exc_line.tb_lineno} as {exc_msg}")
 
