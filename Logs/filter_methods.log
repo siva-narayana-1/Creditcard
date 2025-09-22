@@ -1337,3 +1337,293 @@
        'NumberRealEstateLoansOrLines', 'NumberOfTime60-89DaysPastDueNotWorse',
        'MonthlyIncome_replaced', 'NumberOfDependents_replaced'],
       dtype='object')
+2025-09-18 20:32:45,792 - INFO - Constant filter Constant method is applied....
+2025-09-18 20:32:45,810 - INFO - Columns in the train data are : 11 -> After applyin the constant columns with variance not 0 are : 11 and variance with 0 are : 0
+2025-09-18 20:32:45,810 - INFO - Columns after droping are : Index(['NPA Status', 'RevolvingUtilizationOfUnsecuredLines', 'age',
+       'NumberOfTime30-59DaysPastDueNotWorse', 'DebtRatio',
+       'NumberOfOpenCreditLinesAndLoans', 'NumberOfTimes90DaysLate',
+       'NumberRealEstateLoansOrLines', 'NumberOfTime60-89DaysPastDueNotWorse',
+       'MonthlyIncome_replaced', 'NumberOfDependents_replaced'],
+      dtype='object')
+2025-09-18 20:32:45,826 - INFO - Constant filter Quasi Constant method is applied....
+2025-09-18 20:32:45,843 - INFO - Columns in the train data are : 11 -> After applyin the constant columns with variance not 0 are : 10 and variance with 0 are : 1
+2025-09-18 20:32:45,858 - INFO - Columns after droping are : Index(['RevolvingUtilizationOfUnsecuredLines', 'age',
+       'NumberOfTime30-59DaysPastDueNotWorse', 'DebtRatio',
+       'NumberOfOpenCreditLinesAndLoans', 'NumberOfTimes90DaysLate',
+       'NumberRealEstateLoansOrLines', 'NumberOfTime60-89DaysPastDueNotWorse',
+       'MonthlyIncome_replaced', 'NumberOfDependents_replaced'],
+      dtype='object')
+2025-09-18 20:35:19,906 - INFO - Constant filter Constant method is applied....
+2025-09-18 20:35:19,926 - INFO - Columns in the train data are : 11 -> After applyin the constant columns with variance not 0 are : 11 and variance with 0 are : 0
+2025-09-18 20:35:19,934 - INFO - Columns after droping are : Index(['NPA Status', 'RevolvingUtilizationOfUnsecuredLines', 'age',
+       'NumberOfTime30-59DaysPastDueNotWorse', 'DebtRatio',
+       'NumberOfOpenCreditLinesAndLoans', 'NumberOfTimes90DaysLate',
+       'NumberRealEstateLoansOrLines', 'NumberOfTime60-89DaysPastDueNotWorse',
+       'MonthlyIncome_replaced', 'NumberOfDependents_replaced'],
+      dtype='object')
+2025-09-18 20:35:19,957 - INFO - Constant filter Quasi Constant method is applied....
+2025-09-18 20:35:19,975 - INFO - Columns in the train data are : 11 -> After applyin the constant columns with variance not 0 are : 10 and variance with 0 are : 1
+2025-09-18 20:35:19,979 - INFO - Columns after droping are : Index(['RevolvingUtilizationOfUnsecuredLines', 'age',
+       'NumberOfTime30-59DaysPastDueNotWorse', 'DebtRatio',
+       'NumberOfOpenCreditLinesAndLoans', 'NumberOfTimes90DaysLate',
+       'NumberRealEstateLoansOrLines', 'NumberOfTime60-89DaysPastDueNotWorse',
+       'MonthlyIncome_replaced', 'NumberOfDependents_replaced'],
+      dtype='object')
+2025-09-18 20:38:12,805 - INFO - Constant filter Constant method is applied....
+2025-09-18 20:38:12,810 - INFO - Columns in the train data are : 11 -> After applyin the constant columns with variance not 0 are : 11 and variance with 0 are : 0
+2025-09-18 20:38:12,828 - INFO - Columns after droping are : Index(['NPA Status', 'RevolvingUtilizationOfUnsecuredLines', 'age',
+       'NumberOfTime30-59DaysPastDueNotWorse', 'DebtRatio',
+       'NumberOfOpenCreditLinesAndLoans', 'NumberOfTimes90DaysLate',
+       'NumberRealEstateLoansOrLines', 'NumberOfTime60-89DaysPastDueNotWorse',
+       'MonthlyIncome_replaced', 'NumberOfDependents_replaced'],
+      dtype='object')
+2025-09-18 20:38:12,842 - INFO - Constant filter Quasi Constant method is applied....
+2025-09-18 20:38:12,859 - INFO - Columns in the train data are : 11 -> After applyin the constant columns with variance not 0 are : 10 and variance with 0 are : 1
+2025-09-18 20:38:12,873 - INFO - Columns after droping are : Index(['RevolvingUtilizationOfUnsecuredLines', 'age',
+       'NumberOfTime30-59DaysPastDueNotWorse', 'DebtRatio',
+       'NumberOfOpenCreditLinesAndLoans', 'NumberOfTimes90DaysLate',
+       'NumberRealEstateLoansOrLines', 'NumberOfTime60-89DaysPastDueNotWorse',
+       'MonthlyIncome_replaced', 'NumberOfDependents_replaced'],
+      dtype='object')
+2025-09-18 20:40:14,545 - INFO - Constant filter Constant method is applied....
+2025-09-18 20:40:14,561 - INFO - Columns in the train data are : 11 -> After applyin the constant columns with variance not 0 are : 11 and variance with 0 are : 0
+2025-09-18 20:40:14,561 - INFO - Columns after droping are : Index(['NPA Status', 'RevolvingUtilizationOfUnsecuredLines', 'age',
+       'NumberOfTime30-59DaysPastDueNotWorse', 'DebtRatio',
+       'NumberOfOpenCreditLinesAndLoans', 'NumberOfTimes90DaysLate',
+       'NumberRealEstateLoansOrLines', 'NumberOfTime60-89DaysPastDueNotWorse',
+       'MonthlyIncome_replaced', 'NumberOfDependents_replaced'],
+      dtype='object')
+2025-09-18 20:40:14,577 - INFO - Constant filter Quasi Constant method is applied....
+2025-09-18 20:40:14,594 - INFO - Columns in the train data are : 11 -> After applyin the constant columns with variance not 0 are : 10 and variance with 0 are : 1
+2025-09-18 20:40:14,611 - INFO - Columns after droping are : Index(['RevolvingUtilizationOfUnsecuredLines', 'age',
+       'NumberOfTime30-59DaysPastDueNotWorse', 'DebtRatio',
+       'NumberOfOpenCreditLinesAndLoans', 'NumberOfTimes90DaysLate',
+       'NumberRealEstateLoansOrLines', 'NumberOfTime60-89DaysPastDueNotWorse',
+       'MonthlyIncome_replaced', 'NumberOfDependents_replaced'],
+      dtype='object')
+2025-09-18 20:43:28,834 - INFO - Constant filter Constant method is applied....
+2025-09-18 20:43:28,866 - INFO - Columns in the train data are : 11 -> After applyin the constant columns with variance not 0 are : 11 and variance with 0 are : 0
+2025-09-18 20:43:28,870 - INFO - Columns after droping are : Index(['NPA Status', 'RevolvingUtilizationOfUnsecuredLines', 'age',
+       'NumberOfTime30-59DaysPastDueNotWorse', 'DebtRatio',
+       'NumberOfOpenCreditLinesAndLoans', 'NumberOfTimes90DaysLate',
+       'NumberRealEstateLoansOrLines', 'NumberOfTime60-89DaysPastDueNotWorse',
+       'MonthlyIncome_replaced', 'NumberOfDependents_replaced'],
+      dtype='object')
+2025-09-18 20:43:28,882 - INFO - Constant filter Quasi Constant method is applied....
+2025-09-18 20:43:28,899 - INFO - Columns in the train data are : 11 -> After applyin the constant columns with variance not 0 are : 10 and variance with 0 are : 1
+2025-09-18 20:43:28,914 - INFO - Columns after droping are : Index(['RevolvingUtilizationOfUnsecuredLines', 'age',
+       'NumberOfTime30-59DaysPastDueNotWorse', 'DebtRatio',
+       'NumberOfOpenCreditLinesAndLoans', 'NumberOfTimes90DaysLate',
+       'NumberRealEstateLoansOrLines', 'NumberOfTime60-89DaysPastDueNotWorse',
+       'MonthlyIncome_replaced', 'NumberOfDependents_replaced'],
+      dtype='object')
+2025-09-18 20:44:59,580 - INFO - Constant filter Constant method is applied....
+2025-09-18 20:44:59,602 - INFO - Columns in the train data are : 11 -> After applyin the constant columns with variance not 0 are : 7 and variance with 0 are : 4
+2025-09-18 20:44:59,608 - INFO - Columns after droping are : Index(['RevolvingUtilizationOfUnsecuredLines_log_trim', 'age_log_trim',
+       'DebtRatio_log_trim', 'NumberOfOpenCreditLinesAndLoans_log_trim',
+       'NumberRealEstateLoansOrLines_log_trim',
+       'MonthlyIncome_replaced_log_trim',
+       'NumberOfDependents_replaced_log_trim'],
+      dtype='object')
+2025-09-18 20:44:59,624 - INFO - Constant filter Quasi Constant method is applied....
+2025-09-18 20:44:59,640 - INFO - Columns in the train data are : 7 -> After applyin the constant columns with variance not 0 are : 5 and variance with 0 are : 2
+2025-09-18 20:44:59,642 - INFO - Columns after droping are : Index(['DebtRatio_log_trim', 'NumberOfOpenCreditLinesAndLoans_log_trim',
+       'NumberRealEstateLoansOrLines_log_trim',
+       'MonthlyIncome_replaced_log_trim',
+       'NumberOfDependents_replaced_log_trim'],
+      dtype='object')
+2025-09-18 20:47:15,338 - INFO - Constant filter Constant method is applied....
+2025-09-18 20:47:15,366 - INFO - Columns in the train data are : 11 -> After applyin the constant columns with variance not 0 are : 7 and variance with 0 are : 4
+2025-09-18 20:47:15,371 - INFO - Columns after droping are : Index(['RevolvingUtilizationOfUnsecuredLines_log_trim', 'age_log_trim',
+       'DebtRatio_log_trim', 'NumberOfOpenCreditLinesAndLoans_log_trim',
+       'NumberRealEstateLoansOrLines_log_trim',
+       'MonthlyIncome_replaced_log_trim',
+       'NumberOfDependents_replaced_log_trim'],
+      dtype='object')
+2025-09-18 20:47:15,387 - INFO - Constant filter Quasi Constant method is applied....
+2025-09-18 20:47:15,405 - INFO - Columns in the train data are : 7 -> After applyin the constant columns with variance not 0 are : 5 and variance with 0 are : 2
+2025-09-18 20:47:15,411 - INFO - Columns after droping are : Index(['DebtRatio_log_trim', 'NumberOfOpenCreditLinesAndLoans_log_trim',
+       'NumberRealEstateLoansOrLines_log_trim',
+       'MonthlyIncome_replaced_log_trim',
+       'NumberOfDependents_replaced_log_trim'],
+      dtype='object')
+2025-09-19 09:14:39,802 - INFO - Constant filter Constant method is applied....
+2025-09-19 09:14:39,838 - INFO - Columns in the train data are : 11 -> After applyin the constant columns with variance not 0 are : 7 and variance with 0 are : 4
+2025-09-19 09:14:39,852 - INFO - Columns after droping are : Index(['RevolvingUtilizationOfUnsecuredLines_log_trim', 'age_log_trim',
+       'DebtRatio_log_trim', 'NumberOfOpenCreditLinesAndLoans_log_trim',
+       'NumberRealEstateLoansOrLines_log_trim',
+       'MonthlyIncome_replaced_log_trim',
+       'NumberOfDependents_replaced_log_trim'],
+      dtype='object')
+2025-09-19 09:14:39,871 - INFO - Constant filter Quasi Constant method is applied....
+2025-09-19 09:14:39,889 - INFO - Columns in the train data are : 7 -> After applyin the constant columns with variance not 0 are : 5 and variance with 0 are : 2
+2025-09-19 09:14:39,889 - INFO - Columns after droping are : Index(['DebtRatio_log_trim', 'NumberOfOpenCreditLinesAndLoans_log_trim',
+       'NumberRealEstateLoansOrLines_log_trim',
+       'MonthlyIncome_replaced_log_trim',
+       'NumberOfDependents_replaced_log_trim'],
+      dtype='object')
+2025-09-19 09:19:54,338 - INFO - Constant filter Constant method is applied....
+2025-09-19 09:19:54,369 - INFO - Columns in the train data are : 11 -> After applyin the constant columns with variance not 0 are : 7 and variance with 0 are : 4
+2025-09-19 09:19:54,372 - INFO - Columns after droping are : Index(['RevolvingUtilizationOfUnsecuredLines_log_trim', 'age_log_trim',
+       'DebtRatio_log_trim', 'NumberOfOpenCreditLinesAndLoans_log_trim',
+       'NumberRealEstateLoansOrLines_log_trim',
+       'MonthlyIncome_replaced_log_trim',
+       'NumberOfDependents_replaced_log_trim'],
+      dtype='object')
+2025-09-19 09:19:54,395 - INFO - Constant filter Quasi Constant method is applied....
+2025-09-19 09:19:54,411 - INFO - Columns in the train data are : 7 -> After applyin the constant columns with variance not 0 are : 5 and variance with 0 are : 2
+2025-09-19 09:19:54,417 - INFO - Columns after droping are : Index(['DebtRatio_log_trim', 'NumberOfOpenCreditLinesAndLoans_log_trim',
+       'NumberRealEstateLoansOrLines_log_trim',
+       'MonthlyIncome_replaced_log_trim',
+       'NumberOfDependents_replaced_log_trim'],
+      dtype='object')
+2025-09-19 09:24:55,434 - INFO - Constant filter Constant method is applied....
+2025-09-19 09:24:55,465 - INFO - Columns in the train data are : 11 -> After applyin the constant columns with variance not 0 are : 7 and variance with 0 are : 4
+2025-09-19 09:24:55,465 - INFO - Columns after droping are : Index(['RevolvingUtilizationOfUnsecuredLines_log_trim', 'age_log_trim',
+       'DebtRatio_log_trim', 'NumberOfOpenCreditLinesAndLoans_log_trim',
+       'NumberRealEstateLoansOrLines_log_trim',
+       'MonthlyIncome_replaced_log_trim',
+       'NumberOfDependents_replaced_log_trim'],
+      dtype='object')
+2025-09-19 09:24:55,481 - INFO - Constant filter Quasi Constant method is applied....
+2025-09-19 09:24:55,513 - INFO - Columns in the train data are : 7 -> After applyin the constant columns with variance not 0 are : 5 and variance with 0 are : 2
+2025-09-19 09:24:55,513 - INFO - Columns after droping are : Index(['DebtRatio_log_trim', 'NumberOfOpenCreditLinesAndLoans_log_trim',
+       'NumberRealEstateLoansOrLines_log_trim',
+       'MonthlyIncome_replaced_log_trim',
+       'NumberOfDependents_replaced_log_trim'],
+      dtype='object')
+2025-09-19 09:27:19,082 - INFO - Constant filter Constant method is applied....
+2025-09-19 09:27:19,116 - INFO - Columns in the train data are : 11 -> After applyin the constant columns with variance not 0 are : 7 and variance with 0 are : 4
+2025-09-19 09:27:19,116 - INFO - Columns after droping are : Index(['RevolvingUtilizationOfUnsecuredLines_log_trim', 'age_log_trim',
+       'DebtRatio_log_trim', 'NumberOfOpenCreditLinesAndLoans_log_trim',
+       'NumberRealEstateLoansOrLines_log_trim',
+       'MonthlyIncome_replaced_log_trim',
+       'NumberOfDependents_replaced_log_trim'],
+      dtype='object')
+2025-09-19 09:27:19,136 - INFO - Constant filter Quasi Constant method is applied....
+2025-09-19 09:27:19,154 - INFO - Columns in the train data are : 7 -> After applyin the constant columns with variance not 0 are : 5 and variance with 0 are : 2
+2025-09-19 09:27:19,162 - INFO - Columns after droping are : Index(['DebtRatio_log_trim', 'NumberOfOpenCreditLinesAndLoans_log_trim',
+       'NumberRealEstateLoansOrLines_log_trim',
+       'MonthlyIncome_replaced_log_trim',
+       'NumberOfDependents_replaced_log_trim'],
+      dtype='object')
+2025-09-21 11:04:28,098 - INFO - Constant filter Constant method is applied....
+2025-09-21 11:04:28,146 - INFO - Columns in the train data are : 11 -> After applyin the constant columns with variance not 0 are : 7 and variance with 0 are : 4
+2025-09-21 11:04:28,151 - INFO - Columns after droping are : Index(['RevolvingUtilizationOfUnsecuredLines_log_trim', 'age_log_trim',
+       'DebtRatio_log_trim', 'NumberOfOpenCreditLinesAndLoans_log_trim',
+       'NumberRealEstateLoansOrLines_log_trim',
+       'MonthlyIncome_replaced_log_trim',
+       'NumberOfDependents_replaced_log_trim'],
+      dtype='object')
+2025-09-21 11:04:28,179 - INFO - Constant filter Quasi Constant method is applied....
+2025-09-21 11:04:28,198 - INFO - Columns in the train data are : 7 -> After applyin the constant columns with variance not 0 are : 5 and variance with 0 are : 2
+2025-09-21 11:04:28,205 - INFO - Columns after droping are : Index(['DebtRatio_log_trim', 'NumberOfOpenCreditLinesAndLoans_log_trim',
+       'NumberRealEstateLoansOrLines_log_trim',
+       'MonthlyIncome_replaced_log_trim',
+       'NumberOfDependents_replaced_log_trim'],
+      dtype='object')
+2025-09-22 00:43:25,396 - INFO - Constant filter Constant method is applied....
+2025-09-22 00:43:25,425 - INFO - Columns in the train data are : 11 -> After applyin the constant columns with variance not 0 are : 7 and variance with 0 are : 4
+2025-09-22 00:43:25,425 - INFO - Columns after droping are : Index(['RevolvingUtilizationOfUnsecuredLines_log_trim', 'age_log_trim',
+       'DebtRatio_log_trim', 'NumberOfOpenCreditLinesAndLoans_log_trim',
+       'NumberRealEstateLoansOrLines_log_trim',
+       'MonthlyIncome_replaced_log_trim',
+       'NumberOfDependents_replaced_log_trim'],
+      dtype='object')
+2025-09-22 00:43:25,448 - INFO - Constant filter Quasi Constant method is applied....
+2025-09-22 00:43:25,467 - INFO - Columns in the train data are : 7 -> After applyin the constant columns with variance not 0 are : 5 and variance with 0 are : 2
+2025-09-22 00:43:25,471 - INFO - Columns after droping are : Index(['DebtRatio_log_trim', 'NumberOfOpenCreditLinesAndLoans_log_trim',
+       'NumberRealEstateLoansOrLines_log_trim',
+       'MonthlyIncome_replaced_log_trim',
+       'NumberOfDependents_replaced_log_trim'],
+      dtype='object')
+2025-09-22 07:59:09,090 - INFO - Constant filter Constant method is applied....
+2025-09-22 07:59:09,118 - INFO - Columns in the train data are : 11 -> After applyin the constant columns with variance not 0 are : 7 and variance with 0 are : 4
+2025-09-22 07:59:09,126 - INFO - Columns after droping are : Index(['RevolvingUtilizationOfUnsecuredLines_log_trim', 'age_log_trim',
+       'DebtRatio_log_trim', 'NumberOfOpenCreditLinesAndLoans_log_trim',
+       'NumberRealEstateLoansOrLines_log_trim',
+       'MonthlyIncome_replaced_log_trim',
+       'NumberOfDependents_replaced_log_trim'],
+      dtype='object')
+2025-09-22 07:59:09,145 - INFO - Constant filter Quasi Constant method is applied....
+2025-09-22 07:59:09,161 - INFO - Columns in the train data are : 7 -> After applyin the constant columns with variance not 0 are : 5 and variance with 0 are : 2
+2025-09-22 07:59:09,168 - INFO - Columns after droping are : Index(['DebtRatio_log_trim', 'NumberOfOpenCreditLinesAndLoans_log_trim',
+       'NumberRealEstateLoansOrLines_log_trim',
+       'MonthlyIncome_replaced_log_trim',
+       'NumberOfDependents_replaced_log_trim'],
+      dtype='object')
+2025-09-22 08:00:47,805 - INFO - Constant filter Constant method is applied....
+2025-09-22 08:00:47,861 - INFO - Columns in the train data are : 11 -> After applyin the constant columns with variance not 0 are : 7 and variance with 0 are : 4
+2025-09-22 08:00:47,873 - INFO - Columns after droping are : Index(['RevolvingUtilizationOfUnsecuredLines_log_trim', 'age_log_trim',
+       'DebtRatio_log_trim', 'NumberOfOpenCreditLinesAndLoans_log_trim',
+       'NumberRealEstateLoansOrLines_log_trim',
+       'MonthlyIncome_replaced_log_trim',
+       'NumberOfDependents_replaced_log_trim'],
+      dtype='object')
+2025-09-22 08:00:47,901 - INFO - Constant filter Quasi Constant method is applied....
+2025-09-22 08:00:47,929 - INFO - Columns in the train data are : 7 -> After applyin the constant columns with variance not 0 are : 5 and variance with 0 are : 2
+2025-09-22 08:00:47,933 - INFO - Columns after droping are : Index(['DebtRatio_log_trim', 'NumberOfOpenCreditLinesAndLoans_log_trim',
+       'NumberRealEstateLoansOrLines_log_trim',
+       'MonthlyIncome_replaced_log_trim',
+       'NumberOfDependents_replaced_log_trim'],
+      dtype='object')
+2025-09-22 09:39:11,079 - INFO - Constant filter Constant method is applied....
+2025-09-22 09:39:11,114 - INFO - Columns in the train data are : 11 -> After applyin the constant columns with variance not 0 are : 7 and variance with 0 are : 4
+2025-09-22 09:39:11,128 - INFO - Columns after droping are : Index(['RevolvingUtilizationOfUnsecuredLines_log_trim', 'age_log_trim',
+       'DebtRatio_log_trim', 'NumberOfOpenCreditLinesAndLoans_log_trim',
+       'NumberRealEstateLoansOrLines_log_trim',
+       'MonthlyIncome_replaced_log_trim',
+       'NumberOfDependents_replaced_log_trim'],
+      dtype='object')
+2025-09-22 09:39:11,142 - INFO - Constant filter Quasi Constant method is applied....
+2025-09-22 09:39:11,160 - INFO - Columns in the train data are : 7 -> After applyin the constant columns with variance not 0 are : 5 and variance with 0 are : 2
+2025-09-22 09:39:11,160 - INFO - Columns after droping are : Index(['DebtRatio_log_trim', 'NumberOfOpenCreditLinesAndLoans_log_trim',
+       'NumberRealEstateLoansOrLines_log_trim',
+       'MonthlyIncome_replaced_log_trim',
+       'NumberOfDependents_replaced_log_trim'],
+      dtype='object')
+2025-09-22 10:11:37,800 - INFO - Constant filter Constant method is applied....
+2025-09-22 10:11:37,833 - INFO - Columns in the train data are : 11 -> After applyin the constant columns with variance not 0 are : 7 and variance with 0 are : 4
+2025-09-22 10:11:37,835 - INFO - Columns after droping are : Index(['RevolvingUtilizationOfUnsecuredLines_log_trim', 'age_log_trim',
+       'DebtRatio_log_trim', 'NumberOfOpenCreditLinesAndLoans_log_trim',
+       'NumberRealEstateLoansOrLines_log_trim',
+       'MonthlyIncome_replaced_log_trim',
+       'NumberOfDependents_replaced_log_trim'],
+      dtype='object')
+2025-09-22 10:11:37,854 - INFO - Constant filter Quasi Constant method is applied....
+2025-09-22 10:11:37,874 - INFO - Columns in the train data are : 7 -> After applyin the constant columns with variance not 0 are : 5 and variance with 0 are : 2
+2025-09-22 10:11:37,881 - INFO - Columns after droping are : Index(['DebtRatio_log_trim', 'NumberOfOpenCreditLinesAndLoans_log_trim',
+       'NumberRealEstateLoansOrLines_log_trim',
+       'MonthlyIncome_replaced_log_trim',
+       'NumberOfDependents_replaced_log_trim'],
+      dtype='object')
+2025-09-22 10:12:26,196 - INFO - Constant filter Constant method is applied....
+2025-09-22 10:12:26,252 - INFO - Columns in the train data are : 11 -> After applyin the constant columns with variance not 0 are : 7 and variance with 0 are : 4
+2025-09-22 10:12:26,266 - INFO - Columns after droping are : Index(['RevolvingUtilizationOfUnsecuredLines_log_trim', 'age_log_trim',
+       'DebtRatio_log_trim', 'NumberOfOpenCreditLinesAndLoans_log_trim',
+       'NumberRealEstateLoansOrLines_log_trim',
+       'MonthlyIncome_replaced_log_trim',
+       'NumberOfDependents_replaced_log_trim'],
+      dtype='object')
+2025-09-22 10:12:26,303 - INFO - Constant filter Quasi Constant method is applied....
+2025-09-22 10:12:26,340 - INFO - Columns in the train data are : 7 -> After applyin the constant columns with variance not 0 are : 5 and variance with 0 are : 2
+2025-09-22 10:12:26,352 - INFO - Columns after droping are : Index(['DebtRatio_log_trim', 'NumberOfOpenCreditLinesAndLoans_log_trim',
+       'NumberRealEstateLoansOrLines_log_trim',
+       'MonthlyIncome_replaced_log_trim',
+       'NumberOfDependents_replaced_log_trim'],
+      dtype='object')
+2025-09-22 10:17:32,714 - INFO - Constant filter Constant method is applied....
+2025-09-22 10:17:32,731 - INFO - Columns in the train data are : 11 -> After applyin the constant columns with variance not 0 are : 7 and variance with 0 are : 4
+2025-09-22 10:17:32,731 - INFO - Columns after droping are : Index(['RevolvingUtilizationOfUnsecuredLines_log_trim', 'age_log_trim',
+       'DebtRatio_log_trim', 'NumberOfOpenCreditLinesAndLoans_log_trim',
+       'NumberRealEstateLoansOrLines_log_trim',
+       'MonthlyIncome_replaced_log_trim',
+       'NumberOfDependents_replaced_log_trim'],
+      dtype='object')
+2025-09-22 10:17:32,747 - INFO - Constant filter Quasi Constant method is applied....
+2025-09-22 10:17:32,778 - INFO - Columns in the train data are : 7 -> After applyin the constant columns with variance not 0 are : 5 and variance with 0 are : 2
+2025-09-22 10:17:32,778 - INFO - Columns after droping are : Index(['DebtRatio_log_trim', 'NumberOfOpenCreditLinesAndLoans_log_trim',
+       'NumberRealEstateLoansOrLines_log_trim',
+       'MonthlyIncome_replaced_log_trim',
+       'NumberOfDependents_replaced_log_trim'],
+      dtype='object')

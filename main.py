@@ -6,6 +6,7 @@ from loggers import Logger
 import warnings
 warnings.filterwarnings('ignore')
 logger = Logger.get_logs('main')
+from transform import Variable_Transform
 from missing_values import MissingData
 from outliers_handle import Outliers
 from filter_methods import Filter_methods
@@ -44,7 +45,7 @@ class CreditCard:
 
     def feature_engineering(self):
         try:
-            logger.info('-----------------Feature Selection---------------------')
+            logger.info('-----------------Feature Engineering---------------------')
             logger.info(f'Send the train and test columns to handle the missing values.')
             self.X_train, self.X_test = MissingData.Random_sample(self.X_train, self.X_test)
             logger.info('Now we have to divide the numerical and categorical columns.')
@@ -54,10 +55,11 @@ class CreditCard:
             self.X_test_cat = self.X_test.select_dtypes(include='object')
             logger.info('we have divide the independent columns into numerical and categorical.')
             logger.info(f'Shape of Numerical columns are X_train{self.X_train_num.shape} and X_test{self.X_test_num.shape}')
-            logger.info(f'Shape of categorical columns are X_train{self.X_tran_cat.shape} and X_test{self.X_test_cat.shape}')
+            logger.info(f'{type(self.X_train_cat)}')
+            logger.info(f'Shape of categorical columns are X_train{self.X_train_cat.shape} and X_test{self.X_test_cat.shape}')
             logger.info(f'Null values in Numerical columns are X_train: {self.X_train_num.isnull().sum().sum()} and X_test: {self.X_test_num.isnull().sum().sum()}')
-            logger.info(f'Null values in categorical columns are X_train: {self.X_tran_cat.isnull().sum().sum()} and X_test: {self.X_test_cat.isnull().sum().sum()}')
-            logger.info(f'Null values in categorical columns are X_train: {self.X_tran_cat.columns} and X_test: {self.X_test_cat.columns}')
+            logger.info(f'Null values in categorical columns are X_train: {self.X_train_cat.isnull().sum().sum()} and X_test: {self.X_test_cat.isnull().sum().sum()}')
+            logger.info(f'Null values in categorical columns are X_train: {self.X_train_cat.columns} and X_test: {self.X_test_cat.columns}')
             logger.info('Send the numerical columns to variable transformation')
             # Variable Tranformation
             self.X_train_num, self.X_test_num = Variable_Transform.log_transform(self.X_train_num, self.X_test_num)
@@ -74,6 +76,7 @@ class CreditCard:
 
     def feature_selections(self):
         try:
+            logger.info('-----------------Feature Selection---------------------')
             # Filter Methods
             self.X_train_num,self.X_test_num = Filter_methods.constant(self.X_train_num, self.X_test_num)
             self.X_train_num, self.X_test_num = Filter_methods.quasi_constant(self.X_train_num, self.X_test_num)
@@ -96,10 +99,12 @@ class CreditCard:
             test_onencode.reset_index(drop=True, inplace=True)
             train_odencode.reset_index(drop=True, inplace=True)
             test_odencode.reset_index(drop=True, inplace=True)
+            self.X_train_num.reset_index(drop=True, inplace=True)
+            self.X_test_num.reset_index(drop=True, inplace=True)
 
             # Combine categorical encodings
-            self.training_data = pd.concat([train_onencode, train_odencode], axis=1)
-            self.testing_data = pd.concat([test_onencode, test_odencode], axis=1)
+            self.training_data = pd.concat([self.X_train_num, train_onencode, train_odencode], axis=1)
+            self.testing_data = pd.concat([self.X_test_num, test_onencode, test_odencode], axis=1)
 
             logger.info(f'Training encoded sample:\n{self.training_data.sample(5)}')
             logger.info(f'Testing encoded sample:\n{self.testing_data.sample(5)}')
@@ -134,6 +139,7 @@ class CreditCard:
         try:
             logger.info('---------Before scaling-------')
             logger.info(f'{self.training_data_res.head(4)}')
+            logger.info(f'{self.training_data_res.columns}')
             sc = StandardScaler()
             sc.fit(self.training_data_res)
             self.training_data_res_t = sc.transform(self.training_data_res)
@@ -141,6 +147,7 @@ class CreditCard:
             logger.info('----------After scaling--------')
             logger.info(f'{self.training_data_res_t}')
             common(self.training_data_res_t, self.y_train_res, self.testing_data_t, self.y_test)
+            logger.info(self.training_data_res.shape)
         except Exception as e:
             er_ty, er_msg, er_lin = sys.exc_info()
             logger.info(f'Issue is : {er_lin.tb_lineno} : due to : {er_msg}')

@@ -1794,3 +1794,465 @@
        'NumberRealEstateLoansOrLines', 'NumberOfTime60-89DaysPastDueNotWorse',
        'MonthlyIncome_replaced', 'NumberOfDependents_replaced'],
       dtype='object')
+2025-09-18 20:32:45,858 - INFO - Columns in the x_train are : 10
+2025-09-18 20:32:45,858 - INFO - Columns in the x_test are : 10
+2025-09-18 20:32:45,858 - INFO - Unique values in the target are:['Good' 'Bad']
+2025-09-18 20:32:45,915 - INFO - Corelation values are : [np.float64(0.0017066941375071586), np.float64(0.11686233876142049), np.float64(-0.12827265291974632), np.float64(0.008265815920442243), np.float64(0.029222062215291552), np.float64(-0.12031500476317944), np.float64(0.008224305373081105), np.float64(-0.10427930068875776), np.float64(0.01747124231629267), np.float64(-0.04355484568216989)]
+2025-09-18 20:32:45,915 - INFO - P - values
+ [np.float64(0.5543794125231316), np.float64(0.0), np.float64(0.0), np.float64(0.0041914528326382474), np.float64(4.2852213176482516e-24), np.float64(0.0), np.float64(0.004385668023117828), np.float64(2.76119112250797e-287), np.float64(1.4251341005159556e-09), np.float64(1.750942242254912e-51)]
+2025-09-18 20:32:45,915 - INFO - <class 'str'>
+2025-09-18 20:32:45,915 - INFO - <class 'str'>
+2025-09-18 20:32:45,916 - INFO - <class 'str'>
+2025-09-18 20:32:45,916 - INFO - <class 'str'>
+2025-09-18 20:32:45,916 - INFO - <class 'str'>
+2025-09-18 20:32:45,916 - INFO - <class 'str'>
+2025-09-18 20:32:45,916 - INFO - <class 'str'>
+2025-09-18 20:32:45,916 - INFO - <class 'str'>
+2025-09-18 20:32:45,916 - INFO - <class 'str'>
+2025-09-18 20:32:45,916 - INFO - <class 'str'>
+2025-09-18 20:32:45,916 - INFO - Index value of the hyp > 0.05 are :[0]
+2025-09-18 20:32:45,916 - INFO - Columns that has p value greather than 0.05 : Index(['RevolvingUtilizationOfUnsecuredLines'], dtype='object')
+2025-09-18 20:32:45,919 - INFO - After removing the columns whose p value > 0.05 are : Index(['age', 'NumberOfTime30-59DaysPastDueNotWorse', 'DebtRatio',
+       'NumberOfOpenCreditLinesAndLoans', 'NumberOfTimes90DaysLate',
+       'NumberRealEstateLoansOrLines', 'NumberOfTime60-89DaysPastDueNotWorse',
+       'MonthlyIncome_replaced', 'NumberOfDependents_replaced'],
+      dtype='object')
+ test :Index(['age', 'NumberOfTime30-59DaysPastDueNotWorse', 'DebtRatio',
+       'NumberOfOpenCreditLinesAndLoans', 'NumberOfTimes90DaysLate',
+       'NumberRealEstateLoansOrLines', 'NumberOfTime60-89DaysPastDueNotWorse',
+       'MonthlyIncome_replaced', 'NumberOfDependents_replaced'],
+      dtype='object')
+2025-09-18 20:35:19,979 - INFO - Columns in the x_train are : 10
+2025-09-18 20:35:19,979 - INFO - Columns in the x_test are : 10
+2025-09-18 20:35:19,979 - INFO - Unique values in the target are:['Good' 'Bad']
+2025-09-18 20:35:20,029 - INFO - Corelation values are : [np.float64(0.0017066941375071586), np.float64(0.11686233876142049), np.float64(-0.12827265291974632), np.float64(0.008265815920442243), np.float64(0.029222062215291552), np.float64(-0.12031500476317944), np.float64(0.008224305373081105), np.float64(-0.10427930068875776), np.float64(0.01747124231629267), np.float64(-0.04355484568216989)]
+2025-09-18 20:35:20,029 - INFO - P - values
+ [np.float64(0.5543794125231316), np.float64(0.0), np.float64(0.0), np.float64(0.0041914528326382474), np.float64(4.2852213176482516e-24), np.float64(0.0), np.float64(0.004385668023117828), np.float64(2.76119112250797e-287), np.float64(1.4251341005159556e-09), np.float64(1.750942242254912e-51)]
+2025-09-18 20:35:20,029 - INFO - <class 'str'>
+2025-09-18 20:35:20,029 - INFO - <class 'str'>
+2025-09-18 20:35:20,029 - INFO - <class 'str'>
+2025-09-18 20:35:20,029 - INFO - <class 'str'>
+2025-09-18 20:35:20,029 - INFO - <class 'str'>
+2025-09-18 20:35:20,029 - INFO - <class 'str'>
+2025-09-18 20:35:20,029 - INFO - <class 'str'>
+2025-09-18 20:35:20,029 - INFO - <class 'str'>
+2025-09-18 20:35:20,029 - INFO - <class 'str'>
+2025-09-18 20:35:20,029 - INFO - <class 'str'>
+2025-09-18 20:35:20,029 - INFO - Index value of the hyp > 0.05 are :[0]
+2025-09-18 20:35:20,029 - INFO - Columns that has p value greather than 0.05 : Index(['RevolvingUtilizationOfUnsecuredLines'], dtype='object')
+2025-09-18 20:35:20,029 - INFO - After removing the columns whose p value > 0.05 are : Index(['age', 'NumberOfTime30-59DaysPastDueNotWorse', 'DebtRatio',
+       'NumberOfOpenCreditLinesAndLoans', 'NumberOfTimes90DaysLate',
+       'NumberRealEstateLoansOrLines', 'NumberOfTime60-89DaysPastDueNotWorse',
+       'MonthlyIncome_replaced', 'NumberOfDependents_replaced'],
+      dtype='object')
+ test :Index(['age', 'NumberOfTime30-59DaysPastDueNotWorse', 'DebtRatio',
+       'NumberOfOpenCreditLinesAndLoans', 'NumberOfTimes90DaysLate',
+       'NumberRealEstateLoansOrLines', 'NumberOfTime60-89DaysPastDueNotWorse',
+       'MonthlyIncome_replaced', 'NumberOfDependents_replaced'],
+      dtype='object')
+2025-09-18 20:38:12,873 - INFO - Columns in the x_train are : 10
+2025-09-18 20:38:12,873 - INFO - Columns in the x_test are : 10
+2025-09-18 20:38:12,873 - INFO - Unique values in the target are:['Good' 'Bad']
+2025-09-18 20:38:12,919 - INFO - Corelation values are : [np.float64(0.0017066941375071586), np.float64(0.11686233876142049), np.float64(-0.12827265291974632), np.float64(0.008265815920442243), np.float64(0.029222062215291552), np.float64(-0.12031500476317944), np.float64(0.008224305373081105), np.float64(-0.10427930068875776), np.float64(0.01747124231629267), np.float64(-0.04355484568216989)]
+2025-09-18 20:38:12,919 - INFO - P - values
+ [np.float64(0.5543794125231316), np.float64(0.0), np.float64(0.0), np.float64(0.0041914528326382474), np.float64(4.2852213176482516e-24), np.float64(0.0), np.float64(0.004385668023117828), np.float64(2.76119112250797e-287), np.float64(1.4251341005159556e-09), np.float64(1.750942242254912e-51)]
+2025-09-18 20:38:12,919 - INFO - <class 'str'>
+2025-09-18 20:38:12,919 - INFO - <class 'str'>
+2025-09-18 20:38:12,919 - INFO - <class 'str'>
+2025-09-18 20:38:12,919 - INFO - <class 'str'>
+2025-09-18 20:38:12,919 - INFO - <class 'str'>
+2025-09-18 20:38:12,919 - INFO - <class 'str'>
+2025-09-18 20:38:12,919 - INFO - <class 'str'>
+2025-09-18 20:38:12,919 - INFO - <class 'str'>
+2025-09-18 20:38:12,919 - INFO - <class 'str'>
+2025-09-18 20:38:12,919 - INFO - <class 'str'>
+2025-09-18 20:38:12,919 - INFO - Index value of the hyp > 0.05 are :[0]
+2025-09-18 20:38:12,919 - INFO - Columns that has p value greather than 0.05 : Index(['RevolvingUtilizationOfUnsecuredLines'], dtype='object')
+2025-09-18 20:38:12,919 - INFO - After removing the columns whose p value > 0.05 are : Index(['age', 'NumberOfTime30-59DaysPastDueNotWorse', 'DebtRatio',
+       'NumberOfOpenCreditLinesAndLoans', 'NumberOfTimes90DaysLate',
+       'NumberRealEstateLoansOrLines', 'NumberOfTime60-89DaysPastDueNotWorse',
+       'MonthlyIncome_replaced', 'NumberOfDependents_replaced'],
+      dtype='object')
+ test :Index(['age', 'NumberOfTime30-59DaysPastDueNotWorse', 'DebtRatio',
+       'NumberOfOpenCreditLinesAndLoans', 'NumberOfTimes90DaysLate',
+       'NumberRealEstateLoansOrLines', 'NumberOfTime60-89DaysPastDueNotWorse',
+       'MonthlyIncome_replaced', 'NumberOfDependents_replaced'],
+      dtype='object')
+2025-09-18 20:40:14,612 - INFO - Columns in the x_train are : 10
+2025-09-18 20:40:14,612 - INFO - Columns in the x_test are : 10
+2025-09-18 20:40:14,615 - INFO - Unique values in the target are:['Good' 'Bad']
+2025-09-18 20:40:14,649 - INFO - Corelation values are : [np.float64(0.0017066941375071586), np.float64(0.11686233876142049), np.float64(-0.12827265291974632), np.float64(0.008265815920442243), np.float64(0.029222062215291552), np.float64(-0.12031500476317944), np.float64(0.008224305373081105), np.float64(-0.10427930068875776), np.float64(0.01747124231629267), np.float64(-0.04355484568216989)]
+2025-09-18 20:40:14,649 - INFO - P - values
+ [np.float64(0.5543794125231316), np.float64(0.0), np.float64(0.0), np.float64(0.0041914528326382474), np.float64(4.2852213176482516e-24), np.float64(0.0), np.float64(0.004385668023117828), np.float64(2.76119112250797e-287), np.float64(1.4251341005159556e-09), np.float64(1.750942242254912e-51)]
+2025-09-18 20:40:14,649 - INFO - <class 'str'>
+2025-09-18 20:40:14,649 - INFO - <class 'str'>
+2025-09-18 20:40:14,649 - INFO - <class 'str'>
+2025-09-18 20:40:14,649 - INFO - <class 'str'>
+2025-09-18 20:40:14,649 - INFO - <class 'str'>
+2025-09-18 20:40:14,649 - INFO - <class 'str'>
+2025-09-18 20:40:14,649 - INFO - <class 'str'>
+2025-09-18 20:40:14,649 - INFO - <class 'str'>
+2025-09-18 20:40:14,649 - INFO - <class 'str'>
+2025-09-18 20:40:14,649 - INFO - <class 'str'>
+2025-09-18 20:40:14,649 - INFO - Index value of the hyp > 0.05 are :[0]
+2025-09-18 20:40:14,649 - INFO - Columns that has p value greather than 0.05 : Index(['RevolvingUtilizationOfUnsecuredLines'], dtype='object')
+2025-09-18 20:40:14,655 - INFO - After removing the columns whose p value > 0.05 are : Index(['age', 'NumberOfTime30-59DaysPastDueNotWorse', 'DebtRatio',
+       'NumberOfOpenCreditLinesAndLoans', 'NumberOfTimes90DaysLate',
+       'NumberRealEstateLoansOrLines', 'NumberOfTime60-89DaysPastDueNotWorse',
+       'MonthlyIncome_replaced', 'NumberOfDependents_replaced'],
+      dtype='object')
+ test :Index(['age', 'NumberOfTime30-59DaysPastDueNotWorse', 'DebtRatio',
+       'NumberOfOpenCreditLinesAndLoans', 'NumberOfTimes90DaysLate',
+       'NumberRealEstateLoansOrLines', 'NumberOfTime60-89DaysPastDueNotWorse',
+       'MonthlyIncome_replaced', 'NumberOfDependents_replaced'],
+      dtype='object')
+2025-09-18 20:43:28,914 - INFO - Columns in the x_train are : 10
+2025-09-18 20:43:28,914 - INFO - Columns in the x_test are : 10
+2025-09-18 20:43:28,914 - INFO - Unique values in the target are:['Good' 'Bad']
+2025-09-18 20:43:28,962 - INFO - Corelation values are : [np.float64(0.0017066941375071586), np.float64(0.11686233876142049), np.float64(-0.12827265291974632), np.float64(0.008265815920442243), np.float64(0.029222062215291552), np.float64(-0.12031500476317944), np.float64(0.008224305373081105), np.float64(-0.10427930068875776), np.float64(0.01747124231629267), np.float64(-0.04355484568216989)]
+2025-09-18 20:43:28,962 - INFO - P - values
+ [np.float64(0.5543794125231316), np.float64(0.0), np.float64(0.0), np.float64(0.0041914528326382474), np.float64(4.2852213176482516e-24), np.float64(0.0), np.float64(0.004385668023117828), np.float64(2.76119112250797e-287), np.float64(1.4251341005159556e-09), np.float64(1.750942242254912e-51)]
+2025-09-18 20:43:28,962 - INFO - <class 'str'>
+2025-09-18 20:43:28,962 - INFO - <class 'str'>
+2025-09-18 20:43:28,962 - INFO - <class 'str'>
+2025-09-18 20:43:28,962 - INFO - <class 'str'>
+2025-09-18 20:43:28,962 - INFO - <class 'str'>
+2025-09-18 20:43:28,962 - INFO - <class 'str'>
+2025-09-18 20:43:28,962 - INFO - <class 'str'>
+2025-09-18 20:43:28,962 - INFO - <class 'str'>
+2025-09-18 20:43:28,978 - INFO - <class 'str'>
+2025-09-18 20:43:28,978 - INFO - <class 'str'>
+2025-09-18 20:43:28,978 - INFO - Index value of the hyp > 0.05 are :[0]
+2025-09-18 20:43:28,978 - INFO - Columns that has p value greather than 0.05 : Index(['RevolvingUtilizationOfUnsecuredLines'], dtype='object')
+2025-09-18 20:43:28,978 - INFO - After removing the columns whose p value > 0.05 are : Index(['age', 'NumberOfTime30-59DaysPastDueNotWorse', 'DebtRatio',
+       'NumberOfOpenCreditLinesAndLoans', 'NumberOfTimes90DaysLate',
+       'NumberRealEstateLoansOrLines', 'NumberOfTime60-89DaysPastDueNotWorse',
+       'MonthlyIncome_replaced', 'NumberOfDependents_replaced'],
+      dtype='object')
+ test :Index(['age', 'NumberOfTime30-59DaysPastDueNotWorse', 'DebtRatio',
+       'NumberOfOpenCreditLinesAndLoans', 'NumberOfTimes90DaysLate',
+       'NumberRealEstateLoansOrLines', 'NumberOfTime60-89DaysPastDueNotWorse',
+       'MonthlyIncome_replaced', 'NumberOfDependents_replaced'],
+      dtype='object')
+2025-09-18 20:44:59,642 - INFO - Columns in the x_train are : 5
+2025-09-18 20:44:59,642 - INFO - Columns in the x_test are : 5
+2025-09-18 20:44:59,642 - INFO - Unique values in the target are:['Good' 'Bad']
+2025-09-18 20:44:59,656 - INFO - Corelation values are : [np.float64(-0.0023848803510485832), np.float64(0.05244997420525318), np.float64(0.029365792828241213), np.float64(0.04522183499442352), np.float64(-0.044259576044850694)]
+2025-09-18 20:44:59,672 - INFO - P - values
+ [np.float64(0.40872504430764695), np.float64(7.228960218270213e-74), np.float64(2.571987761402853e-24), np.float64(2.3082099782807604e-55), np.float64(4.175229654835514e-53)]
+2025-09-18 20:44:59,672 - INFO - <class 'str'>
+2025-09-18 20:44:59,672 - INFO - <class 'str'>
+2025-09-18 20:44:59,672 - INFO - <class 'str'>
+2025-09-18 20:44:59,672 - INFO - <class 'str'>
+2025-09-18 20:44:59,672 - INFO - <class 'str'>
+2025-09-18 20:44:59,672 - INFO - Index value of the hyp > 0.05 are :[0]
+2025-09-18 20:44:59,672 - INFO - Columns that has p value greather than 0.05 : Index(['DebtRatio_log_trim'], dtype='object')
+2025-09-18 20:44:59,672 - INFO - After removing the columns whose p value > 0.05 are : Index(['NumberOfOpenCreditLinesAndLoans_log_trim',
+       'NumberRealEstateLoansOrLines_log_trim',
+       'MonthlyIncome_replaced_log_trim',
+       'NumberOfDependents_replaced_log_trim'],
+      dtype='object')
+ test :Index(['NumberOfOpenCreditLinesAndLoans_log_trim',
+       'NumberRealEstateLoansOrLines_log_trim',
+       'MonthlyIncome_replaced_log_trim',
+       'NumberOfDependents_replaced_log_trim'],
+      dtype='object')
+2025-09-18 20:47:15,412 - INFO - Columns in the x_train are : 5
+2025-09-18 20:47:15,412 - INFO - Columns in the x_test are : 5
+2025-09-18 20:47:15,415 - INFO - Unique values in the target are:['Good' 'Bad']
+2025-09-18 20:47:15,441 - INFO - Corelation values are : [np.float64(-0.0023848803510485832), np.float64(0.05244997420525318), np.float64(0.029365792828241213), np.float64(0.04522183499442352), np.float64(-0.044259576044850694)]
+2025-09-18 20:47:15,441 - INFO - P - values
+ [np.float64(0.40872504430764695), np.float64(7.228960218270213e-74), np.float64(2.571987761402853e-24), np.float64(2.3082099782807604e-55), np.float64(4.175229654835514e-53)]
+2025-09-18 20:47:15,441 - INFO - <class 'str'>
+2025-09-18 20:47:15,441 - INFO - <class 'str'>
+2025-09-18 20:47:15,441 - INFO - <class 'str'>
+2025-09-18 20:47:15,441 - INFO - <class 'str'>
+2025-09-18 20:47:15,441 - INFO - <class 'str'>
+2025-09-18 20:47:15,441 - INFO - Index value of the hyp > 0.05 are :[0]
+2025-09-18 20:47:15,441 - INFO - Columns that has p value greather than 0.05 : Index(['DebtRatio_log_trim'], dtype='object')
+2025-09-18 20:47:15,445 - INFO - After removing the columns whose p value > 0.05 are : Index(['NumberOfOpenCreditLinesAndLoans_log_trim',
+       'NumberRealEstateLoansOrLines_log_trim',
+       'MonthlyIncome_replaced_log_trim',
+       'NumberOfDependents_replaced_log_trim'],
+      dtype='object')
+ test :Index(['NumberOfOpenCreditLinesAndLoans_log_trim',
+       'NumberRealEstateLoansOrLines_log_trim',
+       'MonthlyIncome_replaced_log_trim',
+       'NumberOfDependents_replaced_log_trim'],
+      dtype='object')
+2025-09-19 09:14:39,897 - INFO - Columns in the x_train are : 5
+2025-09-19 09:14:39,897 - INFO - Columns in the x_test are : 5
+2025-09-19 09:14:39,904 - INFO - Unique values in the target are:['Good' 'Bad']
+2025-09-19 09:14:39,926 - INFO - Corelation values are : [np.float64(-0.0023848803510485832), np.float64(0.05244997420525318), np.float64(0.029365792828241213), np.float64(0.04522183499442352), np.float64(-0.044259576044850694)]
+2025-09-19 09:14:39,926 - INFO - P - values
+ [np.float64(0.40872504430764695), np.float64(7.228960218270213e-74), np.float64(2.571987761402853e-24), np.float64(2.3082099782807604e-55), np.float64(4.175229654835514e-53)]
+2025-09-19 09:14:39,926 - INFO - <class 'str'>
+2025-09-19 09:14:39,926 - INFO - <class 'str'>
+2025-09-19 09:14:39,926 - INFO - <class 'str'>
+2025-09-19 09:14:39,928 - INFO - <class 'str'>
+2025-09-19 09:14:39,928 - INFO - <class 'str'>
+2025-09-19 09:14:39,928 - INFO - Index value of the hyp > 0.05 are :[0]
+2025-09-19 09:14:39,928 - INFO - Columns that has p value greather than 0.05 : Index(['DebtRatio_log_trim'], dtype='object')
+2025-09-19 09:14:39,928 - INFO - After removing the columns whose p value > 0.05 are : Index(['NumberOfOpenCreditLinesAndLoans_log_trim',
+       'NumberRealEstateLoansOrLines_log_trim',
+       'MonthlyIncome_replaced_log_trim',
+       'NumberOfDependents_replaced_log_trim'],
+      dtype='object')
+ test :Index(['NumberOfOpenCreditLinesAndLoans_log_trim',
+       'NumberRealEstateLoansOrLines_log_trim',
+       'MonthlyIncome_replaced_log_trim',
+       'NumberOfDependents_replaced_log_trim'],
+      dtype='object')
+2025-09-19 09:19:54,417 - INFO - Columns in the x_train are : 5
+2025-09-19 09:19:54,417 - INFO - Columns in the x_test are : 5
+2025-09-19 09:19:54,417 - INFO - Unique values in the target are:['Good' 'Bad']
+2025-09-19 09:19:54,456 - INFO - Corelation values are : [np.float64(-0.0023848803510485832), np.float64(0.05244997420525318), np.float64(0.029365792828241213), np.float64(0.04522183499442352), np.float64(-0.044259576044850694)]
+2025-09-19 09:19:54,456 - INFO - P - values
+ [np.float64(0.40872504430764695), np.float64(7.228960218270213e-74), np.float64(2.571987761402853e-24), np.float64(2.3082099782807604e-55), np.float64(4.175229654835514e-53)]
+2025-09-19 09:19:54,456 - INFO - <class 'str'>
+2025-09-19 09:19:54,456 - INFO - <class 'str'>
+2025-09-19 09:19:54,456 - INFO - <class 'str'>
+2025-09-19 09:19:54,456 - INFO - <class 'str'>
+2025-09-19 09:19:54,456 - INFO - <class 'str'>
+2025-09-19 09:19:54,456 - INFO - Index value of the hyp > 0.05 are :[0]
+2025-09-19 09:19:54,456 - INFO - Columns that has p value greather than 0.05 : Index(['DebtRatio_log_trim'], dtype='object')
+2025-09-19 09:19:54,462 - INFO - After removing the columns whose p value > 0.05 are : Index(['NumberOfOpenCreditLinesAndLoans_log_trim',
+       'NumberRealEstateLoansOrLines_log_trim',
+       'MonthlyIncome_replaced_log_trim',
+       'NumberOfDependents_replaced_log_trim'],
+      dtype='object')
+ test :Index(['NumberOfOpenCreditLinesAndLoans_log_trim',
+       'NumberRealEstateLoansOrLines_log_trim',
+       'MonthlyIncome_replaced_log_trim',
+       'NumberOfDependents_replaced_log_trim'],
+      dtype='object')
+2025-09-19 09:24:55,513 - INFO - Columns in the x_train are : 5
+2025-09-19 09:24:55,513 - INFO - Columns in the x_test are : 5
+2025-09-19 09:24:55,529 - INFO - Unique values in the target are:['Good' 'Bad']
+2025-09-19 09:24:55,561 - INFO - Corelation values are : [np.float64(-0.0023848803510485832), np.float64(0.05244997420525318), np.float64(0.029365792828241213), np.float64(0.04522183499442352), np.float64(-0.044259576044850694)]
+2025-09-19 09:24:55,561 - INFO - P - values
+ [np.float64(0.40872504430764695), np.float64(7.228960218270213e-74), np.float64(2.571987761402853e-24), np.float64(2.3082099782807604e-55), np.float64(4.175229654835514e-53)]
+2025-09-19 09:24:55,561 - INFO - <class 'str'>
+2025-09-19 09:24:55,561 - INFO - <class 'str'>
+2025-09-19 09:24:55,561 - INFO - <class 'str'>
+2025-09-19 09:24:55,561 - INFO - <class 'str'>
+2025-09-19 09:24:55,561 - INFO - <class 'str'>
+2025-09-19 09:24:55,561 - INFO - Index value of the hyp > 0.05 are :[0]
+2025-09-19 09:24:55,561 - INFO - Columns that has p value greather than 0.05 : Index(['DebtRatio_log_trim'], dtype='object')
+2025-09-19 09:24:55,561 - INFO - After removing the columns whose p value > 0.05 are : Index(['NumberOfOpenCreditLinesAndLoans_log_trim',
+       'NumberRealEstateLoansOrLines_log_trim',
+       'MonthlyIncome_replaced_log_trim',
+       'NumberOfDependents_replaced_log_trim'],
+      dtype='object')
+ test :Index(['NumberOfOpenCreditLinesAndLoans_log_trim',
+       'NumberRealEstateLoansOrLines_log_trim',
+       'MonthlyIncome_replaced_log_trim',
+       'NumberOfDependents_replaced_log_trim'],
+      dtype='object')
+2025-09-19 09:27:19,163 - INFO - Columns in the x_train are : 5
+2025-09-19 09:27:19,163 - INFO - Columns in the x_test are : 5
+2025-09-19 09:27:19,163 - INFO - Unique values in the target are:['Good' 'Bad']
+2025-09-19 09:27:19,193 - INFO - Corelation values are : [np.float64(-0.0023848803510485832), np.float64(0.05244997420525318), np.float64(0.029365792828241213), np.float64(0.04522183499442352), np.float64(-0.044259576044850694)]
+2025-09-19 09:27:19,193 - INFO - P - values
+ [np.float64(0.40872504430764695), np.float64(7.228960218270213e-74), np.float64(2.571987761402853e-24), np.float64(2.3082099782807604e-55), np.float64(4.175229654835514e-53)]
+2025-09-19 09:27:19,193 - INFO - <class 'str'>
+2025-09-19 09:27:19,193 - INFO - <class 'str'>
+2025-09-19 09:27:19,193 - INFO - <class 'str'>
+2025-09-19 09:27:19,193 - INFO - <class 'str'>
+2025-09-19 09:27:19,193 - INFO - <class 'str'>
+2025-09-19 09:27:19,193 - INFO - Index value of the hyp > 0.05 are :[0]
+2025-09-19 09:27:19,193 - INFO - Columns that has p value greather than 0.05 : Index(['DebtRatio_log_trim'], dtype='object')
+2025-09-19 09:27:19,197 - INFO - After removing the columns whose p value > 0.05 are : Index(['NumberOfOpenCreditLinesAndLoans_log_trim',
+       'NumberRealEstateLoansOrLines_log_trim',
+       'MonthlyIncome_replaced_log_trim',
+       'NumberOfDependents_replaced_log_trim'],
+      dtype='object')
+ test :Index(['NumberOfOpenCreditLinesAndLoans_log_trim',
+       'NumberRealEstateLoansOrLines_log_trim',
+       'MonthlyIncome_replaced_log_trim',
+       'NumberOfDependents_replaced_log_trim'],
+      dtype='object')
+2025-09-21 11:04:28,207 - INFO - Columns in the x_train are : 5
+2025-09-21 11:04:28,207 - INFO - Columns in the x_test are : 5
+2025-09-21 11:04:28,214 - INFO - Unique values in the target are:['Good' 'Bad']
+2025-09-21 11:04:28,252 - INFO - Corelation values are : [np.float64(-0.0023848803510485832), np.float64(0.05244997420525318), np.float64(0.029365792828241213), np.float64(0.04522183499442352), np.float64(-0.044259576044850694)]
+2025-09-21 11:04:28,252 - INFO - P - values
+ [np.float64(0.40872504430764695), np.float64(7.228960218270213e-74), np.float64(2.571987761402853e-24), np.float64(2.3082099782807604e-55), np.float64(4.175229654835514e-53)]
+2025-09-21 11:04:28,252 - INFO - <class 'str'>
+2025-09-21 11:04:28,252 - INFO - <class 'str'>
+2025-09-21 11:04:28,252 - INFO - <class 'str'>
+2025-09-21 11:04:28,252 - INFO - <class 'str'>
+2025-09-21 11:04:28,252 - INFO - <class 'str'>
+2025-09-21 11:04:28,252 - INFO - Index value of the hyp > 0.05 are :[0]
+2025-09-21 11:04:28,254 - INFO - Columns that has p value greather than 0.05 : Index(['DebtRatio_log_trim'], dtype='object')
+2025-09-21 11:04:28,259 - INFO - After removing the columns whose p value > 0.05 are : Index(['NumberOfOpenCreditLinesAndLoans_log_trim',
+       'NumberRealEstateLoansOrLines_log_trim',
+       'MonthlyIncome_replaced_log_trim',
+       'NumberOfDependents_replaced_log_trim'],
+      dtype='object')
+ test :Index(['NumberOfOpenCreditLinesAndLoans_log_trim',
+       'NumberRealEstateLoansOrLines_log_trim',
+       'MonthlyIncome_replaced_log_trim',
+       'NumberOfDependents_replaced_log_trim'],
+      dtype='object')
+2025-09-22 00:43:25,471 - INFO - Columns in the x_train are : 5
+2025-09-22 00:43:25,471 - INFO - Columns in the x_test are : 5
+2025-09-22 00:43:25,471 - INFO - Unique values in the target are:['Good' 'Bad']
+2025-09-22 00:43:25,503 - INFO - Corelation values are : [np.float64(-0.0023848803510485832), np.float64(0.05244997420525318), np.float64(0.029365792828241213), np.float64(0.04522183499442352), np.float64(-0.044259576044850694)]
+2025-09-22 00:43:25,503 - INFO - P - values
+ [np.float64(0.40872504430764695), np.float64(7.228960218270213e-74), np.float64(2.571987761402853e-24), np.float64(2.3082099782807604e-55), np.float64(4.175229654835514e-53)]
+2025-09-22 00:43:25,503 - INFO - <class 'str'>
+2025-09-22 00:43:25,503 - INFO - <class 'str'>
+2025-09-22 00:43:25,503 - INFO - <class 'str'>
+2025-09-22 00:43:25,503 - INFO - <class 'str'>
+2025-09-22 00:43:25,503 - INFO - <class 'str'>
+2025-09-22 00:43:25,503 - INFO - Index value of the hyp > 0.05 are :[0]
+2025-09-22 00:43:25,503 - INFO - Columns that has p value greather than 0.05 : Index(['DebtRatio_log_trim'], dtype='object')
+2025-09-22 00:43:25,518 - INFO - After removing the columns whose p value > 0.05 are : Index(['NumberOfOpenCreditLinesAndLoans_log_trim',
+       'NumberRealEstateLoansOrLines_log_trim',
+       'MonthlyIncome_replaced_log_trim',
+       'NumberOfDependents_replaced_log_trim'],
+      dtype='object')
+ test :Index(['NumberOfOpenCreditLinesAndLoans_log_trim',
+       'NumberRealEstateLoansOrLines_log_trim',
+       'MonthlyIncome_replaced_log_trim',
+       'NumberOfDependents_replaced_log_trim'],
+      dtype='object')
+2025-09-22 07:59:09,168 - INFO - Columns in the x_train are : 5
+2025-09-22 07:59:09,168 - INFO - Columns in the x_test are : 5
+2025-09-22 07:59:09,177 - INFO - Unique values in the target are:['Good' 'Bad']
+2025-09-22 07:59:09,198 - INFO - Corelation values are : [np.float64(-0.0023848803510485832), np.float64(0.05244997420525318), np.float64(0.029365792828241213), np.float64(0.04522183499442352), np.float64(-0.044259576044850694)]
+2025-09-22 07:59:09,198 - INFO - P - values
+ [np.float64(0.40872504430764695), np.float64(7.228960218270213e-74), np.float64(2.571987761402853e-24), np.float64(2.3082099782807604e-55), np.float64(4.175229654835514e-53)]
+2025-09-22 07:59:09,198 - INFO - <class 'str'>
+2025-09-22 07:59:09,198 - INFO - <class 'str'>
+2025-09-22 07:59:09,198 - INFO - <class 'str'>
+2025-09-22 07:59:09,198 - INFO - <class 'str'>
+2025-09-22 07:59:09,198 - INFO - <class 'str'>
+2025-09-22 07:59:09,198 - INFO - Index value of the hyp > 0.05 are :[0]
+2025-09-22 07:59:09,198 - INFO - Columns that has p value greather than 0.05 : Index(['DebtRatio_log_trim'], dtype='object')
+2025-09-22 07:59:09,202 - INFO - After removing the columns whose p value > 0.05 are : Index(['NumberOfOpenCreditLinesAndLoans_log_trim',
+       'NumberRealEstateLoansOrLines_log_trim',
+       'MonthlyIncome_replaced_log_trim',
+       'NumberOfDependents_replaced_log_trim'],
+      dtype='object')
+ test :Index(['NumberOfOpenCreditLinesAndLoans_log_trim',
+       'NumberRealEstateLoansOrLines_log_trim',
+       'MonthlyIncome_replaced_log_trim',
+       'NumberOfDependents_replaced_log_trim'],
+      dtype='object')
+2025-09-22 08:00:47,937 - INFO - Columns in the x_train are : 5
+2025-09-22 08:00:47,937 - INFO - Columns in the x_test are : 5
+2025-09-22 08:00:47,942 - INFO - Unique values in the target are:['Good' 'Bad']
+2025-09-22 08:00:47,994 - INFO - Corelation values are : [np.float64(-0.0023848803510485832), np.float64(0.05244997420525318), np.float64(0.029365792828241213), np.float64(0.04522183499442352), np.float64(-0.044259576044850694)]
+2025-09-22 08:00:47,994 - INFO - P - values
+ [np.float64(0.40872504430764695), np.float64(7.228960218270213e-74), np.float64(2.571987761402853e-24), np.float64(2.3082099782807604e-55), np.float64(4.175229654835514e-53)]
+2025-09-22 08:00:47,994 - INFO - <class 'str'>
+2025-09-22 08:00:47,994 - INFO - <class 'str'>
+2025-09-22 08:00:47,994 - INFO - <class 'str'>
+2025-09-22 08:00:47,994 - INFO - <class 'str'>
+2025-09-22 08:00:47,994 - INFO - <class 'str'>
+2025-09-22 08:00:47,994 - INFO - Index value of the hyp > 0.05 are :[0]
+2025-09-22 08:00:47,994 - INFO - Columns that has p value greather than 0.05 : Index(['DebtRatio_log_trim'], dtype='object')
+2025-09-22 08:00:48,004 - INFO - After removing the columns whose p value > 0.05 are : Index(['NumberOfOpenCreditLinesAndLoans_log_trim',
+       'NumberRealEstateLoansOrLines_log_trim',
+       'MonthlyIncome_replaced_log_trim',
+       'NumberOfDependents_replaced_log_trim'],
+      dtype='object')
+ test :Index(['NumberOfOpenCreditLinesAndLoans_log_trim',
+       'NumberRealEstateLoansOrLines_log_trim',
+       'MonthlyIncome_replaced_log_trim',
+       'NumberOfDependents_replaced_log_trim'],
+      dtype='object')
+2025-09-22 09:39:11,160 - INFO - Columns in the x_train are : 5
+2025-09-22 09:39:11,160 - INFO - Columns in the x_test are : 5
+2025-09-22 09:39:11,174 - INFO - Unique values in the target are:['Good' 'Bad']
+2025-09-22 09:39:11,189 - INFO - Corelation values are : [np.float64(-0.0023848803510485832), np.float64(0.05244997420525318), np.float64(0.029365792828241213), np.float64(0.04522183499442352), np.float64(-0.044259576044850694)]
+2025-09-22 09:39:11,189 - INFO - P - values
+ [np.float64(0.40872504430764695), np.float64(7.228960218270213e-74), np.float64(2.571987761402853e-24), np.float64(2.3082099782807604e-55), np.float64(4.175229654835514e-53)]
+2025-09-22 09:39:11,189 - INFO - <class 'str'>
+2025-09-22 09:39:11,189 - INFO - <class 'str'>
+2025-09-22 09:39:11,189 - INFO - <class 'str'>
+2025-09-22 09:39:11,189 - INFO - <class 'str'>
+2025-09-22 09:39:11,189 - INFO - <class 'str'>
+2025-09-22 09:39:11,189 - INFO - Index value of the hyp > 0.05 are :[0]
+2025-09-22 09:39:11,189 - INFO - Columns that has p value greather than 0.05 : Index(['DebtRatio_log_trim'], dtype='object')
+2025-09-22 09:39:11,208 - INFO - After removing the columns whose p value > 0.05 are : Index(['NumberOfOpenCreditLinesAndLoans_log_trim',
+       'NumberRealEstateLoansOrLines_log_trim',
+       'MonthlyIncome_replaced_log_trim',
+       'NumberOfDependents_replaced_log_trim'],
+      dtype='object')
+ test :Index(['NumberOfOpenCreditLinesAndLoans_log_trim',
+       'NumberRealEstateLoansOrLines_log_trim',
+       'MonthlyIncome_replaced_log_trim',
+       'NumberOfDependents_replaced_log_trim'],
+      dtype='object')
+2025-09-22 10:11:37,881 - INFO - Columns in the x_train are : 5
+2025-09-22 10:11:37,881 - INFO - Columns in the x_test are : 5
+2025-09-22 10:11:37,885 - INFO - Unique values in the target are:['Good' 'Bad']
+2025-09-22 10:11:37,912 - INFO - Corelation values are : [np.float64(-0.0023848803510485832), np.float64(0.05244997420525318), np.float64(0.029365792828241213), np.float64(0.04522183499442352), np.float64(-0.044259576044850694)]
+2025-09-22 10:11:37,912 - INFO - P - values
+ [np.float64(0.40872504430764695), np.float64(7.228960218270213e-74), np.float64(2.571987761402853e-24), np.float64(2.3082099782807604e-55), np.float64(4.175229654835514e-53)]
+2025-09-22 10:11:37,912 - INFO - <class 'str'>
+2025-09-22 10:11:37,912 - INFO - <class 'str'>
+2025-09-22 10:11:37,912 - INFO - <class 'str'>
+2025-09-22 10:11:37,912 - INFO - <class 'str'>
+2025-09-22 10:11:37,912 - INFO - <class 'str'>
+2025-09-22 10:11:37,912 - INFO - Index value of the hyp > 0.05 are :[0]
+2025-09-22 10:11:37,912 - INFO - Columns that has p value greather than 0.05 : Index(['DebtRatio_log_trim'], dtype='object')
+2025-09-22 10:11:37,912 - INFO - After removing the columns whose p value > 0.05 are : Index(['NumberOfOpenCreditLinesAndLoans_log_trim',
+       'NumberRealEstateLoansOrLines_log_trim',
+       'MonthlyIncome_replaced_log_trim',
+       'NumberOfDependents_replaced_log_trim'],
+      dtype='object')
+ test :Index(['NumberOfOpenCreditLinesAndLoans_log_trim',
+       'NumberRealEstateLoansOrLines_log_trim',
+       'MonthlyIncome_replaced_log_trim',
+       'NumberOfDependents_replaced_log_trim'],
+      dtype='object')
+2025-09-22 10:12:26,354 - INFO - Columns in the x_train are : 5
+2025-09-22 10:12:26,356 - INFO - Columns in the x_test are : 5
+2025-09-22 10:12:26,362 - INFO - Unique values in the target are:['Good' 'Bad']
+2025-09-22 10:12:26,447 - INFO - Corelation values are : [np.float64(-0.0023848803510485832), np.float64(0.05244997420525318), np.float64(0.029365792828241213), np.float64(0.04522183499442352), np.float64(-0.044259576044850694)]
+2025-09-22 10:12:26,447 - INFO - P - values
+ [np.float64(0.40872504430764695), np.float64(7.228960218270213e-74), np.float64(2.571987761402853e-24), np.float64(2.3082099782807604e-55), np.float64(4.175229654835514e-53)]
+2025-09-22 10:12:26,447 - INFO - <class 'str'>
+2025-09-22 10:12:26,447 - INFO - <class 'str'>
+2025-09-22 10:12:26,450 - INFO - <class 'str'>
+2025-09-22 10:12:26,450 - INFO - <class 'str'>
+2025-09-22 10:12:26,450 - INFO - <class 'str'>
+2025-09-22 10:12:26,450 - INFO - Index value of the hyp > 0.05 are :[0]
+2025-09-22 10:12:26,450 - INFO - Columns that has p value greather than 0.05 : Index(['DebtRatio_log_trim'], dtype='object')
+2025-09-22 10:12:26,460 - INFO - After removing the columns whose p value > 0.05 are : Index(['NumberOfOpenCreditLinesAndLoans_log_trim',
+       'NumberRealEstateLoansOrLines_log_trim',
+       'MonthlyIncome_replaced_log_trim',
+       'NumberOfDependents_replaced_log_trim'],
+      dtype='object')
+ test :Index(['NumberOfOpenCreditLinesAndLoans_log_trim',
+       'NumberRealEstateLoansOrLines_log_trim',
+       'MonthlyIncome_replaced_log_trim',
+       'NumberOfDependents_replaced_log_trim'],
+      dtype='object')
+2025-09-22 10:17:32,778 - INFO - Columns in the x_train are : 5
+2025-09-22 10:17:32,778 - INFO - Columns in the x_test are : 5
+2025-09-22 10:17:32,787 - INFO - Unique values in the target are:['Good' 'Bad']
+2025-09-22 10:17:32,810 - INFO - Corelation values are : [np.float64(-0.0023848803510485832), np.float64(0.05244997420525318), np.float64(0.029365792828241213), np.float64(0.04522183499442352), np.float64(-0.044259576044850694)]
+2025-09-22 10:17:32,810 - INFO - P - values
+ [np.float64(0.40872504430764695), np.float64(7.228960218270213e-74), np.float64(2.571987761402853e-24), np.float64(2.3082099782807604e-55), np.float64(4.175229654835514e-53)]
+2025-09-22 10:17:32,810 - INFO - <class 'str'>
+2025-09-22 10:17:32,810 - INFO - <class 'str'>
+2025-09-22 10:17:32,810 - INFO - <class 'str'>
+2025-09-22 10:17:32,810 - INFO - <class 'str'>
+2025-09-22 10:17:32,810 - INFO - <class 'str'>
+2025-09-22 10:17:32,810 - INFO - Index value of the hyp > 0.05 are :[0]
+2025-09-22 10:17:32,810 - INFO - Columns that has p value greather than 0.05 : Index(['DebtRatio_log_trim'], dtype='object')
+2025-09-22 10:17:32,810 - INFO - After removing the columns whose p value > 0.05 are : Index(['NumberOfOpenCreditLinesAndLoans_log_trim',
+       'NumberRealEstateLoansOrLines_log_trim',
+       'MonthlyIncome_replaced_log_trim',
+       'NumberOfDependents_replaced_log_trim'],
+      dtype='object')
+ test :Index(['NumberOfOpenCreditLinesAndLoans_log_trim',
+       'NumberRealEstateLoansOrLines_log_trim',
+       'MonthlyIncome_replaced_log_trim',
+       'NumberOfDependents_replaced_log_trim'],
+      dtype='object')

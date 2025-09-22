@@ -9239,3 +9239,2223 @@ dtype: int64
   -0.75060709]
  [-1.27226429  2.87561844 -0.56720747 ...  1.15044235  0.98677172
    0.5062488 ]]
+2025-09-18 20:32:45,259 - INFO - --------------------Server started--------------------------
+2025-09-18 20:32:45,485 - INFO - Data loaded sucessfully with shape of (150002, 18)
+2025-09-18 20:32:45,517 - INFO - Check the null values in the dataset:NPA Status                                  2
+RevolvingUtilizationOfUnsecuredLines        2
+age                                         2
+Gender                                      2
+Region                                      2
+MonthlyIncome                           29733
+Rented_OwnHouse                             2
+Occupation                                  2
+Education                                   2
+NumberOfTime30-59DaysPastDueNotWorse        2
+DebtRatio                                   2
+MonthlyIncome.1                         29733
+NumberOfOpenCreditLinesAndLoans             2
+NumberOfTimes90DaysLate                     2
+NumberRealEstateLoansOrLines                2
+NumberOfTime60-89DaysPastDueNotWorse        2
+NumberOfDependents                       3924
+Good_Bad                                    2
+dtype: int64
+2025-09-18 20:32:45,549 - INFO - shape of data set after droping Id: (150000, 17)
+2025-09-18 20:32:45,586 - INFO - Check the null values in the dataset after dropna :NPA Status                                  0
+RevolvingUtilizationOfUnsecuredLines        0
+age                                         0
+Gender                                      0
+Region                                      0
+MonthlyIncome                           29731
+Rented_OwnHouse                             0
+Occupation                                  0
+Education                                   0
+NumberOfTime30-59DaysPastDueNotWorse        0
+DebtRatio                                   0
+NumberOfOpenCreditLinesAndLoans             0
+NumberOfTimes90DaysLate                     0
+NumberRealEstateLoansOrLines                0
+NumberOfTime60-89DaysPastDueNotWorse        0
+NumberOfDependents                       3924
+Good_Bad                                    0
+dtype: int64
+2025-09-18 20:32:45,591 - INFO - Now we have divided the independent data and dependent columns seperately.
+2025-09-18 20:32:45,591 - INFO - Shape of independent columns is :(150000, 16)
+2025-09-18 20:32:45,591 - INFO - Shape of dependent column is :(150000,)
+2025-09-18 20:32:45,622 - INFO - We have done the splitting and shpe of X_train is (120000, 16) and X_test is (30000, 16)
+2025-09-18 20:32:45,622 - INFO - -----------------Feature Selection---------------------
+2025-09-18 20:32:45,622 - INFO - Send the train and test columns to handle the missing values.
+2025-09-18 20:32:45,766 - INFO - Now we have to divide the numerical and categorical columns.
+2025-09-18 20:32:45,792 - INFO - we have divide the independent columns into numerical and categorical.
+2025-09-18 20:32:45,792 - INFO - Shape of Numerical columns are X_train(120000, 11) and X_test(30000, 11)
+2025-09-18 20:32:45,792 - ERROR - <class 'AttributeError'> at 57 as 'NoneType' object has no attribute 'shape'
+2025-09-18 20:32:45,858 - INFO - Sucessfully we have done filter method...
+2025-09-18 20:32:45,919 - INFO - Sucessfully done the Hyphothesis...
+2025-09-18 20:32:46,132 - INFO - Training encoded sample:
+        Gender_Male  Region_East  Region_North  Region_South  Region_West  Rented_OwnHouse  Occupation  Education
+1717            0.0          1.0           0.0           0.0          0.0              1.0         1.0        3.0
+109343          1.0          0.0           0.0           0.0          1.0              0.0         0.0        4.0
+80000           1.0          0.0           0.0           0.0          0.0              1.0         3.0        4.0
+82869           0.0          0.0           0.0           1.0          0.0              0.0         1.0        3.0
+23861           1.0          0.0           0.0           0.0          1.0              1.0         4.0        0.0
+2025-09-18 20:32:46,139 - INFO - Testing encoded sample:
+       Gender_Male  Region_East  Region_North  Region_South  Region_West  Rented_OwnHouse  Occupation  Education
+24723          0.0          0.0           1.0           0.0          0.0              0.0         4.0        3.0
+19945          1.0          0.0           1.0           0.0          0.0              0.0         3.0        3.0
+11160          0.0          0.0           0.0           0.0          0.0              0.0         0.0        4.0
+6190           0.0          0.0           0.0           0.0          0.0              0.0         2.0        4.0
+14018          1.0          0.0           0.0           0.0          0.0              1.0         0.0        0.0
+2025-09-18 20:32:46,154 - INFO - Sample dependent data : [1 1 1 1 1 1 0 1 1 1]
+2025-09-18 20:32:46,154 - INFO - ----------------Before Balancing------------------------
+2025-09-18 20:32:46,174 - INFO - Total row for Good category in training data 120000 was : 111930
+2025-09-18 20:32:46,174 - INFO - Total row for Bad category in training data 120000 was : 8070
+2025-09-18 20:32:46,174 - INFO - ---------------After Balancing-------------------------
+2025-09-18 20:32:46,357 - INFO - Total row for Good category in training data 223860 was : 111930
+2025-09-18 20:32:46,375 - INFO - Total row for Bad category in training data 223860 was : 111930
+2025-09-18 20:32:46,375 - INFO - ---------Before scaling-------
+2025-09-18 20:32:46,384 - INFO -    Gender_Male  Region_East  Region_North  Region_South  Region_West  Rented_OwnHouse  Occupation  Education
+0          0.0          0.0           0.0           0.0          1.0              0.0         4.0        0.0
+1          1.0          0.0           0.0           1.0          0.0              0.0         4.0        1.0
+2          0.0          0.0           0.0           0.0          0.0              1.0         0.0        4.0
+3          1.0          0.0           0.0           0.0          1.0              0.0         0.0        4.0
+2025-09-18 20:32:46,433 - INFO - ----------After scaling--------
+2025-09-18 20:32:46,433 - INFO - [[-1.27226429 -0.34775128 -0.56720747 ... -0.86952204  0.98677172
+  -1.37903503]
+ [ 0.78615882 -0.34775128 -0.56720747 ... -0.86952204  0.98677172
+  -0.75060709]
+ [-1.27226429 -0.34775128 -0.56720747 ...  1.15044235 -1.35808214
+   1.13467675]
+ ...
+ [-1.27226429 -0.34775128 -0.56720747 ... -0.86952204  0.98677172
+  -0.75060709]
+ [ 0.78615882 -0.34775128 -0.56720747 ... -0.86952204  0.98677172
+  -0.75060709]
+ [-1.27226429  2.87561844 -0.56720747 ...  1.15044235  0.98677172
+   0.5062488 ]]
+2025-09-18 20:35:19,325 - INFO - --------------------Server started--------------------------
+2025-09-18 20:35:19,580 - INFO - Data loaded sucessfully with shape of (150002, 18)
+2025-09-18 20:35:19,610 - INFO - Check the null values in the dataset:NPA Status                                  2
+RevolvingUtilizationOfUnsecuredLines        2
+age                                         2
+Gender                                      2
+Region                                      2
+MonthlyIncome                           29733
+Rented_OwnHouse                             2
+Occupation                                  2
+Education                                   2
+NumberOfTime30-59DaysPastDueNotWorse        2
+DebtRatio                                   2
+MonthlyIncome.1                         29733
+NumberOfOpenCreditLinesAndLoans             2
+NumberOfTimes90DaysLate                     2
+NumberRealEstateLoansOrLines                2
+NumberOfTime60-89DaysPastDueNotWorse        2
+NumberOfDependents                       3924
+Good_Bad                                    2
+dtype: int64
+2025-09-18 20:35:19,652 - INFO - shape of data set after droping Id: (150000, 17)
+2025-09-18 20:35:19,683 - INFO - Check the null values in the dataset after dropna :NPA Status                                  0
+RevolvingUtilizationOfUnsecuredLines        0
+age                                         0
+Gender                                      0
+Region                                      0
+MonthlyIncome                           29731
+Rented_OwnHouse                             0
+Occupation                                  0
+Education                                   0
+NumberOfTime30-59DaysPastDueNotWorse        0
+DebtRatio                                   0
+NumberOfOpenCreditLinesAndLoans             0
+NumberOfTimes90DaysLate                     0
+NumberRealEstateLoansOrLines                0
+NumberOfTime60-89DaysPastDueNotWorse        0
+NumberOfDependents                       3924
+Good_Bad                                    0
+dtype: int64
+2025-09-18 20:35:19,692 - INFO - Now we have divided the independent data and dependent columns seperately.
+2025-09-18 20:35:19,692 - INFO - Shape of independent columns is :(150000, 16)
+2025-09-18 20:35:19,692 - INFO - Shape of dependent column is :(150000,)
+2025-09-18 20:35:19,734 - INFO - We have done the splitting and shpe of X_train is (120000, 16) and X_test is (30000, 16)
+2025-09-18 20:35:19,734 - INFO - -----------------Feature Selection---------------------
+2025-09-18 20:35:19,734 - INFO - Send the train and test columns to handle the missing values.
+2025-09-18 20:35:19,880 - INFO - Now we have to divide the numerical and categorical columns.
+2025-09-18 20:35:19,906 - INFO - we have divide the independent columns into numerical and categorical.
+2025-09-18 20:35:19,906 - INFO - Shape of Numerical columns are X_train(120000, 11) and X_test(30000, 11)
+2025-09-18 20:35:19,906 - ERROR - <class 'AttributeError'> at 57 as 'NoneType' object has no attribute 'shape'
+2025-09-18 20:35:19,979 - INFO - Sucessfully we have done filter method...
+2025-09-18 20:35:20,043 - INFO - Sucessfully done the Hyphothesis...
+2025-09-18 20:35:20,284 - INFO - Training encoded sample:
+       Gender_Male  Region_East  Region_North  Region_South  Region_West  Rented_OwnHouse  Occupation  Education
+73108          1.0          0.0           1.0           0.0          0.0              0.0         0.0        0.0
+40418          1.0          0.0           0.0           1.0          0.0              0.0         0.0        1.0
+74173          0.0          1.0           0.0           0.0          0.0              1.0         1.0        3.0
+93104          0.0          0.0           0.0           0.0          0.0              0.0         4.0        4.0
+27938          0.0          0.0           0.0           0.0          0.0              0.0         0.0        0.0
+2025-09-18 20:35:20,307 - INFO - Testing encoded sample:
+       Gender_Male  Region_East  Region_North  Region_South  Region_West  Rented_OwnHouse  Occupation  Education
+25823          1.0          0.0           1.0           0.0          0.0              0.0         3.0        3.0
+6313           0.0          0.0           1.0           0.0          0.0              0.0         4.0        2.0
+14779          0.0          0.0           1.0           0.0          0.0              0.0         1.0        3.0
+1146           0.0          0.0           0.0           0.0          0.0              1.0         0.0        0.0
+5768           0.0          1.0           0.0           0.0          0.0              1.0         4.0        3.0
+2025-09-18 20:35:20,338 - INFO - Sample dependent data : [1 1 1 1 1 1 0 1 1 1]
+2025-09-18 20:35:20,344 - INFO - ----------------Before Balancing------------------------
+2025-09-18 20:35:20,357 - INFO - Total row for Good category in training data 120000 was : 111930
+2025-09-18 20:35:20,369 - INFO - Total row for Bad category in training data 120000 was : 8070
+2025-09-18 20:35:20,369 - INFO - ---------------After Balancing-------------------------
+2025-09-18 20:35:20,580 - INFO - Total row for Good category in training data 223860 was : 111930
+2025-09-18 20:35:20,600 - INFO - Total row for Bad category in training data 223860 was : 111930
+2025-09-18 20:35:20,600 - INFO - ---------Before scaling-------
+2025-09-18 20:35:20,616 - INFO -    Gender_Male  Region_East  Region_North  Region_South  Region_West  Rented_OwnHouse  Occupation  Education
+0          0.0          0.0           0.0           0.0          1.0              0.0         4.0        0.0
+1          1.0          0.0           0.0           1.0          0.0              0.0         4.0        1.0
+2          0.0          0.0           0.0           0.0          0.0              1.0         0.0        4.0
+3          1.0          0.0           0.0           0.0          1.0              0.0         0.0        4.0
+2025-09-18 20:35:20,731 - INFO - ----------After scaling--------
+2025-09-18 20:35:20,731 - INFO - [[-1.27226429 -0.34775128 -0.56720747 ... -0.86952204  0.98677172
+  -1.37903503]
+ [ 0.78615882 -0.34775128 -0.56720747 ... -0.86952204  0.98677172
+  -0.75060709]
+ [-1.27226429 -0.34775128 -0.56720747 ...  1.15044235 -1.35808214
+   1.13467675]
+ ...
+ [-1.27226429 -0.34775128 -0.56720747 ... -0.86952204  0.98677172
+  -0.75060709]
+ [ 0.78615882 -0.34775128 -0.56720747 ... -0.86952204  0.98677172
+  -0.75060709]
+ [-1.27226429  2.87561844 -0.56720747 ...  1.15044235  0.98677172
+   0.5062488 ]]
+2025-09-18 20:38:12,247 - INFO - --------------------Server started--------------------------
+2025-09-18 20:38:12,482 - INFO - Data loaded sucessfully with shape of (150002, 18)
+2025-09-18 20:38:12,526 - INFO - Check the null values in the dataset:NPA Status                                  2
+RevolvingUtilizationOfUnsecuredLines        2
+age                                         2
+Gender                                      2
+Region                                      2
+MonthlyIncome                           29733
+Rented_OwnHouse                             2
+Occupation                                  2
+Education                                   2
+NumberOfTime30-59DaysPastDueNotWorse        2
+DebtRatio                                   2
+MonthlyIncome.1                         29733
+NumberOfOpenCreditLinesAndLoans             2
+NumberOfTimes90DaysLate                     2
+NumberRealEstateLoansOrLines                2
+NumberOfTime60-89DaysPastDueNotWorse        2
+NumberOfDependents                       3924
+Good_Bad                                    2
+dtype: int64
+2025-09-18 20:38:12,563 - INFO - shape of data set after droping Id: (150000, 17)
+2025-09-18 20:38:12,591 - INFO - Check the null values in the dataset after dropna :NPA Status                                  0
+RevolvingUtilizationOfUnsecuredLines        0
+age                                         0
+Gender                                      0
+Region                                      0
+MonthlyIncome                           29731
+Rented_OwnHouse                             0
+Occupation                                  0
+Education                                   0
+NumberOfTime30-59DaysPastDueNotWorse        0
+DebtRatio                                   0
+NumberOfOpenCreditLinesAndLoans             0
+NumberOfTimes90DaysLate                     0
+NumberRealEstateLoansOrLines                0
+NumberOfTime60-89DaysPastDueNotWorse        0
+NumberOfDependents                       3924
+Good_Bad                                    0
+dtype: int64
+2025-09-18 20:38:12,608 - INFO - Now we have divided the independent data and dependent columns seperately.
+2025-09-18 20:38:12,608 - INFO - Shape of independent columns is :(150000, 16)
+2025-09-18 20:38:12,608 - INFO - Shape of dependent column is :(150000,)
+2025-09-18 20:38:12,641 - INFO - We have done the splitting and shpe of X_train is (120000, 16) and X_test is (30000, 16)
+2025-09-18 20:38:12,641 - INFO - -----------------Feature Selection---------------------
+2025-09-18 20:38:12,641 - INFO - Send the train and test columns to handle the missing values.
+2025-09-18 20:38:12,782 - INFO - Now we have to divide the numerical and categorical columns.
+2025-09-18 20:38:12,804 - INFO - we have divide the independent columns into numerical and categorical.
+2025-09-18 20:38:12,804 - INFO - Shape of Numerical columns are X_train(120000, 11) and X_test(30000, 11)
+2025-09-18 20:38:12,805 - INFO - <class 'NoneType'>
+2025-09-18 20:38:12,805 - ERROR - <class 'AttributeError'> at 58 as 'NoneType' object has no attribute 'shape'
+2025-09-18 20:38:12,873 - INFO - Sucessfully we have done filter method...
+2025-09-18 20:38:12,919 - INFO - Sucessfully done the Hyphothesis...
+2025-09-18 20:38:13,138 - INFO - Training encoded sample:
+        Gender_Male  Region_East  Region_North  Region_South  Region_West  Rented_OwnHouse  Occupation  Education
+69450           0.0          0.0           1.0           0.0          0.0              0.0         4.0        3.0
+52865           1.0          0.0           0.0           0.0          0.0              0.0         2.0        4.0
+99595           1.0          0.0           0.0           0.0          1.0              1.0         0.0        4.0
+57140           1.0          0.0           0.0           0.0          1.0              1.0         0.0        4.0
+100050          0.0          0.0           0.0           0.0          1.0              0.0         0.0        0.0
+2025-09-18 20:38:13,149 - INFO - Testing encoded sample:
+       Gender_Male  Region_East  Region_North  Region_South  Region_West  Rented_OwnHouse  Occupation  Education
+11556          0.0          0.0           0.0           1.0          0.0              0.0         4.0        2.0
+5037           0.0          0.0           0.0           0.0          0.0              0.0         0.0        0.0
+21226          1.0          0.0           0.0           0.0          1.0              0.0         2.0        4.0
+23535          1.0          0.0           0.0           0.0          1.0              1.0         0.0        4.0
+23198          0.0          0.0           1.0           0.0          0.0              1.0         0.0        0.0
+2025-09-18 20:38:13,169 - INFO - Sample dependent data : [1 1 1 1 1 1 0 1 1 1]
+2025-09-18 20:38:13,171 - INFO - ----------------Before Balancing------------------------
+2025-09-18 20:38:13,171 - INFO - Total row for Good category in training data 120000 was : 111930
+2025-09-18 20:38:13,185 - INFO - Total row for Bad category in training data 120000 was : 8070
+2025-09-18 20:38:13,185 - INFO - ---------------After Balancing-------------------------
+2025-09-18 20:38:13,356 - INFO - Total row for Good category in training data 223860 was : 111930
+2025-09-18 20:38:13,372 - INFO - Total row for Bad category in training data 223860 was : 111930
+2025-09-18 20:38:13,372 - INFO - ---------Before scaling-------
+2025-09-18 20:38:13,394 - INFO -    Gender_Male  Region_East  Region_North  Region_South  Region_West  Rented_OwnHouse  Occupation  Education
+0          0.0          0.0           0.0           0.0          1.0              0.0         4.0        0.0
+1          1.0          0.0           0.0           1.0          0.0              0.0         4.0        1.0
+2          0.0          0.0           0.0           0.0          0.0              1.0         0.0        4.0
+3          1.0          0.0           0.0           0.0          1.0              0.0         0.0        4.0
+2025-09-18 20:38:13,444 - INFO - ----------After scaling--------
+2025-09-18 20:38:13,445 - INFO - [[-1.27226429 -0.34775128 -0.56720747 ... -0.86952204  0.98677172
+  -1.37903503]
+ [ 0.78615882 -0.34775128 -0.56720747 ... -0.86952204  0.98677172
+  -0.75060709]
+ [-1.27226429 -0.34775128 -0.56720747 ...  1.15044235 -1.35808214
+   1.13467675]
+ ...
+ [-1.27226429 -0.34775128 -0.56720747 ... -0.86952204  0.98677172
+  -0.75060709]
+ [ 0.78615882 -0.34775128 -0.56720747 ... -0.86952204  0.98677172
+  -0.75060709]
+ [-1.27226429  2.87561844 -0.56720747 ...  1.15044235  0.98677172
+   0.5062488 ]]
+2025-09-18 20:40:14,003 - INFO - --------------------Server started--------------------------
+2025-09-18 20:40:14,216 - INFO - Data loaded sucessfully with shape of (150002, 18)
+2025-09-18 20:40:14,258 - INFO - Check the null values in the dataset:NPA Status                                  2
+RevolvingUtilizationOfUnsecuredLines        2
+age                                         2
+Gender                                      2
+Region                                      2
+MonthlyIncome                           29733
+Rented_OwnHouse                             2
+Occupation                                  2
+Education                                   2
+NumberOfTime30-59DaysPastDueNotWorse        2
+DebtRatio                                   2
+MonthlyIncome.1                         29733
+NumberOfOpenCreditLinesAndLoans             2
+NumberOfTimes90DaysLate                     2
+NumberRealEstateLoansOrLines                2
+NumberOfTime60-89DaysPastDueNotWorse        2
+NumberOfDependents                       3924
+Good_Bad                                    2
+dtype: int64
+2025-09-18 20:40:14,299 - INFO - shape of data set after droping Id: (150000, 17)
+2025-09-18 20:40:14,326 - INFO - Check the null values in the dataset after dropna :NPA Status                                  0
+RevolvingUtilizationOfUnsecuredLines        0
+age                                         0
+Gender                                      0
+Region                                      0
+MonthlyIncome                           29731
+Rented_OwnHouse                             0
+Occupation                                  0
+Education                                   0
+NumberOfTime30-59DaysPastDueNotWorse        0
+DebtRatio                                   0
+NumberOfOpenCreditLinesAndLoans             0
+NumberOfTimes90DaysLate                     0
+NumberRealEstateLoansOrLines                0
+NumberOfTime60-89DaysPastDueNotWorse        0
+NumberOfDependents                       3924
+Good_Bad                                    0
+dtype: int64
+2025-09-18 20:40:14,343 - INFO - Now we have divided the independent data and dependent columns seperately.
+2025-09-18 20:40:14,343 - INFO - Shape of independent columns is :(150000, 16)
+2025-09-18 20:40:14,343 - INFO - Shape of dependent column is :(150000,)
+2025-09-18 20:40:14,381 - INFO - We have done the splitting and shpe of X_train is (120000, 16) and X_test is (30000, 16)
+2025-09-18 20:40:14,381 - INFO - -----------------Feature Selection---------------------
+2025-09-18 20:40:14,381 - INFO - Send the train and test columns to handle the missing values.
+2025-09-18 20:40:14,506 - INFO - Now we have to divide the numerical and categorical columns.
+2025-09-18 20:40:14,513 - INFO - we have divide the independent columns into numerical and categorical.
+2025-09-18 20:40:14,513 - INFO - Shape of Numerical columns are X_train(120000, 11) and X_test(30000, 11)
+2025-09-18 20:40:14,513 - INFO - <class 'pandas.core.frame.DataFrame'>
+2025-09-18 20:40:14,513 - INFO - Shape of categorical columns are X_train(120000, 5) and X_test(30000, 5)
+2025-09-18 20:40:14,513 - INFO - Null values in Numerical columns are X_train: 0 and X_test: 0
+2025-09-18 20:40:14,545 - INFO - Null values in categorical columns are X_train: 0 and X_test: 0
+2025-09-18 20:40:14,545 - INFO - Null values in categorical columns are X_train: Index(['Gender', 'Region', 'Rented_OwnHouse', 'Occupation', 'Education'], dtype='object') and X_test: Index(['Gender', 'Region', 'Rented_OwnHouse', 'Occupation', 'Education'], dtype='object')
+2025-09-18 20:40:14,545 - INFO - Send the numerical columns to variable transformation
+2025-09-18 20:40:14,545 - ERROR - <class 'NameError'> at 64 as name 'Variable_Transform' is not defined
+2025-09-18 20:40:14,612 - INFO - Sucessfully we have done filter method...
+2025-09-18 20:40:14,655 - INFO - Sucessfully done the Hyphothesis...
+2025-09-18 20:40:14,864 - INFO - Training encoded sample:
+        Gender_Male  Region_East  Region_North  Region_South  Region_West  Rented_OwnHouse  Occupation  Education
+2823            0.0          0.0           0.0           0.0          0.0              1.0         0.0        0.0
+34495           1.0          0.0           0.0           1.0          0.0              1.0         2.0        4.0
+13437           1.0          0.0           0.0           0.0          1.0              0.0         4.0        4.0
+38494           1.0          0.0           0.0           0.0          1.0              1.0         4.0        4.0
+114369          1.0          0.0           0.0           0.0          1.0              0.0         0.0        0.0
+2025-09-18 20:40:14,871 - INFO - Testing encoded sample:
+       Gender_Male  Region_East  Region_North  Region_South  Region_West  Rented_OwnHouse  Occupation  Education
+15186          1.0          0.0           0.0           0.0          0.0              0.0         0.0        4.0
+27578          1.0          0.0           0.0           0.0          0.0              1.0         4.0        0.0
+22072          1.0          0.0           1.0           0.0          0.0              0.0         4.0        2.0
+20913          0.0          1.0           0.0           0.0          0.0              1.0         1.0        3.0
+8946           1.0          0.0           1.0           0.0          0.0              0.0         3.0        3.0
+2025-09-18 20:40:14,889 - INFO - Sample dependent data : [1 1 1 1 1 1 0 1 1 1]
+2025-09-18 20:40:14,889 - INFO - ----------------Before Balancing------------------------
+2025-09-18 20:40:14,889 - INFO - Total row for Good category in training data 120000 was : 111930
+2025-09-18 20:40:14,906 - INFO - Total row for Bad category in training data 120000 was : 8070
+2025-09-18 20:40:14,906 - INFO - ---------------After Balancing-------------------------
+2025-09-18 20:40:15,078 - INFO - Total row for Good category in training data 223860 was : 111930
+2025-09-18 20:40:15,099 - INFO - Total row for Bad category in training data 223860 was : 111930
+2025-09-18 20:40:15,099 - INFO - ---------Before scaling-------
+2025-09-18 20:40:15,106 - INFO -    Gender_Male  Region_East  Region_North  Region_South  Region_West  Rented_OwnHouse  Occupation  Education
+0          0.0          0.0           0.0           0.0          1.0              0.0         4.0        0.0
+1          1.0          0.0           0.0           1.0          0.0              0.0         4.0        1.0
+2          0.0          0.0           0.0           0.0          0.0              1.0         0.0        4.0
+3          1.0          0.0           0.0           0.0          1.0              0.0         0.0        4.0
+2025-09-18 20:40:15,153 - INFO - ----------After scaling--------
+2025-09-18 20:40:15,153 - INFO - [[-1.27226429 -0.34775128 -0.56720747 ... -0.86952204  0.98677172
+  -1.37903503]
+ [ 0.78615882 -0.34775128 -0.56720747 ... -0.86952204  0.98677172
+  -0.75060709]
+ [-1.27226429 -0.34775128 -0.56720747 ...  1.15044235 -1.35808214
+   1.13467675]
+ ...
+ [-1.27226429 -0.34775128 -0.56720747 ... -0.86952204  0.98677172
+  -0.75060709]
+ [ 0.78615882 -0.34775128 -0.56720747 ... -0.86952204  0.98677172
+  -0.75060709]
+ [-1.27226429  2.87561844 -0.56720747 ...  1.15044235  0.98677172
+   0.5062488 ]]
+2025-09-18 20:43:28,212 - INFO - --------------------Server started--------------------------
+2025-09-18 20:43:28,492 - INFO - Data loaded sucessfully with shape of (150002, 18)
+2025-09-18 20:43:28,529 - INFO - Check the null values in the dataset:NPA Status                                  2
+RevolvingUtilizationOfUnsecuredLines        2
+age                                         2
+Gender                                      2
+Region                                      2
+MonthlyIncome                           29733
+Rented_OwnHouse                             2
+Occupation                                  2
+Education                                   2
+NumberOfTime30-59DaysPastDueNotWorse        2
+DebtRatio                                   2
+MonthlyIncome.1                         29733
+NumberOfOpenCreditLinesAndLoans             2
+NumberOfTimes90DaysLate                     2
+NumberRealEstateLoansOrLines                2
+NumberOfTime60-89DaysPastDueNotWorse        2
+NumberOfDependents                       3924
+Good_Bad                                    2
+dtype: int64
+2025-09-18 20:43:28,573 - INFO - shape of data set after droping Id: (150000, 17)
+2025-09-18 20:43:28,604 - INFO - Check the null values in the dataset after dropna :NPA Status                                  0
+RevolvingUtilizationOfUnsecuredLines        0
+age                                         0
+Gender                                      0
+Region                                      0
+MonthlyIncome                           29731
+Rented_OwnHouse                             0
+Occupation                                  0
+Education                                   0
+NumberOfTime30-59DaysPastDueNotWorse        0
+DebtRatio                                   0
+NumberOfOpenCreditLinesAndLoans             0
+NumberOfTimes90DaysLate                     0
+NumberRealEstateLoansOrLines                0
+NumberOfTime60-89DaysPastDueNotWorse        0
+NumberOfDependents                       3924
+Good_Bad                                    0
+dtype: int64
+2025-09-18 20:43:28,620 - INFO - Now we have divided the independent data and dependent columns seperately.
+2025-09-18 20:43:28,620 - INFO - Shape of independent columns is :(150000, 16)
+2025-09-18 20:43:28,620 - INFO - Shape of dependent column is :(150000,)
+2025-09-18 20:43:28,654 - INFO - We have done the splitting and shpe of X_train is (120000, 16) and X_test is (30000, 16)
+2025-09-18 20:43:28,654 - INFO - -----------------Feature Selection---------------------
+2025-09-18 20:43:28,654 - INFO - Send the train and test columns to handle the missing values.
+2025-09-18 20:43:28,787 - INFO - Now we have to divide the numerical and categorical columns.
+2025-09-18 20:43:28,818 - INFO - we have divide the independent columns into numerical and categorical.
+2025-09-18 20:43:28,818 - INFO - Shape of Numerical columns are X_train(120000, 11) and X_test(30000, 11)
+2025-09-18 20:43:28,818 - INFO - <class 'pandas.core.frame.DataFrame'>
+2025-09-18 20:43:28,818 - INFO - Shape of categorical columns are X_train(120000, 5) and X_test(30000, 5)
+2025-09-18 20:43:28,818 - INFO - Null values in Numerical columns are X_train: 0 and X_test: 0
+2025-09-18 20:43:28,834 - INFO - Null values in categorical columns are X_train: 0 and X_test: 0
+2025-09-18 20:43:28,834 - INFO - Null values in categorical columns are X_train: Index(['Gender', 'Region', 'Rented_OwnHouse', 'Occupation', 'Education'], dtype='object') and X_test: Index(['Gender', 'Region', 'Rented_OwnHouse', 'Occupation', 'Education'], dtype='object')
+2025-09-18 20:43:28,834 - INFO - Send the numerical columns to variable transformation
+2025-09-18 20:43:28,834 - ERROR - <class 'NameError'> at 64 as name 'Variable_Transform' is not defined
+2025-09-18 20:43:28,914 - INFO - Sucessfully we have done filter method...
+2025-09-18 20:43:28,978 - INFO - Sucessfully done the Hyphothesis...
+2025-09-18 20:43:29,195 - INFO - Training encoded sample:
+       Gender_Male  Region_East  Region_North  Region_South  Region_West  Rented_OwnHouse  Occupation  Education
+75741          1.0          0.0           0.0           1.0          0.0              0.0         4.0        1.0
+25780          0.0          0.0           0.0           0.0          0.0              0.0         0.0        0.0
+78614          1.0          0.0           0.0           0.0          0.0              0.0         2.0        4.0
+51398          1.0          0.0           0.0           0.0          1.0              0.0         2.0        4.0
+54887          0.0          0.0           0.0           0.0          1.0              0.0         4.0        0.0
+2025-09-18 20:43:29,206 - INFO - Testing encoded sample:
+       Gender_Male  Region_East  Region_North  Region_South  Region_West  Rented_OwnHouse  Occupation  Education
+17179          0.0          0.0           0.0           0.0          0.0              1.0         0.0        4.0
+16227          0.0          0.0           0.0           0.0          1.0              1.0         4.0        3.0
+17023          1.0          0.0           0.0           1.0          0.0              0.0         4.0        1.0
+16852          0.0          0.0           0.0           0.0          0.0              1.0         0.0        4.0
+17397          0.0          0.0           0.0           0.0          1.0              1.0         4.0        0.0
+2025-09-18 20:43:29,225 - INFO - Sample dependent data : [1 1 1 1 1 1 0 1 1 1]
+2025-09-18 20:43:29,229 - INFO - ----------------Before Balancing------------------------
+2025-09-18 20:43:29,240 - INFO - Total row for Good category in training data 120000 was : 111930
+2025-09-18 20:43:29,253 - INFO - Total row for Bad category in training data 120000 was : 8070
+2025-09-18 20:43:29,253 - INFO - ---------------After Balancing-------------------------
+2025-09-18 20:43:29,459 - INFO - Total row for Good category in training data 223860 was : 111930
+2025-09-18 20:43:29,489 - INFO - Total row for Bad category in training data 223860 was : 111930
+2025-09-18 20:43:29,490 - INFO - ---------Before scaling-------
+2025-09-18 20:43:29,492 - INFO -    Gender_Male  Region_East  Region_North  Region_South  Region_West  Rented_OwnHouse  Occupation  Education
+0          0.0          0.0           0.0           0.0          1.0              0.0         4.0        0.0
+1          1.0          0.0           0.0           1.0          0.0              0.0         4.0        1.0
+2          0.0          0.0           0.0           0.0          0.0              1.0         0.0        4.0
+3          1.0          0.0           0.0           0.0          1.0              0.0         0.0        4.0
+2025-09-18 20:43:29,538 - INFO - ----------After scaling--------
+2025-09-18 20:43:29,550 - INFO - [[-1.27226429 -0.34775128 -0.56720747 ... -0.86952204  0.98677172
+  -1.37903503]
+ [ 0.78615882 -0.34775128 -0.56720747 ... -0.86952204  0.98677172
+  -0.75060709]
+ [-1.27226429 -0.34775128 -0.56720747 ...  1.15044235 -1.35808214
+   1.13467675]
+ ...
+ [-1.27226429 -0.34775128 -0.56720747 ... -0.86952204  0.98677172
+  -0.75060709]
+ [ 0.78615882 -0.34775128 -0.56720747 ... -0.86952204  0.98677172
+  -0.75060709]
+ [-1.27226429  2.87561844 -0.56720747 ...  1.15044235  0.98677172
+   0.5062488 ]]
+2025-09-18 20:44:58,652 - INFO - --------------------Server started--------------------------
+2025-09-18 20:44:58,860 - INFO - Data loaded sucessfully with shape of (150002, 18)
+2025-09-18 20:44:58,892 - INFO - Check the null values in the dataset:NPA Status                                  2
+RevolvingUtilizationOfUnsecuredLines        2
+age                                         2
+Gender                                      2
+Region                                      2
+MonthlyIncome                           29733
+Rented_OwnHouse                             2
+Occupation                                  2
+Education                                   2
+NumberOfTime30-59DaysPastDueNotWorse        2
+DebtRatio                                   2
+MonthlyIncome.1                         29733
+NumberOfOpenCreditLinesAndLoans             2
+NumberOfTimes90DaysLate                     2
+NumberRealEstateLoansOrLines                2
+NumberOfTime60-89DaysPastDueNotWorse        2
+NumberOfDependents                       3924
+Good_Bad                                    2
+dtype: int64
+2025-09-18 20:44:58,924 - INFO - shape of data set after droping Id: (150000, 17)
+2025-09-18 20:44:58,955 - INFO - Check the null values in the dataset after dropna :NPA Status                                  0
+RevolvingUtilizationOfUnsecuredLines        0
+age                                         0
+Gender                                      0
+Region                                      0
+MonthlyIncome                           29731
+Rented_OwnHouse                             0
+Occupation                                  0
+Education                                   0
+NumberOfTime30-59DaysPastDueNotWorse        0
+DebtRatio                                   0
+NumberOfOpenCreditLinesAndLoans             0
+NumberOfTimes90DaysLate                     0
+NumberRealEstateLoansOrLines                0
+NumberOfTime60-89DaysPastDueNotWorse        0
+NumberOfDependents                       3924
+Good_Bad                                    0
+dtype: int64
+2025-09-18 20:44:58,972 - INFO - Now we have divided the independent data and dependent columns seperately.
+2025-09-18 20:44:58,972 - INFO - Shape of independent columns is :(150000, 16)
+2025-09-18 20:44:58,972 - INFO - Shape of dependent column is :(150000,)
+2025-09-18 20:44:59,004 - INFO - We have done the splitting and shpe of X_train is (120000, 16) and X_test is (30000, 16)
+2025-09-18 20:44:59,004 - INFO - -----------------Feature Selection---------------------
+2025-09-18 20:44:59,004 - INFO - Send the train and test columns to handle the missing values.
+2025-09-18 20:44:59,131 - INFO - Now we have to divide the numerical and categorical columns.
+2025-09-18 20:44:59,148 - INFO - we have divide the independent columns into numerical and categorical.
+2025-09-18 20:44:59,148 - INFO - Shape of Numerical columns are X_train(120000, 11) and X_test(30000, 11)
+2025-09-18 20:44:59,148 - INFO - <class 'pandas.core.frame.DataFrame'>
+2025-09-18 20:44:59,148 - INFO - Shape of categorical columns are X_train(120000, 5) and X_test(30000, 5)
+2025-09-18 20:44:59,148 - INFO - Null values in Numerical columns are X_train: 0 and X_test: 0
+2025-09-18 20:44:59,163 - INFO - Null values in categorical columns are X_train: 0 and X_test: 0
+2025-09-18 20:44:59,163 - INFO - Null values in categorical columns are X_train: Index(['Gender', 'Region', 'Rented_OwnHouse', 'Occupation', 'Education'], dtype='object') and X_test: Index(['Gender', 'Region', 'Rented_OwnHouse', 'Occupation', 'Education'], dtype='object')
+2025-09-18 20:44:59,163 - INFO - Send the numerical columns to variable transformation
+2025-09-18 20:44:59,352 - INFO - We have done the variable transformation sucessfully.
+2025-09-18 20:44:59,352 - INFO - Check the null values in train : NPA Status_log                              0
+RevolvingUtilizationOfUnsecuredLines_log    0
+age_log                                     0
+NumberOfTime30-59DaysPastDueNotWorse_log    0
+DebtRatio_log                               0
+NumberOfOpenCreditLinesAndLoans_log         0
+NumberOfTimes90DaysLate_log                 0
+NumberRealEstateLoansOrLines_log            0
+NumberOfTime60-89DaysPastDueNotWorse_log    0
+MonthlyIncome_replaced_log                  0
+NumberOfDependents_replaced_log             0
+dtype: int64
+2025-09-18 20:44:59,352 - INFO - Check the null values in test : NPA Status_log                              0
+RevolvingUtilizationOfUnsecuredLines_log    0
+age_log                                     0
+NumberOfTime30-59DaysPastDueNotWorse_log    0
+DebtRatio_log                               0
+NumberOfOpenCreditLinesAndLoans_log         0
+NumberOfTimes90DaysLate_log                 0
+NumberRealEstateLoansOrLines_log            0
+NumberOfTime60-89DaysPastDueNotWorse_log    0
+MonthlyIncome_replaced_log                  0
+NumberOfDependents_replaced_log             0
+dtype: int64
+2025-09-18 20:44:59,580 - INFO - We have sucessfully done the feature engineering.
+2025-09-18 20:44:59,642 - INFO - Sucessfully we have done filter method...
+2025-09-18 20:44:59,672 - INFO - Sucessfully done the Hyphothesis...
+2025-09-18 20:44:59,864 - INFO - Training encoded sample:
+       Gender_Male  Region_East  Region_North  Region_South  Region_West  Rented_OwnHouse  Occupation  Education
+67023          0.0          0.0           1.0           0.0          0.0              0.0         3.0        3.0
+83339          0.0          0.0           0.0           0.0          0.0              1.0         0.0        4.0
+34092          0.0          0.0           0.0           1.0          0.0              0.0         4.0        2.0
+58513          1.0          0.0           0.0           0.0          1.0              0.0         0.0        0.0
+42618          1.0          0.0           0.0           1.0          0.0              0.0         0.0        4.0
+2025-09-18 20:44:59,879 - INFO - Testing encoded sample:
+       Gender_Male  Region_East  Region_North  Region_South  Region_West  Rented_OwnHouse  Occupation  Education
+4354           1.0          0.0           0.0           0.0          1.0              1.0         2.0        4.0
+6820           1.0          0.0           0.0           0.0          0.0              1.0         3.0        4.0
+4877           0.0          0.0           0.0           0.0          0.0              1.0         0.0        0.0
+29511          0.0          0.0           0.0           0.0          0.0              0.0         0.0        4.0
+9710           1.0          0.0           0.0           1.0          0.0              0.0         4.0        1.0
+2025-09-18 20:44:59,895 - INFO - Sample dependent data : [1 1 1 1 1 1 0 1 1 1]
+2025-09-18 20:44:59,895 - INFO - ----------------Before Balancing------------------------
+2025-09-18 20:44:59,911 - INFO - Total row for Good category in training data 120000 was : 111930
+2025-09-18 20:44:59,927 - INFO - Total row for Bad category in training data 120000 was : 8070
+2025-09-18 20:44:59,927 - INFO - ---------------After Balancing-------------------------
+2025-09-18 20:45:00,085 - INFO - Total row for Good category in training data 223860 was : 111930
+2025-09-18 20:45:00,101 - INFO - Total row for Bad category in training data 223860 was : 111930
+2025-09-18 20:45:00,101 - INFO - ---------Before scaling-------
+2025-09-18 20:45:00,101 - INFO -    Gender_Male  Region_East  Region_North  Region_South  Region_West  Rented_OwnHouse  Occupation  Education
+0          0.0          0.0           0.0           0.0          1.0              0.0         4.0        0.0
+1          1.0          0.0           0.0           1.0          0.0              0.0         4.0        1.0
+2          0.0          0.0           0.0           0.0          0.0              1.0         0.0        4.0
+3          1.0          0.0           0.0           0.0          1.0              0.0         0.0        4.0
+2025-09-18 20:45:00,149 - INFO - ----------After scaling--------
+2025-09-18 20:45:00,149 - INFO - [[-1.27226429 -0.34775128 -0.56720747 ... -0.86952204  0.98677172
+  -1.37903503]
+ [ 0.78615882 -0.34775128 -0.56720747 ... -0.86952204  0.98677172
+  -0.75060709]
+ [-1.27226429 -0.34775128 -0.56720747 ...  1.15044235 -1.35808214
+   1.13467675]
+ ...
+ [-1.27226429 -0.34775128 -0.56720747 ... -0.86952204  0.98677172
+  -0.75060709]
+ [ 0.78615882 -0.34775128 -0.56720747 ... -0.86952204  0.98677172
+  -0.75060709]
+ [-1.27226429  2.87561844 -0.56720747 ...  1.15044235  0.98677172
+   0.5062488 ]]
+2025-09-18 20:47:14,368 - INFO - --------------------Server started--------------------------
+2025-09-18 20:47:14,607 - INFO - Data loaded sucessfully with shape of (150002, 18)
+2025-09-18 20:47:14,642 - INFO - Check the null values in the dataset:NPA Status                                  2
+RevolvingUtilizationOfUnsecuredLines        2
+age                                         2
+Gender                                      2
+Region                                      2
+MonthlyIncome                           29733
+Rented_OwnHouse                             2
+Occupation                                  2
+Education                                   2
+NumberOfTime30-59DaysPastDueNotWorse        2
+DebtRatio                                   2
+MonthlyIncome.1                         29733
+NumberOfOpenCreditLinesAndLoans             2
+NumberOfTimes90DaysLate                     2
+NumberRealEstateLoansOrLines                2
+NumberOfTime60-89DaysPastDueNotWorse        2
+NumberOfDependents                       3924
+Good_Bad                                    2
+dtype: int64
+2025-09-18 20:47:14,672 - INFO - shape of data set after droping Id: (150000, 17)
+2025-09-18 20:47:14,703 - INFO - Check the null values in the dataset after dropna :NPA Status                                  0
+RevolvingUtilizationOfUnsecuredLines        0
+age                                         0
+Gender                                      0
+Region                                      0
+MonthlyIncome                           29731
+Rented_OwnHouse                             0
+Occupation                                  0
+Education                                   0
+NumberOfTime30-59DaysPastDueNotWorse        0
+DebtRatio                                   0
+NumberOfOpenCreditLinesAndLoans             0
+NumberOfTimes90DaysLate                     0
+NumberRealEstateLoansOrLines                0
+NumberOfTime60-89DaysPastDueNotWorse        0
+NumberOfDependents                       3924
+Good_Bad                                    0
+dtype: int64
+2025-09-18 20:47:14,719 - INFO - Now we have divided the independent data and dependent columns seperately.
+2025-09-18 20:47:14,719 - INFO - Shape of independent columns is :(150000, 16)
+2025-09-18 20:47:14,719 - INFO - Shape of dependent column is :(150000,)
+2025-09-18 20:47:14,751 - INFO - We have done the splitting and shpe of X_train is (120000, 16) and X_test is (30000, 16)
+2025-09-18 20:47:14,751 - INFO - -----------------Feature Selection---------------------
+2025-09-18 20:47:14,751 - INFO - Send the train and test columns to handle the missing values.
+2025-09-18 20:47:14,890 - INFO - Now we have to divide the numerical and categorical columns.
+2025-09-18 20:47:14,908 - INFO - we have divide the independent columns into numerical and categorical.
+2025-09-18 20:47:14,908 - INFO - Shape of Numerical columns are X_train(120000, 11) and X_test(30000, 11)
+2025-09-18 20:47:14,908 - INFO - <class 'pandas.core.frame.DataFrame'>
+2025-09-18 20:47:14,908 - INFO - Shape of categorical columns are X_train(120000, 5) and X_test(30000, 5)
+2025-09-18 20:47:14,912 - INFO - Null values in Numerical columns are X_train: 0 and X_test: 0
+2025-09-18 20:47:14,930 - INFO - Null values in categorical columns are X_train: 0 and X_test: 0
+2025-09-18 20:47:14,930 - INFO - Null values in categorical columns are X_train: Index(['Gender', 'Region', 'Rented_OwnHouse', 'Occupation', 'Education'], dtype='object') and X_test: Index(['Gender', 'Region', 'Rented_OwnHouse', 'Occupation', 'Education'], dtype='object')
+2025-09-18 20:47:14,930 - INFO - Send the numerical columns to variable transformation
+2025-09-18 20:47:15,119 - INFO - We have done the variable transformation sucessfully.
+2025-09-18 20:47:15,119 - INFO - Check the null values in train : NPA Status_log                              0
+RevolvingUtilizationOfUnsecuredLines_log    0
+age_log                                     0
+NumberOfTime30-59DaysPastDueNotWorse_log    0
+DebtRatio_log                               0
+NumberOfOpenCreditLinesAndLoans_log         0
+NumberOfTimes90DaysLate_log                 0
+NumberRealEstateLoansOrLines_log            0
+NumberOfTime60-89DaysPastDueNotWorse_log    0
+MonthlyIncome_replaced_log                  0
+NumberOfDependents_replaced_log             0
+dtype: int64
+2025-09-18 20:47:15,119 - INFO - Check the null values in test : NPA Status_log                              0
+RevolvingUtilizationOfUnsecuredLines_log    0
+age_log                                     0
+NumberOfTime30-59DaysPastDueNotWorse_log    0
+DebtRatio_log                               0
+NumberOfOpenCreditLinesAndLoans_log         0
+NumberOfTimes90DaysLate_log                 0
+NumberRealEstateLoansOrLines_log            0
+NumberOfTime60-89DaysPastDueNotWorse_log    0
+MonthlyIncome_replaced_log                  0
+NumberOfDependents_replaced_log             0
+dtype: int64
+2025-09-18 20:47:15,338 - INFO - We have sucessfully done the feature engineering.
+2025-09-18 20:47:15,412 - INFO - Sucessfully we have done filter method...
+2025-09-18 20:47:15,445 - INFO - Sucessfully done the Hyphothesis...
+2025-09-18 20:47:15,643 - INFO - Training encoded sample:
+        Gender_Male  Region_East  Region_North  Region_South  Region_West  Rented_OwnHouse  Occupation  Education
+12692           0.0          1.0           0.0           0.0          0.0              1.0         4.0        3.0
+32979           1.0          0.0           1.0           0.0          0.0              1.0         0.0        0.0
+110699          1.0          1.0           0.0           0.0          0.0              1.0         3.0        4.0
+110834          0.0          0.0           1.0           0.0          0.0              1.0         4.0        3.0
+49689           1.0          0.0           0.0           1.0          0.0              1.0         0.0        4.0
+2025-09-18 20:47:15,645 - INFO - Testing encoded sample:
+       Gender_Male  Region_East  Region_North  Region_South  Region_West  Rented_OwnHouse  Occupation  Education
+21555          0.0          0.0           0.0           0.0          1.0              1.0         4.0        3.0
+29439          0.0          0.0           1.0           0.0          0.0              1.0         3.0        3.0
+21148          1.0          0.0           0.0           0.0          0.0              1.0         2.0        4.0
+3049           1.0          1.0           0.0           0.0          0.0              1.0         1.0        4.0
+25816          1.0          0.0           0.0           0.0          0.0              0.0         4.0        0.0
+2025-09-18 20:47:15,658 - INFO - Sample dependent data : [1 1 1 1 1 1 0 1 1 1]
+2025-09-18 20:47:15,675 - INFO - ----------------Before Balancing------------------------
+2025-09-18 20:47:15,677 - INFO - Total row for Good category in training data 120000 was : 111930
+2025-09-18 20:47:15,689 - INFO - Total row for Bad category in training data 120000 was : 8070
+2025-09-18 20:47:15,689 - INFO - ---------------After Balancing-------------------------
+2025-09-18 20:47:15,855 - INFO - Total row for Good category in training data 223860 was : 111930
+2025-09-18 20:47:15,874 - INFO - Total row for Bad category in training data 223860 was : 111930
+2025-09-18 20:47:15,874 - INFO - ---------Before scaling-------
+2025-09-18 20:47:15,882 - INFO -    Gender_Male  Region_East  Region_North  Region_South  Region_West  Rented_OwnHouse  Occupation  Education
+0          0.0          0.0           0.0           0.0          1.0              0.0         4.0        0.0
+1          1.0          0.0           0.0           1.0          0.0              0.0         4.0        1.0
+2          0.0          0.0           0.0           0.0          0.0              1.0         0.0        4.0
+3          1.0          0.0           0.0           0.0          1.0              0.0         0.0        4.0
+2025-09-18 20:47:15,929 - INFO - ----------After scaling--------
+2025-09-18 20:47:15,929 - INFO - [[-1.27226429 -0.34775128 -0.56720747 ... -0.86952204  0.98677172
+  -1.37903503]
+ [ 0.78615882 -0.34775128 -0.56720747 ... -0.86952204  0.98677172
+  -0.75060709]
+ [-1.27226429 -0.34775128 -0.56720747 ...  1.15044235 -1.35808214
+   1.13467675]
+ ...
+ [-1.27226429 -0.34775128 -0.56720747 ... -0.86952204  0.98677172
+  -0.75060709]
+ [ 0.78615882 -0.34775128 -0.56720747 ... -0.86952204  0.98677172
+  -0.75060709]
+ [-1.27226429  2.87561844 -0.56720747 ...  1.15044235  0.98677172
+   0.5062488 ]]
+2025-09-19 09:14:38,387 - INFO - --------------------Server started--------------------------
+2025-09-19 09:14:38,740 - INFO - Data loaded sucessfully with shape of (150002, 18)
+2025-09-19 09:14:38,784 - INFO - Check the null values in the dataset:NPA Status                                  2
+RevolvingUtilizationOfUnsecuredLines        2
+age                                         2
+Gender                                      2
+Region                                      2
+MonthlyIncome                           29733
+Rented_OwnHouse                             2
+Occupation                                  2
+Education                                   2
+NumberOfTime30-59DaysPastDueNotWorse        2
+DebtRatio                                   2
+MonthlyIncome.1                         29733
+NumberOfOpenCreditLinesAndLoans             2
+NumberOfTimes90DaysLate                     2
+NumberRealEstateLoansOrLines                2
+NumberOfTime60-89DaysPastDueNotWorse        2
+NumberOfDependents                       3924
+Good_Bad                                    2
+dtype: int64
+2025-09-19 09:14:38,836 - INFO - shape of data set after droping Id: (150000, 17)
+2025-09-19 09:14:38,888 - INFO - Check the null values in the dataset after dropna :NPA Status                                  0
+RevolvingUtilizationOfUnsecuredLines        0
+age                                         0
+Gender                                      0
+Region                                      0
+MonthlyIncome                           29731
+Rented_OwnHouse                             0
+Occupation                                  0
+Education                                   0
+NumberOfTime30-59DaysPastDueNotWorse        0
+DebtRatio                                   0
+NumberOfOpenCreditLinesAndLoans             0
+NumberOfTimes90DaysLate                     0
+NumberRealEstateLoansOrLines                0
+NumberOfTime60-89DaysPastDueNotWorse        0
+NumberOfDependents                       3924
+Good_Bad                                    0
+dtype: int64
+2025-09-19 09:14:38,900 - INFO - Now we have divided the independent data and dependent columns seperately.
+2025-09-19 09:14:38,900 - INFO - Shape of independent columns is :(150000, 16)
+2025-09-19 09:14:38,900 - INFO - Shape of dependent column is :(150000,)
+2025-09-19 09:14:38,949 - INFO - We have done the splitting and shpe of X_train is (120000, 16) and X_test is (30000, 16)
+2025-09-19 09:14:38,949 - INFO - -----------------Feature Selection---------------------
+2025-09-19 09:14:38,949 - INFO - Send the train and test columns to handle the missing values.
+2025-09-19 09:14:39,143 - INFO - Now we have to divide the numerical and categorical columns.
+2025-09-19 09:14:39,172 - INFO - we have divide the independent columns into numerical and categorical.
+2025-09-19 09:14:39,172 - INFO - Shape of Numerical columns are X_train(120000, 11) and X_test(30000, 11)
+2025-09-19 09:14:39,172 - INFO - <class 'pandas.core.frame.DataFrame'>
+2025-09-19 09:14:39,172 - INFO - Shape of categorical columns are X_train(120000, 5) and X_test(30000, 5)
+2025-09-19 09:14:39,181 - INFO - Null values in Numerical columns are X_train: 0 and X_test: 0
+2025-09-19 09:14:39,200 - INFO - Null values in categorical columns are X_train: 0 and X_test: 0
+2025-09-19 09:14:39,200 - INFO - Null values in categorical columns are X_train: Index(['Gender', 'Region', 'Rented_OwnHouse', 'Occupation', 'Education'], dtype='object') and X_test: Index(['Gender', 'Region', 'Rented_OwnHouse', 'Occupation', 'Education'], dtype='object')
+2025-09-19 09:14:39,200 - INFO - Send the numerical columns to variable transformation
+2025-09-19 09:14:39,485 - INFO - We have done the variable transformation sucessfully.
+2025-09-19 09:14:39,487 - INFO - Check the null values in train : NPA Status_log                              0
+RevolvingUtilizationOfUnsecuredLines_log    0
+age_log                                     0
+NumberOfTime30-59DaysPastDueNotWorse_log    0
+DebtRatio_log                               0
+NumberOfOpenCreditLinesAndLoans_log         0
+NumberOfTimes90DaysLate_log                 0
+NumberRealEstateLoansOrLines_log            0
+NumberOfTime60-89DaysPastDueNotWorse_log    0
+MonthlyIncome_replaced_log                  0
+NumberOfDependents_replaced_log             0
+dtype: int64
+2025-09-19 09:14:39,487 - INFO - Check the null values in test : NPA Status_log                              0
+RevolvingUtilizationOfUnsecuredLines_log    0
+age_log                                     0
+NumberOfTime30-59DaysPastDueNotWorse_log    0
+DebtRatio_log                               0
+NumberOfOpenCreditLinesAndLoans_log         0
+NumberOfTimes90DaysLate_log                 0
+NumberRealEstateLoansOrLines_log            0
+NumberOfTime60-89DaysPastDueNotWorse_log    0
+MonthlyIncome_replaced_log                  0
+NumberOfDependents_replaced_log             0
+dtype: int64
+2025-09-19 09:14:39,802 - INFO - We have sucessfully done the feature engineering.
+2025-09-19 09:14:39,889 - INFO - Sucessfully we have done filter method...
+2025-09-19 09:14:39,928 - INFO - Sucessfully done the Hyphothesis...
+2025-09-19 09:14:40,180 - INFO - Training encoded sample:
+       Gender_Male  Region_East  Region_North  Region_South  Region_West  Rented_OwnHouse  Occupation  Education
+23797          1.0          0.0           0.0           1.0          0.0              0.0         4.0        4.0
+18312          1.0          0.0           0.0           0.0          0.0              0.0         0.0        4.0
+90175          1.0          0.0           0.0           0.0          1.0              0.0         4.0        1.0
+88784          0.0          0.0           0.0           0.0          0.0              1.0         0.0        0.0
+34753          1.0          0.0           0.0           0.0          1.0              0.0         4.0        4.0
+2025-09-19 09:14:40,183 - INFO - Testing encoded sample:
+       Gender_Male  Region_East  Region_North  Region_South  Region_West  Rented_OwnHouse  Occupation  Education
+4492           1.0          0.0           1.0           0.0          0.0              0.0         0.0        0.0
+14171          1.0          0.0           0.0           0.0          1.0              0.0         0.0        0.0
+22416          0.0          1.0           0.0           0.0          0.0              1.0         4.0        3.0
+26347          0.0          1.0           0.0           0.0          0.0              1.0         1.0        3.0
+24916          0.0          0.0           0.0           0.0          0.0              0.0         4.0        0.0
+2025-09-19 09:14:40,205 - INFO - Sample dependent data : [1 1 1 1 1 1 0 1 1 1]
+2025-09-19 09:14:40,205 - INFO - ----------------Before Balancing------------------------
+2025-09-19 09:14:40,222 - INFO - Total row for Good category in training data 120000 was : 111930
+2025-09-19 09:14:40,235 - INFO - Total row for Bad category in training data 120000 was : 8070
+2025-09-19 09:14:40,235 - INFO - ---------------After Balancing-------------------------
+2025-09-19 09:14:40,437 - INFO - Total row for Good category in training data 223860 was : 111930
+2025-09-19 09:14:40,462 - INFO - Total row for Bad category in training data 223860 was : 111930
+2025-09-19 09:14:40,462 - INFO - ---------Before scaling-------
+2025-09-19 09:14:40,480 - INFO -    Gender_Male  Region_East  Region_North  Region_South  Region_West  Rented_OwnHouse  Occupation  Education
+0          0.0          0.0           0.0           0.0          1.0              0.0         4.0        0.0
+1          1.0          0.0           0.0           1.0          0.0              0.0         4.0        1.0
+2          0.0          0.0           0.0           0.0          0.0              1.0         0.0        4.0
+3          1.0          0.0           0.0           0.0          1.0              0.0         0.0        4.0
+2025-09-19 09:14:40,538 - INFO - ----------After scaling--------
+2025-09-19 09:14:40,538 - INFO - [[-1.27226429 -0.34775128 -0.56720747 ... -0.86952204  0.98677172
+  -1.37903503]
+ [ 0.78615882 -0.34775128 -0.56720747 ... -0.86952204  0.98677172
+  -0.75060709]
+ [-1.27226429 -0.34775128 -0.56720747 ...  1.15044235 -1.35808214
+   1.13467675]
+ ...
+ [-1.27226429 -0.34775128 -0.56720747 ... -0.86952204  0.98677172
+  -0.75060709]
+ [ 0.78615882 -0.34775128 -0.56720747 ... -0.86952204  0.98677172
+  -0.75060709]
+ [-1.27226429  2.87561844 -0.56720747 ...  1.15044235  0.98677172
+   0.5062488 ]]
+2025-09-19 09:19:53,067 - INFO - --------------------Server started--------------------------
+2025-09-19 09:19:53,363 - INFO - Data loaded sucessfully with shape of (150002, 18)
+2025-09-19 09:19:53,409 - INFO - Check the null values in the dataset:NPA Status                                  2
+RevolvingUtilizationOfUnsecuredLines        2
+age                                         2
+Gender                                      2
+Region                                      2
+MonthlyIncome                           29733
+Rented_OwnHouse                             2
+Occupation                                  2
+Education                                   2
+NumberOfTime30-59DaysPastDueNotWorse        2
+DebtRatio                                   2
+MonthlyIncome.1                         29733
+NumberOfOpenCreditLinesAndLoans             2
+NumberOfTimes90DaysLate                     2
+NumberRealEstateLoansOrLines                2
+NumberOfTime60-89DaysPastDueNotWorse        2
+NumberOfDependents                       3924
+Good_Bad                                    2
+dtype: int64
+2025-09-19 09:19:53,456 - INFO - shape of data set after droping Id: (150000, 17)
+2025-09-19 09:19:53,495 - INFO - Check the null values in the dataset after dropna :NPA Status                                  0
+RevolvingUtilizationOfUnsecuredLines        0
+age                                         0
+Gender                                      0
+Region                                      0
+MonthlyIncome                           29731
+Rented_OwnHouse                             0
+Occupation                                  0
+Education                                   0
+NumberOfTime30-59DaysPastDueNotWorse        0
+DebtRatio                                   0
+NumberOfOpenCreditLinesAndLoans             0
+NumberOfTimes90DaysLate                     0
+NumberRealEstateLoansOrLines                0
+NumberOfTime60-89DaysPastDueNotWorse        0
+NumberOfDependents                       3924
+Good_Bad                                    0
+dtype: int64
+2025-09-19 09:19:53,506 - INFO - Now we have divided the independent data and dependent columns seperately.
+2025-09-19 09:19:53,506 - INFO - Shape of independent columns is :(150000, 16)
+2025-09-19 09:19:53,506 - INFO - Shape of dependent column is :(150000,)
+2025-09-19 09:19:53,564 - INFO - We have done the splitting and shpe of X_train is (120000, 16) and X_test is (30000, 16)
+2025-09-19 09:19:53,564 - INFO - -----------------Feature Selection---------------------
+2025-09-19 09:19:53,566 - INFO - Send the train and test columns to handle the missing values.
+2025-09-19 09:19:53,738 - INFO - Now we have to divide the numerical and categorical columns.
+2025-09-19 09:19:53,761 - INFO - we have divide the independent columns into numerical and categorical.
+2025-09-19 09:19:53,761 - INFO - Shape of Numerical columns are X_train(120000, 11) and X_test(30000, 11)
+2025-09-19 09:19:53,761 - INFO - <class 'pandas.core.frame.DataFrame'>
+2025-09-19 09:19:53,761 - INFO - Shape of categorical columns are X_train(120000, 5) and X_test(30000, 5)
+2025-09-19 09:19:53,766 - INFO - Null values in Numerical columns are X_train: 0 and X_test: 0
+2025-09-19 09:19:53,784 - INFO - Null values in categorical columns are X_train: 0 and X_test: 0
+2025-09-19 09:19:53,784 - INFO - Null values in categorical columns are X_train: Index(['Gender', 'Region', 'Rented_OwnHouse', 'Occupation', 'Education'], dtype='object') and X_test: Index(['Gender', 'Region', 'Rented_OwnHouse', 'Occupation', 'Education'], dtype='object')
+2025-09-19 09:19:53,784 - INFO - Send the numerical columns to variable transformation
+2025-09-19 09:19:54,014 - INFO - We have done the variable transformation sucessfully.
+2025-09-19 09:19:54,019 - INFO - Check the null values in train : NPA Status_log                              0
+RevolvingUtilizationOfUnsecuredLines_log    0
+age_log                                     0
+NumberOfTime30-59DaysPastDueNotWorse_log    0
+DebtRatio_log                               0
+NumberOfOpenCreditLinesAndLoans_log         0
+NumberOfTimes90DaysLate_log                 0
+NumberRealEstateLoansOrLines_log            0
+NumberOfTime60-89DaysPastDueNotWorse_log    0
+MonthlyIncome_replaced_log                  0
+NumberOfDependents_replaced_log             0
+dtype: int64
+2025-09-19 09:19:54,023 - INFO - Check the null values in test : NPA Status_log                              0
+RevolvingUtilizationOfUnsecuredLines_log    0
+age_log                                     0
+NumberOfTime30-59DaysPastDueNotWorse_log    0
+DebtRatio_log                               0
+NumberOfOpenCreditLinesAndLoans_log         0
+NumberOfTimes90DaysLate_log                 0
+NumberRealEstateLoansOrLines_log            0
+NumberOfTime60-89DaysPastDueNotWorse_log    0
+MonthlyIncome_replaced_log                  0
+NumberOfDependents_replaced_log             0
+dtype: int64
+2025-09-19 09:19:54,338 - INFO - We have sucessfully done the feature engineering.
+2025-09-19 09:19:54,417 - INFO - Sucessfully we have done filter method...
+2025-09-19 09:19:54,462 - INFO - Sucessfully done the Hyphothesis...
+2025-09-19 09:19:54,728 - INFO - Training encoded sample:
+       Gender_Male  Region_East  Region_North  Region_South  Region_West  Rented_OwnHouse  Occupation  Education
+1796           0.0          0.0           1.0           0.0          0.0              0.0         4.0        0.0
+61882          0.0          0.0           0.0           0.0          0.0              0.0         4.0        0.0
+6940           1.0          0.0           0.0           0.0          0.0              0.0         4.0        4.0
+56696          1.0          0.0           1.0           0.0          0.0              1.0         0.0        0.0
+30892          1.0          0.0           1.0           0.0          0.0              0.0         4.0        3.0
+2025-09-19 09:19:54,743 - INFO - Testing encoded sample:
+       Gender_Male  Region_East  Region_North  Region_South  Region_West  Rented_OwnHouse  Occupation  Education
+12702          1.0          0.0           1.0           0.0          0.0              0.0         4.0        1.0
+15501          1.0          0.0           0.0           0.0          0.0              0.0         0.0        4.0
+7748           1.0          0.0           0.0           0.0          0.0              1.0         0.0        4.0
+2              0.0          1.0           0.0           0.0          0.0              1.0         1.0        3.0
+5849           1.0          0.0           0.0           0.0          1.0              0.0         4.0        4.0
+2025-09-19 09:19:54,760 - INFO - Sample dependent data : [1 1 1 1 1 1 0 1 1 1]
+2025-09-19 09:19:54,776 - INFO - ----------------Before Balancing------------------------
+2025-09-19 09:19:54,789 - INFO - Total row for Good category in training data 120000 was : 111930
+2025-09-19 09:19:54,800 - INFO - Total row for Bad category in training data 120000 was : 8070
+2025-09-19 09:19:54,800 - INFO - ---------------After Balancing-------------------------
+2025-09-19 09:19:54,989 - INFO - Total row for Good category in training data 223860 was : 111930
+2025-09-19 09:19:55,016 - INFO - Total row for Bad category in training data 223860 was : 111930
+2025-09-19 09:19:55,016 - INFO - ---------Before scaling-------
+2025-09-19 09:19:55,026 - INFO -    Gender_Male  Region_East  Region_North  Region_South  Region_West  Rented_OwnHouse  Occupation  Education
+0          0.0          0.0           0.0           0.0          1.0              0.0         4.0        0.0
+1          1.0          0.0           0.0           1.0          0.0              0.0         4.0        1.0
+2          0.0          0.0           0.0           0.0          0.0              1.0         0.0        4.0
+3          1.0          0.0           0.0           0.0          1.0              0.0         0.0        4.0
+2025-09-19 09:19:55,084 - INFO - ----------After scaling--------
+2025-09-19 09:19:55,084 - INFO - [[-1.27226429 -0.34775128 -0.56720747 ... -0.86952204  0.98677172
+  -1.37903503]
+ [ 0.78615882 -0.34775128 -0.56720747 ... -0.86952204  0.98677172
+  -0.75060709]
+ [-1.27226429 -0.34775128 -0.56720747 ...  1.15044235 -1.35808214
+   1.13467675]
+ ...
+ [-1.27226429 -0.34775128 -0.56720747 ... -0.86952204  0.98677172
+  -0.75060709]
+ [ 0.78615882 -0.34775128 -0.56720747 ... -0.86952204  0.98677172
+  -0.75060709]
+ [-1.27226429  2.87561844 -0.56720747 ...  1.15044235  0.98677172
+   0.5062488 ]]
+2025-09-19 09:24:54,161 - INFO - --------------------Server started--------------------------
+2025-09-19 09:24:54,467 - INFO - Data loaded sucessfully with shape of (150002, 18)
+2025-09-19 09:24:54,514 - INFO - Check the null values in the dataset:NPA Status                                  2
+RevolvingUtilizationOfUnsecuredLines        2
+age                                         2
+Gender                                      2
+Region                                      2
+MonthlyIncome                           29733
+Rented_OwnHouse                             2
+Occupation                                  2
+Education                                   2
+NumberOfTime30-59DaysPastDueNotWorse        2
+DebtRatio                                   2
+MonthlyIncome.1                         29733
+NumberOfOpenCreditLinesAndLoans             2
+NumberOfTimes90DaysLate                     2
+NumberRealEstateLoansOrLines                2
+NumberOfTime60-89DaysPastDueNotWorse        2
+NumberOfDependents                       3924
+Good_Bad                                    2
+dtype: int64
+2025-09-19 09:24:54,562 - INFO - shape of data set after droping Id: (150000, 17)
+2025-09-19 09:24:54,593 - INFO - Check the null values in the dataset after dropna :NPA Status                                  0
+RevolvingUtilizationOfUnsecuredLines        0
+age                                         0
+Gender                                      0
+Region                                      0
+MonthlyIncome                           29731
+Rented_OwnHouse                             0
+Occupation                                  0
+Education                                   0
+NumberOfTime30-59DaysPastDueNotWorse        0
+DebtRatio                                   0
+NumberOfOpenCreditLinesAndLoans             0
+NumberOfTimes90DaysLate                     0
+NumberRealEstateLoansOrLines                0
+NumberOfTime60-89DaysPastDueNotWorse        0
+NumberOfDependents                       3924
+Good_Bad                                    0
+dtype: int64
+2025-09-19 09:24:54,609 - INFO - Now we have divided the independent data and dependent columns seperately.
+2025-09-19 09:24:54,609 - INFO - Shape of independent columns is :(150000, 16)
+2025-09-19 09:24:54,609 - INFO - Shape of dependent column is :(150000,)
+2025-09-19 09:24:54,656 - INFO - We have done the splitting and shpe of X_train is (120000, 16) and X_test is (30000, 16)
+2025-09-19 09:24:54,656 - INFO - -----------------Feature Selection---------------------
+2025-09-19 09:24:54,656 - INFO - Send the train and test columns to handle the missing values.
+2025-09-19 09:24:54,849 - INFO - Now we have to divide the numerical and categorical columns.
+2025-09-19 09:24:54,865 - INFO - we have divide the independent columns into numerical and categorical.
+2025-09-19 09:24:54,865 - INFO - Shape of Numerical columns are X_train(120000, 11) and X_test(30000, 11)
+2025-09-19 09:24:54,880 - INFO - <class 'pandas.core.frame.DataFrame'>
+2025-09-19 09:24:54,880 - INFO - Shape of categorical columns are X_train(120000, 5) and X_test(30000, 5)
+2025-09-19 09:24:54,880 - INFO - Null values in Numerical columns are X_train: 0 and X_test: 0
+2025-09-19 09:24:54,896 - INFO - Null values in categorical columns are X_train: 0 and X_test: 0
+2025-09-19 09:24:54,896 - INFO - Null values in categorical columns are X_train: Index(['Gender', 'Region', 'Rented_OwnHouse', 'Occupation', 'Education'], dtype='object') and X_test: Index(['Gender', 'Region', 'Rented_OwnHouse', 'Occupation', 'Education'], dtype='object')
+2025-09-19 09:24:54,896 - INFO - Send the numerical columns to variable transformation
+2025-09-19 09:24:55,118 - INFO - We have done the variable transformation sucessfully.
+2025-09-19 09:24:55,134 - INFO - Check the null values in train : NPA Status_log                              0
+RevolvingUtilizationOfUnsecuredLines_log    0
+age_log                                     0
+NumberOfTime30-59DaysPastDueNotWorse_log    0
+DebtRatio_log                               0
+NumberOfOpenCreditLinesAndLoans_log         0
+NumberOfTimes90DaysLate_log                 0
+NumberRealEstateLoansOrLines_log            0
+NumberOfTime60-89DaysPastDueNotWorse_log    0
+MonthlyIncome_replaced_log                  0
+NumberOfDependents_replaced_log             0
+dtype: int64
+2025-09-19 09:24:55,134 - INFO - Check the null values in test : NPA Status_log                              0
+RevolvingUtilizationOfUnsecuredLines_log    0
+age_log                                     0
+NumberOfTime30-59DaysPastDueNotWorse_log    0
+DebtRatio_log                               0
+NumberOfOpenCreditLinesAndLoans_log         0
+NumberOfTimes90DaysLate_log                 0
+NumberRealEstateLoansOrLines_log            0
+NumberOfTime60-89DaysPastDueNotWorse_log    0
+MonthlyIncome_replaced_log                  0
+NumberOfDependents_replaced_log             0
+dtype: int64
+2025-09-19 09:24:55,434 - INFO - We have sucessfully done the feature engineering.
+2025-09-19 09:24:55,513 - INFO - Sucessfully we have done filter method...
+2025-09-19 09:24:55,561 - INFO - Sucessfully done the Hyphothesis...
+2025-09-19 09:24:55,860 - INFO - Training encoded sample:
+        Gender_Male  Region_East  ...  Occupation  Education
+25274           1.0          0.0  ...         4.0        4.0
+41947           1.0          0.0  ...         0.0        0.0
+107792          0.0          0.0  ...         4.0        0.0
+85136           1.0          0.0  ...         4.0        4.0
+6466            1.0          0.0  ...         2.0        4.0
+
+[5 rows x 8 columns]
+2025-09-19 09:24:55,870 - INFO - Testing encoded sample:
+       Gender_Male  Region_East  ...  Occupation  Education
+16184          0.0          0.0  ...         3.0        3.0
+22038          1.0          0.0  ...         0.0        0.0
+18802          0.0          0.0  ...         4.0        3.0
+17889          1.0          1.0  ...         4.0        4.0
+11665          0.0          0.0  ...         4.0        4.0
+
+[5 rows x 8 columns]
+2025-09-19 09:24:55,892 - INFO - Sample dependent data : [1 1 1 1 1 1 0 1 1 1]
+2025-09-19 09:24:55,896 - INFO - ----------------Before Balancing------------------------
+2025-09-19 09:24:55,908 - INFO - Total row for Good category in training data 120000 was : 111930
+2025-09-19 09:24:55,912 - INFO - Total row for Bad category in training data 120000 was : 8070
+2025-09-19 09:24:55,912 - INFO - ---------------After Balancing-------------------------
+2025-09-19 09:24:56,099 - INFO - Total row for Good category in training data 223860 was : 111930
+2025-09-19 09:24:56,115 - INFO - Total row for Bad category in training data 223860 was : 111930
+2025-09-19 09:24:56,115 - INFO - ---------Before scaling-------
+2025-09-19 09:24:56,130 - INFO -    Gender_Male  Region_East  Region_North  ...  Rented_OwnHouse  Occupation  Education
+0          0.0          0.0           0.0  ...              0.0         4.0        0.0
+1          1.0          0.0           0.0  ...              0.0         4.0        1.0
+2          0.0          0.0           0.0  ...              1.0         0.0        4.0
+3          1.0          0.0           0.0  ...              0.0         0.0        4.0
+
+[4 rows x 8 columns]
+2025-09-19 09:24:56,178 - INFO - ----------After scaling--------
+2025-09-19 09:24:56,178 - INFO - [[-1.27226429 -0.34775128 -0.56720747 ... -0.86952204  0.98677172
+  -1.37903503]
+ [ 0.78615882 -0.34775128 -0.56720747 ... -0.86952204  0.98677172
+  -0.75060709]
+ [-1.27226429 -0.34775128 -0.56720747 ...  1.15044235 -1.35808214
+   1.13467675]
+ ...
+ [-1.27226429 -0.34775128 -0.56720747 ... -0.86952204  0.98677172
+  -0.75060709]
+ [ 0.78615882 -0.34775128 -0.56720747 ... -0.86952204  0.98677172
+  -0.75060709]
+ [-1.27226429  2.87561844 -0.56720747 ...  1.15044235  0.98677172
+   0.5062488 ]]
+2025-09-19 09:27:17,882 - INFO - --------------------Server started--------------------------
+2025-09-19 09:27:18,140 - INFO - Data loaded sucessfully with shape of (150002, 18)
+2025-09-19 09:27:18,180 - INFO - Check the null values in the dataset:NPA Status                                  2
+RevolvingUtilizationOfUnsecuredLines        2
+age                                         2
+Gender                                      2
+Region                                      2
+MonthlyIncome                           29733
+Rented_OwnHouse                             2
+Occupation                                  2
+Education                                   2
+NumberOfTime30-59DaysPastDueNotWorse        2
+DebtRatio                                   2
+MonthlyIncome.1                         29733
+NumberOfOpenCreditLinesAndLoans             2
+NumberOfTimes90DaysLate                     2
+NumberRealEstateLoansOrLines                2
+NumberOfTime60-89DaysPastDueNotWorse        2
+NumberOfDependents                       3924
+Good_Bad                                    2
+dtype: int64
+2025-09-19 09:27:18,214 - INFO - shape of data set after droping Id: (150000, 17)
+2025-09-19 09:27:18,254 - INFO - Check the null values in the dataset after dropna :NPA Status                                  0
+RevolvingUtilizationOfUnsecuredLines        0
+age                                         0
+Gender                                      0
+Region                                      0
+MonthlyIncome                           29731
+Rented_OwnHouse                             0
+Occupation                                  0
+Education                                   0
+NumberOfTime30-59DaysPastDueNotWorse        0
+DebtRatio                                   0
+NumberOfOpenCreditLinesAndLoans             0
+NumberOfTimes90DaysLate                     0
+NumberRealEstateLoansOrLines                0
+NumberOfTime60-89DaysPastDueNotWorse        0
+NumberOfDependents                       3924
+Good_Bad                                    0
+dtype: int64
+2025-09-19 09:27:18,265 - INFO - Now we have divided the independent data and dependent columns seperately.
+2025-09-19 09:27:18,265 - INFO - Shape of independent columns is :(150000, 16)
+2025-09-19 09:27:18,265 - INFO - Shape of dependent column is :(150000,)
+2025-09-19 09:27:18,314 - INFO - We have done the splitting and shpe of X_train is (120000, 16) and X_test is (30000, 16)
+2025-09-19 09:27:18,314 - INFO - -----------------Feature Selection---------------------
+2025-09-19 09:27:18,314 - INFO - Send the train and test columns to handle the missing values.
+2025-09-19 09:27:18,477 - INFO - Now we have to divide the numerical and categorical columns.
+2025-09-19 09:27:18,495 - INFO - we have divide the independent columns into numerical and categorical.
+2025-09-19 09:27:18,495 - INFO - Shape of Numerical columns are X_train(120000, 11) and X_test(30000, 11)
+2025-09-19 09:27:18,495 - INFO - <class 'pandas.core.frame.DataFrame'>
+2025-09-19 09:27:18,495 - INFO - Shape of categorical columns are X_train(120000, 5) and X_test(30000, 5)
+2025-09-19 09:27:18,498 - INFO - Null values in Numerical columns are X_train: 0 and X_test: 0
+2025-09-19 09:27:18,525 - INFO - Null values in categorical columns are X_train: 0 and X_test: 0
+2025-09-19 09:27:18,525 - INFO - Null values in categorical columns are X_train: Index(['Gender', 'Region', 'Rented_OwnHouse', 'Occupation', 'Education'], dtype='object') and X_test: Index(['Gender', 'Region', 'Rented_OwnHouse', 'Occupation', 'Education'], dtype='object')
+2025-09-19 09:27:18,525 - INFO - Send the numerical columns to variable transformation
+2025-09-19 09:27:18,769 - INFO - We have done the variable transformation sucessfully.
+2025-09-19 09:27:18,781 - INFO - Check the null values in train : NPA Status_log                              0
+RevolvingUtilizationOfUnsecuredLines_log    0
+age_log                                     0
+NumberOfTime30-59DaysPastDueNotWorse_log    0
+DebtRatio_log                               0
+NumberOfOpenCreditLinesAndLoans_log         0
+NumberOfTimes90DaysLate_log                 0
+NumberRealEstateLoansOrLines_log            0
+NumberOfTime60-89DaysPastDueNotWorse_log    0
+MonthlyIncome_replaced_log                  0
+NumberOfDependents_replaced_log             0
+dtype: int64
+2025-09-19 09:27:18,787 - INFO - Check the null values in test : NPA Status_log                              0
+RevolvingUtilizationOfUnsecuredLines_log    0
+age_log                                     0
+NumberOfTime30-59DaysPastDueNotWorse_log    0
+DebtRatio_log                               0
+NumberOfOpenCreditLinesAndLoans_log         0
+NumberOfTimes90DaysLate_log                 0
+NumberRealEstateLoansOrLines_log            0
+NumberOfTime60-89DaysPastDueNotWorse_log    0
+MonthlyIncome_replaced_log                  0
+NumberOfDependents_replaced_log             0
+dtype: int64
+2025-09-19 09:27:19,082 - INFO - We have sucessfully done the feature engineering.
+2025-09-19 09:27:19,162 - INFO - Sucessfully we have done filter method...
+2025-09-19 09:27:19,197 - INFO - Sucessfully done the Hyphothesis...
+2025-09-19 09:27:19,447 - INFO - Training encoded sample:
+        Gender_Male  Region_East  ...  Occupation  Education
+111263          0.0          0.0  ...         4.0        2.0
+84252           0.0          0.0  ...         4.0        3.0
+9063            0.0          1.0  ...         3.0        3.0
+32586           1.0          0.0  ...         4.0        4.0
+71611           1.0          0.0  ...         1.0        4.0
+
+[5 rows x 8 columns]
+2025-09-19 09:27:19,459 - INFO - Testing encoded sample:
+       Gender_Male  Region_East  ...  Occupation  Education
+14836          0.0          0.0  ...         1.0        3.0
+23587          1.0          0.0  ...         4.0        1.0
+2971           1.0          0.0  ...         0.0        4.0
+14681          1.0          0.0  ...         4.0        2.0
+17442          0.0          0.0  ...         0.0        4.0
+
+[5 rows x 8 columns]
+2025-09-19 09:27:19,484 - INFO - Sample dependent data : [1 1 1 1 1 1 0 1 1 1]
+2025-09-19 09:27:19,486 - INFO - ----------------Before Balancing------------------------
+2025-09-19 09:27:19,498 - INFO - Total row for Good category in training data 120000 was : 111930
+2025-09-19 09:27:19,510 - INFO - Total row for Bad category in training data 120000 was : 8070
+2025-09-19 09:27:19,510 - INFO - ---------------After Balancing-------------------------
+2025-09-19 09:27:19,721 - INFO - Total row for Good category in training data 223860 was : 111930
+2025-09-19 09:27:19,743 - INFO - Total row for Bad category in training data 223860 was : 111930
+2025-09-19 09:27:19,743 - INFO - ---------Before scaling-------
+2025-09-19 09:27:19,755 - INFO -    Gender_Male  Region_East  Region_North  ...  Rented_OwnHouse  Occupation  Education
+0          0.0          0.0           0.0  ...              0.0         4.0        0.0
+1          1.0          0.0           0.0  ...              0.0         4.0        1.0
+2          0.0          0.0           0.0  ...              1.0         0.0        4.0
+3          1.0          0.0           0.0  ...              0.0         0.0        4.0
+
+[4 rows x 8 columns]
+2025-09-19 09:27:19,795 - INFO - ----------After scaling--------
+2025-09-19 09:27:19,795 - INFO - [[-1.27226429 -0.34775128 -0.56720747 ... -0.86952204  0.98677172
+  -1.37903503]
+ [ 0.78615882 -0.34775128 -0.56720747 ... -0.86952204  0.98677172
+  -0.75060709]
+ [-1.27226429 -0.34775128 -0.56720747 ...  1.15044235 -1.35808214
+   1.13467675]
+ ...
+ [-1.27226429 -0.34775128 -0.56720747 ... -0.86952204  0.98677172
+  -0.75060709]
+ [ 0.78615882 -0.34775128 -0.56720747 ... -0.86952204  0.98677172
+  -0.75060709]
+ [-1.27226429  2.87561844 -0.56720747 ...  1.15044235  0.98677172
+   0.5062488 ]]
+2025-09-21 11:04:26,755 - INFO - --------------------Server started--------------------------
+2025-09-21 11:04:27,083 - INFO - Data loaded sucessfully with shape of (150002, 18)
+2025-09-21 11:04:27,130 - INFO - Check the null values in the dataset:NPA Status                                  2
+RevolvingUtilizationOfUnsecuredLines        2
+age                                         2
+Gender                                      2
+Region                                      2
+MonthlyIncome                           29733
+Rented_OwnHouse                             2
+Occupation                                  2
+Education                                   2
+NumberOfTime30-59DaysPastDueNotWorse        2
+DebtRatio                                   2
+MonthlyIncome.1                         29733
+NumberOfOpenCreditLinesAndLoans             2
+NumberOfTimes90DaysLate                     2
+NumberRealEstateLoansOrLines                2
+NumberOfTime60-89DaysPastDueNotWorse        2
+NumberOfDependents                       3924
+Good_Bad                                    2
+dtype: int64
+2025-09-21 11:04:27,179 - INFO - shape of data set after droping Id: (150000, 17)
+2025-09-21 11:04:27,227 - INFO - Check the null values in the dataset after dropna :NPA Status                                  0
+RevolvingUtilizationOfUnsecuredLines        0
+age                                         0
+Gender                                      0
+Region                                      0
+MonthlyIncome                           29731
+Rented_OwnHouse                             0
+Occupation                                  0
+Education                                   0
+NumberOfTime30-59DaysPastDueNotWorse        0
+DebtRatio                                   0
+NumberOfOpenCreditLinesAndLoans             0
+NumberOfTimes90DaysLate                     0
+NumberRealEstateLoansOrLines                0
+NumberOfTime60-89DaysPastDueNotWorse        0
+NumberOfDependents                       3924
+Good_Bad                                    0
+dtype: int64
+2025-09-21 11:04:27,227 - INFO - Now we have divided the independent data and dependent columns seperately.
+2025-09-21 11:04:27,227 - INFO - Shape of independent columns is :(150000, 16)
+2025-09-21 11:04:27,227 - INFO - Shape of dependent column is :(150000,)
+2025-09-21 11:04:27,311 - INFO - We have done the splitting and shpe of X_train is (120000, 16) and X_test is (30000, 16)
+2025-09-21 11:04:27,311 - INFO - -----------------Feature Selection---------------------
+2025-09-21 11:04:27,311 - INFO - Send the train and test columns to handle the missing values.
+2025-09-21 11:04:27,493 - INFO - Now we have to divide the numerical and categorical columns.
+2025-09-21 11:04:27,525 - INFO - we have divide the independent columns into numerical and categorical.
+2025-09-21 11:04:27,525 - INFO - Shape of Numerical columns are X_train(120000, 11) and X_test(30000, 11)
+2025-09-21 11:04:27,525 - INFO - <class 'pandas.core.frame.DataFrame'>
+2025-09-21 11:04:27,525 - INFO - Shape of categorical columns are X_train(120000, 5) and X_test(30000, 5)
+2025-09-21 11:04:27,525 - INFO - Null values in Numerical columns are X_train: 0 and X_test: 0
+2025-09-21 11:04:27,546 - INFO - Null values in categorical columns are X_train: 0 and X_test: 0
+2025-09-21 11:04:27,546 - INFO - Null values in categorical columns are X_train: Index(['Gender', 'Region', 'Rented_OwnHouse', 'Occupation', 'Education'], dtype='object') and X_test: Index(['Gender', 'Region', 'Rented_OwnHouse', 'Occupation', 'Education'], dtype='object')
+2025-09-21 11:04:27,546 - INFO - Send the numerical columns to variable transformation
+2025-09-21 11:04:27,780 - INFO - We have done the variable transformation sucessfully.
+2025-09-21 11:04:27,796 - INFO - Check the null values in train : NPA Status_log                              0
+RevolvingUtilizationOfUnsecuredLines_log    0
+age_log                                     0
+NumberOfTime30-59DaysPastDueNotWorse_log    0
+DebtRatio_log                               0
+NumberOfOpenCreditLinesAndLoans_log         0
+NumberOfTimes90DaysLate_log                 0
+NumberRealEstateLoansOrLines_log            0
+NumberOfTime60-89DaysPastDueNotWorse_log    0
+MonthlyIncome_replaced_log                  0
+NumberOfDependents_replaced_log             0
+dtype: int64
+2025-09-21 11:04:27,796 - INFO - Check the null values in test : NPA Status_log                              0
+RevolvingUtilizationOfUnsecuredLines_log    0
+age_log                                     0
+NumberOfTime30-59DaysPastDueNotWorse_log    0
+DebtRatio_log                               0
+NumberOfOpenCreditLinesAndLoans_log         0
+NumberOfTimes90DaysLate_log                 0
+NumberRealEstateLoansOrLines_log            0
+NumberOfTime60-89DaysPastDueNotWorse_log    0
+MonthlyIncome_replaced_log                  0
+NumberOfDependents_replaced_log             0
+dtype: int64
+2025-09-21 11:04:28,098 - INFO - We have sucessfully done the feature engineering.
+2025-09-21 11:04:28,205 - INFO - Sucessfully we have done filter method...
+2025-09-21 11:04:28,261 - INFO - Sucessfully done the Hyphothesis...
+2025-09-21 11:04:28,518 - INFO - Training encoded sample:
+       Gender_Male  Region_East  Region_North  Region_South  Region_West  Rented_OwnHouse  Occupation  Education
+11678          1.0          0.0           0.0           0.0          0.0              0.0         0.0        4.0
+84679          1.0          0.0           0.0           0.0          0.0              1.0         4.0        0.0
+50366          0.0          1.0           0.0           0.0          0.0              1.0         4.0        3.0
+39766          1.0          0.0           1.0           0.0          0.0              0.0         4.0        0.0
+50023          0.0          0.0           1.0           0.0          0.0              0.0         4.0        1.0
+2025-09-21 11:04:28,539 - INFO - Testing encoded sample:
+       Gender_Male  Region_East  Region_North  Region_South  Region_West  Rented_OwnHouse  Occupation  Education
+20881          0.0          1.0           0.0           0.0          0.0              1.0         4.0        3.0
+23257          0.0          1.0           0.0           0.0          0.0              1.0         1.0        3.0
+26914          1.0          0.0           0.0           0.0          1.0              1.0         2.0        4.0
+13153          0.0          0.0           1.0           0.0          0.0              0.0         0.0        0.0
+13327          0.0          1.0           0.0           0.0          0.0              1.0         1.0        3.0
+2025-09-21 11:04:28,564 - INFO - Sample dependent data : [1 1 1 1 1 1 0 1 1 1]
+2025-09-21 11:04:28,568 - INFO - ----------------Before Balancing------------------------
+2025-09-21 11:04:28,574 - INFO - Total row for Good category in training data 120000 was : 111930
+2025-09-21 11:04:28,592 - INFO - Total row for Bad category in training data 120000 was : 8070
+2025-09-21 11:04:28,592 - INFO - ---------------After Balancing-------------------------
+2025-09-21 11:04:28,780 - INFO - Total row for Good category in training data 223860 was : 111930
+2025-09-21 11:04:28,819 - INFO - Total row for Bad category in training data 223860 was : 111930
+2025-09-21 11:04:28,819 - INFO - ---------Before scaling-------
+2025-09-21 11:04:28,833 - INFO -    Gender_Male  Region_East  Region_North  Region_South  Region_West  Rented_OwnHouse  Occupation  Education
+0          0.0          0.0           0.0           0.0          1.0              0.0         4.0        0.0
+1          1.0          0.0           0.0           1.0          0.0              0.0         4.0        1.0
+2          0.0          0.0           0.0           0.0          0.0              1.0         0.0        4.0
+3          1.0          0.0           0.0           0.0          1.0              0.0         0.0        4.0
+2025-09-21 11:04:28,890 - INFO - ----------After scaling--------
+2025-09-21 11:04:28,890 - INFO - [[-1.27226429 -0.34775128 -0.56720747 ... -0.86952204  0.98677172
+  -1.37903503]
+ [ 0.78615882 -0.34775128 -0.56720747 ... -0.86952204  0.98677172
+  -0.75060709]
+ [-1.27226429 -0.34775128 -0.56720747 ...  1.15044235 -1.35808214
+   1.13467675]
+ ...
+ [-1.27226429 -0.34775128 -0.56720747 ... -0.86952204  0.98677172
+  -0.75060709]
+ [ 0.78615882 -0.34775128 -0.56720747 ... -0.86952204  0.98677172
+  -0.75060709]
+ [-1.27226429  2.87561844 -0.56720747 ...  1.15044235  0.98677172
+   0.5062488 ]]
+2025-09-22 00:43:24,132 - INFO - --------------------Server started--------------------------
+2025-09-22 00:43:24,444 - INFO - Data loaded sucessfully with shape of (150002, 18)
+2025-09-22 00:43:24,489 - INFO - Check the null values in the dataset:NPA Status                                  2
+RevolvingUtilizationOfUnsecuredLines        2
+age                                         2
+Gender                                      2
+Region                                      2
+MonthlyIncome                           29733
+Rented_OwnHouse                             2
+Occupation                                  2
+Education                                   2
+NumberOfTime30-59DaysPastDueNotWorse        2
+DebtRatio                                   2
+MonthlyIncome.1                         29733
+NumberOfOpenCreditLinesAndLoans             2
+NumberOfTimes90DaysLate                     2
+NumberRealEstateLoansOrLines                2
+NumberOfTime60-89DaysPastDueNotWorse        2
+NumberOfDependents                       3924
+Good_Bad                                    2
+dtype: int64
+2025-09-22 00:43:24,551 - INFO - shape of data set after droping Id: (150000, 17)
+2025-09-22 00:43:24,595 - INFO - Check the null values in the dataset after dropna :NPA Status                                  0
+RevolvingUtilizationOfUnsecuredLines        0
+age                                         0
+Gender                                      0
+Region                                      0
+MonthlyIncome                           29731
+Rented_OwnHouse                             0
+Occupation                                  0
+Education                                   0
+NumberOfTime30-59DaysPastDueNotWorse        0
+DebtRatio                                   0
+NumberOfOpenCreditLinesAndLoans             0
+NumberOfTimes90DaysLate                     0
+NumberRealEstateLoansOrLines                0
+NumberOfTime60-89DaysPastDueNotWorse        0
+NumberOfDependents                       3924
+Good_Bad                                    0
+dtype: int64
+2025-09-22 00:43:24,608 - INFO - Now we have divided the independent data and dependent columns seperately.
+2025-09-22 00:43:24,608 - INFO - Shape of independent columns is :(150000, 16)
+2025-09-22 00:43:24,608 - INFO - Shape of dependent column is :(150000,)
+2025-09-22 00:43:24,660 - INFO - We have done the splitting and shpe of X_train is (120000, 16) and X_test is (30000, 16)
+2025-09-22 00:43:24,660 - INFO - -----------------Feature Engineering---------------------
+2025-09-22 00:43:24,660 - INFO - Send the train and test columns to handle the missing values.
+2025-09-22 00:43:24,842 - INFO - Now we have to divide the numerical and categorical columns.
+2025-09-22 00:43:24,865 - INFO - we have divide the independent columns into numerical and categorical.
+2025-09-22 00:43:24,865 - INFO - Shape of Numerical columns are X_train(120000, 11) and X_test(30000, 11)
+2025-09-22 00:43:24,865 - INFO - <class 'pandas.core.frame.DataFrame'>
+2025-09-22 00:43:24,865 - INFO - Shape of categorical columns are X_train(120000, 5) and X_test(30000, 5)
+2025-09-22 00:43:24,866 - INFO - Null values in Numerical columns are X_train: 0 and X_test: 0
+2025-09-22 00:43:24,896 - INFO - Null values in categorical columns are X_train: 0 and X_test: 0
+2025-09-22 00:43:24,896 - INFO - Null values in categorical columns are X_train: Index(['Gender', 'Region', 'Rented_OwnHouse', 'Occupation', 'Education'], dtype='object') and X_test: Index(['Gender', 'Region', 'Rented_OwnHouse', 'Occupation', 'Education'], dtype='object')
+2025-09-22 00:43:24,896 - INFO - Send the numerical columns to variable transformation
+2025-09-22 00:43:25,103 - INFO - We have done the variable transformation sucessfully.
+2025-09-22 00:43:25,112 - INFO - Check the null values in train : NPA Status_log                              0
+RevolvingUtilizationOfUnsecuredLines_log    0
+age_log                                     0
+NumberOfTime30-59DaysPastDueNotWorse_log    0
+DebtRatio_log                               0
+NumberOfOpenCreditLinesAndLoans_log         0
+NumberOfTimes90DaysLate_log                 0
+NumberRealEstateLoansOrLines_log            0
+NumberOfTime60-89DaysPastDueNotWorse_log    0
+MonthlyIncome_replaced_log                  0
+NumberOfDependents_replaced_log             0
+dtype: int64
+2025-09-22 00:43:25,116 - INFO - Check the null values in test : NPA Status_log                              0
+RevolvingUtilizationOfUnsecuredLines_log    0
+age_log                                     0
+NumberOfTime30-59DaysPastDueNotWorse_log    0
+DebtRatio_log                               0
+NumberOfOpenCreditLinesAndLoans_log         0
+NumberOfTimes90DaysLate_log                 0
+NumberRealEstateLoansOrLines_log            0
+NumberOfTime60-89DaysPastDueNotWorse_log    0
+MonthlyIncome_replaced_log                  0
+NumberOfDependents_replaced_log             0
+dtype: int64
+2025-09-22 00:43:25,396 - INFO - We have sucessfully done the feature engineering.
+2025-09-22 00:43:25,396 - INFO - -----------------Feature Selection---------------------
+2025-09-22 00:43:25,471 - INFO - Sucessfully we have done filter method...
+2025-09-22 00:43:25,518 - INFO - Sucessfully done the Hyphothesis...
+2025-09-22 00:43:25,787 - INFO - Training encoded sample:
+       Gender_Male  Region_East  Region_North  Region_South  Region_West  Rented_OwnHouse  Occupation  Education
+20059          0.0          0.0           1.0           0.0          0.0              0.0         1.0        3.0
+33612          0.0          0.0           1.0           0.0          0.0              1.0         0.0        0.0
+44885          1.0          0.0           0.0           0.0          0.0              1.0         0.0        0.0
+95471          1.0          0.0           1.0           0.0          0.0              0.0         4.0        3.0
+97664          1.0          0.0           0.0           0.0          1.0              1.0         4.0        0.0
+2025-09-22 00:43:25,800 - INFO - Testing encoded sample:
+       Gender_Male  Region_East  Region_North  Region_South  Region_West  Rented_OwnHouse  Occupation  Education
+29170          0.0          0.0           0.0           0.0          0.0              1.0         4.0        4.0
+18365          1.0          0.0           1.0           0.0          0.0              0.0         1.0        3.0
+9776           1.0          0.0           0.0           0.0          0.0              1.0         0.0        0.0
+22822          0.0          0.0           0.0           1.0          0.0              0.0         4.0        1.0
+13969          1.0          0.0           1.0           0.0          0.0              0.0         3.0        3.0
+2025-09-22 00:43:25,823 - INFO - Sample dependent data : [1 1 1 1 1 1 0 1 1 1]
+2025-09-22 00:43:25,827 - INFO - ----------------Before Balancing------------------------
+2025-09-22 00:43:25,839 - INFO - Total row for Good category in training data 120000 was : 111930
+2025-09-22 00:43:25,849 - INFO - Total row for Bad category in training data 120000 was : 8070
+2025-09-22 00:43:25,849 - INFO - ---------------After Balancing-------------------------
+2025-09-22 00:43:26,040 - INFO - Total row for Good category in training data 223860 was : 111930
+2025-09-22 00:43:26,056 - INFO - Total row for Bad category in training data 223860 was : 111930
+2025-09-22 00:43:26,056 - INFO - ---------Before scaling-------
+2025-09-22 00:43:26,072 - INFO -    Gender_Male  Region_East  Region_North  Region_South  Region_West  Rented_OwnHouse  Occupation  Education
+0          0.0          0.0           0.0           0.0          1.0              0.0         4.0        0.0
+1          1.0          0.0           0.0           1.0          0.0              0.0         4.0        1.0
+2          0.0          0.0           0.0           0.0          0.0              1.0         0.0        4.0
+3          1.0          0.0           0.0           0.0          1.0              0.0         0.0        4.0
+2025-09-22 00:43:26,127 - INFO - ----------After scaling--------
+2025-09-22 00:43:26,129 - INFO - [[-1.27226429 -0.34775128 -0.56720747 ... -0.86952204  0.98677172
+  -1.37903503]
+ [ 0.78615882 -0.34775128 -0.56720747 ... -0.86952204  0.98677172
+  -0.75060709]
+ [-1.27226429 -0.34775128 -0.56720747 ...  1.15044235 -1.35808214
+   1.13467675]
+ ...
+ [-1.27226429 -0.34775128 -0.56720747 ... -0.86952204  0.98677172
+  -0.75060709]
+ [ 0.78615882 -0.34775128 -0.56720747 ... -0.86952204  0.98677172
+  -0.75060709]
+ [-1.27226429  2.87561844 -0.56720747 ...  1.15044235  0.98677172
+   0.5062488 ]]
+2025-09-22 07:59:07,699 - INFO - --------------------Server started--------------------------
+2025-09-22 07:59:08,031 - INFO - Data loaded sucessfully with shape of (150002, 18)
+2025-09-22 07:59:08,078 - INFO - Check the null values in the dataset:NPA Status                                  2
+RevolvingUtilizationOfUnsecuredLines        2
+age                                         2
+Gender                                      2
+Region                                      2
+MonthlyIncome                           29733
+Rented_OwnHouse                             2
+Occupation                                  2
+Education                                   2
+NumberOfTime30-59DaysPastDueNotWorse        2
+DebtRatio                                   2
+MonthlyIncome.1                         29733
+NumberOfOpenCreditLinesAndLoans             2
+NumberOfTimes90DaysLate                     2
+NumberRealEstateLoansOrLines                2
+NumberOfTime60-89DaysPastDueNotWorse        2
+NumberOfDependents                       3924
+Good_Bad                                    2
+dtype: int64
+2025-09-22 07:59:08,133 - INFO - shape of data set after droping Id: (150000, 17)
+2025-09-22 07:59:08,167 - INFO - Check the null values in the dataset after dropna :NPA Status                                  0
+RevolvingUtilizationOfUnsecuredLines        0
+age                                         0
+Gender                                      0
+Region                                      0
+MonthlyIncome                           29731
+Rented_OwnHouse                             0
+Occupation                                  0
+Education                                   0
+NumberOfTime30-59DaysPastDueNotWorse        0
+DebtRatio                                   0
+NumberOfOpenCreditLinesAndLoans             0
+NumberOfTimes90DaysLate                     0
+NumberRealEstateLoansOrLines                0
+NumberOfTime60-89DaysPastDueNotWorse        0
+NumberOfDependents                       3924
+Good_Bad                                    0
+dtype: int64
+2025-09-22 07:59:08,183 - INFO - Now we have divided the independent data and dependent columns seperately.
+2025-09-22 07:59:08,183 - INFO - Shape of independent columns is :(150000, 16)
+2025-09-22 07:59:08,183 - INFO - Shape of dependent column is :(150000,)
+2025-09-22 07:59:08,245 - INFO - We have done the splitting and shpe of X_train is (120000, 16) and X_test is (30000, 16)
+2025-09-22 07:59:08,245 - INFO - -----------------Feature Engineering---------------------
+2025-09-22 07:59:08,245 - INFO - Send the train and test columns to handle the missing values.
+2025-09-22 07:59:08,416 - INFO - Now we have to divide the numerical and categorical columns.
+2025-09-22 07:59:08,442 - INFO - we have divide the independent columns into numerical and categorical.
+2025-09-22 07:59:08,442 - INFO - Shape of Numerical columns are X_train(120000, 11) and X_test(30000, 11)
+2025-09-22 07:59:08,442 - INFO - <class 'pandas.core.frame.DataFrame'>
+2025-09-22 07:59:08,442 - INFO - Shape of categorical columns are X_train(120000, 5) and X_test(30000, 5)
+2025-09-22 07:59:08,447 - INFO - Null values in Numerical columns are X_train: 0 and X_test: 0
+2025-09-22 07:59:08,471 - INFO - Null values in categorical columns are X_train: 0 and X_test: 0
+2025-09-22 07:59:08,471 - INFO - Null values in categorical columns are X_train: Index(['Gender', 'Region', 'Rented_OwnHouse', 'Occupation', 'Education'], dtype='object') and X_test: Index(['Gender', 'Region', 'Rented_OwnHouse', 'Occupation', 'Education'], dtype='object')
+2025-09-22 07:59:08,471 - INFO - Send the numerical columns to variable transformation
+2025-09-22 07:59:08,728 - INFO - We have done the variable transformation sucessfully.
+2025-09-22 07:59:08,732 - INFO - Check the null values in train : NPA Status_log                              0
+RevolvingUtilizationOfUnsecuredLines_log    0
+age_log                                     0
+NumberOfTime30-59DaysPastDueNotWorse_log    0
+DebtRatio_log                               0
+NumberOfOpenCreditLinesAndLoans_log         0
+NumberOfTimes90DaysLate_log                 0
+NumberRealEstateLoansOrLines_log            0
+NumberOfTime60-89DaysPastDueNotWorse_log    0
+MonthlyIncome_replaced_log                  0
+NumberOfDependents_replaced_log             0
+dtype: int64
+2025-09-22 07:59:08,736 - INFO - Check the null values in test : NPA Status_log                              0
+RevolvingUtilizationOfUnsecuredLines_log    0
+age_log                                     0
+NumberOfTime30-59DaysPastDueNotWorse_log    0
+DebtRatio_log                               0
+NumberOfOpenCreditLinesAndLoans_log         0
+NumberOfTimes90DaysLate_log                 0
+NumberRealEstateLoansOrLines_log            0
+NumberOfTime60-89DaysPastDueNotWorse_log    0
+MonthlyIncome_replaced_log                  0
+NumberOfDependents_replaced_log             0
+dtype: int64
+2025-09-22 07:59:09,090 - INFO - We have sucessfully done the feature engineering.
+2025-09-22 07:59:09,090 - INFO - -----------------Feature Selection---------------------
+2025-09-22 07:59:09,168 - INFO - Sucessfully we have done filter method...
+2025-09-22 07:59:09,204 - INFO - Sucessfully done the Hyphothesis...
+2025-09-22 07:59:09,444 - INFO - Training encoded sample:
+        Gender_Male  Region_East  Region_North  Region_South  Region_West  Rented_OwnHouse  Occupation  Education
+30515           0.0          0.0           0.0           0.0          0.0              0.0         4.0        0.0
+45941           1.0          0.0           0.0           1.0          0.0              0.0         4.0        1.0
+61964           1.0          0.0           0.0           0.0          0.0              1.0         0.0        0.0
+11282           0.0          0.0           0.0           0.0          1.0              0.0         3.0        3.0
+106225          1.0          0.0           1.0           0.0          0.0              0.0         4.0        0.0
+2025-09-22 07:59:09,454 - INFO - Testing encoded sample:
+       Gender_Male  Region_East  Region_North  Region_South  Region_West  Rented_OwnHouse  Occupation  Education
+18186          0.0          0.0           0.0           0.0          0.0              1.0         0.0        4.0
+24722          0.0          0.0           0.0           1.0          0.0              0.0         3.0        3.0
+23729          1.0          0.0           0.0           0.0          1.0              1.0         0.0        0.0
+18968          0.0          0.0           0.0           0.0          0.0              1.0         2.0        4.0
+5057           1.0          0.0           1.0           0.0          0.0              0.0         4.0        2.0
+2025-09-22 07:59:09,478 - INFO - Sample dependent data : [1 1 1 1 1 1 0 1 1 1]
+2025-09-22 07:59:09,482 - INFO - ----------------Before Balancing------------------------
+2025-09-22 07:59:09,494 - INFO - Total row for Good category in training data 120000 was : 111930
+2025-09-22 07:59:09,503 - INFO - Total row for Bad category in training data 120000 was : 8070
+2025-09-22 07:59:09,503 - INFO - ---------------After Balancing-------------------------
+2025-09-22 07:59:09,715 - INFO - Total row for Good category in training data 223860 was : 111930
+2025-09-22 07:59:09,732 - INFO - Total row for Bad category in training data 223860 was : 111930
+2025-09-22 07:59:09,732 - INFO - ---------Before scaling-------
+2025-09-22 07:59:09,749 - INFO -    Gender_Male  Region_East  Region_North  Region_South  Region_West  Rented_OwnHouse  Occupation  Education
+0          0.0          0.0           0.0           0.0          1.0              0.0         4.0        0.0
+1          1.0          0.0           0.0           1.0          0.0              0.0         4.0        1.0
+2          0.0          0.0           0.0           0.0          0.0              1.0         0.0        4.0
+3          1.0          0.0           0.0           0.0          1.0              0.0         0.0        4.0
+2025-09-22 07:59:09,807 - INFO - ----------After scaling--------
+2025-09-22 07:59:09,809 - INFO - [[-1.27226429 -0.34775128 -0.56720747 ... -0.86952204  0.98677172
+  -1.37903503]
+ [ 0.78615882 -0.34775128 -0.56720747 ... -0.86952204  0.98677172
+  -0.75060709]
+ [-1.27226429 -0.34775128 -0.56720747 ...  1.15044235 -1.35808214
+   1.13467675]
+ ...
+ [-1.27226429 -0.34775128 -0.56720747 ... -0.86952204  0.98677172
+  -0.75060709]
+ [ 0.78615882 -0.34775128 -0.56720747 ... -0.86952204  0.98677172
+  -0.75060709]
+ [-1.27226429  2.87561844 -0.56720747 ...  1.15044235  0.98677172
+   0.5062488 ]]
+2025-09-22 08:00:45,862 - INFO - --------------------Server started--------------------------
+2025-09-22 08:00:46,241 - INFO - Data loaded sucessfully with shape of (150002, 18)
+2025-09-22 08:00:46,288 - INFO - Check the null values in the dataset:NPA Status                                  2
+RevolvingUtilizationOfUnsecuredLines        2
+age                                         2
+Gender                                      2
+Region                                      2
+MonthlyIncome                           29733
+Rented_OwnHouse                             2
+Occupation                                  2
+Education                                   2
+NumberOfTime30-59DaysPastDueNotWorse        2
+DebtRatio                                   2
+MonthlyIncome.1                         29733
+NumberOfOpenCreditLinesAndLoans             2
+NumberOfTimes90DaysLate                     2
+NumberRealEstateLoansOrLines                2
+NumberOfTime60-89DaysPastDueNotWorse        2
+NumberOfDependents                       3924
+Good_Bad                                    2
+dtype: int64
+2025-09-22 08:00:46,346 - INFO - shape of data set after droping Id: (150000, 17)
+2025-09-22 08:00:46,384 - INFO - Check the null values in the dataset after dropna :NPA Status                                  0
+RevolvingUtilizationOfUnsecuredLines        0
+age                                         0
+Gender                                      0
+Region                                      0
+MonthlyIncome                           29731
+Rented_OwnHouse                             0
+Occupation                                  0
+Education                                   0
+NumberOfTime30-59DaysPastDueNotWorse        0
+DebtRatio                                   0
+NumberOfOpenCreditLinesAndLoans             0
+NumberOfTimes90DaysLate                     0
+NumberRealEstateLoansOrLines                0
+NumberOfTime60-89DaysPastDueNotWorse        0
+NumberOfDependents                       3924
+Good_Bad                                    0
+dtype: int64
+2025-09-22 08:00:46,411 - INFO - Now we have divided the independent data and dependent columns seperately.
+2025-09-22 08:00:46,411 - INFO - Shape of independent columns is :(150000, 16)
+2025-09-22 08:00:46,411 - INFO - Shape of dependent column is :(150000,)
+2025-09-22 08:00:46,543 - INFO - We have done the splitting and shpe of X_train is (120000, 16) and X_test is (30000, 16)
+2025-09-22 08:00:46,543 - INFO - -----------------Feature Engineering---------------------
+2025-09-22 08:00:46,544 - INFO - Send the train and test columns to handle the missing values.
+2025-09-22 08:00:46,788 - INFO - Now we have to divide the numerical and categorical columns.
+2025-09-22 08:00:46,828 - INFO - we have divide the independent columns into numerical and categorical.
+2025-09-22 08:00:46,830 - INFO - Shape of Numerical columns are X_train(120000, 11) and X_test(30000, 11)
+2025-09-22 08:00:46,830 - INFO - <class 'pandas.core.frame.DataFrame'>
+2025-09-22 08:00:46,832 - INFO - Shape of categorical columns are X_train(120000, 5) and X_test(30000, 5)
+2025-09-22 08:00:46,842 - INFO - Null values in Numerical columns are X_train: 0 and X_test: 0
+2025-09-22 08:00:46,883 - INFO - Null values in categorical columns are X_train: 0 and X_test: 0
+2025-09-22 08:00:46,883 - INFO - Null values in categorical columns are X_train: Index(['Gender', 'Region', 'Rented_OwnHouse', 'Occupation', 'Education'], dtype='object') and X_test: Index(['Gender', 'Region', 'Rented_OwnHouse', 'Occupation', 'Education'], dtype='object')
+2025-09-22 08:00:46,883 - INFO - Send the numerical columns to variable transformation
+2025-09-22 08:00:47,307 - INFO - We have done the variable transformation sucessfully.
+2025-09-22 08:00:47,315 - INFO - Check the null values in train : NPA Status_log                              0
+RevolvingUtilizationOfUnsecuredLines_log    0
+age_log                                     0
+NumberOfTime30-59DaysPastDueNotWorse_log    0
+DebtRatio_log                               0
+NumberOfOpenCreditLinesAndLoans_log         0
+NumberOfTimes90DaysLate_log                 0
+NumberRealEstateLoansOrLines_log            0
+NumberOfTime60-89DaysPastDueNotWorse_log    0
+MonthlyIncome_replaced_log                  0
+NumberOfDependents_replaced_log             0
+dtype: int64
+2025-09-22 08:00:47,324 - INFO - Check the null values in test : NPA Status_log                              0
+RevolvingUtilizationOfUnsecuredLines_log    0
+age_log                                     0
+NumberOfTime30-59DaysPastDueNotWorse_log    0
+DebtRatio_log                               0
+NumberOfOpenCreditLinesAndLoans_log         0
+NumberOfTimes90DaysLate_log                 0
+NumberRealEstateLoansOrLines_log            0
+NumberOfTime60-89DaysPastDueNotWorse_log    0
+MonthlyIncome_replaced_log                  0
+NumberOfDependents_replaced_log             0
+dtype: int64
+2025-09-22 08:00:47,805 - INFO - We have sucessfully done the feature engineering.
+2025-09-22 08:00:47,805 - INFO - -----------------Feature Selection---------------------
+2025-09-22 08:00:47,933 - INFO - Sucessfully we have done filter method...
+2025-09-22 08:00:48,006 - INFO - Sucessfully done the Hyphothesis...
+2025-09-22 08:00:48,526 - INFO - Training encoded sample:
+        Gender_Male  Region_East  Region_North  Region_South  Region_West  Rented_OwnHouse  Occupation  Education
+116631          1.0          0.0           0.0           0.0          1.0              0.0         4.0        4.0
+49469           1.0          0.0           0.0           0.0          0.0              1.0         4.0        4.0
+93594           1.0          0.0           0.0           0.0          0.0              0.0         4.0        0.0
+93337           1.0          0.0           0.0           0.0          0.0              0.0         4.0        4.0
+46919           1.0          0.0           0.0           1.0          0.0              0.0         4.0        2.0
+2025-09-22 08:00:48,537 - INFO - Testing encoded sample:
+       Gender_Male  Region_East  Region_North  Region_South  Region_West  Rented_OwnHouse  Occupation  Education
+17721          1.0          0.0           0.0           0.0          0.0              1.0         4.0        0.0
+2089           0.0          0.0           0.0           0.0          0.0              1.0         0.0        0.0
+1095           1.0          0.0           0.0           1.0          0.0              0.0         4.0        2.0
+17104          0.0          0.0           0.0           0.0          1.0              0.0         0.0        0.0
+16322          0.0          0.0           0.0           0.0          0.0              1.0         4.0        3.0
+2025-09-22 08:00:48,558 - INFO - Sample dependent data : [1 1 1 1 1 1 0 1 1 1]
+2025-09-22 08:00:48,570 - INFO - ----------------Before Balancing------------------------
+2025-09-22 08:00:48,590 - INFO - Total row for Good category in training data 120000 was : 111930
+2025-09-22 08:00:48,606 - INFO - Total row for Bad category in training data 120000 was : 8070
+2025-09-22 08:00:48,606 - INFO - ---------------After Balancing-------------------------
+2025-09-22 08:00:48,953 - INFO - Total row for Good category in training data 223860 was : 111930
+2025-09-22 08:00:48,977 - INFO - Total row for Bad category in training data 223860 was : 111930
+2025-09-22 08:00:48,977 - INFO - ---------Before scaling-------
+2025-09-22 08:00:48,985 - INFO -    Gender_Male  Region_East  Region_North  Region_South  Region_West  Rented_OwnHouse  Occupation  Education
+0          0.0          0.0           0.0           0.0          1.0              0.0         4.0        0.0
+1          1.0          0.0           0.0           1.0          0.0              0.0         4.0        1.0
+2          0.0          0.0           0.0           0.0          0.0              1.0         0.0        4.0
+3          1.0          0.0           0.0           0.0          1.0              0.0         0.0        4.0
+2025-09-22 08:00:49,060 - INFO - ----------After scaling--------
+2025-09-22 08:00:49,062 - INFO - [[-1.27226429 -0.34775128 -0.56720747 ... -0.86952204  0.98677172
+  -1.37903503]
+ [ 0.78615882 -0.34775128 -0.56720747 ... -0.86952204  0.98677172
+  -0.75060709]
+ [-1.27226429 -0.34775128 -0.56720747 ...  1.15044235 -1.35808214
+   1.13467675]
+ ...
+ [-1.27226429 -0.34775128 -0.56720747 ... -0.86952204  0.98677172
+  -0.75060709]
+ [ 0.78615882 -0.34775128 -0.56720747 ... -0.86952204  0.98677172
+  -0.75060709]
+ [-1.27226429  2.87561844 -0.56720747 ...  1.15044235  0.98677172
+   0.5062488 ]]
+2025-09-22 08:01:49,074 - INFO - (223860, 8)
+2025-09-22 09:39:09,837 - INFO - --------------------Server started--------------------------
+2025-09-22 09:39:10,176 - INFO - Data loaded sucessfully with shape of (150002, 18)
+2025-09-22 09:39:10,219 - INFO - Check the null values in the dataset:NPA Status                                  2
+RevolvingUtilizationOfUnsecuredLines        2
+age                                         2
+Gender                                      2
+Region                                      2
+MonthlyIncome                           29733
+Rented_OwnHouse                             2
+Occupation                                  2
+Education                                   2
+NumberOfTime30-59DaysPastDueNotWorse        2
+DebtRatio                                   2
+MonthlyIncome.1                         29733
+NumberOfOpenCreditLinesAndLoans             2
+NumberOfTimes90DaysLate                     2
+NumberRealEstateLoansOrLines                2
+NumberOfTime60-89DaysPastDueNotWorse        2
+NumberOfDependents                       3924
+Good_Bad                                    2
+dtype: int64
+2025-09-22 09:39:10,269 - INFO - shape of data set after droping Id: (150000, 17)
+2025-09-22 09:39:10,307 - INFO - Check the null values in the dataset after dropna :NPA Status                                  0
+RevolvingUtilizationOfUnsecuredLines        0
+age                                         0
+Gender                                      0
+Region                                      0
+MonthlyIncome                           29731
+Rented_OwnHouse                             0
+Occupation                                  0
+Education                                   0
+NumberOfTime30-59DaysPastDueNotWorse        0
+DebtRatio                                   0
+NumberOfOpenCreditLinesAndLoans             0
+NumberOfTimes90DaysLate                     0
+NumberRealEstateLoansOrLines                0
+NumberOfTime60-89DaysPastDueNotWorse        0
+NumberOfDependents                       3924
+Good_Bad                                    0
+dtype: int64
+2025-09-22 09:39:10,321 - INFO - Now we have divided the independent data and dependent columns seperately.
+2025-09-22 09:39:10,321 - INFO - Shape of independent columns is :(150000, 16)
+2025-09-22 09:39:10,321 - INFO - Shape of dependent column is :(150000,)
+2025-09-22 09:39:10,381 - INFO - We have done the splitting and shpe of X_train is (120000, 16) and X_test is (30000, 16)
+2025-09-22 09:39:10,381 - INFO - -----------------Feature Engineering---------------------
+2025-09-22 09:39:10,381 - INFO - Send the train and test columns to handle the missing values.
+2025-09-22 09:39:10,556 - INFO - Now we have to divide the numerical and categorical columns.
+2025-09-22 09:39:10,572 - INFO - we have divide the independent columns into numerical and categorical.
+2025-09-22 09:39:10,572 - INFO - Shape of Numerical columns are X_train(120000, 11) and X_test(30000, 11)
+2025-09-22 09:39:10,572 - INFO - <class 'pandas.core.frame.DataFrame'>
+2025-09-22 09:39:10,572 - INFO - Shape of categorical columns are X_train(120000, 5) and X_test(30000, 5)
+2025-09-22 09:39:10,579 - INFO - Null values in Numerical columns are X_train: 0 and X_test: 0
+2025-09-22 09:39:10,605 - INFO - Null values in categorical columns are X_train: 0 and X_test: 0
+2025-09-22 09:39:10,605 - INFO - Null values in categorical columns are X_train: Index(['Gender', 'Region', 'Rented_OwnHouse', 'Occupation', 'Education'], dtype='object') and X_test: Index(['Gender', 'Region', 'Rented_OwnHouse', 'Occupation', 'Education'], dtype='object')
+2025-09-22 09:39:10,605 - INFO - Send the numerical columns to variable transformation
+2025-09-22 09:39:10,840 - INFO - We have done the variable transformation sucessfully.
+2025-09-22 09:39:10,845 - INFO - Check the null values in train : NPA Status_log                              0
+RevolvingUtilizationOfUnsecuredLines_log    0
+age_log                                     0
+NumberOfTime30-59DaysPastDueNotWorse_log    0
+DebtRatio_log                               0
+NumberOfOpenCreditLinesAndLoans_log         0
+NumberOfTimes90DaysLate_log                 0
+NumberRealEstateLoansOrLines_log            0
+NumberOfTime60-89DaysPastDueNotWorse_log    0
+MonthlyIncome_replaced_log                  0
+NumberOfDependents_replaced_log             0
+dtype: int64
+2025-09-22 09:39:10,847 - INFO - Check the null values in test : NPA Status_log                              0
+RevolvingUtilizationOfUnsecuredLines_log    0
+age_log                                     0
+NumberOfTime30-59DaysPastDueNotWorse_log    0
+DebtRatio_log                               0
+NumberOfOpenCreditLinesAndLoans_log         0
+NumberOfTimes90DaysLate_log                 0
+NumberRealEstateLoansOrLines_log            0
+NumberOfTime60-89DaysPastDueNotWorse_log    0
+MonthlyIncome_replaced_log                  0
+NumberOfDependents_replaced_log             0
+dtype: int64
+2025-09-22 09:39:11,079 - INFO - We have sucessfully done the feature engineering.
+2025-09-22 09:39:11,079 - INFO - -----------------Feature Selection---------------------
+2025-09-22 09:39:11,160 - INFO - Sucessfully we have done filter method...
+2025-09-22 09:39:11,208 - INFO - Sucessfully done the Hyphothesis...
+2025-09-22 09:39:11,476 - INFO - Training encoded sample:
+       Gender_Male  Region_East  Region_North  Region_South  Region_West  Rented_OwnHouse  Occupation  Education
+75948          0.0          0.0           0.0           0.0          1.0              0.0         4.0        0.0
+63154          0.0          1.0           0.0           0.0          0.0              1.0         3.0        3.0
+619            0.0          1.0           0.0           0.0          0.0              1.0         1.0        3.0
+43586          1.0          0.0           0.0           1.0          0.0              0.0         4.0        4.0
+50030          0.0          0.0           1.0           0.0          0.0              0.0         4.0        1.0
+2025-09-22 09:39:11,481 - INFO - Testing encoded sample:
+       Gender_Male  Region_East  Region_North  Region_South  Region_West  Rented_OwnHouse  Occupation  Education
+8792           0.0          0.0           1.0           0.0          0.0              0.0         4.0        3.0
+5934           0.0          1.0           0.0           0.0          0.0              1.0         3.0        3.0
+21633          0.0          0.0           0.0           1.0          0.0              0.0         1.0        3.0
+25186          1.0          0.0           0.0           0.0          1.0              0.0         4.0        1.0
+17575          1.0          0.0           0.0           0.0          1.0              0.0         2.0        4.0
+2025-09-22 09:39:11,507 - INFO - Sample dependent data : [1 1 1 1 1 1 0 1 1 1]
+2025-09-22 09:39:11,507 - INFO - ----------------Before Balancing------------------------
+2025-09-22 09:39:11,522 - INFO - Total row for Good category in training data 120000 was : 111930
+2025-09-22 09:39:11,522 - INFO - Total row for Bad category in training data 120000 was : 8070
+2025-09-22 09:39:11,522 - INFO - ---------------After Balancing-------------------------
+2025-09-22 09:39:11,730 - INFO - Total row for Good category in training data 223860 was : 111930
+2025-09-22 09:39:11,758 - INFO - Total row for Bad category in training data 223860 was : 111930
+2025-09-22 09:39:11,758 - INFO - ---------Before scaling-------
+2025-09-22 09:39:11,769 - INFO -    Gender_Male  Region_East  Region_North  Region_South  Region_West  Rented_OwnHouse  Occupation  Education
+0          0.0          0.0           0.0           0.0          1.0              0.0         4.0        0.0
+1          1.0          0.0           0.0           1.0          0.0              0.0         4.0        1.0
+2          0.0          0.0           0.0           0.0          0.0              1.0         0.0        4.0
+3          1.0          0.0           0.0           0.0          1.0              0.0         0.0        4.0
+2025-09-22 09:39:11,821 - INFO - ----------After scaling--------
+2025-09-22 09:39:11,821 - INFO - [[-1.27226429 -0.34775128 -0.56720747 ... -0.86952204  0.98677172
+  -1.37903503]
+ [ 0.78615882 -0.34775128 -0.56720747 ... -0.86952204  0.98677172
+  -0.75060709]
+ [-1.27226429 -0.34775128 -0.56720747 ...  1.15044235 -1.35808214
+   1.13467675]
+ ...
+ [-1.27226429 -0.34775128 -0.56720747 ... -0.86952204  0.98677172
+  -0.75060709]
+ [ 0.78615882 -0.34775128 -0.56720747 ... -0.86952204  0.98677172
+  -0.75060709]
+ [-1.27226429  2.87561844 -0.56720747 ...  1.15044235  0.98677172
+   0.5062488 ]]
+2025-09-22 10:04:14,022 - INFO - (223860, 8)
+2025-09-22 10:11:36,134 - INFO - --------------------Server started--------------------------
+2025-09-22 10:11:36,553 - INFO - Data loaded sucessfully with shape of (150002, 18)
+2025-09-22 10:11:36,599 - INFO - Check the null values in the dataset:NPA Status                                  2
+RevolvingUtilizationOfUnsecuredLines        2
+age                                         2
+Gender                                      2
+Region                                      2
+MonthlyIncome                           29733
+Rented_OwnHouse                             2
+Occupation                                  2
+Education                                   2
+NumberOfTime30-59DaysPastDueNotWorse        2
+DebtRatio                                   2
+MonthlyIncome.1                         29733
+NumberOfOpenCreditLinesAndLoans             2
+NumberOfTimes90DaysLate                     2
+NumberRealEstateLoansOrLines                2
+NumberOfTime60-89DaysPastDueNotWorse        2
+NumberOfDependents                       3924
+Good_Bad                                    2
+dtype: int64
+2025-09-22 10:11:36,686 - INFO - shape of data set after droping Id: (150000, 17)
+2025-09-22 10:11:36,730 - INFO - Check the null values in the dataset after dropna :NPA Status                                  0
+RevolvingUtilizationOfUnsecuredLines        0
+age                                         0
+Gender                                      0
+Region                                      0
+MonthlyIncome                           29731
+Rented_OwnHouse                             0
+Occupation                                  0
+Education                                   0
+NumberOfTime30-59DaysPastDueNotWorse        0
+DebtRatio                                   0
+NumberOfOpenCreditLinesAndLoans             0
+NumberOfTimes90DaysLate                     0
+NumberRealEstateLoansOrLines                0
+NumberOfTime60-89DaysPastDueNotWorse        0
+NumberOfDependents                       3924
+Good_Bad                                    0
+dtype: int64
+2025-09-22 10:11:36,743 - INFO - Now we have divided the independent data and dependent columns seperately.
+2025-09-22 10:11:36,747 - INFO - Shape of independent columns is :(150000, 16)
+2025-09-22 10:11:36,747 - INFO - Shape of dependent column is :(150000,)
+2025-09-22 10:11:36,813 - INFO - We have done the splitting and shpe of X_train is (120000, 16) and X_test is (30000, 16)
+2025-09-22 10:11:36,813 - INFO - -----------------Feature Engineering---------------------
+2025-09-22 10:11:36,813 - INFO - Send the train and test columns to handle the missing values.
+2025-09-22 10:11:37,040 - INFO - Now we have to divide the numerical and categorical columns.
+2025-09-22 10:11:37,091 - INFO - we have divide the independent columns into numerical and categorical.
+2025-09-22 10:11:37,093 - INFO - Shape of Numerical columns are X_train(120000, 11) and X_test(30000, 11)
+2025-09-22 10:11:37,093 - INFO - <class 'pandas.core.frame.DataFrame'>
+2025-09-22 10:11:37,093 - INFO - Shape of categorical columns are X_train(120000, 5) and X_test(30000, 5)
+2025-09-22 10:11:37,102 - INFO - Null values in Numerical columns are X_train: 0 and X_test: 0
+2025-09-22 10:11:37,132 - INFO - Null values in categorical columns are X_train: 0 and X_test: 0
+2025-09-22 10:11:37,134 - INFO - Null values in categorical columns are X_train: Index(['Gender', 'Region', 'Rented_OwnHouse', 'Occupation', 'Education'], dtype='object') and X_test: Index(['Gender', 'Region', 'Rented_OwnHouse', 'Occupation', 'Education'], dtype='object')
+2025-09-22 10:11:37,134 - INFO - Send the numerical columns to variable transformation
+2025-09-22 10:11:37,516 - INFO - We have done the variable transformation sucessfully.
+2025-09-22 10:11:37,519 - INFO - Check the null values in train : NPA Status_log                              0
+RevolvingUtilizationOfUnsecuredLines_log    0
+age_log                                     0
+NumberOfTime30-59DaysPastDueNotWorse_log    0
+DebtRatio_log                               0
+NumberOfOpenCreditLinesAndLoans_log         0
+NumberOfTimes90DaysLate_log                 0
+NumberRealEstateLoansOrLines_log            0
+NumberOfTime60-89DaysPastDueNotWorse_log    0
+MonthlyIncome_replaced_log                  0
+NumberOfDependents_replaced_log             0
+dtype: int64
+2025-09-22 10:11:37,519 - INFO - Check the null values in test : NPA Status_log                              0
+RevolvingUtilizationOfUnsecuredLines_log    0
+age_log                                     0
+NumberOfTime30-59DaysPastDueNotWorse_log    0
+DebtRatio_log                               0
+NumberOfOpenCreditLinesAndLoans_log         0
+NumberOfTimes90DaysLate_log                 0
+NumberRealEstateLoansOrLines_log            0
+NumberOfTime60-89DaysPastDueNotWorse_log    0
+MonthlyIncome_replaced_log                  0
+NumberOfDependents_replaced_log             0
+dtype: int64
+2025-09-22 10:11:37,800 - INFO - We have sucessfully done the feature engineering.
+2025-09-22 10:11:37,800 - INFO - -----------------Feature Selection---------------------
+2025-09-22 10:11:37,881 - INFO - Sucessfully we have done filter method...
+2025-09-22 10:11:37,912 - INFO - Sucessfully done the Hyphothesis...
+2025-09-22 10:11:38,148 - ERROR - <class 'AttributeError'> at 103 as 'CreditCard' object has no attribute 'y_test_num'
+2025-09-22 10:11:38,148 - INFO - ----------------Before Balancing------------------------
+2025-09-22 10:11:38,148 - INFO - Issue is : 125 : due to : 'CreditCard' object has no attribute 'training_data'
+2025-09-22 10:11:38,148 - INFO - ---------Before scaling-------
+2025-09-22 10:11:38,148 - INFO - Issue is : 141 : due to : 'CreditCard' object has no attribute 'training_data_res'
+2025-09-22 10:12:24,554 - INFO - --------------------Server started--------------------------
+2025-09-22 10:12:24,897 - INFO - Data loaded sucessfully with shape of (150002, 18)
+2025-09-22 10:12:24,943 - INFO - Check the null values in the dataset:NPA Status                                  2
+RevolvingUtilizationOfUnsecuredLines        2
+age                                         2
+Gender                                      2
+Region                                      2
+MonthlyIncome                           29733
+Rented_OwnHouse                             2
+Occupation                                  2
+Education                                   2
+NumberOfTime30-59DaysPastDueNotWorse        2
+DebtRatio                                   2
+MonthlyIncome.1                         29733
+NumberOfOpenCreditLinesAndLoans             2
+NumberOfTimes90DaysLate                     2
+NumberRealEstateLoansOrLines                2
+NumberOfTime60-89DaysPastDueNotWorse        2
+NumberOfDependents                       3924
+Good_Bad                                    2
+dtype: int64
+2025-09-22 10:12:24,990 - INFO - shape of data set after droping Id: (150000, 17)
+2025-09-22 10:12:25,034 - INFO - Check the null values in the dataset after dropna :NPA Status                                  0
+RevolvingUtilizationOfUnsecuredLines        0
+age                                         0
+Gender                                      0
+Region                                      0
+MonthlyIncome                           29731
+Rented_OwnHouse                             0
+Occupation                                  0
+Education                                   0
+NumberOfTime30-59DaysPastDueNotWorse        0
+DebtRatio                                   0
+NumberOfOpenCreditLinesAndLoans             0
+NumberOfTimes90DaysLate                     0
+NumberRealEstateLoansOrLines                0
+NumberOfTime60-89DaysPastDueNotWorse        0
+NumberOfDependents                       3924
+Good_Bad                                    0
+dtype: int64
+2025-09-22 10:12:25,049 - INFO - Now we have divided the independent data and dependent columns seperately.
+2025-09-22 10:12:25,051 - INFO - Shape of independent columns is :(150000, 16)
+2025-09-22 10:12:25,051 - INFO - Shape of dependent column is :(150000,)
+2025-09-22 10:12:25,105 - INFO - We have done the splitting and shpe of X_train is (120000, 16) and X_test is (30000, 16)
+2025-09-22 10:12:25,105 - INFO - -----------------Feature Engineering---------------------
+2025-09-22 10:12:25,105 - INFO - Send the train and test columns to handle the missing values.
+2025-09-22 10:12:25,345 - INFO - Now we have to divide the numerical and categorical columns.
+2025-09-22 10:12:25,377 - INFO - we have divide the independent columns into numerical and categorical.
+2025-09-22 10:12:25,380 - INFO - Shape of Numerical columns are X_train(120000, 11) and X_test(30000, 11)
+2025-09-22 10:12:25,380 - INFO - <class 'pandas.core.frame.DataFrame'>
+2025-09-22 10:12:25,380 - INFO - Shape of categorical columns are X_train(120000, 5) and X_test(30000, 5)
+2025-09-22 10:12:25,380 - INFO - Null values in Numerical columns are X_train: 0 and X_test: 0
+2025-09-22 10:12:25,415 - INFO - Null values in categorical columns are X_train: 0 and X_test: 0
+2025-09-22 10:12:25,415 - INFO - Null values in categorical columns are X_train: Index(['Gender', 'Region', 'Rented_OwnHouse', 'Occupation', 'Education'], dtype='object') and X_test: Index(['Gender', 'Region', 'Rented_OwnHouse', 'Occupation', 'Education'], dtype='object')
+2025-09-22 10:12:25,415 - INFO - Send the numerical columns to variable transformation
+2025-09-22 10:12:25,718 - INFO - We have done the variable transformation sucessfully.
+2025-09-22 10:12:25,721 - INFO - Check the null values in train : NPA Status_log                              0
+RevolvingUtilizationOfUnsecuredLines_log    0
+age_log                                     0
+NumberOfTime30-59DaysPastDueNotWorse_log    0
+DebtRatio_log                               0
+NumberOfOpenCreditLinesAndLoans_log         0
+NumberOfTimes90DaysLate_log                 0
+NumberRealEstateLoansOrLines_log            0
+NumberOfTime60-89DaysPastDueNotWorse_log    0
+MonthlyIncome_replaced_log                  0
+NumberOfDependents_replaced_log             0
+dtype: int64
+2025-09-22 10:12:25,728 - INFO - Check the null values in test : NPA Status_log                              0
+RevolvingUtilizationOfUnsecuredLines_log    0
+age_log                                     0
+NumberOfTime30-59DaysPastDueNotWorse_log    0
+DebtRatio_log                               0
+NumberOfOpenCreditLinesAndLoans_log         0
+NumberOfTimes90DaysLate_log                 0
+NumberRealEstateLoansOrLines_log            0
+NumberOfTime60-89DaysPastDueNotWorse_log    0
+MonthlyIncome_replaced_log                  0
+NumberOfDependents_replaced_log             0
+dtype: int64
+2025-09-22 10:12:26,194 - INFO - We have sucessfully done the feature engineering.
+2025-09-22 10:12:26,194 - INFO - -----------------Feature Selection---------------------
+2025-09-22 10:12:26,354 - INFO - Sucessfully we have done filter method...
+2025-09-22 10:12:26,462 - INFO - Sucessfully done the Hyphothesis...
+2025-09-22 10:12:26,883 - INFO - Training encoded sample:
+       NumberOfOpenCreditLinesAndLoans_log_trim  NumberRealEstateLoansOrLines_log_trim  MonthlyIncome_replaced_log_trim  ...  Rented_OwnHouse  Occupation  Education
+30089                                  2.639057                               1.098612                         8.863333  ...              1.0         0.0        4.0
+87963                                  2.397895                               1.098612                         8.612685  ...              1.0         4.0        0.0
+76167                                  1.386294                               0.000000                         7.378384  ...              1.0         0.0        0.0
+24311                                  1.791759                               0.000000                         7.650169  ...              0.0         0.0        0.0
+58261                                  1.609438                               0.000000                         7.824846  ...              1.0         3.0        3.0
+
+[5 rows x 12 columns]
+2025-09-22 10:12:26,896 - INFO - Testing encoded sample:
+       NumberOfOpenCreditLinesAndLoans_log_trim  NumberRealEstateLoansOrLines_log_trim  MonthlyIncome_replaced_log_trim  ...  Rented_OwnHouse  Occupation  Education
+514                                    1.386294                               0.000000                         7.611348  ...              0.0         4.0        1.0
+2845                                   2.302585                               0.693147                         8.517393  ...              0.0         4.0        2.0
+19692                                  2.079442                               0.693147                         8.955577  ...              0.0         0.0        0.0
+22887                                  1.945910                               0.000000                         8.216358  ...              0.0         4.0        1.0
+12747                                  1.098612                               0.000000                         6.802427  ...              1.0         4.0        4.0
+
+[5 rows x 12 columns]
+2025-09-22 10:12:26,929 - INFO - Sample dependent data : [1 1 1 1 1 1 0 1 1 1]
+2025-09-22 10:12:26,934 - INFO - ----------------Before Balancing------------------------
+2025-09-22 10:12:26,951 - INFO - Total row for Good category in training data 120000 was : 111930
+2025-09-22 10:12:26,968 - INFO - Total row for Bad category in training data 120000 was : 8070
+2025-09-22 10:12:26,968 - INFO - ---------------After Balancing-------------------------
+2025-09-22 10:12:27,469 - INFO - Total row for Good category in training data 223860 was : 111930
+2025-09-22 10:12:27,497 - INFO - Total row for Bad category in training data 223860 was : 111930
+2025-09-22 10:12:27,497 - INFO - ---------Before scaling-------
+2025-09-22 10:12:27,511 - INFO -    NumberOfOpenCreditLinesAndLoans_log_trim  NumberRealEstateLoansOrLines_log_trim  MonthlyIncome_replaced_log_trim  ...  Rented_OwnHouse  Occupation  Education
+0                                  1.609438                               0.000000                         7.824446  ...              0.0         4.0        0.0
+1                                  2.484907                               0.693147                         7.514255  ...              0.0         4.0        1.0
+2                                  1.945910                               0.000000                         8.556606  ...              1.0         0.0        4.0
+3                                  1.098612                               0.000000                         9.105091  ...              0.0         0.0        4.0
+
+[4 rows x 12 columns]
+2025-09-22 10:12:27,594 - INFO - ----------After scaling--------
+2025-09-22 10:12:27,595 - INFO - [[-0.73404997 -1.06974441 -0.98650971 ... -0.87049908  0.9863935
+  -1.37968385]
+ [ 0.72891833  0.29150188 -1.45081204 ... -0.87049908  0.9863935
+  -0.75101789]
+ [-0.17178179 -1.06974441  0.10940672 ...  1.15288871 -1.35828811
+   1.13497999]
+ ...
+ [-2.16682286 -1.06974441  0.35844844 ... -0.87049908  0.9863935
+  -0.75101789]
+ [-2.16682286 -1.06974441 -1.41964686 ... -0.87049908  0.9863935
+  -0.75101789]
+ [ 1.31797448  2.97252034  1.7387953  ...  1.15288871  0.9863935
+   0.50631403]]
+2025-09-22 10:16:38,766 - INFO - (223860, 12)
+2025-09-22 10:17:31,653 - INFO - --------------------Server started--------------------------
+2025-09-22 10:17:31,924 - INFO - Data loaded sucessfully with shape of (150002, 18)
+2025-09-22 10:17:31,963 - INFO - Check the null values in the dataset:NPA Status                                  2
+RevolvingUtilizationOfUnsecuredLines        2
+age                                         2
+Gender                                      2
+Region                                      2
+MonthlyIncome                           29733
+Rented_OwnHouse                             2
+Occupation                                  2
+Education                                   2
+NumberOfTime30-59DaysPastDueNotWorse        2
+DebtRatio                                   2
+MonthlyIncome.1                         29733
+NumberOfOpenCreditLinesAndLoans             2
+NumberOfTimes90DaysLate                     2
+NumberRealEstateLoansOrLines                2
+NumberOfTime60-89DaysPastDueNotWorse        2
+NumberOfDependents                       3924
+Good_Bad                                    2
+dtype: int64
+2025-09-22 10:17:31,997 - INFO - shape of data set after droping Id: (150000, 17)
+2025-09-22 10:17:32,042 - INFO - Check the null values in the dataset after dropna :NPA Status                                  0
+RevolvingUtilizationOfUnsecuredLines        0
+age                                         0
+Gender                                      0
+Region                                      0
+MonthlyIncome                           29731
+Rented_OwnHouse                             0
+Occupation                                  0
+Education                                   0
+NumberOfTime30-59DaysPastDueNotWorse        0
+DebtRatio                                   0
+NumberOfOpenCreditLinesAndLoans             0
+NumberOfTimes90DaysLate                     0
+NumberRealEstateLoansOrLines                0
+NumberOfTime60-89DaysPastDueNotWorse        0
+NumberOfDependents                       3924
+Good_Bad                                    0
+dtype: int64
+2025-09-22 10:17:32,042 - INFO - Now we have divided the independent data and dependent columns seperately.
+2025-09-22 10:17:32,042 - INFO - Shape of independent columns is :(150000, 16)
+2025-09-22 10:17:32,042 - INFO - Shape of dependent column is :(150000,)
+2025-09-22 10:17:32,090 - INFO - We have done the splitting and shpe of X_train is (120000, 16) and X_test is (30000, 16)
+2025-09-22 10:17:32,090 - INFO - -----------------Feature Engineering---------------------
+2025-09-22 10:17:32,090 - INFO - Send the train and test columns to handle the missing values.
+2025-09-22 10:17:32,237 - INFO - Now we have to divide the numerical and categorical columns.
+2025-09-22 10:17:32,255 - INFO - we have divide the independent columns into numerical and categorical.
+2025-09-22 10:17:32,255 - INFO - Shape of Numerical columns are X_train(120000, 11) and X_test(30000, 11)
+2025-09-22 10:17:32,255 - INFO - <class 'pandas.core.frame.DataFrame'>
+2025-09-22 10:17:32,255 - INFO - Shape of categorical columns are X_train(120000, 5) and X_test(30000, 5)
+2025-09-22 10:17:32,255 - INFO - Null values in Numerical columns are X_train: 0 and X_test: 0
+2025-09-22 10:17:32,284 - INFO - Null values in categorical columns are X_train: 0 and X_test: 0
+2025-09-22 10:17:32,284 - INFO - Null values in categorical columns are X_train: Index(['Gender', 'Region', 'Rented_OwnHouse', 'Occupation', 'Education'], dtype='object') and X_test: Index(['Gender', 'Region', 'Rented_OwnHouse', 'Occupation', 'Education'], dtype='object')
+2025-09-22 10:17:32,284 - INFO - Send the numerical columns to variable transformation
+2025-09-22 10:17:32,476 - INFO - We have done the variable transformation sucessfully.
+2025-09-22 10:17:32,481 - INFO - Check the null values in train : NPA Status_log                              0
+RevolvingUtilizationOfUnsecuredLines_log    0
+age_log                                     0
+NumberOfTime30-59DaysPastDueNotWorse_log    0
+DebtRatio_log                               0
+NumberOfOpenCreditLinesAndLoans_log         0
+NumberOfTimes90DaysLate_log                 0
+NumberRealEstateLoansOrLines_log            0
+NumberOfTime60-89DaysPastDueNotWorse_log    0
+MonthlyIncome_replaced_log                  0
+NumberOfDependents_replaced_log             0
+dtype: int64
+2025-09-22 10:17:32,481 - INFO - Check the null values in test : NPA Status_log                              0
+RevolvingUtilizationOfUnsecuredLines_log    0
+age_log                                     0
+NumberOfTime30-59DaysPastDueNotWorse_log    0
+DebtRatio_log                               0
+NumberOfOpenCreditLinesAndLoans_log         0
+NumberOfTimes90DaysLate_log                 0
+NumberRealEstateLoansOrLines_log            0
+NumberOfTime60-89DaysPastDueNotWorse_log    0
+MonthlyIncome_replaced_log                  0
+NumberOfDependents_replaced_log             0
+dtype: int64
+2025-09-22 10:17:32,698 - INFO - We have sucessfully done the feature engineering.
+2025-09-22 10:17:32,698 - INFO - -----------------Feature Selection---------------------
+2025-09-22 10:17:32,778 - INFO - Sucessfully we have done filter method...
+2025-09-22 10:17:32,810 - INFO - Sucessfully done the Hyphothesis...
+2025-09-22 10:17:33,050 - INFO - Training encoded sample:
+       NumberOfOpenCreditLinesAndLoans_log_trim  NumberRealEstateLoansOrLines_log_trim  MonthlyIncome_replaced_log_trim  ...  Rented_OwnHouse  Occupation  Education
+25351                                  2.708050                               1.098612                         9.638936  ...              1.0         1.0        3.0
+39859                                  2.639057                               0.693147                         8.699681  ...              1.0         0.0        0.0
+78597                                  2.397895                               0.693147                         9.167850  ...              0.0         4.0        2.0
+74466                                  2.397895                               0.693147                         8.977146  ...              1.0         2.0        4.0
+57943                                  2.079442                               1.098612                         8.426174  ...              0.0         4.0        2.0
+
+[5 rows x 12 columns]
+2025-09-22 10:17:33,053 - INFO - Testing encoded sample:
+       NumberOfOpenCreditLinesAndLoans_log_trim  NumberRealEstateLoansOrLines_log_trim  MonthlyIncome_replaced_log_trim  ...  Rented_OwnHouse  Occupation  Education
+13539                                  0.752039                               0.000000                         7.783641  ...              0.0         4.0        2.0
+14806                                  2.302585                               0.693147                         9.259226  ...              1.0         3.0        4.0
+18401                                  1.098612                               0.693147                         8.274867  ...              0.0         4.0        4.0
+8171                                   2.197225                               0.000000                         7.863651  ...              0.0         0.0        0.0
+12947                                  1.945910                               0.693147                         8.922392  ...              0.0         4.0        1.0
+
+[5 rows x 12 columns]
+2025-09-22 10:17:33,087 - INFO - Sample dependent data : [1 1 1 1 1 1 0 1 1 1]
+2025-09-22 10:17:33,091 - INFO - ----------------Before Balancing------------------------
+2025-09-22 10:17:33,099 - INFO - Total row for Good category in training data 120000 was : 111930
+2025-09-22 10:17:33,112 - INFO - Total row for Bad category in training data 120000 was : 8070
+2025-09-22 10:17:33,112 - INFO - ---------------After Balancing-------------------------
+2025-09-22 10:17:33,430 - INFO - Total row for Good category in training data 223860 was : 111930
+2025-09-22 10:17:33,462 - INFO - Total row for Bad category in training data 223860 was : 111930
+2025-09-22 10:17:33,462 - INFO - ---------Before scaling-------
+2025-09-22 10:17:33,466 - INFO -    NumberOfOpenCreditLinesAndLoans_log_trim  NumberRealEstateLoansOrLines_log_trim  MonthlyIncome_replaced_log_trim  ...  Rented_OwnHouse  Occupation  Education
+0                                  1.609438                               0.000000                         7.824446  ...              0.0         4.0        0.0
+1                                  2.484907                               0.693147                         7.514255  ...              0.0         4.0        1.0
+2                                  1.945910                               0.000000                         8.556606  ...              1.0         0.0        4.0
+3                                  1.098612                               0.000000                         9.105091  ...              0.0         0.0        4.0
+
+[4 rows x 12 columns]
+2025-09-22 10:17:33,466 - INFO - Index(['NumberOfOpenCreditLinesAndLoans_log_trim',
+       'NumberRealEstateLoansOrLines_log_trim',
+       'MonthlyIncome_replaced_log_trim',
+       'NumberOfDependents_replaced_log_trim', 'Gender_Male', 'Region_East',
+       'Region_North', 'Region_South', 'Region_West', 'Rented_OwnHouse',
+       'Occupation', 'Education'],
+      dtype='object')
+2025-09-22 10:17:33,526 - INFO - ----------After scaling--------
+2025-09-22 10:17:33,526 - INFO - [[-0.73404997 -1.06974441 -0.98650971 ... -0.87049908  0.9863935
+  -1.37968385]
+ [ 0.72891833  0.29150188 -1.45081204 ... -0.87049908  0.9863935
+  -0.75101789]
+ [-0.17178179 -1.06974441  0.10940672 ...  1.15288871 -1.35828811
+   1.13497999]
+ ...
+ [-2.16682286 -1.06974441  0.35844844 ... -0.87049908  0.9863935
+  -0.75101789]
+ [-2.16682286 -1.06974441 -1.41964686 ... -0.87049908  0.9863935
+  -0.75101789]
+ [ 1.31797448  2.97252034  1.7387953  ...  1.15288871  0.9863935
+   0.50631403]]
+2025-09-22 10:51:43,544 - INFO - (223860, 12)

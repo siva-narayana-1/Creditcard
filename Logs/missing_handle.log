@@ -2762,3 +2762,402 @@ NumberOfTime60-89DaysPastDueNotWorse    0
 MonthlyIncome_replaced                  0
 NumberOfDependents_replaced             0
 dtype: int64
+2025-09-18 20:32:45,696 - INFO - Columns in the train and test are : ['MonthlyIncome', 'NumberOfDependents']
+2025-09-18 20:32:45,696 - INFO - start handle the missing values in the above columns
+2025-09-18 20:32:45,732 - INFO - We have sucessfully removed all null values in the train and test data.
+2025-09-18 20:32:45,766 - INFO - Check the null values:
+NPA Status                              0
+RevolvingUtilizationOfUnsecuredLines    0
+age                                     0
+Gender                                  0
+Region                                  0
+Rented_OwnHouse                         0
+Occupation                              0
+Education                               0
+NumberOfTime30-59DaysPastDueNotWorse    0
+DebtRatio                               0
+NumberOfOpenCreditLinesAndLoans         0
+NumberOfTimes90DaysLate                 0
+NumberRealEstateLoansOrLines            0
+NumberOfTime60-89DaysPastDueNotWorse    0
+MonthlyIncome_replaced                  0
+NumberOfDependents_replaced             0
+dtype: int64
+2025-09-18 20:35:19,782 - INFO - Columns in the train and test are : ['MonthlyIncome', 'NumberOfDependents']
+2025-09-18 20:35:19,782 - INFO - start handle the missing values in the above columns
+2025-09-18 20:35:19,854 - INFO - We have sucessfully removed all null values in the train and test data.
+2025-09-18 20:35:19,874 - INFO - Check the null values:
+NPA Status                              0
+RevolvingUtilizationOfUnsecuredLines    0
+age                                     0
+Gender                                  0
+Region                                  0
+Rented_OwnHouse                         0
+Occupation                              0
+Education                               0
+NumberOfTime30-59DaysPastDueNotWorse    0
+DebtRatio                               0
+NumberOfOpenCreditLinesAndLoans         0
+NumberOfTimes90DaysLate                 0
+NumberRealEstateLoansOrLines            0
+NumberOfTime60-89DaysPastDueNotWorse    0
+MonthlyIncome_replaced                  0
+NumberOfDependents_replaced             0
+dtype: int64
+2025-09-18 20:38:12,700 - INFO - Columns in the train and test are : ['MonthlyIncome', 'NumberOfDependents']
+2025-09-18 20:38:12,700 - INFO - start handle the missing values in the above columns
+2025-09-18 20:38:12,750 - INFO - We have sucessfully removed all null values in the train and test data.
+2025-09-18 20:38:12,766 - INFO - Check the null values:
+NPA Status                              0
+RevolvingUtilizationOfUnsecuredLines    0
+age                                     0
+Gender                                  0
+Region                                  0
+Rented_OwnHouse                         0
+Occupation                              0
+Education                               0
+NumberOfTime30-59DaysPastDueNotWorse    0
+DebtRatio                               0
+NumberOfOpenCreditLinesAndLoans         0
+NumberOfTimes90DaysLate                 0
+NumberRealEstateLoansOrLines            0
+NumberOfTime60-89DaysPastDueNotWorse    0
+MonthlyIncome_replaced                  0
+NumberOfDependents_replaced             0
+dtype: int64
+2025-09-18 20:40:14,436 - INFO - Columns in the train and test are : ['MonthlyIncome', 'NumberOfDependents']
+2025-09-18 20:40:14,436 - INFO - start handle the missing values in the above columns
+2025-09-18 20:40:14,468 - INFO - We have sucessfully removed all null values in the train and test data.
+2025-09-18 20:40:14,501 - INFO - Check the null values:
+NPA Status                              0
+RevolvingUtilizationOfUnsecuredLines    0
+age                                     0
+Gender                                  0
+Region                                  0
+Rented_OwnHouse                         0
+Occupation                              0
+Education                               0
+NumberOfTime30-59DaysPastDueNotWorse    0
+DebtRatio                               0
+NumberOfOpenCreditLinesAndLoans         0
+NumberOfTimes90DaysLate                 0
+NumberRealEstateLoansOrLines            0
+NumberOfTime60-89DaysPastDueNotWorse    0
+MonthlyIncome_replaced                  0
+NumberOfDependents_replaced             0
+dtype: int64
+2025-09-18 20:43:28,723 - INFO - Columns in the train and test are : ['MonthlyIncome', 'NumberOfDependents']
+2025-09-18 20:43:28,723 - INFO - start handle the missing values in the above columns
+2025-09-18 20:43:28,771 - INFO - We have sucessfully removed all null values in the train and test data.
+2025-09-18 20:43:28,787 - INFO - Check the null values:
+NPA Status                              0
+RevolvingUtilizationOfUnsecuredLines    0
+age                                     0
+Gender                                  0
+Region                                  0
+Rented_OwnHouse                         0
+Occupation                              0
+Education                               0
+NumberOfTime30-59DaysPastDueNotWorse    0
+DebtRatio                               0
+NumberOfOpenCreditLinesAndLoans         0
+NumberOfTimes90DaysLate                 0
+NumberRealEstateLoansOrLines            0
+NumberOfTime60-89DaysPastDueNotWorse    0
+MonthlyIncome_replaced                  0
+NumberOfDependents_replaced             0
+dtype: int64
+2025-09-18 20:44:59,052 - INFO - Columns in the train and test are : ['MonthlyIncome', 'NumberOfDependents']
+2025-09-18 20:44:59,052 - INFO - start handle the missing values in the above columns
+2025-09-18 20:44:59,100 - INFO - We have sucessfully removed all null values in the train and test data.
+2025-09-18 20:44:59,116 - INFO - Check the null values:
+NPA Status                              0
+RevolvingUtilizationOfUnsecuredLines    0
+age                                     0
+Gender                                  0
+Region                                  0
+Rented_OwnHouse                         0
+Occupation                              0
+Education                               0
+NumberOfTime30-59DaysPastDueNotWorse    0
+DebtRatio                               0
+NumberOfOpenCreditLinesAndLoans         0
+NumberOfTimes90DaysLate                 0
+NumberRealEstateLoansOrLines            0
+NumberOfTime60-89DaysPastDueNotWorse    0
+MonthlyIncome_replaced                  0
+NumberOfDependents_replaced             0
+dtype: int64
+2025-09-18 20:47:14,800 - INFO - Columns in the train and test are : ['MonthlyIncome', 'NumberOfDependents']
+2025-09-18 20:47:14,800 - INFO - start handle the missing values in the above columns
+2025-09-18 20:47:14,846 - INFO - We have sucessfully removed all null values in the train and test data.
+2025-09-18 20:47:14,880 - INFO - Check the null values:
+NPA Status                              0
+RevolvingUtilizationOfUnsecuredLines    0
+age                                     0
+Gender                                  0
+Region                                  0
+Rented_OwnHouse                         0
+Occupation                              0
+Education                               0
+NumberOfTime30-59DaysPastDueNotWorse    0
+DebtRatio                               0
+NumberOfOpenCreditLinesAndLoans         0
+NumberOfTimes90DaysLate                 0
+NumberRealEstateLoansOrLines            0
+NumberOfTime60-89DaysPastDueNotWorse    0
+MonthlyIncome_replaced                  0
+NumberOfDependents_replaced             0
+dtype: int64
+2025-09-19 09:14:39,031 - INFO - Columns in the train and test are : ['MonthlyIncome', 'NumberOfDependents']
+2025-09-19 09:14:39,033 - INFO - start handle the missing values in the above columns
+2025-09-19 09:14:39,115 - INFO - We have sucessfully removed all null values in the train and test data.
+2025-09-19 09:14:39,143 - INFO - Check the null values:
+NPA Status                              0
+RevolvingUtilizationOfUnsecuredLines    0
+age                                     0
+Gender                                  0
+Region                                  0
+Rented_OwnHouse                         0
+Occupation                              0
+Education                               0
+NumberOfTime30-59DaysPastDueNotWorse    0
+DebtRatio                               0
+NumberOfOpenCreditLinesAndLoans         0
+NumberOfTimes90DaysLate                 0
+NumberRealEstateLoansOrLines            0
+NumberOfTime60-89DaysPastDueNotWorse    0
+MonthlyIncome_replaced                  0
+NumberOfDependents_replaced             0
+dtype: int64
+2025-09-19 09:19:53,643 - INFO - Columns in the train and test are : ['MonthlyIncome', 'NumberOfDependents']
+2025-09-19 09:19:53,643 - INFO - start handle the missing values in the above columns
+2025-09-19 09:19:53,707 - INFO - We have sucessfully removed all null values in the train and test data.
+2025-09-19 09:19:53,731 - INFO - Check the null values:
+NPA Status                              0
+RevolvingUtilizationOfUnsecuredLines    0
+age                                     0
+Gender                                  0
+Region                                  0
+Rented_OwnHouse                         0
+Occupation                              0
+Education                               0
+NumberOfTime30-59DaysPastDueNotWorse    0
+DebtRatio                               0
+NumberOfOpenCreditLinesAndLoans         0
+NumberOfTimes90DaysLate                 0
+NumberRealEstateLoansOrLines            0
+NumberOfTime60-89DaysPastDueNotWorse    0
+MonthlyIncome_replaced                  0
+NumberOfDependents_replaced             0
+dtype: int64
+2025-09-19 09:24:54,735 - INFO - Columns in the train and test are : ['MonthlyIncome', 'NumberOfDependents']
+2025-09-19 09:24:54,735 - INFO - start handle the missing values in the above columns
+2025-09-19 09:24:54,810 - INFO - We have sucessfully removed all null values in the train and test data.
+2025-09-19 09:24:54,831 - INFO - Check the null values:
+NPA Status                              0
+RevolvingUtilizationOfUnsecuredLines    0
+age                                     0
+Gender                                  0
+Region                                  0
+Rented_OwnHouse                         0
+Occupation                              0
+Education                               0
+NumberOfTime30-59DaysPastDueNotWorse    0
+DebtRatio                               0
+NumberOfOpenCreditLinesAndLoans         0
+NumberOfTimes90DaysLate                 0
+NumberRealEstateLoansOrLines            0
+NumberOfTime60-89DaysPastDueNotWorse    0
+MonthlyIncome_replaced                  0
+NumberOfDependents_replaced             0
+dtype: int64
+2025-09-19 09:27:18,386 - INFO - Columns in the train and test are : ['MonthlyIncome', 'NumberOfDependents']
+2025-09-19 09:27:18,386 - INFO - start handle the missing values in the above columns
+2025-09-19 09:27:18,445 - INFO - We have sucessfully removed all null values in the train and test data.
+2025-09-19 09:27:18,467 - INFO - Check the null values:
+NPA Status                              0
+RevolvingUtilizationOfUnsecuredLines    0
+age                                     0
+Gender                                  0
+Region                                  0
+Rented_OwnHouse                         0
+Occupation                              0
+Education                               0
+NumberOfTime30-59DaysPastDueNotWorse    0
+DebtRatio                               0
+NumberOfOpenCreditLinesAndLoans         0
+NumberOfTimes90DaysLate                 0
+NumberRealEstateLoansOrLines            0
+NumberOfTime60-89DaysPastDueNotWorse    0
+MonthlyIncome_replaced                  0
+NumberOfDependents_replaced             0
+dtype: int64
+2025-09-21 11:04:27,391 - INFO - Columns in the train and test are : ['MonthlyIncome', 'NumberOfDependents']
+2025-09-21 11:04:27,391 - INFO - start handle the missing values in the above columns
+2025-09-21 11:04:27,461 - INFO - We have sucessfully removed all null values in the train and test data.
+2025-09-21 11:04:27,493 - INFO - Check the null values:
+NPA Status                              0
+RevolvingUtilizationOfUnsecuredLines    0
+age                                     0
+Gender                                  0
+Region                                  0
+Rented_OwnHouse                         0
+Occupation                              0
+Education                               0
+NumberOfTime30-59DaysPastDueNotWorse    0
+DebtRatio                               0
+NumberOfOpenCreditLinesAndLoans         0
+NumberOfTimes90DaysLate                 0
+NumberRealEstateLoansOrLines            0
+NumberOfTime60-89DaysPastDueNotWorse    0
+MonthlyIncome_replaced                  0
+NumberOfDependents_replaced             0
+dtype: int64
+2025-09-22 00:43:24,744 - INFO - Columns in the train and test are : ['MonthlyIncome', 'NumberOfDependents']
+2025-09-22 00:43:24,745 - INFO - start handle the missing values in the above columns
+2025-09-22 00:43:24,797 - INFO - We have sucessfully removed all null values in the train and test data.
+2025-09-22 00:43:24,835 - INFO - Check the null values:
+NPA Status                              0
+RevolvingUtilizationOfUnsecuredLines    0
+age                                     0
+Gender                                  0
+Region                                  0
+Rented_OwnHouse                         0
+Occupation                              0
+Education                               0
+NumberOfTime30-59DaysPastDueNotWorse    0
+DebtRatio                               0
+NumberOfOpenCreditLinesAndLoans         0
+NumberOfTimes90DaysLate                 0
+NumberRealEstateLoansOrLines            0
+NumberOfTime60-89DaysPastDueNotWorse    0
+MonthlyIncome_replaced                  0
+NumberOfDependents_replaced             0
+dtype: int64
+2025-09-22 07:59:08,320 - INFO - Columns in the train and test are : ['MonthlyIncome', 'NumberOfDependents']
+2025-09-22 07:59:08,321 - INFO - start handle the missing values in the above columns
+2025-09-22 07:59:08,382 - INFO - We have sucessfully removed all null values in the train and test data.
+2025-09-22 07:59:08,403 - INFO - Check the null values:
+NPA Status                              0
+RevolvingUtilizationOfUnsecuredLines    0
+age                                     0
+Gender                                  0
+Region                                  0
+Rented_OwnHouse                         0
+Occupation                              0
+Education                               0
+NumberOfTime30-59DaysPastDueNotWorse    0
+DebtRatio                               0
+NumberOfOpenCreditLinesAndLoans         0
+NumberOfTimes90DaysLate                 0
+NumberRealEstateLoansOrLines            0
+NumberOfTime60-89DaysPastDueNotWorse    0
+MonthlyIncome_replaced                  0
+NumberOfDependents_replaced             0
+dtype: int64
+2025-09-22 08:00:46,637 - INFO - Columns in the train and test are : ['MonthlyIncome', 'NumberOfDependents']
+2025-09-22 08:00:46,637 - INFO - start handle the missing values in the above columns
+2025-09-22 08:00:46,750 - INFO - We have sucessfully removed all null values in the train and test data.
+2025-09-22 08:00:46,779 - INFO - Check the null values:
+NPA Status                              0
+RevolvingUtilizationOfUnsecuredLines    0
+age                                     0
+Gender                                  0
+Region                                  0
+Rented_OwnHouse                         0
+Occupation                              0
+Education                               0
+NumberOfTime30-59DaysPastDueNotWorse    0
+DebtRatio                               0
+NumberOfOpenCreditLinesAndLoans         0
+NumberOfTimes90DaysLate                 0
+NumberRealEstateLoansOrLines            0
+NumberOfTime60-89DaysPastDueNotWorse    0
+MonthlyIncome_replaced                  0
+NumberOfDependents_replaced             0
+dtype: int64
+2025-09-22 09:39:10,463 - INFO - Columns in the train and test are : ['MonthlyIncome', 'NumberOfDependents']
+2025-09-22 09:39:10,463 - INFO - start handle the missing values in the above columns
+2025-09-22 09:39:10,529 - INFO - We have sucessfully removed all null values in the train and test data.
+2025-09-22 09:39:10,552 - INFO - Check the null values:
+NPA Status                              0
+RevolvingUtilizationOfUnsecuredLines    0
+age                                     0
+Gender                                  0
+Region                                  0
+Rented_OwnHouse                         0
+Occupation                              0
+Education                               0
+NumberOfTime30-59DaysPastDueNotWorse    0
+DebtRatio                               0
+NumberOfOpenCreditLinesAndLoans         0
+NumberOfTimes90DaysLate                 0
+NumberRealEstateLoansOrLines            0
+NumberOfTime60-89DaysPastDueNotWorse    0
+MonthlyIncome_replaced                  0
+NumberOfDependents_replaced             0
+dtype: int64
+2025-09-22 10:11:36,895 - INFO - Columns in the train and test are : ['MonthlyIncome', 'NumberOfDependents']
+2025-09-22 10:11:36,895 - INFO - start handle the missing values in the above columns
+2025-09-22 10:11:36,982 - INFO - We have sucessfully removed all null values in the train and test data.
+2025-09-22 10:11:37,020 - INFO - Check the null values:
+NPA Status                              0
+RevolvingUtilizationOfUnsecuredLines    0
+age                                     0
+Gender                                  0
+Region                                  0
+Rented_OwnHouse                         0
+Occupation                              0
+Education                               0
+NumberOfTime30-59DaysPastDueNotWorse    0
+DebtRatio                               0
+NumberOfOpenCreditLinesAndLoans         0
+NumberOfTimes90DaysLate                 0
+NumberRealEstateLoansOrLines            0
+NumberOfTime60-89DaysPastDueNotWorse    0
+MonthlyIncome_replaced                  0
+NumberOfDependents_replaced             0
+dtype: int64
+2025-09-22 10:12:25,210 - INFO - Columns in the train and test are : ['MonthlyIncome', 'NumberOfDependents']
+2025-09-22 10:12:25,210 - INFO - start handle the missing values in the above columns
+2025-09-22 10:12:25,312 - INFO - We have sucessfully removed all null values in the train and test data.
+2025-09-22 10:12:25,335 - INFO - Check the null values:
+NPA Status                              0
+RevolvingUtilizationOfUnsecuredLines    0
+age                                     0
+Gender                                  0
+Region                                  0
+Rented_OwnHouse                         0
+Occupation                              0
+Education                               0
+NumberOfTime30-59DaysPastDueNotWorse    0
+DebtRatio                               0
+NumberOfOpenCreditLinesAndLoans         0
+NumberOfTimes90DaysLate                 0
+NumberRealEstateLoansOrLines            0
+NumberOfTime60-89DaysPastDueNotWorse    0
+MonthlyIncome_replaced                  0
+NumberOfDependents_replaced             0
+dtype: int64
+2025-09-22 10:17:32,156 - INFO - Columns in the train and test are : ['MonthlyIncome', 'NumberOfDependents']
+2025-09-22 10:17:32,156 - INFO - start handle the missing values in the above columns
+2025-09-22 10:17:32,203 - INFO - We have sucessfully removed all null values in the train and test data.
+2025-09-22 10:17:32,219 - INFO - Check the null values:
+NPA Status                              0
+RevolvingUtilizationOfUnsecuredLines    0
+age                                     0
+Gender                                  0
+Region                                  0
+Rented_OwnHouse                         0
+Occupation                              0
+Education                               0
+NumberOfTime30-59DaysPastDueNotWorse    0
+DebtRatio                               0
+NumberOfOpenCreditLinesAndLoans         0
+NumberOfTimes90DaysLate                 0
+NumberRealEstateLoansOrLines            0
+NumberOfTime60-89DaysPastDueNotWorse    0
+MonthlyIncome_replaced                  0
+NumberOfDependents_replaced             0
+dtype: int64

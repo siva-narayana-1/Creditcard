@@ -2427,3 +2427,689 @@ NumberOfTime60-89DaysPastDueNotWorse_log    0
 MonthlyIncome_replaced_log                  0
 NumberOfDependents_replaced_log             0
 dtype: int64
+2025-09-18 20:44:59,163 - INFO - Variable Transformation has started..............
+2025-09-18 20:44:59,194 - INFO - first 10 samples in the x_train are : 
+        NPA Status  RevolvingUtilizationOfUnsecuredLines   age  ...  NumberOfTime60-89DaysPastDueNotWorse  MonthlyIncome_replaced  NumberOfDependents_replaced
+104025         0.0                              0.389826  38.0  ...                                   0.0                  2500.0                          0.0
+5415           0.0                              0.595526  55.0  ...                                   0.0                  1833.0                          0.0
+75612          0.0                              0.844664  34.0  ...                                   0.0                  5200.0                          3.0
+138169         0.0                              0.391980  40.0  ...                                   0.0                  9000.0                          5.0
+87184          0.0                              0.000000  55.0  ...                                   0.0                  2666.0                          0.0
+108083         0.0                              0.442956  61.0  ...                                   0.0                  7200.0                          1.0
+138046         1.0                              0.336976  27.0  ...                                   0.0                  4500.0                          0.0
+17518          0.0                              0.000000  49.0  ...                                   0.0                  2500.0                          0.0
+93438          0.0                              0.043492  38.0  ...                                   0.0                  2400.0                          0.0
+149607         0.0                              0.133706  57.0  ...                                   0.0                  3500.0                          2.0
+
+[10 rows x 11 columns]
+2025-09-18 20:44:59,336 - INFO - Columns we have removed from train and test are : ['NPA Status', 'RevolvingUtilizationOfUnsecuredLines', 'age', 'NumberOfTime30-59DaysPastDueNotWorse', 'DebtRatio', 'NumberOfOpenCreditLinesAndLoans', 'NumberOfTimes90DaysLate', 'NumberRealEstateLoansOrLines', 'NumberOfTime60-89DaysPastDueNotWorse', 'MonthlyIncome_replaced', 'NumberOfDependents_replaced']
+2025-09-18 20:44:59,336 - INFO - Columns in the train data are : Index(['NPA Status_log', 'RevolvingUtilizationOfUnsecuredLines_log', 'age_log',
+       'NumberOfTime30-59DaysPastDueNotWorse_log', 'DebtRatio_log',
+       'NumberOfOpenCreditLinesAndLoans_log', 'NumberOfTimes90DaysLate_log',
+       'NumberRealEstateLoansOrLines_log',
+       'NumberOfTime60-89DaysPastDueNotWorse_log',
+       'MonthlyIncome_replaced_log', 'NumberOfDependents_replaced_log'],
+      dtype='object')
+2025-09-18 20:44:59,352 - INFO - first 10 samples in the x_train are : 
+        NPA Status_log  RevolvingUtilizationOfUnsecuredLines_log  ...  MonthlyIncome_replaced_log  NumberOfDependents_replaced_log
+104025        0.000000                                  0.329179  ...                    7.824446                         0.000000
+5415          0.000000                                  0.467204  ...                    7.514255                         0.000000
+75612         0.000000                                  0.612297  ...                    8.556606                         1.386294
+138169        0.000000                                  0.330727  ...                    9.105091                         1.791759
+87184         0.000000                                  0.000000  ...                    7.888710                         0.000000
+108083        0.000000                                  0.366694  ...                    8.881975                         0.693147
+138046        0.693147                                  0.290410  ...                    8.412055                         0.000000
+17518         0.000000                                  0.000000  ...                    7.824446                         0.000000
+93438         0.000000                                  0.042573  ...                    7.783641                         0.000000
+149607        0.000000                                  0.125492  ...                    8.160804                         1.098612
+
+[10 rows x 11 columns]
+2025-09-18 20:44:59,352 - INFO - check null values:NPA Status_log                              0
+RevolvingUtilizationOfUnsecuredLines_log    0
+age_log                                     0
+NumberOfTime30-59DaysPastDueNotWorse_log    0
+DebtRatio_log                               0
+NumberOfOpenCreditLinesAndLoans_log         0
+NumberOfTimes90DaysLate_log                 0
+NumberRealEstateLoansOrLines_log            0
+NumberOfTime60-89DaysPastDueNotWorse_log    0
+MonthlyIncome_replaced_log                  0
+NumberOfDependents_replaced_log             0
+dtype: int64
+2025-09-18 20:47:14,930 - INFO - Variable Transformation has started..............
+2025-09-18 20:47:14,949 - INFO - first 10 samples in the x_train are : 
+        NPA Status  RevolvingUtilizationOfUnsecuredLines   age  ...  NumberOfTime60-89DaysPastDueNotWorse  MonthlyIncome_replaced  NumberOfDependents_replaced
+104025         0.0                              0.389826  38.0  ...                                   0.0                  2500.0                          0.0
+5415           0.0                              0.595526  55.0  ...                                   0.0                  1833.0                          0.0
+75612          0.0                              0.844664  34.0  ...                                   0.0                  5200.0                          3.0
+138169         0.0                              0.391980  40.0  ...                                   0.0                  9000.0                          5.0
+87184          0.0                              0.000000  55.0  ...                                   0.0                  2666.0                          0.0
+108083         0.0                              0.442956  61.0  ...                                   0.0                  7200.0                          1.0
+138046         1.0                              0.336976  27.0  ...                                   0.0                  4500.0                          0.0
+17518          0.0                              0.000000  49.0  ...                                   0.0                  2500.0                          0.0
+93438          0.0                              0.043492  38.0  ...                                   0.0                  2400.0                          0.0
+149607         0.0                              0.133706  57.0  ...                                   0.0                  3500.0                          2.0
+
+[10 rows x 11 columns]
+2025-09-18 20:47:15,102 - INFO - Columns we have removed from train and test are : ['NPA Status', 'RevolvingUtilizationOfUnsecuredLines', 'age', 'NumberOfTime30-59DaysPastDueNotWorse', 'DebtRatio', 'NumberOfOpenCreditLinesAndLoans', 'NumberOfTimes90DaysLate', 'NumberRealEstateLoansOrLines', 'NumberOfTime60-89DaysPastDueNotWorse', 'MonthlyIncome_replaced', 'NumberOfDependents_replaced']
+2025-09-18 20:47:15,102 - INFO - Columns in the train data are : Index(['NPA Status_log', 'RevolvingUtilizationOfUnsecuredLines_log', 'age_log',
+       'NumberOfTime30-59DaysPastDueNotWorse_log', 'DebtRatio_log',
+       'NumberOfOpenCreditLinesAndLoans_log', 'NumberOfTimes90DaysLate_log',
+       'NumberRealEstateLoansOrLines_log',
+       'NumberOfTime60-89DaysPastDueNotWorse_log',
+       'MonthlyIncome_replaced_log', 'NumberOfDependents_replaced_log'],
+      dtype='object')
+2025-09-18 20:47:15,102 - INFO - first 10 samples in the x_train are : 
+        NPA Status_log  RevolvingUtilizationOfUnsecuredLines_log  ...  MonthlyIncome_replaced_log  NumberOfDependents_replaced_log
+104025        0.000000                                  0.329179  ...                    7.824446                         0.000000
+5415          0.000000                                  0.467204  ...                    7.514255                         0.000000
+75612         0.000000                                  0.612297  ...                    8.556606                         1.386294
+138169        0.000000                                  0.330727  ...                    9.105091                         1.791759
+87184         0.000000                                  0.000000  ...                    7.888710                         0.000000
+108083        0.000000                                  0.366694  ...                    8.881975                         0.693147
+138046        0.693147                                  0.290410  ...                    8.412055                         0.000000
+17518         0.000000                                  0.000000  ...                    7.824446                         0.000000
+93438         0.000000                                  0.042573  ...                    7.783641                         0.000000
+149607        0.000000                                  0.125492  ...                    8.160804                         1.098612
+
+[10 rows x 11 columns]
+2025-09-18 20:47:15,116 - INFO - check null values:NPA Status_log                              0
+RevolvingUtilizationOfUnsecuredLines_log    0
+age_log                                     0
+NumberOfTime30-59DaysPastDueNotWorse_log    0
+DebtRatio_log                               0
+NumberOfOpenCreditLinesAndLoans_log         0
+NumberOfTimes90DaysLate_log                 0
+NumberRealEstateLoansOrLines_log            0
+NumberOfTime60-89DaysPastDueNotWorse_log    0
+MonthlyIncome_replaced_log                  0
+NumberOfDependents_replaced_log             0
+dtype: int64
+2025-09-19 09:14:39,200 - INFO - Variable Transformation has started..............
+2025-09-19 09:14:39,236 - INFO - first 10 samples in the x_train are : 
+        NPA Status  RevolvingUtilizationOfUnsecuredLines   age  ...  NumberOfTime60-89DaysPastDueNotWorse  MonthlyIncome_replaced  NumberOfDependents_replaced
+104025         0.0                              0.389826  38.0  ...                                   0.0                  2500.0                          0.0
+5415           0.0                              0.595526  55.0  ...                                   0.0                  1833.0                          0.0
+75612          0.0                              0.844664  34.0  ...                                   0.0                  5200.0                          3.0
+138169         0.0                              0.391980  40.0  ...                                   0.0                  9000.0                          5.0
+87184          0.0                              0.000000  55.0  ...                                   0.0                  2666.0                          0.0
+108083         0.0                              0.442956  61.0  ...                                   0.0                  7200.0                          1.0
+138046         1.0                              0.336976  27.0  ...                                   0.0                  4500.0                          0.0
+17518          0.0                              0.000000  49.0  ...                                   0.0                  2500.0                          0.0
+93438          0.0                              0.043492  38.0  ...                                   0.0                  2400.0                          0.0
+149607         0.0                              0.133706  57.0  ...                                   0.0                  3500.0                          2.0
+
+[10 rows x 11 columns]
+2025-09-19 09:14:39,453 - INFO - Columns we have removed from train and test are : ['NPA Status', 'RevolvingUtilizationOfUnsecuredLines', 'age', 'NumberOfTime30-59DaysPastDueNotWorse', 'DebtRatio', 'NumberOfOpenCreditLinesAndLoans', 'NumberOfTimes90DaysLate', 'NumberRealEstateLoansOrLines', 'NumberOfTime60-89DaysPastDueNotWorse', 'MonthlyIncome_replaced', 'NumberOfDependents_replaced']
+2025-09-19 09:14:39,453 - INFO - Columns in the train data are : Index(['NPA Status_log', 'RevolvingUtilizationOfUnsecuredLines_log', 'age_log',
+       'NumberOfTime30-59DaysPastDueNotWorse_log', 'DebtRatio_log',
+       'NumberOfOpenCreditLinesAndLoans_log', 'NumberOfTimes90DaysLate_log',
+       'NumberRealEstateLoansOrLines_log',
+       'NumberOfTime60-89DaysPastDueNotWorse_log',
+       'MonthlyIncome_replaced_log', 'NumberOfDependents_replaced_log'],
+      dtype='object')
+2025-09-19 09:14:39,469 - INFO - first 10 samples in the x_train are : 
+        NPA Status_log  RevolvingUtilizationOfUnsecuredLines_log  ...  MonthlyIncome_replaced_log  NumberOfDependents_replaced_log
+104025        0.000000                                  0.329179  ...                    7.824446                         0.000000
+5415          0.000000                                  0.467204  ...                    7.514255                         0.000000
+75612         0.000000                                  0.612297  ...                    8.556606                         1.386294
+138169        0.000000                                  0.330727  ...                    9.105091                         1.791759
+87184         0.000000                                  0.000000  ...                    7.888710                         0.000000
+108083        0.000000                                  0.366694  ...                    8.881975                         0.693147
+138046        0.693147                                  0.290410  ...                    8.412055                         0.000000
+17518         0.000000                                  0.000000  ...                    7.824446                         0.000000
+93438         0.000000                                  0.042573  ...                    7.783641                         0.000000
+149607        0.000000                                  0.125492  ...                    8.160804                         1.098612
+
+[10 rows x 11 columns]
+2025-09-19 09:14:39,469 - INFO - check null values:NPA Status_log                              0
+RevolvingUtilizationOfUnsecuredLines_log    0
+age_log                                     0
+NumberOfTime30-59DaysPastDueNotWorse_log    0
+DebtRatio_log                               0
+NumberOfOpenCreditLinesAndLoans_log         0
+NumberOfTimes90DaysLate_log                 0
+NumberRealEstateLoansOrLines_log            0
+NumberOfTime60-89DaysPastDueNotWorse_log    0
+MonthlyIncome_replaced_log                  0
+NumberOfDependents_replaced_log             0
+dtype: int64
+2025-09-19 09:19:53,784 - INFO - Variable Transformation has started..............
+2025-09-19 09:19:53,808 - INFO - first 10 samples in the x_train are : 
+        NPA Status  RevolvingUtilizationOfUnsecuredLines   age  ...  NumberOfTime60-89DaysPastDueNotWorse  MonthlyIncome_replaced  NumberOfDependents_replaced
+104025         0.0                              0.389826  38.0  ...                                   0.0                  2500.0                          0.0
+5415           0.0                              0.595526  55.0  ...                                   0.0                  1833.0                          0.0
+75612          0.0                              0.844664  34.0  ...                                   0.0                  5200.0                          3.0
+138169         0.0                              0.391980  40.0  ...                                   0.0                  9000.0                          5.0
+87184          0.0                              0.000000  55.0  ...                                   0.0                  2666.0                          0.0
+108083         0.0                              0.442956  61.0  ...                                   0.0                  7200.0                          1.0
+138046         1.0                              0.336976  27.0  ...                                   0.0                  4500.0                          0.0
+17518          0.0                              0.000000  49.0  ...                                   0.0                  2500.0                          0.0
+93438          0.0                              0.043492  38.0  ...                                   0.0                  2400.0                          0.0
+149607         0.0                              0.133706  57.0  ...                                   0.0                  3500.0                          2.0
+
+[10 rows x 11 columns]
+2025-09-19 09:19:53,988 - INFO - Columns we have removed from train and test are : ['NPA Status', 'RevolvingUtilizationOfUnsecuredLines', 'age', 'NumberOfTime30-59DaysPastDueNotWorse', 'DebtRatio', 'NumberOfOpenCreditLinesAndLoans', 'NumberOfTimes90DaysLate', 'NumberRealEstateLoansOrLines', 'NumberOfTime60-89DaysPastDueNotWorse', 'MonthlyIncome_replaced', 'NumberOfDependents_replaced']
+2025-09-19 09:19:53,988 - INFO - Columns in the train data are : Index(['NPA Status_log', 'RevolvingUtilizationOfUnsecuredLines_log', 'age_log',
+       'NumberOfTime30-59DaysPastDueNotWorse_log', 'DebtRatio_log',
+       'NumberOfOpenCreditLinesAndLoans_log', 'NumberOfTimes90DaysLate_log',
+       'NumberRealEstateLoansOrLines_log',
+       'NumberOfTime60-89DaysPastDueNotWorse_log',
+       'MonthlyIncome_replaced_log', 'NumberOfDependents_replaced_log'],
+      dtype='object')
+2025-09-19 09:19:54,008 - INFO - first 10 samples in the x_train are : 
+        NPA Status_log  RevolvingUtilizationOfUnsecuredLines_log  ...  MonthlyIncome_replaced_log  NumberOfDependents_replaced_log
+104025        0.000000                                  0.329179  ...                    7.824446                         0.000000
+5415          0.000000                                  0.467204  ...                    7.514255                         0.000000
+75612         0.000000                                  0.612297  ...                    8.556606                         1.386294
+138169        0.000000                                  0.330727  ...                    9.105091                         1.791759
+87184         0.000000                                  0.000000  ...                    7.888710                         0.000000
+108083        0.000000                                  0.366694  ...                    8.881975                         0.693147
+138046        0.693147                                  0.290410  ...                    8.412055                         0.000000
+17518         0.000000                                  0.000000  ...                    7.824446                         0.000000
+93438         0.000000                                  0.042573  ...                    7.783641                         0.000000
+149607        0.000000                                  0.125492  ...                    8.160804                         1.098612
+
+[10 rows x 11 columns]
+2025-09-19 09:19:54,008 - INFO - check null values:NPA Status_log                              0
+RevolvingUtilizationOfUnsecuredLines_log    0
+age_log                                     0
+NumberOfTime30-59DaysPastDueNotWorse_log    0
+DebtRatio_log                               0
+NumberOfOpenCreditLinesAndLoans_log         0
+NumberOfTimes90DaysLate_log                 0
+NumberRealEstateLoansOrLines_log            0
+NumberOfTime60-89DaysPastDueNotWorse_log    0
+MonthlyIncome_replaced_log                  0
+NumberOfDependents_replaced_log             0
+dtype: int64
+2025-09-19 09:24:54,912 - INFO - Variable Transformation has started..............
+2025-09-19 09:24:54,912 - INFO - first 10 samples in the x_train are : 
+        NPA Status  ...  NumberOfDependents_replaced
+104025         0.0  ...                          0.0
+5415           0.0  ...                          0.0
+75612          0.0  ...                          3.0
+138169         0.0  ...                          5.0
+87184          0.0  ...                          0.0
+108083         0.0  ...                          1.0
+138046         1.0  ...                          0.0
+17518          0.0  ...                          0.0
+93438          0.0  ...                          0.0
+149607         0.0  ...                          2.0
+
+[10 rows x 11 columns]
+2025-09-19 09:24:55,102 - INFO - Columns we have removed from train and test are : ['NPA Status', 'RevolvingUtilizationOfUnsecuredLines', 'age', 'NumberOfTime30-59DaysPastDueNotWorse', 'DebtRatio', 'NumberOfOpenCreditLinesAndLoans', 'NumberOfTimes90DaysLate', 'NumberRealEstateLoansOrLines', 'NumberOfTime60-89DaysPastDueNotWorse', 'MonthlyIncome_replaced', 'NumberOfDependents_replaced']
+2025-09-19 09:24:55,102 - INFO - Columns in the train data are : Index(['NPA Status_log', 'RevolvingUtilizationOfUnsecuredLines_log', 'age_log',
+       'NumberOfTime30-59DaysPastDueNotWorse_log', 'DebtRatio_log',
+       'NumberOfOpenCreditLinesAndLoans_log', 'NumberOfTimes90DaysLate_log',
+       'NumberRealEstateLoansOrLines_log',
+       'NumberOfTime60-89DaysPastDueNotWorse_log',
+       'MonthlyIncome_replaced_log', 'NumberOfDependents_replaced_log'],
+      dtype='object')
+2025-09-19 09:24:55,118 - INFO - first 10 samples in the x_train are : 
+        NPA Status_log  ...  NumberOfDependents_replaced_log
+104025        0.000000  ...                         0.000000
+5415          0.000000  ...                         0.000000
+75612         0.000000  ...                         1.386294
+138169        0.000000  ...                         1.791759
+87184         0.000000  ...                         0.000000
+108083        0.000000  ...                         0.693147
+138046        0.693147  ...                         0.000000
+17518         0.000000  ...                         0.000000
+93438         0.000000  ...                         0.000000
+149607        0.000000  ...                         1.098612
+
+[10 rows x 11 columns]
+2025-09-19 09:24:55,118 - INFO - check null values:NPA Status_log                              0
+RevolvingUtilizationOfUnsecuredLines_log    0
+age_log                                     0
+NumberOfTime30-59DaysPastDueNotWorse_log    0
+DebtRatio_log                               0
+NumberOfOpenCreditLinesAndLoans_log         0
+NumberOfTimes90DaysLate_log                 0
+NumberRealEstateLoansOrLines_log            0
+NumberOfTime60-89DaysPastDueNotWorse_log    0
+MonthlyIncome_replaced_log                  0
+NumberOfDependents_replaced_log             0
+dtype: int64
+2025-09-19 09:27:18,525 - INFO - Variable Transformation has started..............
+2025-09-19 09:27:18,544 - INFO - first 10 samples in the x_train are : 
+        NPA Status  ...  NumberOfDependents_replaced
+104025         0.0  ...                          0.0
+5415           0.0  ...                          0.0
+75612          0.0  ...                          3.0
+138169         0.0  ...                          5.0
+87184          0.0  ...                          0.0
+108083         0.0  ...                          1.0
+138046         1.0  ...                          0.0
+17518          0.0  ...                          0.0
+93438          0.0  ...                          0.0
+149607         0.0  ...                          2.0
+
+[10 rows x 11 columns]
+2025-09-19 09:27:18,755 - INFO - Columns we have removed from train and test are : ['NPA Status', 'RevolvingUtilizationOfUnsecuredLines', 'age', 'NumberOfTime30-59DaysPastDueNotWorse', 'DebtRatio', 'NumberOfOpenCreditLinesAndLoans', 'NumberOfTimes90DaysLate', 'NumberRealEstateLoansOrLines', 'NumberOfTime60-89DaysPastDueNotWorse', 'MonthlyIncome_replaced', 'NumberOfDependents_replaced']
+2025-09-19 09:27:18,757 - INFO - Columns in the train data are : Index(['NPA Status_log', 'RevolvingUtilizationOfUnsecuredLines_log', 'age_log',
+       'NumberOfTime30-59DaysPastDueNotWorse_log', 'DebtRatio_log',
+       'NumberOfOpenCreditLinesAndLoans_log', 'NumberOfTimes90DaysLate_log',
+       'NumberRealEstateLoansOrLines_log',
+       'NumberOfTime60-89DaysPastDueNotWorse_log',
+       'MonthlyIncome_replaced_log', 'NumberOfDependents_replaced_log'],
+      dtype='object')
+2025-09-19 09:27:18,769 - INFO - first 10 samples in the x_train are : 
+        NPA Status_log  ...  NumberOfDependents_replaced_log
+104025        0.000000  ...                         0.000000
+5415          0.000000  ...                         0.000000
+75612         0.000000  ...                         1.386294
+138169        0.000000  ...                         1.791759
+87184         0.000000  ...                         0.000000
+108083        0.000000  ...                         0.693147
+138046        0.693147  ...                         0.000000
+17518         0.000000  ...                         0.000000
+93438         0.000000  ...                         0.000000
+149607        0.000000  ...                         1.098612
+
+[10 rows x 11 columns]
+2025-09-19 09:27:18,769 - INFO - check null values:NPA Status_log                              0
+RevolvingUtilizationOfUnsecuredLines_log    0
+age_log                                     0
+NumberOfTime30-59DaysPastDueNotWorse_log    0
+DebtRatio_log                               0
+NumberOfOpenCreditLinesAndLoans_log         0
+NumberOfTimes90DaysLate_log                 0
+NumberRealEstateLoansOrLines_log            0
+NumberOfTime60-89DaysPastDueNotWorse_log    0
+MonthlyIncome_replaced_log                  0
+NumberOfDependents_replaced_log             0
+dtype: int64
+2025-09-21 11:04:27,557 - INFO - Variable Transformation has started..............
+2025-09-21 11:04:27,576 - INFO - first 10 samples in the x_train are : 
+        NPA Status  RevolvingUtilizationOfUnsecuredLines   age  ...  NumberOfTime60-89DaysPastDueNotWorse  MonthlyIncome_replaced  NumberOfDependents_replaced
+104025         0.0                              0.389826  38.0  ...                                   0.0                  2500.0                          0.0
+5415           0.0                              0.595526  55.0  ...                                   0.0                  1833.0                          0.0
+75612          0.0                              0.844664  34.0  ...                                   0.0                  5200.0                          3.0
+138169         0.0                              0.391980  40.0  ...                                   0.0                  9000.0                          5.0
+87184          0.0                              0.000000  55.0  ...                                   0.0                  2666.0                          0.0
+108083         0.0                              0.442956  61.0  ...                                   0.0                  7200.0                          1.0
+138046         1.0                              0.336976  27.0  ...                                   0.0                  4500.0                          0.0
+17518          0.0                              0.000000  49.0  ...                                   0.0                  2500.0                          0.0
+93438          0.0                              0.043492  38.0  ...                                   0.0                  2400.0                          0.0
+149607         0.0                              0.133706  57.0  ...                                   0.0                  3500.0                          2.0
+
+[10 rows x 11 columns]
+2025-09-21 11:04:27,764 - INFO - Columns we have removed from train and test are : ['NPA Status', 'RevolvingUtilizationOfUnsecuredLines', 'age', 'NumberOfTime30-59DaysPastDueNotWorse', 'DebtRatio', 'NumberOfOpenCreditLinesAndLoans', 'NumberOfTimes90DaysLate', 'NumberRealEstateLoansOrLines', 'NumberOfTime60-89DaysPastDueNotWorse', 'MonthlyIncome_replaced', 'NumberOfDependents_replaced']
+2025-09-21 11:04:27,764 - INFO - Columns in the train data are : Index(['NPA Status_log', 'RevolvingUtilizationOfUnsecuredLines_log', 'age_log',
+       'NumberOfTime30-59DaysPastDueNotWorse_log', 'DebtRatio_log',
+       'NumberOfOpenCreditLinesAndLoans_log', 'NumberOfTimes90DaysLate_log',
+       'NumberRealEstateLoansOrLines_log',
+       'NumberOfTime60-89DaysPastDueNotWorse_log',
+       'MonthlyIncome_replaced_log', 'NumberOfDependents_replaced_log'],
+      dtype='object')
+2025-09-21 11:04:27,780 - INFO - first 10 samples in the x_train are : 
+        NPA Status_log  RevolvingUtilizationOfUnsecuredLines_log   age_log  ...  NumberOfTime60-89DaysPastDueNotWorse_log  MonthlyIncome_replaced_log  NumberOfDependents_replaced_log
+104025        0.000000                                  0.329179  3.663562  ...                                       0.0                    7.824446                         0.000000
+5415          0.000000                                  0.467204  4.025352  ...                                       0.0                    7.514255                         0.000000
+75612         0.000000                                  0.612297  3.555348  ...                                       0.0                    8.556606                         1.386294
+138169        0.000000                                  0.330727  3.713572  ...                                       0.0                    9.105091                         1.791759
+87184         0.000000                                  0.000000  4.025352  ...                                       0.0                    7.888710                         0.000000
+108083        0.000000                                  0.366694  4.127134  ...                                       0.0                    8.881975                         0.693147
+138046        0.693147                                  0.290410  3.332205  ...                                       0.0                    8.412055                         0.000000
+17518         0.000000                                  0.000000  3.912023  ...                                       0.0                    7.824446                         0.000000
+93438         0.000000                                  0.042573  3.663562  ...                                       0.0                    7.783641                         0.000000
+149607        0.000000                                  0.125492  4.060443  ...                                       0.0                    8.160804                         1.098612
+
+[10 rows x 11 columns]
+2025-09-21 11:04:27,780 - INFO - check null values:NPA Status_log                              0
+RevolvingUtilizationOfUnsecuredLines_log    0
+age_log                                     0
+NumberOfTime30-59DaysPastDueNotWorse_log    0
+DebtRatio_log                               0
+NumberOfOpenCreditLinesAndLoans_log         0
+NumberOfTimes90DaysLate_log                 0
+NumberRealEstateLoansOrLines_log            0
+NumberOfTime60-89DaysPastDueNotWorse_log    0
+MonthlyIncome_replaced_log                  0
+NumberOfDependents_replaced_log             0
+dtype: int64
+2025-09-22 00:43:24,896 - INFO - Variable Transformation has started..............
+2025-09-22 00:43:24,911 - INFO - first 10 samples in the x_train are : 
+        NPA Status  RevolvingUtilizationOfUnsecuredLines   age  ...  NumberOfTime60-89DaysPastDueNotWorse  MonthlyIncome_replaced  NumberOfDependents_replaced
+104025         0.0                              0.389826  38.0  ...                                   0.0                  2500.0                          0.0
+5415           0.0                              0.595526  55.0  ...                                   0.0                  1833.0                          0.0
+75612          0.0                              0.844664  34.0  ...                                   0.0                  5200.0                          3.0
+138169         0.0                              0.391980  40.0  ...                                   0.0                  9000.0                          5.0
+87184          0.0                              0.000000  55.0  ...                                   0.0                  2666.0                          0.0
+108083         0.0                              0.442956  61.0  ...                                   0.0                  7200.0                          1.0
+138046         1.0                              0.336976  27.0  ...                                   0.0                  4500.0                          0.0
+17518          0.0                              0.000000  49.0  ...                                   0.0                  2500.0                          0.0
+93438          0.0                              0.043492  38.0  ...                                   0.0                  2400.0                          0.0
+149607         0.0                              0.133706  57.0  ...                                   0.0                  3500.0                          2.0
+
+[10 rows x 11 columns]
+2025-09-22 00:43:25,086 - INFO - Columns we have removed from train and test are : ['NPA Status', 'RevolvingUtilizationOfUnsecuredLines', 'age', 'NumberOfTime30-59DaysPastDueNotWorse', 'DebtRatio', 'NumberOfOpenCreditLinesAndLoans', 'NumberOfTimes90DaysLate', 'NumberRealEstateLoansOrLines', 'NumberOfTime60-89DaysPastDueNotWorse', 'MonthlyIncome_replaced', 'NumberOfDependents_replaced']
+2025-09-22 00:43:25,086 - INFO - Columns in the train data are : Index(['NPA Status_log', 'RevolvingUtilizationOfUnsecuredLines_log', 'age_log',
+       'NumberOfTime30-59DaysPastDueNotWorse_log', 'DebtRatio_log',
+       'NumberOfOpenCreditLinesAndLoans_log', 'NumberOfTimes90DaysLate_log',
+       'NumberRealEstateLoansOrLines_log',
+       'NumberOfTime60-89DaysPastDueNotWorse_log',
+       'MonthlyIncome_replaced_log', 'NumberOfDependents_replaced_log'],
+      dtype='object')
+2025-09-22 00:43:25,086 - INFO - first 10 samples in the x_train are : 
+        NPA Status_log  RevolvingUtilizationOfUnsecuredLines_log   age_log  ...  NumberOfTime60-89DaysPastDueNotWorse_log  MonthlyIncome_replaced_log  NumberOfDependents_replaced_log
+104025        0.000000                                  0.329179  3.663562  ...                                       0.0                    7.824446                         0.000000
+5415          0.000000                                  0.467204  4.025352  ...                                       0.0                    7.514255                         0.000000
+75612         0.000000                                  0.612297  3.555348  ...                                       0.0                    8.556606                         1.386294
+138169        0.000000                                  0.330727  3.713572  ...                                       0.0                    9.105091                         1.791759
+87184         0.000000                                  0.000000  4.025352  ...                                       0.0                    7.888710                         0.000000
+108083        0.000000                                  0.366694  4.127134  ...                                       0.0                    8.881975                         0.693147
+138046        0.693147                                  0.290410  3.332205  ...                                       0.0                    8.412055                         0.000000
+17518         0.000000                                  0.000000  3.912023  ...                                       0.0                    7.824446                         0.000000
+93438         0.000000                                  0.042573  3.663562  ...                                       0.0                    7.783641                         0.000000
+149607        0.000000                                  0.125492  4.060443  ...                                       0.0                    8.160804                         1.098612
+
+[10 rows x 11 columns]
+2025-09-22 00:43:25,103 - INFO - check null values:NPA Status_log                              0
+RevolvingUtilizationOfUnsecuredLines_log    0
+age_log                                     0
+NumberOfTime30-59DaysPastDueNotWorse_log    0
+DebtRatio_log                               0
+NumberOfOpenCreditLinesAndLoans_log         0
+NumberOfTimes90DaysLate_log                 0
+NumberRealEstateLoansOrLines_log            0
+NumberOfTime60-89DaysPastDueNotWorse_log    0
+MonthlyIncome_replaced_log                  0
+NumberOfDependents_replaced_log             0
+dtype: int64
+2025-09-22 07:59:08,471 - INFO - Variable Transformation has started..............
+2025-09-22 07:59:08,493 - INFO - first 10 samples in the x_train are : 
+        NPA Status  RevolvingUtilizationOfUnsecuredLines   age  ...  NumberOfTime60-89DaysPastDueNotWorse  MonthlyIncome_replaced  NumberOfDependents_replaced
+104025         0.0                              0.389826  38.0  ...                                   0.0                  2500.0                          0.0
+5415           0.0                              0.595526  55.0  ...                                   0.0                  1833.0                          0.0
+75612          0.0                              0.844664  34.0  ...                                   0.0                  5200.0                          3.0
+138169         0.0                              0.391980  40.0  ...                                   0.0                  9000.0                          5.0
+87184          0.0                              0.000000  55.0  ...                                   0.0                  2666.0                          0.0
+108083         0.0                              0.442956  61.0  ...                                   0.0                  7200.0                          1.0
+138046         1.0                              0.336976  27.0  ...                                   0.0                  4500.0                          0.0
+17518          0.0                              0.000000  49.0  ...                                   0.0                  2500.0                          0.0
+93438          0.0                              0.043492  38.0  ...                                   0.0                  2400.0                          0.0
+149607         0.0                              0.133706  57.0  ...                                   0.0                  3500.0                          2.0
+
+[10 rows x 11 columns]
+2025-09-22 07:59:08,702 - INFO - Columns we have removed from train and test are : ['NPA Status', 'RevolvingUtilizationOfUnsecuredLines', 'age', 'NumberOfTime30-59DaysPastDueNotWorse', 'DebtRatio', 'NumberOfOpenCreditLinesAndLoans', 'NumberOfTimes90DaysLate', 'NumberRealEstateLoansOrLines', 'NumberOfTime60-89DaysPastDueNotWorse', 'MonthlyIncome_replaced', 'NumberOfDependents_replaced']
+2025-09-22 07:59:08,703 - INFO - Columns in the train data are : Index(['NPA Status_log', 'RevolvingUtilizationOfUnsecuredLines_log', 'age_log',
+       'NumberOfTime30-59DaysPastDueNotWorse_log', 'DebtRatio_log',
+       'NumberOfOpenCreditLinesAndLoans_log', 'NumberOfTimes90DaysLate_log',
+       'NumberRealEstateLoansOrLines_log',
+       'NumberOfTime60-89DaysPastDueNotWorse_log',
+       'MonthlyIncome_replaced_log', 'NumberOfDependents_replaced_log'],
+      dtype='object')
+2025-09-22 07:59:08,720 - INFO - first 10 samples in the x_train are : 
+        NPA Status_log  RevolvingUtilizationOfUnsecuredLines_log   age_log  ...  NumberOfTime60-89DaysPastDueNotWorse_log  MonthlyIncome_replaced_log  NumberOfDependents_replaced_log
+104025        0.000000                                  0.329179  3.663562  ...                                       0.0                    7.824446                         0.000000
+5415          0.000000                                  0.467204  4.025352  ...                                       0.0                    7.514255                         0.000000
+75612         0.000000                                  0.612297  3.555348  ...                                       0.0                    8.556606                         1.386294
+138169        0.000000                                  0.330727  3.713572  ...                                       0.0                    9.105091                         1.791759
+87184         0.000000                                  0.000000  4.025352  ...                                       0.0                    7.888710                         0.000000
+108083        0.000000                                  0.366694  4.127134  ...                                       0.0                    8.881975                         0.693147
+138046        0.693147                                  0.290410  3.332205  ...                                       0.0                    8.412055                         0.000000
+17518         0.000000                                  0.000000  3.912023  ...                                       0.0                    7.824446                         0.000000
+93438         0.000000                                  0.042573  3.663562  ...                                       0.0                    7.783641                         0.000000
+149607        0.000000                                  0.125492  4.060443  ...                                       0.0                    8.160804                         1.098612
+
+[10 rows x 11 columns]
+2025-09-22 07:59:08,723 - INFO - check null values:NPA Status_log                              0
+RevolvingUtilizationOfUnsecuredLines_log    0
+age_log                                     0
+NumberOfTime30-59DaysPastDueNotWorse_log    0
+DebtRatio_log                               0
+NumberOfOpenCreditLinesAndLoans_log         0
+NumberOfTimes90DaysLate_log                 0
+NumberRealEstateLoansOrLines_log            0
+NumberOfTime60-89DaysPastDueNotWorse_log    0
+MonthlyIncome_replaced_log                  0
+NumberOfDependents_replaced_log             0
+dtype: int64
+2025-09-22 08:00:46,883 - INFO - Variable Transformation has started..............
+2025-09-22 08:00:46,912 - INFO - first 10 samples in the x_train are : 
+        NPA Status  RevolvingUtilizationOfUnsecuredLines   age  ...  NumberOfTime60-89DaysPastDueNotWorse  MonthlyIncome_replaced  NumberOfDependents_replaced
+104025         0.0                              0.389826  38.0  ...                                   0.0                  2500.0                          0.0
+5415           0.0                              0.595526  55.0  ...                                   0.0                  1833.0                          0.0
+75612          0.0                              0.844664  34.0  ...                                   0.0                  5200.0                          3.0
+138169         0.0                              0.391980  40.0  ...                                   0.0                  9000.0                          5.0
+87184          0.0                              0.000000  55.0  ...                                   0.0                  2666.0                          0.0
+108083         0.0                              0.442956  61.0  ...                                   0.0                  7200.0                          1.0
+138046         1.0                              0.336976  27.0  ...                                   0.0                  4500.0                          0.0
+17518          0.0                              0.000000  49.0  ...                                   0.0                  2500.0                          0.0
+93438          0.0                              0.043492  38.0  ...                                   0.0                  2400.0                          0.0
+149607         0.0                              0.133706  57.0  ...                                   0.0                  3500.0                          2.0
+
+[10 rows x 11 columns]
+2025-09-22 08:00:47,268 - INFO - Columns we have removed from train and test are : ['NPA Status', 'RevolvingUtilizationOfUnsecuredLines', 'age', 'NumberOfTime30-59DaysPastDueNotWorse', 'DebtRatio', 'NumberOfOpenCreditLinesAndLoans', 'NumberOfTimes90DaysLate', 'NumberRealEstateLoansOrLines', 'NumberOfTime60-89DaysPastDueNotWorse', 'MonthlyIncome_replaced', 'NumberOfDependents_replaced']
+2025-09-22 08:00:47,271 - INFO - Columns in the train data are : Index(['NPA Status_log', 'RevolvingUtilizationOfUnsecuredLines_log', 'age_log',
+       'NumberOfTime30-59DaysPastDueNotWorse_log', 'DebtRatio_log',
+       'NumberOfOpenCreditLinesAndLoans_log', 'NumberOfTimes90DaysLate_log',
+       'NumberRealEstateLoansOrLines_log',
+       'NumberOfTime60-89DaysPastDueNotWorse_log',
+       'MonthlyIncome_replaced_log', 'NumberOfDependents_replaced_log'],
+      dtype='object')
+2025-09-22 08:00:47,293 - INFO - first 10 samples in the x_train are : 
+        NPA Status_log  RevolvingUtilizationOfUnsecuredLines_log   age_log  ...  NumberOfTime60-89DaysPastDueNotWorse_log  MonthlyIncome_replaced_log  NumberOfDependents_replaced_log
+104025        0.000000                                  0.329179  3.663562  ...                                       0.0                    7.824446                         0.000000
+5415          0.000000                                  0.467204  4.025352  ...                                       0.0                    7.514255                         0.000000
+75612         0.000000                                  0.612297  3.555348  ...                                       0.0                    8.556606                         1.386294
+138169        0.000000                                  0.330727  3.713572  ...                                       0.0                    9.105091                         1.791759
+87184         0.000000                                  0.000000  4.025352  ...                                       0.0                    7.888710                         0.000000
+108083        0.000000                                  0.366694  4.127134  ...                                       0.0                    8.881975                         0.693147
+138046        0.693147                                  0.290410  3.332205  ...                                       0.0                    8.412055                         0.000000
+17518         0.000000                                  0.000000  3.912023  ...                                       0.0                    7.824446                         0.000000
+93438         0.000000                                  0.042573  3.663562  ...                                       0.0                    7.783641                         0.000000
+149607        0.000000                                  0.125492  4.060443  ...                                       0.0                    8.160804                         1.098612
+
+[10 rows x 11 columns]
+2025-09-22 08:00:47,301 - INFO - check null values:NPA Status_log                              0
+RevolvingUtilizationOfUnsecuredLines_log    0
+age_log                                     0
+NumberOfTime30-59DaysPastDueNotWorse_log    0
+DebtRatio_log                               0
+NumberOfOpenCreditLinesAndLoans_log         0
+NumberOfTimes90DaysLate_log                 0
+NumberRealEstateLoansOrLines_log            0
+NumberOfTime60-89DaysPastDueNotWorse_log    0
+MonthlyIncome_replaced_log                  0
+NumberOfDependents_replaced_log             0
+dtype: int64
+2025-09-22 09:39:10,605 - INFO - Variable Transformation has started..............
+2025-09-22 09:39:10,631 - INFO - first 10 samples in the x_train are : 
+        NPA Status  RevolvingUtilizationOfUnsecuredLines   age  ...  NumberOfTime60-89DaysPastDueNotWorse  MonthlyIncome_replaced  NumberOfDependents_replaced
+104025         0.0                              0.389826  38.0  ...                                   0.0                  2500.0                          0.0
+5415           0.0                              0.595526  55.0  ...                                   0.0                  1833.0                          0.0
+75612          0.0                              0.844664  34.0  ...                                   0.0                  5200.0                          3.0
+138169         0.0                              0.391980  40.0  ...                                   0.0                  9000.0                          5.0
+87184          0.0                              0.000000  55.0  ...                                   0.0                  2666.0                          0.0
+108083         0.0                              0.442956  61.0  ...                                   0.0                  7200.0                          1.0
+138046         1.0                              0.336976  27.0  ...                                   0.0                  4500.0                          0.0
+17518          0.0                              0.000000  49.0  ...                                   0.0                  2500.0                          0.0
+93438          0.0                              0.043492  38.0  ...                                   0.0                  2400.0                          0.0
+149607         0.0                              0.133706  57.0  ...                                   0.0                  3500.0                          2.0
+
+[10 rows x 11 columns]
+2025-09-22 09:39:10,815 - INFO - Columns we have removed from train and test are : ['NPA Status', 'RevolvingUtilizationOfUnsecuredLines', 'age', 'NumberOfTime30-59DaysPastDueNotWorse', 'DebtRatio', 'NumberOfOpenCreditLinesAndLoans', 'NumberOfTimes90DaysLate', 'NumberRealEstateLoansOrLines', 'NumberOfTime60-89DaysPastDueNotWorse', 'MonthlyIncome_replaced', 'NumberOfDependents_replaced']
+2025-09-22 09:39:10,815 - INFO - Columns in the train data are : Index(['NPA Status_log', 'RevolvingUtilizationOfUnsecuredLines_log', 'age_log',
+       'NumberOfTime30-59DaysPastDueNotWorse_log', 'DebtRatio_log',
+       'NumberOfOpenCreditLinesAndLoans_log', 'NumberOfTimes90DaysLate_log',
+       'NumberRealEstateLoansOrLines_log',
+       'NumberOfTime60-89DaysPastDueNotWorse_log',
+       'MonthlyIncome_replaced_log', 'NumberOfDependents_replaced_log'],
+      dtype='object')
+2025-09-22 09:39:10,831 - INFO - first 10 samples in the x_train are : 
+        NPA Status_log  RevolvingUtilizationOfUnsecuredLines_log   age_log  ...  NumberOfTime60-89DaysPastDueNotWorse_log  MonthlyIncome_replaced_log  NumberOfDependents_replaced_log
+104025        0.000000                                  0.329179  3.663562  ...                                       0.0                    7.824446                         0.000000
+5415          0.000000                                  0.467204  4.025352  ...                                       0.0                    7.514255                         0.000000
+75612         0.000000                                  0.612297  3.555348  ...                                       0.0                    8.556606                         1.386294
+138169        0.000000                                  0.330727  3.713572  ...                                       0.0                    9.105091                         1.791759
+87184         0.000000                                  0.000000  4.025352  ...                                       0.0                    7.888710                         0.000000
+108083        0.000000                                  0.366694  4.127134  ...                                       0.0                    8.881975                         0.693147
+138046        0.693147                                  0.290410  3.332205  ...                                       0.0                    8.412055                         0.000000
+17518         0.000000                                  0.000000  3.912023  ...                                       0.0                    7.824446                         0.000000
+93438         0.000000                                  0.042573  3.663562  ...                                       0.0                    7.783641                         0.000000
+149607        0.000000                                  0.125492  4.060443  ...                                       0.0                    8.160804                         1.098612
+
+[10 rows x 11 columns]
+2025-09-22 09:39:10,836 - INFO - check null values:NPA Status_log                              0
+RevolvingUtilizationOfUnsecuredLines_log    0
+age_log                                     0
+NumberOfTime30-59DaysPastDueNotWorse_log    0
+DebtRatio_log                               0
+NumberOfOpenCreditLinesAndLoans_log         0
+NumberOfTimes90DaysLate_log                 0
+NumberRealEstateLoansOrLines_log            0
+NumberOfTime60-89DaysPastDueNotWorse_log    0
+MonthlyIncome_replaced_log                  0
+NumberOfDependents_replaced_log             0
+dtype: int64
+2025-09-22 10:11:37,134 - INFO - Variable Transformation has started..............
+2025-09-22 10:11:37,185 - INFO - first 10 samples in the x_train are : 
+        NPA Status  RevolvingUtilizationOfUnsecuredLines   age  ...  NumberOfTime60-89DaysPastDueNotWorse  MonthlyIncome_replaced  NumberOfDependents_replaced
+104025         0.0                              0.389826  38.0  ...                                   0.0                  2500.0                          0.0
+5415           0.0                              0.595526  55.0  ...                                   0.0                  1833.0                          0.0
+75612          0.0                              0.844664  34.0  ...                                   0.0                  5200.0                          3.0
+138169         0.0                              0.391980  40.0  ...                                   0.0                  9000.0                          5.0
+87184          0.0                              0.000000  55.0  ...                                   0.0                  2666.0                          0.0
+108083         0.0                              0.442956  61.0  ...                                   0.0                  7200.0                          1.0
+138046         1.0                              0.336976  27.0  ...                                   0.0                  4500.0                          0.0
+17518          0.0                              0.000000  49.0  ...                                   0.0                  2500.0                          0.0
+93438          0.0                              0.043492  38.0  ...                                   0.0                  2400.0                          0.0
+149607         0.0                              0.133706  57.0  ...                                   0.0                  3500.0                          2.0
+
+[10 rows x 11 columns]
+2025-09-22 10:11:37,494 - INFO - Columns we have removed from train and test are : ['NPA Status', 'RevolvingUtilizationOfUnsecuredLines', 'age', 'NumberOfTime30-59DaysPastDueNotWorse', 'DebtRatio', 'NumberOfOpenCreditLinesAndLoans', 'NumberOfTimes90DaysLate', 'NumberRealEstateLoansOrLines', 'NumberOfTime60-89DaysPastDueNotWorse', 'MonthlyIncome_replaced', 'NumberOfDependents_replaced']
+2025-09-22 10:11:37,494 - INFO - Columns in the train data are : Index(['NPA Status_log', 'RevolvingUtilizationOfUnsecuredLines_log', 'age_log',
+       'NumberOfTime30-59DaysPastDueNotWorse_log', 'DebtRatio_log',
+       'NumberOfOpenCreditLinesAndLoans_log', 'NumberOfTimes90DaysLate_log',
+       'NumberRealEstateLoansOrLines_log',
+       'NumberOfTime60-89DaysPastDueNotWorse_log',
+       'MonthlyIncome_replaced_log', 'NumberOfDependents_replaced_log'],
+      dtype='object')
+2025-09-22 10:11:37,506 - INFO - first 10 samples in the x_train are : 
+        NPA Status_log  RevolvingUtilizationOfUnsecuredLines_log   age_log  ...  NumberOfTime60-89DaysPastDueNotWorse_log  MonthlyIncome_replaced_log  NumberOfDependents_replaced_log
+104025        0.000000                                  0.329179  3.663562  ...                                       0.0                    7.824446                         0.000000
+5415          0.000000                                  0.467204  4.025352  ...                                       0.0                    7.514255                         0.000000
+75612         0.000000                                  0.612297  3.555348  ...                                       0.0                    8.556606                         1.386294
+138169        0.000000                                  0.330727  3.713572  ...                                       0.0                    9.105091                         1.791759
+87184         0.000000                                  0.000000  4.025352  ...                                       0.0                    7.888710                         0.000000
+108083        0.000000                                  0.366694  4.127134  ...                                       0.0                    8.881975                         0.693147
+138046        0.693147                                  0.290410  3.332205  ...                                       0.0                    8.412055                         0.000000
+17518         0.000000                                  0.000000  3.912023  ...                                       0.0                    7.824446                         0.000000
+93438         0.000000                                  0.042573  3.663562  ...                                       0.0                    7.783641                         0.000000
+149607        0.000000                                  0.125492  4.060443  ...                                       0.0                    8.160804                         1.098612
+
+[10 rows x 11 columns]
+2025-09-22 10:11:37,510 - INFO - check null values:NPA Status_log                              0
+RevolvingUtilizationOfUnsecuredLines_log    0
+age_log                                     0
+NumberOfTime30-59DaysPastDueNotWorse_log    0
+DebtRatio_log                               0
+NumberOfOpenCreditLinesAndLoans_log         0
+NumberOfTimes90DaysLate_log                 0
+NumberRealEstateLoansOrLines_log            0
+NumberOfTime60-89DaysPastDueNotWorse_log    0
+MonthlyIncome_replaced_log                  0
+NumberOfDependents_replaced_log             0
+dtype: int64
+2025-09-22 10:12:25,415 - INFO - Variable Transformation has started..............
+2025-09-22 10:12:25,443 - INFO - first 10 samples in the x_train are : 
+        NPA Status  RevolvingUtilizationOfUnsecuredLines   age  ...  NumberOfTime60-89DaysPastDueNotWorse  MonthlyIncome_replaced  NumberOfDependents_replaced
+104025         0.0                              0.389826  38.0  ...                                   0.0                  2500.0                          0.0
+5415           0.0                              0.595526  55.0  ...                                   0.0                  1833.0                          0.0
+75612          0.0                              0.844664  34.0  ...                                   0.0                  5200.0                          3.0
+138169         0.0                              0.391980  40.0  ...                                   0.0                  9000.0                          5.0
+87184          0.0                              0.000000  55.0  ...                                   0.0                  2666.0                          0.0
+108083         0.0                              0.442956  61.0  ...                                   0.0                  7200.0                          1.0
+138046         1.0                              0.336976  27.0  ...                                   0.0                  4500.0                          0.0
+17518          0.0                              0.000000  49.0  ...                                   0.0                  2500.0                          0.0
+93438          0.0                              0.043492  38.0  ...                                   0.0                  2400.0                          0.0
+149607         0.0                              0.133706  57.0  ...                                   0.0                  3500.0                          2.0
+
+[10 rows x 11 columns]
+2025-09-22 10:12:25,682 - INFO - Columns we have removed from train and test are : ['NPA Status', 'RevolvingUtilizationOfUnsecuredLines', 'age', 'NumberOfTime30-59DaysPastDueNotWorse', 'DebtRatio', 'NumberOfOpenCreditLinesAndLoans', 'NumberOfTimes90DaysLate', 'NumberRealEstateLoansOrLines', 'NumberOfTime60-89DaysPastDueNotWorse', 'MonthlyIncome_replaced', 'NumberOfDependents_replaced']
+2025-09-22 10:12:25,682 - INFO - Columns in the train data are : Index(['NPA Status_log', 'RevolvingUtilizationOfUnsecuredLines_log', 'age_log',
+       'NumberOfTime30-59DaysPastDueNotWorse_log', 'DebtRatio_log',
+       'NumberOfOpenCreditLinesAndLoans_log', 'NumberOfTimes90DaysLate_log',
+       'NumberRealEstateLoansOrLines_log',
+       'NumberOfTime60-89DaysPastDueNotWorse_log',
+       'MonthlyIncome_replaced_log', 'NumberOfDependents_replaced_log'],
+      dtype='object')
+2025-09-22 10:12:25,698 - INFO - first 10 samples in the x_train are : 
+        NPA Status_log  RevolvingUtilizationOfUnsecuredLines_log   age_log  ...  NumberOfTime60-89DaysPastDueNotWorse_log  MonthlyIncome_replaced_log  NumberOfDependents_replaced_log
+104025        0.000000                                  0.329179  3.663562  ...                                       0.0                    7.824446                         0.000000
+5415          0.000000                                  0.467204  4.025352  ...                                       0.0                    7.514255                         0.000000
+75612         0.000000                                  0.612297  3.555348  ...                                       0.0                    8.556606                         1.386294
+138169        0.000000                                  0.330727  3.713572  ...                                       0.0                    9.105091                         1.791759
+87184         0.000000                                  0.000000  4.025352  ...                                       0.0                    7.888710                         0.000000
+108083        0.000000                                  0.366694  4.127134  ...                                       0.0                    8.881975                         0.693147
+138046        0.693147                                  0.290410  3.332205  ...                                       0.0                    8.412055                         0.000000
+17518         0.000000                                  0.000000  3.912023  ...                                       0.0                    7.824446                         0.000000
+93438         0.000000                                  0.042573  3.663562  ...                                       0.0                    7.783641                         0.000000
+149607        0.000000                                  0.125492  4.060443  ...                                       0.0                    8.160804                         1.098612
+
+[10 rows x 11 columns]
+2025-09-22 10:12:25,698 - INFO - check null values:NPA Status_log                              0
+RevolvingUtilizationOfUnsecuredLines_log    0
+age_log                                     0
+NumberOfTime30-59DaysPastDueNotWorse_log    0
+DebtRatio_log                               0
+NumberOfOpenCreditLinesAndLoans_log         0
+NumberOfTimes90DaysLate_log                 0
+NumberRealEstateLoansOrLines_log            0
+NumberOfTime60-89DaysPastDueNotWorse_log    0
+MonthlyIncome_replaced_log                  0
+NumberOfDependents_replaced_log             0
+dtype: int64
+2025-09-22 10:17:32,284 - INFO - Variable Transformation has started..............
+2025-09-22 10:17:32,302 - INFO - first 10 samples in the x_train are : 
+        NPA Status  RevolvingUtilizationOfUnsecuredLines   age  ...  NumberOfTime60-89DaysPastDueNotWorse  MonthlyIncome_replaced  NumberOfDependents_replaced
+104025         0.0                              0.389826  38.0  ...                                   0.0                  2500.0                          0.0
+5415           0.0                              0.595526  55.0  ...                                   0.0                  1833.0                          0.0
+75612          0.0                              0.844664  34.0  ...                                   0.0                  5200.0                          3.0
+138169         0.0                              0.391980  40.0  ...                                   0.0                  9000.0                          5.0
+87184          0.0                              0.000000  55.0  ...                                   0.0                  2666.0                          0.0
+108083         0.0                              0.442956  61.0  ...                                   0.0                  7200.0                          1.0
+138046         1.0                              0.336976  27.0  ...                                   0.0                  4500.0                          0.0
+17518          0.0                              0.000000  49.0  ...                                   0.0                  2500.0                          0.0
+93438          0.0                              0.043492  38.0  ...                                   0.0                  2400.0                          0.0
+149607         0.0                              0.133706  57.0  ...                                   0.0                  3500.0                          2.0
+
+[10 rows x 11 columns]
+2025-09-22 10:17:32,444 - INFO - Columns we have removed from train and test are : ['NPA Status', 'RevolvingUtilizationOfUnsecuredLines', 'age', 'NumberOfTime30-59DaysPastDueNotWorse', 'DebtRatio', 'NumberOfOpenCreditLinesAndLoans', 'NumberOfTimes90DaysLate', 'NumberRealEstateLoansOrLines', 'NumberOfTime60-89DaysPastDueNotWorse', 'MonthlyIncome_replaced', 'NumberOfDependents_replaced']
+2025-09-22 10:17:32,444 - INFO - Columns in the train data are : Index(['NPA Status_log', 'RevolvingUtilizationOfUnsecuredLines_log', 'age_log',
+       'NumberOfTime30-59DaysPastDueNotWorse_log', 'DebtRatio_log',
+       'NumberOfOpenCreditLinesAndLoans_log', 'NumberOfTimes90DaysLate_log',
+       'NumberRealEstateLoansOrLines_log',
+       'NumberOfTime60-89DaysPastDueNotWorse_log',
+       'MonthlyIncome_replaced_log', 'NumberOfDependents_replaced_log'],
+      dtype='object')
+2025-09-22 10:17:32,470 - INFO - first 10 samples in the x_train are : 
+        NPA Status_log  RevolvingUtilizationOfUnsecuredLines_log   age_log  ...  NumberOfTime60-89DaysPastDueNotWorse_log  MonthlyIncome_replaced_log  NumberOfDependents_replaced_log
+104025        0.000000                                  0.329179  3.663562  ...                                       0.0                    7.824446                         0.000000
+5415          0.000000                                  0.467204  4.025352  ...                                       0.0                    7.514255                         0.000000
+75612         0.000000                                  0.612297  3.555348  ...                                       0.0                    8.556606                         1.386294
+138169        0.000000                                  0.330727  3.713572  ...                                       0.0                    9.105091                         1.791759
+87184         0.000000                                  0.000000  4.025352  ...                                       0.0                    7.888710                         0.000000
+108083        0.000000                                  0.366694  4.127134  ...                                       0.0                    8.881975                         0.693147
+138046        0.693147                                  0.290410  3.332205  ...                                       0.0                    8.412055                         0.000000
+17518         0.000000                                  0.000000  3.912023  ...                                       0.0                    7.824446                         0.000000
+93438         0.000000                                  0.042573  3.663562  ...                                       0.0                    7.783641                         0.000000
+149607        0.000000                                  0.125492  4.060443  ...                                       0.0                    8.160804                         1.098612
+
+[10 rows x 11 columns]
+2025-09-22 10:17:32,474 - INFO - check null values:NPA Status_log                              0
+RevolvingUtilizationOfUnsecuredLines_log    0
+age_log                                     0
+NumberOfTime30-59DaysPastDueNotWorse_log    0
+DebtRatio_log                               0
+NumberOfOpenCreditLinesAndLoans_log         0
+NumberOfTimes90DaysLate_log                 0
+NumberRealEstateLoansOrLines_log            0
+NumberOfTime60-89DaysPastDueNotWorse_log    0
+MonthlyIncome_replaced_log                  0
+NumberOfDependents_replaced_log             0
+dtype: int64
